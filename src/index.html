@@ -13,7 +13,8 @@
     <div class="shell nav-wrap">
       <a class="brand" href="./">AI 免费机会情报站</a>
       <nav aria-label="主导航">
-        <a href="#resources">资源</a>
+        <a href="#resources">推荐</a>
+        <a href="#radar">完整雷达</a>
         <a href="#changes">更新</a>
         <a href="#rules">收录规则</a>
       </nav>
@@ -30,6 +31,7 @@
       </div>
       <div class="status-strip" aria-label="网站状态">
         <div><strong id="resource-count">—</strong><span>当前合格机会</span></div>
+        <div><strong id="radar-count">—</strong><span>完整雷达记录</span></div>
         <div><strong id="source-count">—</strong><span>搜索与核查路径</span></div>
         <div><strong id="updated-at">—</strong><span>资料更新时间</span></div>
       </div>
@@ -51,7 +53,25 @@
       <div id="empty" class="empty" hidden><h3>没有符合条件的机会</h3><p>可以清空筛选条件再查看。网站不会用小额试用填满列表。</p></div>
     </section>
 
-    <section id="changes" class="section section-tint">
+    <section id="radar" class="section section-tint">
+      <div class="shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">完整覆盖</p><h2>机会雷达</h2></div>
+          <p>这里展示官方已列出的模型渠道和权益库存。它用于发现和比较，不等于推荐榜；容量、资格或体验没有完成验证的记录会明确标出。</p>
+        </div>
+        <form class="filters radar-filters" id="radar-filters" role="search">
+          <label class="search-box"><span>搜索雷达</span><input id="radar-query" type="search" placeholder="平台、模型、权益或用途" autocomplete="off"></label>
+          <label><span>状态</span><select id="radar-tier"><option value="all">全部状态</option><option value="featured">已进入推荐榜</option><option value="listed_unverified">官方列出，容量待测</option><option value="candidate">规则已核，容量待测</option><option value="reference">低额或容量待测参考</option><option value="existing_member">已有会员权益</option></select></label>
+          <label><span>类型</span><select id="radar-kind"><option value="all">全部类型</option><option value="model_channel">模型渠道</option><option value="benefit">额度与会员</option></select></label>
+          <button type="button" class="reset" id="radar-reset">重置</button>
+        </form>
+        <div class="result-meta"><span id="radar-result-count">正在加载…</span><span>推荐与线索严格分层</span></div>
+        <div id="radar-list" class="radar-list" aria-live="polite"></div>
+        <div id="radar-empty" class="empty" hidden><h3>没有符合条件的雷达记录</h3><p>请清空筛选条件后重试。</p></div>
+      </div>
+    </section>
+
+    <section id="changes" class="section">
       <div class="shell">
         <div class="section-heading"><div><p class="eyebrow">变更记录</p><h2>最近发生了什么</h2></div><p>只有新增、规则变化和结束等实质事件会出现在这里。每日额度重置不算新闻。</p></div>
         <div id="change-list" class="timeline"></div>

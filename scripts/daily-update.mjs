@@ -14,10 +14,10 @@ function due(source){
   if(forceAll||!source.lastAttemptAt)return true;
   return now-new Date(source.lastAttemptAt)>=cadenceDays[source.cadence]*86400000;
 }
-async function fetchText(url){
+async function fetchText(url,userAgent='ai-free-opportunities/1.2 (+https://github.com/Er18-w/ai-free-opportunities)'){
   const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),25000);
   try{
-    const response=await fetch(url,{headers:{'user-agent':'ai-free-opportunities/1.1 (+https://github.com/Er18-w/ai-free-opportunities)','accept':'text/html,application/json;q=0.9,*/*;q=0.8'},signal:controller.signal,redirect:'follow'});
+    const response=await fetch(url,{headers:{'user-agent':userAgent,'accept':'text/html,application/json;q=0.9,*/*;q=0.8'},signal:controller.signal,redirect:'follow'});
     if(!response.ok)throw new Error(`HTTP ${response.status}`);
     const text=await response.text();
     if(!text.trim())throw new Error('空响应');
@@ -45,6 +45,12 @@ async function inspect(source){
       const payload=JSON.parse(text);const models=Array.isArray(payload.data)?payload.data:Array.isArray(payload)?payload:[];
       const items=models.filter(model=>String(model.id??'').endsWith('-free')).map(model=>({id:model.id,name:model.name??model.id,discoveredAt:nowIso,sourceUrl:source.url,machineUrl:source.machineUrl,status:'pending'}));
       candidates=await saveCandidate('opencode-zen-free',source,'限免型号候选；必须再核对开户条件、容量、隐私与有效期，不能自动公开。',items);
+    }else if(source.id==='S19'){
+      const apiUrl='https://aihot.news/api/v1/items?mode=all&window=7d&limit=100&q='+encodeURIComponent('免费');
+      const payload=JSON.parse(await fetchText(apiUrl,'aihot-api/2.0.0'));
+      const seen=new Set();
+      const items=(payload.items??[]).filter(item=>/免费|限时|试用|额度|赠送|credits?|free\s*(tier|access|trial)/i.test(item.title??'')).filter(item=>{if(seen.has(item.id))return false;seen.add(item.id);return true;}).map(item=>({id:item.id,title:item.title,publishedAt:item.publishedAt??null,sourceName:item.source?.name??null,originalUrl:item.links?.original??null,discoveryUrl:item.links?.aihot??null,discoveredAt:nowIso,status:'pending'}));
+      candidates=await saveCandidate('aihot-opportunities',source,'AIHOT 仅作为内部发现源。不得公开镜像其内容；每条线索必须回到厂商官方来源核实免费条件、容量和期限。',items);
     }
     source.lastSuccessAt=nowIso;source.health='ok';source.lastError=null;
     report.sources.push({id:source.id,outcome:'ok',...(candidates?{candidates}:{})});

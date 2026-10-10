@@ -15,8 +15,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -32,8 +32,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -49,8 +49,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null,
       "machineUrl": "https://opencode.ai/zen/v1/models"
@@ -67,8 +67,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -84,8 +84,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -101,10 +101,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
-      "health": "ok",
-      "lastError": null
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": null,
+      "health": "failed",
+      "lastError": "fetch failed"
     },
     {
       "id": "S07",
@@ -118,10 +118,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
-      "health": "ok",
-      "lastError": null
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": null,
+      "health": "failed",
+      "lastError": "fetch failed"
     },
     {
       "id": "S08",
@@ -135,10 +135,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
-      "health": "ok",
-      "lastError": null
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": null,
+      "health": "blocked",
+      "lastError": "HTTP 403"
     },
     {
       "id": "S09",
@@ -152,10 +152,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
-      "health": "ok",
-      "lastError": null
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": null,
+      "health": "blocked",
+      "lastError": "HTTP 403"
     },
     {
       "id": "S10",
@@ -169,8 +169,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -186,8 +186,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -203,8 +203,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -220,8 +220,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -237,8 +237,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -254,10 +254,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
-      "health": "ok",
-      "lastError": null
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": null,
+      "health": "blocked",
+      "lastError": "HTTP 403"
     },
     {
       "id": "S16",
@@ -271,8 +271,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -288,10 +288,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
       "lastSuccessAt": null,
-      "health": "blocked",
-      "lastError": "HTTP 403"
+      "health": "failed",
+      "lastError": "fetch failed"
     },
     {
       "id": "S18",
@@ -305,8 +305,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -314,16 +314,16 @@
       "id": "S19",
       "name": "AIHOT Agent 接入文档",
       "role": "发现源",
-      "url": "https://aihot.news/agent",
-      "mode": "documented_api_pending_test",
+      "url": "https://aihot.news/api/v1/items",
+      "mode": "public_json_discovery",
       "cadence": "daily",
       "status": "monitored",
-      "notes": "官方索引声明匿名只读；本次直接抓取失败，不标自动接入通过。发现消息后必须转官方核验。",
+      "notes": "AIHOT 匿名只读 JSON 只作为内部发现源；不公开镜像其内容。候选必须回到厂商官方来源核验后才能发布。",
       "baselineCheckedAt": "2026-10-09",
-      "adapterStatus": "implemented_generic",
+      "adapterStatus": "implemented_candidate_only",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -339,8 +339,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -356,8 +356,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -373,10 +373,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
-      "health": "ok",
-      "lastError": null
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": null,
+      "health": "blocked",
+      "lastError": "HTTP 403"
     },
     {
       "id": "S23",
@@ -390,10 +390,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
-      "health": "ok",
-      "lastError": null
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": null,
+      "health": "failed",
+      "lastError": "fetch failed"
     },
     {
       "id": "S24",
@@ -407,10 +407,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
-      "health": "ok",
-      "lastError": null
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": null,
+      "health": "failed",
+      "lastError": "fetch failed"
     },
     {
       "id": "S25",
@@ -458,10 +458,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
-      "health": "ok",
-      "lastError": null
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": null,
+      "health": "failed",
+      "lastError": "fetch failed"
     },
     {
       "id": "S28",
@@ -475,8 +475,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -492,8 +492,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -509,8 +509,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     },
@@ -526,8 +526,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
-      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "lastAttemptAt": "2026-10-10T05:49:15.041Z",
+      "lastSuccessAt": "2026-10-10T05:49:15.041Z",
       "health": "ok",
       "lastError": null
     }

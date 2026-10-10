@@ -2,6 +2,13 @@
   "schemaVersion": "1.0.0",
   "items": [
     {
+      "id": "radar-2026-10-10",
+      "type": "coverage_expansion",
+      "date": "2026-10-10",
+      "title": "新增46条完整机会雷达",
+      "summary": "推荐榜与完整库存分层展示；接入 AIHOT 作为私有发现源，新线索仍须回到官方页面核实。"
+    },
+    {
       "id": "expanded-2026-10-10",
       "type": "catalog_expansion",
       "date": "2026-10-10",
