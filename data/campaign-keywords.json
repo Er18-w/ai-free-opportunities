@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "1.0.0",
+  "subjects": ["豆包", "Kimi", "WorkBuddy", "CodeBuddy", "GLM", "智谱", "DeepSeek", "MiniMax", "通义千问", "百炼", "阶跃星辰", "StepFun", "OpenCode", "Cline", "Kilo Code", "OpenRouter", "SiliconFlow", "火山方舟", "腾讯混元", "Groq", "Mistral"],
+  "benefits": ["送会员", "赠送会员", "兑换码", "领取 VIP", "内测", "公测", "限时免费", "免费调用", "免费额度", "送 token", "赠送 token", "新手礼包", "学生福利", "free tier", "free trial", "giveaway", "promo code", "beta"],
+  "thresholds": ["无需绑卡", "直接可用", "邀请码", "免排队", "高校认证", "实名认证", "手机号注册", "名额有限", "领完即止", "自动到账"],
+  "riskTerms": ["代充", "出售账号", "共享号", "拼车", "逆向接口", "破解", "返佣", "先付费", "自动续费", "拉人头", "中转站"]
+}
