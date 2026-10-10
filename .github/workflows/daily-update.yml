@@ -3,6 +3,12 @@ on:
   schedule:
     - cron: '37 0 * * *'
   workflow_dispatch:
+    inputs:
+      full_scan:
+        description: '忽略频率，核查全部非停止来源'
+        required: false
+        default: false
+        type: boolean
 permissions:
   contents: write
   pages: write
@@ -24,6 +30,8 @@ jobs:
       - name: Check public sources
         id: daily
         continue-on-error: true
+        env:
+          FORCE_ALL_SOURCES: ${{ github.event_name == 'workflow_dispatch' && inputs.full_scan && '1' || '0' }}
         run: npm run daily
       - run: npm test
       - run: npm run validate
@@ -62,4 +70,3 @@ jobs:
         if: steps.daily.outcome == 'success'
         id: deployment
         uses: actions/deploy-pages@v4
-

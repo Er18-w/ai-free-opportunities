@@ -30,7 +30,7 @@
       </div>
       <div class="status-strip" aria-label="网站状态">
         <div><strong id="resource-count">—</strong><span>当前合格机会</span></div>
-        <div><strong id="source-count">—</strong><span>已启用来源</span></div>
+        <div><strong id="source-count">—</strong><span>搜索与核查路径</span></div>
         <div><strong id="updated-at">—</strong><span>资料更新时间</span></div>
       </div>
     </section>
@@ -42,7 +42,7 @@
       </div>
       <form class="filters" id="filters" role="search">
         <label class="search-box"><span>搜索</span><input id="query" type="search" placeholder="模型、平台或用途" autocomplete="off"></label>
-        <label><span>用途</span><select id="category"><option value="all">全部用途</option><option value="text-api">文本 API</option><option value="coding-api">编程 API</option></select></label>
+        <label><span>用途</span><select id="category"><option value="all">全部用途</option><option value="text-api">文本 API</option><option value="coding-api">编程 API</option><option value="coding-agent">编程 Agent</option><option value="general-agent">通用 Agent</option><option value="image">生图</option><option value="video">视频</option><option value="speech">语音</option><option value="dev-tools">开发工具</option></select></label>
         <label><span>使用方式</span><select id="access"><option value="all">全部方式</option><option value="api">API</option><option value="web">网页</option><option value="client">客户端</option></select></label>
         <button type="button" class="reset" id="reset">重置</button>
       </form>

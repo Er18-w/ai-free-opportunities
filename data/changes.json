@@ -2,6 +2,13 @@
   "schemaVersion": "1.0.0",
   "items": [
     {
+      "id": "expanded-2026-10-10",
+      "type": "catalog_expansion",
+      "date": "2026-10-10",
+      "title": "恢复完整搜索路径并扩展高价值机会",
+      "summary": "接入31条搜索与核查路径；公开目录从2条扩展至12条，新增 OpenRouter、TRAE、Qoder 和 Cloudflare，低额签到积分仍排除。"
+    },
+    {
       "id": "initial-2026-10-10",
       "type": "initial_import",
       "date": "2026-10-10",
