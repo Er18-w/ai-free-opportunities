@@ -30,11 +30,12 @@ jobs:
       - run: npm run build
       - name: Store review candidates and run report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: daily-review-${{ github.run_number }}
           path: .runtime/
           retention-days: 14
+          include-hidden-files: true
       - name: Commit verified data changes
         shell: bash
         run: |
