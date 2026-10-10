@@ -5,12 +5,17 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
 concurrency:
   group: daily-source-check
   cancel-in-progress: false
 jobs:
   update:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -44,3 +49,16 @@ jobs:
       - name: Report source failures
         if: steps.daily.outcome == 'failure'
         run: exit 1
+      - name: Configure Pages
+        if: steps.daily.outcome == 'success'
+        uses: actions/configure-pages@v5
+      - name: Upload Pages artifact
+        if: steps.daily.outcome == 'success'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy Pages
+        if: steps.daily.outcome == 'success'
+        id: deployment
+        uses: actions/deploy-pages@v4
+
