@@ -16,6 +16,7 @@
 - 首次运行或设置 `FORCE_ALL_SOURCES=1` 时核查全部非停止来源。
 - 从 OpenRouter 官方模型目录发现零价格型号，写入 `.runtime/candidates/openrouter-free.json`。
 - 从 OpenCode Zen 官方机器目录发现名称以 `-free` 结尾的型号，写入 `.runtime/candidates/opencode-zen-free.json`。
+- 使用 AIHOT 官方 JSON 接口搜索最近 7 天包含免费关键词的动态，只保存标题、时间和来源链接到 `.runtime/candidates/aihot-opportunities.json`。AIHOT 只作内部发现源，不公开镜像其摘要或数据库；必须回到厂商官方页面核实。
 - 对其他来源记录可达性、最后成功时间和错误；401、403、429 标为 `blocked`。
 - 成功时清空旧的 `lastError`；失败时保留上次有效公开数据。
 
@@ -31,7 +32,7 @@ GitHub Actions 每天北京时间 08:37 自动运行。候选和报告作为 14 
 4. 领取、排队、限速、导出和改稿成本是否合理？
 5. 是否存在更精确的渠道或型号差异？
 
-全部通过后才人工编辑 `data/catalog.json`。自动发现不得直接发布。
+官方确实列出，但容量或体验仍待测的记录可以进入 `data/radar.json`，并标为“容量待测”。全部通过严格门槛后才进入 `data/catalog.json` 推荐榜。自动发现不得直接发布。
 
 ## 容量参考
 
