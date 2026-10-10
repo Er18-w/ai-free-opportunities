@@ -2,6 +2,13 @@
   "schemaVersion": "1.0.0",
   "items": [
     {
+      "id": "campaign-monitor-2026-10-10",
+      "type": "monitoring_upgrade",
+      "date": "2026-10-10",
+      "title": "新增限时福利专区与营销情报监控",
+      "summary": "聚合站与社区每 6 小时发现线索，官方页面负责验真；首批公开阿里百炼、智谱与火山方舟的高额权益。"
+    },
+    {
       "id": "radar-2026-10-10",
       "type": "coverage_expansion",
       "date": "2026-10-10",

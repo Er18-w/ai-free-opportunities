@@ -1,4 +1,4 @@
-const state={catalog:[],radar:[],sources:[],changes:[]};
+const state={catalog:[],campaigns:[],radar:[],sources:[],changes:[]};
 const $=selector=>document.querySelector(selector);
 const categoryNames={'text-api':'文本 API','coding-api':'编程 API','coding-agent':'编程 Agent','general-agent':'通用 Agent',image:'生图',video:'视频',speech:'语音','dev-tools':'开发工具'};
 const offerNames={ongoing_free:'持续免费层',free_trial:'限时会员试用',new_user:'新用户权益'};
@@ -8,17 +8,22 @@ const escapeHtml=value=>String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<'
 
 async function readData(){
   if(globalThis.__AI_OPPORTUNITY_DATA__)return globalThis.__AI_OPPORTUNITY_DATA__;
-  const names=['catalog','radar','sources','changes'];
+  const names=['catalog','campaigns','radar','sources','changes'];
   const values=await Promise.all(names.map(name=>fetch(`./data/${name}.json`,{cache:'no-cache'}).then(response=>{if(!response.ok)throw new Error(`${name}.json 加载失败`);return response.json();})));
   return Object.fromEntries(names.map((name,index)=>[name,values[index]]));
 }
 
 async function load(){
-  const {catalog,radar,sources,changes}=await readData();
+  const {catalog,campaigns,radar,sources,changes}=await readData();
   state.catalog=catalog.items.filter(item=>item.status==='active').sort((a,b)=>(a.featuredRank??999)-(b.featuredRank??999)||a.id.localeCompare(b.id));
-  state.radar=radar.items;state.sources=sources.items;state.changes=changes.items;
-  $('#resource-count').textContent=state.catalog.length;$('#radar-count').textContent=state.radar.length;$('#source-count').textContent=state.sources.length;$('#updated-at').textContent=formatDate(catalog.updatedAt);
-  bindQuery();bindRadar();render();renderRadar();renderChanges();
+  state.campaigns=campaigns.items.filter(item=>item.status==='active').sort((a,b)=>(a.featuredRank??999)-(b.featuredRank??999));state.radar=radar.items;state.sources=sources.items;state.changes=changes.items;
+  $('#campaign-count').textContent=state.campaigns.length;$('#resource-count').textContent=state.catalog.length;$('#radar-count').textContent=state.radar.length;$('#source-count').textContent=state.sources.length;$('#updated-at').textContent=formatDate(campaigns.updatedAt||catalog.updatedAt);
+  bindQuery();bindRadar();renderCampaigns();render();renderRadar();renderChanges();
+}
+function countdown(value){if(!value)return '截止时间未公开';const days=Math.ceil((new Date(`${value}T23:59:59+08:00`)-Date.now())/86400000);return days<=0?'今天截止':`剩 ${days} 天`;}
+function renderCampaigns(){
+  $('#campaign-result-count').textContent=`${state.campaigns.length} 条已通过公开层审核`;
+  $('#campaign-cards').innerHTML=state.campaigns.map(item=>`<article class="campaign-card"><div class="card-top"><span class="provider">${escapeHtml(item.targetProduct)}</span><span class="badge campaign-badge">${escapeHtml(item.validUntil?`⏳ ${countdown(item.validUntil)}`:item.benefitType.includes('会员')?'🎁 赠送会员':'🔥 当前可领')}</span></div><h3>${escapeHtml(item.title)}</h3><p class="campaign-benefit">${escapeHtml(item.benefit)}</p><dl><dt>领取门槛</dt><dd>${escapeHtml(item.accessThreshold)}</dd><dt>有效期</dt><dd>${escapeHtml(item.validityText)}</dd><dt>怎么领</dt><dd>${escapeHtml(item.claimMethod)}</dd><dt>注意</dt><dd>${escapeHtml(item.riskNotes)}</dd></dl><div class="card-actions"><a class="official" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">查看官方依据</a><a class="entry" href="${escapeHtml(item.entryUrl)}" target="_blank" rel="noopener noreferrer">前往领取</a></div><small>${escapeHtml(item.evidenceStatus==='official_verified'?'官方规则已核':'官方页面已核，部分条件需登录确认')} · ${escapeHtml(formatDate(item.lastVerifiedAt))}</small></article>`).join('');
 }
 function bindQuery(){bindQueryValues();$('#filters').addEventListener('input',()=>{syncUrl();render();});$('#reset').addEventListener('click',()=>{$('#query').value='';$('#category').value='all';$('#access').value='all';syncUrl();render();});window.addEventListener('popstate',()=>{bindQueryValues();render();});}
 function bindQueryValues(){const params=new URLSearchParams(location.search);$('#query').value=params.get('q')??'';$('#category').value=[...$('#category').options].some(o=>o.value===params.get('category'))?params.get('category'):'all';$('#access').value=[...$('#access').options].some(o=>o.value===params.get('access'))?params.get('access'):'all';}

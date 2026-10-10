@@ -20,7 +20,19 @@
 - 对其他来源记录可达性、最后成功时间和错误；401、403、429 标为 `blocked`。
 - 成功时清空旧的 `lastError`；失败时保留上次有效公开数据。
 
-GitHub Actions 每天北京时间 08:37 自动运行。候选和报告作为 14 天的 Actions artifact 保存。网页不会读取 `.runtime/`。
+GitHub Actions 每天北京时间 08:17、14:17、20:17 和次日 02:17 运行。长期来源仍按自身 daily/weekly/monthly 周期判断，活动情报每轮都扫描。候选和报告作为 14 天的 Actions artifact 保存。网页不会读取 `.runtime/`。
+
+## 限时活动情报流程
+
+运行 `npm run campaigns`。这是独立于长期模型目录的 Hunter → Verifier → Cleaner 流程：
+
+1. Hunter 从 `data/campaign-sources.json` 中读取 AI 优惠聚合器、iGetoken RSS、Linux.do、V2EX、NodeSeek 与 AIHOT。命中“主体词 × 权益动作词”且不触发高风险词的内容写入 `.runtime/candidates/campaigns.json`。
+2. 聚合站和社区只负责发现。候选即使带有官方链接，也必须由维护 Agent 打开官方页面，补齐产品、权益、门槛、起止时间、领取方法、官方来源和风险说明。
+3. Verifier 检查 `data/campaigns.json` 的官方链接是否可达，并记录“活动已结束、已领完、404”等信号。单次不可达或模糊关键词只触发人工复核，不自动删除上次有效记录。
+4. Cleaner 对有绝对截止日且已过期的活动自动改为 `archived`。官方未给绝对日期时不得猜日期；使用 `validityText` 如实说明，并由 Agent 每 48 小时复核候选、每日至少复核公开活动。
+5. 兑换码不由脚本实际领取或消耗。需要登录、验证码或账户内才能确认的字段标为“需登录确认”，交给人工检查。
+
+当前来源角色：AI 优惠聚合器的结构化数据最适合机器增量发现；iGetoken 最适合中文人工线报补漏；厂商公告页是公开发布的最终证据。微信公众号、小红书、即刻、Discord、Reddit 与 Hostloc 目前登记为人工路径，不能声称无人值守抓取稳定。
 
 ## 候选入榜审查
 

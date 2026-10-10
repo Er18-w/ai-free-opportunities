@@ -1,7 +1,7 @@
 name: Daily source check
 on:
   schedule:
-    - cron: '37 0 * * *'
+    - cron: '17 0,6,12,18 * * *'
   workflow_dispatch:
     inputs:
       full_scan:
@@ -33,6 +33,10 @@ jobs:
         env:
           FORCE_ALL_SOURCES: ${{ github.event_name == 'workflow_dispatch' && inputs.full_scan && '1' || '0' }}
         run: npm run daily
+      - name: Hunt and verify campaign opportunities
+        id: campaigns
+        continue-on-error: true
+        run: npm run campaigns
       - run: npm test
       - run: npm run validate
       - run: npm run build
@@ -52,11 +56,11 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/sources.json
+          git add data/sources.json data/campaign-sources.json data/campaigns.json
           git commit -m "data: daily source check"
           git push
       - name: Report source failures
-        if: steps.daily.outcome == 'failure'
+        if: steps.daily.outcome == 'failure' || steps.campaigns.outcome == 'failure'
         run: exit 1
       - name: Configure Pages
         if: steps.daily.outcome == 'success'
