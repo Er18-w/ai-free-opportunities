@@ -7,8 +7,8 @@
       "url": "https://console.groq.com/docs/rate-limits",
       "mode": "html",
       "status": "enabled",
-      "lastSuccessAt": "2026-10-10T04:20:33.721Z",
-      "lastAttemptAt": "2026-10-10T04:20:33.721Z",
+      "lastSuccessAt": "2026-10-10T04:23:37.662Z",
+      "lastAttemptAt": "2026-10-10T04:23:37.662Z",
       "health": "ok",
       "lastError": "HTTP 403"
     },
@@ -18,8 +18,8 @@
       "url": "https://openrouter.ai/api/v1/models",
       "mode": "json",
       "status": "discovery",
-      "lastSuccessAt": "2026-10-10T04:20:33.721Z",
-      "lastAttemptAt": "2026-10-10T04:20:33.721Z",
+      "lastSuccessAt": "2026-10-10T04:23:37.662Z",
+      "lastAttemptAt": "2026-10-10T04:23:37.662Z",
       "health": "ok",
       "lastError": "fetch failed"
     }
