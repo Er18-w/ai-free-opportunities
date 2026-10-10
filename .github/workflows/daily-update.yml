@@ -27,6 +27,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      - name: Restore private campaign state
+        uses: actions/cache@v4
+        with:
+          path: .runtime/state
+          key: campaign-state-${{ github.run_id }}
+          restore-keys: |
+            campaign-state-
       - name: Check public sources
         id: daily
         continue-on-error: true
@@ -36,7 +43,7 @@ jobs:
       - name: Hunt and verify campaign opportunities
         id: campaigns
         continue-on-error: true
-        run: npm run campaigns
+        run: ${{ github.event_name == 'workflow_dispatch' && inputs.full_scan && 'npm run campaign:bootstrap' || 'npm run campaigns' }}
       - run: npm test
       - run: npm run validate
       - run: npm run build
@@ -74,3 +81,4 @@ jobs:
         if: steps.daily.outcome == 'success'
         id: deployment
         uses: actions/deploy-pages@v4
+

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-10T00:00:00+08:00",
+  "updatedAt": "2026-10-10T17:55:00+08:00",
   "note": "仅公开官方来源已核实、价值达到任务门槛的活动与新人权益。",
   "items": [
     {
@@ -59,6 +59,83 @@
       "riskNotes": "额度耗尽后可能产生按量费用；使用前核对资源包余额与计费设置。",
       "lastVerifiedAt": "2026-10-10T00:00:00+08:00",
       "featuredRank": 3
+    },
+    {
+      "id": "sensetime-sensenova-u15-lite-beta",
+      "targetProduct": "商汤日日新 Token Plan",
+      "title": "U1.5 Lite 生图与编辑公测免费",
+      "benefitType": "公测期免费模型 API",
+      "benefit": "每 5 小时 1,500 次请求，支持生图与参考图编辑，最高 4K，公测期间可免费关闭水印",
+      "accessThreshold": "注册商汤日日新平台并创建 API Key；官方未公布统一截止日",
+      "claimMethod": "进入日日新控制台获取 API Key，调用 sensenova-u1.5-lite",
+      "startAt": "2026-08-25",
+      "validUntil": null,
+      "validityText": "公测期间免费；无绝对截止日，需每日复核官方公告",
+      "status": "active",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://www.sensetime.com/cn/news/sensenova-u1-5-lite-token-plan-20260911-1741",
+      "entryUrl": "https://platform.sensenova.cn/",
+      "riskNotes": "公测可能随时结束；不要上传隐私、未授权人物或商业机密图片。",
+      "lastVerifiedAt": "2026-10-10T17:55:00+08:00",
+      "featuredRank": 4
+    },
+    {
+      "id": "qiniu-ai-new-user-3m",
+      "targetProduct": "七牛云 AI 大模型推理",
+      "title": "新用户全系列共享 300 万 Tokens",
+      "benefitType": "新用户 API 资源包",
+      "benefit": "AI 推理新客户获得全系列共享 300 万 Tokens，可使用 OpenAI 或 Anthropic 兼容接口",
+      "accessThreshold": "中国大陆账号；首次创建 API Key 或首次产生计费用量后激活，长期使用需实名认证",
+      "claimMethod": "注册 qiniu.com/ai，创建 API Key；等待资源包到账后再开始批量调用",
+      "startAt": null,
+      "validUntil": null,
+      "validityText": "官方当前仍展示上线活动；资源包具体过期时间以账户内为准",
+      "status": "active",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://developer.qiniu.com/aitokenapi/12898/ai-token-api-pricing",
+      "entryUrl": "https://www.qiniu.com/ai",
+      "riskNotes": "额度用尽后自动转按量计费，且账单和余额可能延迟约 15 分钟；先设置 API Key 总限额，确认资源包到账后再调用。",
+      "lastVerifiedAt": "2026-10-10T17:55:00+08:00",
+      "featuredRank": 5
+    },
+    {
+      "id": "coze-limited-free-models",
+      "targetProduct": "扣子 Coze",
+      "title": "Kimi 与阶跃星辰等模型每天免费调用",
+      "benefitType": "限时免费模型调用",
+      "benefit": "官方列出的限时免费模型每个模型每天 100 次调用，不扣减扣子积分",
+      "accessThreshold": "注册扣子并在智能体或工作流模型节点选择标为限时免费的模型",
+      "claimMethod": "进入扣子创建智能体或工作流，在模型列表选择 Kimi、阶跃星辰等限时免费型号",
+      "startAt": null,
+      "validUntil": null,
+      "validityText": "官方未给统一截止日与固定型号清单，按控制台当天展示为准",
+      "status": "active",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://docs.coze.cn/coze_pro_model_fee",
+      "entryUrl": "https://www.coze.cn/",
+      "riskNotes": "免费型号会轮换；方舟自开通模型另行收费，选择模型时必须确认“限时免费”标识。",
+      "lastVerifiedAt": "2026-10-10T17:55:00+08:00",
+      "featuredRank": 6
+    },
+    {
+      "id": "opencode-zen-free-models",
+      "targetProduct": "OpenCode Zen",
+      "title": "多款编程模型限时免费",
+      "benefitType": "限时免费模型 API",
+      "benefit": "官方 Zen 目录当前列出 MiMo、Ling、Nemotron、LongCat、Space Bunny、Jev 等多个免费型号",
+      "accessThreshold": "创建 OpenCode Zen 账户和 API Key；选择名称带 Free 或目录价格为 0 的型号",
+      "claimMethod": "按官方 Zen 文档创建 API Key，通过 OpenAI 兼容端点调用当前免费型号",
+      "startAt": null,
+      "validUntil": null,
+      "validityText": "多数型号仅标注 limited time，未给绝对截止日；每日读取模型目录复核",
+      "status": "active",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://docs.opencode.ai/docs/zen/",
+      "entryUrl": "https://opencode.ai/",
+      "riskNotes": "部分免费型号会记录输入输出用于改进模型，不能提交隐私或机密代码；自动充值应保持关闭。",
+      "lastVerifiedAt": "2026-10-10T17:55:00+08:00",
+      "featuredRank": 7
     }
   ]
 }
+

@@ -9,9 +9,11 @@
     "validate": "node scripts/validate.mjs",
     "daily": "node scripts/daily-update.mjs",
     "campaigns": "node scripts/campaign-monitor.mjs",
+    "campaign:bootstrap": "node scripts/campaign-monitor.mjs --bootstrap --reset",
     "preview": "node scripts/serve.mjs"
   },
   "engines": {
     "node": ">=22"
   }
 }
+
