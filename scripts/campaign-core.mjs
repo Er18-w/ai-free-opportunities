@@ -6,6 +6,12 @@ export const clean=value=>String(value??'')
   .replace(/\s+/g,' ').trim();
 export const lower=value=>clean(value).toLowerCase();
 export const matches=(text,terms=[])=>terms.some(term=>lower(text).includes(lower(term)));
+const safeRiskPhrases=['不自动续费','不会自动续费','无需自动续费','无需绑定信用卡','不需要绑定信用卡','无需绑卡','免绑卡','无需付费','不收费'];
+export function hasRiskSignal(text,terms=[]){
+  let value=lower(text);
+  for(const phrase of safeRiskPhrases)value=value.replaceAll(lower(phrase),' ');
+  return matches(value,terms);
+}
 export function matchesBenefit(text,terms=[]){
   const value=lower(text),specific=terms.filter(term=>lower(term)!=='beta');
   return matches(value,specific)||(/\bbeta\b/.test(value)&&/\bfree\b|免费|赠送|额度|会员/.test(value));
@@ -23,16 +29,18 @@ export function titleTokens(value){
 }
 function overlap(a,b){if(!a.size||!b.size)return 0;let same=0;for(const token of a)if(b.has(token))same++;return same/Math.min(a.size,b.size);}
 export function likelySameCampaign(a,b){
-  if(canonicalUrl(a.sourceUrl)&&canonicalUrl(a.sourceUrl)===canonicalUrl(b.sourceUrl))return true;
   const productA=lower(a.targetProduct),productB=lower(b.targetProduct);if(productA&&productB&&productA!==productB)return false;
   const dateA=a.validUntil??'',dateB=b.validUntil??'';if(dateA&&dateB&&dateA!==dateB)return false;
-  return overlap(titleTokens(a.title),titleTokens(b.title))>=0.6;
+  const titleOverlap=overlap(titleTokens(a.title),titleTokens(b.title));
+  if(lower(a.title)===lower(b.title))return true;
+  if(canonicalUrl(a.sourceUrl)&&canonicalUrl(a.sourceUrl)===canonicalUrl(b.sourceUrl))return titleOverlap>=0.35;
+  return titleOverlap>=0.6;
 }
 export function discoveryScore({text,source,hasDate=false,hasOfficial=false,keywords}){
   let value=source.tier==='official'?36:source.tier==='aggregator'?20:8;
   if(matches(text,keywords.subjects))value+=12;if(matches(text,keywords.benefits))value+=18;if(matches(text,keywords.valueSignals??[]))value+=14;
   if(matches(text,keywords.thresholds))value+=6;if(hasDate)value+=10;if(hasOfficial)value+=12;
-  if(matches(text,keywords.frictionTerms??[]))value-=18;if(matches(text,keywords.riskTerms))value-=80;
+  if(matches(text,keywords.frictionTerms??[]))value-=18;if(hasRiskSignal(text,keywords.riskTerms))value-=80;
   return Math.max(0,Math.min(100,value));
 }
 export function clusterCandidates(items){
@@ -49,4 +57,3 @@ export function mergeLedger(previous=[],current=[],nowIso=new Date().toISOString
   for(const item of current){const old=map.get(item.clusterId);map.set(item.clusterId,{...old,...item,firstSeenAt:old?.firstSeenAt??nowIso,lastSeenAt:nowIso,seenThisRun:true,status:'candidate'});}
   return [...map.values()].map(item=>({...item,status:item.seenThisRun?'candidate':'not_seen_this_run'})).sort((a,b)=>b.discoveryScore-a.discoveryScore||String(b.lastSeenAt).localeCompare(String(a.lastSeenAt)));
 }
-

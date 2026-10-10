@@ -17,6 +17,8 @@ npm run validate
 npm run build
 npm run campaign:bootstrap
 npm run campaigns
+npm run sources:bootstrap
+npm run sources:plan
 npm run preview
 ```
 
@@ -27,21 +29,22 @@ npm run preview
 - `data/catalog.json`：已通过严格准入、适合优先尝试的推荐机会。
 - `data/campaigns.json`：官方依据已核、达到任务容量门槛的限时活动与高额新人权益。
 - `data/campaign-sources.json`：聚合站、社区、官方验真页和人工巡检路径的活动情报源表。
+- `data/source-map.json`：43 个重点厂商与产品的分级监控地图；登记不表示当前有合格免费权益。
 - `data/radar.json`：46 条完整雷达库存，包括官方已列出的模型渠道、容量待测权益、低额参考和已有会员权益；它们不会冒充推荐榜。
 - `data/sources.json`：原交接表中的 31 条搜索、核查、发现和协议路径。它们不是 31 个可直接入榜的平台。
 - `data/changes.json`：公开机会的实质变化。
 - `.runtime/candidates/`：自动发现但尚未通过准入的临时候选，被 Git 忽略，不进入网站。
 - `docs/DAILY_UPDATE.md`：未来维护 Agent 的独立工作流。
 - `docs/AIHOT_SEARCH_ADAPTATION.md`：AIHOT 搜索机制审查，以及本站的轻量改造方案。
+- `docs/SOURCE_EXPANSION.md`：首次建库、每日轮换、查询词与维护 Agent 的来源拓宽说明。
 - `docs/ACCESS.md`：在线地址打不开时的处理方法。
 
-`npm run daily` 核查长期免费模型来源。首次建库用 `npm run campaign:bootstrap` 回溯 90 天，之后用 `npm run campaigns` 扫描营销活动增量。AI 优惠聚合器、iGetoken、AIHOT 和社区只负责生成私有候选；每条线索都要回到厂商官方来源核实。候选补齐免费条件、任务容量、地区、领取门槛和有效期后，才能进入公开活动、雷达或推荐榜。
+`npm run daily` 核查长期免费模型来源。首次建库用 `npm run sources:bootstrap` 生成“近 30 天广搜 + 第 31～90 天定向补漏”计划，再用 `npm run campaign:bootstrap` 汇总机器可读历史候选；之后每天运行 `sources:plan` 和 `campaigns`。AI 优惠聚合器、iGetoken、AIHOT、搜索结果和社区只负责生成私有候选；每条线索都要回到厂商官方来源核实。候选补齐免费条件、任务容量、地区、领取门槛和有效期后，才能进入公开活动、雷达或推荐榜。
 
-GitHub Actions 每 6 小时执行一次活动扫描，长期来源仍按每日、每周、每月频率判断。候选和报告作为 14 天的私有工作流构件保存；公开仓库只提交来源健康状态。手动运行工作流并选择 `full_scan` 可以强制核查全部非停止来源。
+GitHub Actions 每天北京时间 09:17 执行一次。A 级重点对象每日检查，B/C 级轮换覆盖，长期来源仍按每日、每周、每月频率判断。候选和报告作为 14 天的私有工作流构件保存；公开仓库只提交来源健康状态。手动运行工作流并选择 `full_scan` 会重新生成完整查询计划并检查全部重点对象。
 
 ## 部署
 
 `.github/workflows/pages.yml` 将 `dist/` 发布到 GitHub Pages。推送到 `main` 后会自动测试、构建和部署。
 
 当前公开条目采用“少而有用”的标准。数量增加来自补齐可完成任务的机会，不会把即梦普通领积分、TRAE 每日 100 积分、每月极小额度或 BYOK 工具拿来凑数。
-

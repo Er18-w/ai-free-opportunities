@@ -16,6 +16,7 @@
         <a href="#campaigns">限时福利</a>
         <a href="#resources">推荐</a>
         <a href="#radar">完整雷达</a>
+        <a href="#coverage">监控范围</a>
         <a href="#changes">更新</a>
         <a href="#rules">收录规则</a>
       </nav>
@@ -34,6 +35,7 @@
         <div><strong id="campaign-count">—</strong><span>当前福利</span></div>
         <div><strong id="resource-count">—</strong><span>严格推荐</span></div>
         <div><strong id="radar-count">—</strong><span>完整雷达记录</span></div>
+        <div><strong id="vendor-count">—</strong><span>重点监控对象</span></div>
         <div><strong id="source-count">—</strong><span>搜索与核查路径</span></div>
         <div><strong id="updated-at">—</strong><span>资料更新时间</span></div>
       </div>
@@ -42,7 +44,7 @@
     <section id="campaigns" class="section campaign-section">
       <div class="shell">
         <div class="section-heading"><div><p class="eyebrow">现在值得领</p><h2>限时活动与高额新人权益</h2></div><p>聚合站和社区负责发现，只有回到厂商官方页面核实、且额度足够完成实际任务的机会才会显示在这里。</p></div>
-        <div class="result-meta"><span id="campaign-result-count">正在加载…</span><span>每 6 小时发现 · 到期自动归档</span></div>
+        <div class="result-meta"><span id="campaign-result-count">正在加载…</span><span>每日发现 · 到期自动归档</span></div>
         <div id="campaign-cards" class="campaign-cards" aria-live="polite"></div>
       </div>
     </section>
@@ -79,6 +81,15 @@
         <div id="radar-list" class="radar-list" aria-live="polite"></div>
         <div id="radar-empty" class="empty" hidden><h3>没有符合条件的雷达记录</h3><p>请清空筛选条件后重试。</p></div>
       </div>
+    </section>
+
+    <section id="coverage" class="section shell">
+      <div class="section-heading">
+        <div><p class="eyebrow">搜索不只盯聚合站</p><h2>重点监控范围</h2></div>
+        <p>厂商、API 平台、编程 Agent 和创作工具分级轮换检查。这里表示我们会查什么，不表示这些产品当前都有合格的免费权益。</p>
+      </div>
+      <div id="coverage-summary" class="coverage-summary"></div>
+      <div id="coverage-list" class="coverage-list" aria-live="polite"></div>
     </section>
 
     <section id="changes" class="section">

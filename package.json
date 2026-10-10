@@ -10,10 +10,11 @@
     "daily": "node scripts/daily-update.mjs",
     "campaigns": "node scripts/campaign-monitor.mjs",
     "campaign:bootstrap": "node scripts/campaign-monitor.mjs --bootstrap --reset",
+    "sources:plan": "node scripts/source-expansion.mjs",
+    "sources:bootstrap": "node scripts/source-expansion.mjs --bootstrap",
     "preview": "node scripts/serve.mjs"
   },
   "engines": {
     "node": ">=22"
   }
 }
-

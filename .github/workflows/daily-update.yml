@@ -1,7 +1,7 @@
 name: Daily source check
 on:
   schedule:
-    - cron: '17 0,6,12,18 * * *'
+    - cron: '17 1 * * *'
   workflow_dispatch:
     inputs:
       full_scan:
@@ -40,6 +40,10 @@ jobs:
         env:
           FORCE_ALL_SOURCES: ${{ github.event_name == 'workflow_dispatch' && inputs.full_scan && '1' || '0' }}
         run: npm run daily
+      - name: Build source search plan and check official pages
+        id: source_plan
+        continue-on-error: true
+        run: ${{ github.event_name == 'workflow_dispatch' && inputs.full_scan && 'npm run sources:bootstrap' || 'npm run sources:plan' }}
       - name: Hunt and verify campaign opportunities
         id: campaigns
         continue-on-error: true
@@ -67,7 +71,7 @@ jobs:
           git commit -m "data: daily source check"
           git push
       - name: Report source failures
-        if: steps.daily.outcome == 'failure' || steps.campaigns.outcome == 'failure'
+        if: steps.daily.outcome == 'failure' || steps.source_plan.outcome == 'failure' || steps.campaigns.outcome == 'failure'
         run: exit 1
       - name: Configure Pages
         if: steps.daily.outcome == 'success'
@@ -81,4 +85,3 @@ jobs:
         if: steps.daily.outcome == 'success'
         id: deployment
         uses: actions/deploy-pages@v4
-

@@ -1,4 +1,4 @@
-const state={catalog:[],campaigns:[],radar:[],sources:[],changes:[]};
+const state={catalog:[],campaigns:[],radar:[],sources:[],sourceMap:[],changes:[]};
 const $=selector=>document.querySelector(selector);
 const categoryNames={'text-api':'文本 API','coding-api':'编程 API','coding-agent':'编程 Agent','general-agent':'通用 Agent',image:'生图',video:'视频',speech:'语音','dev-tools':'开发工具'};
 const offerNames={ongoing_free:'持续免费层',free_trial:'限时会员试用',new_user:'新用户权益'};
@@ -8,17 +8,17 @@ const escapeHtml=value=>String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<'
 
 async function readData(){
   if(globalThis.__AI_OPPORTUNITY_DATA__)return globalThis.__AI_OPPORTUNITY_DATA__;
-  const names=['catalog','campaigns','radar','sources','changes'];
+  const names=['catalog','campaigns','radar','sources','source-map','changes'];
   const values=await Promise.all(names.map(name=>fetch(`./data/${name}.json`,{cache:'no-cache'}).then(response=>{if(!response.ok)throw new Error(`${name}.json 加载失败`);return response.json();})));
   return Object.fromEntries(names.map((name,index)=>[name,values[index]]));
 }
 
 async function load(){
-  const {catalog,campaigns,radar,sources,changes}=await readData();
+  const loaded=await readData();const {catalog,campaigns,radar,sources,changes}=loaded;const sourceMap=loaded.sourceMap??loaded['source-map'];
   state.catalog=catalog.items.filter(item=>item.status==='active').sort((a,b)=>(a.featuredRank??999)-(b.featuredRank??999)||a.id.localeCompare(b.id));
-  state.campaigns=campaigns.items.filter(item=>item.status==='active').sort((a,b)=>(a.featuredRank??999)-(b.featuredRank??999));state.radar=radar.items;state.sources=sources.items;state.changes=changes.items;
-  $('#campaign-count').textContent=state.campaigns.length;$('#resource-count').textContent=state.catalog.length;$('#radar-count').textContent=state.radar.length;$('#source-count').textContent=state.sources.length;$('#updated-at').textContent=formatDate(campaigns.updatedAt||catalog.updatedAt);
-  bindQuery();bindRadar();renderCampaigns();render();renderRadar();renderChanges();
+  state.campaigns=campaigns.items.filter(item=>item.status==='active').sort((a,b)=>(a.featuredRank??999)-(b.featuredRank??999));state.radar=radar.items;state.sources=sources.items;state.sourceMap=sourceMap.items;state.changes=changes.items;
+  $('#campaign-count').textContent=state.campaigns.length;$('#resource-count').textContent=state.catalog.length;$('#radar-count').textContent=state.radar.length;$('#vendor-count').textContent=state.sourceMap.length;$('#source-count').textContent=state.sources.length;$('#updated-at').textContent=formatDate(campaigns.updatedAt||catalog.updatedAt);
+  bindQuery();bindRadar();renderCampaigns();render();renderRadar();renderCoverage();renderChanges();
 }
 function countdown(value){if(!value)return '截止时间未公开';const days=Math.ceil((new Date(`${value}T23:59:59+08:00`)-Date.now())/86400000);return days<=0?'今天截止':`剩 ${days} 天`;}
 function renderCampaigns(){
@@ -49,6 +49,13 @@ function renderRadar(){
   $('#radar-result-count').textContent=`显示 ${items.length} / ${state.radar.length} 条雷达记录`;
   $('#radar-empty').hidden=items.length!==0;
   $('#radar-list').innerHTML=items.map(item=>`<article class="radar-item tier-${escapeHtml(item.tier)}"><div><div class="radar-provider">${escapeHtml(item.provider)} · ${escapeHtml(item.kind==='model_channel'?'模型渠道':'额度与会员')}</div><h3>${escapeHtml(item.title)}</h3><div class="model-id">${escapeHtml(item.modelId||item.categoryLabel)}</div></div><div><div class="radar-meta">用途</div><div>${escapeHtml(item.categoryLabel)}</div></div><div><div class="radar-meta">免费内容或额度</div><div class="radar-allowance">${escapeHtml(item.allowance)}</div></div><div class="radar-state"><span class="badge">${escapeHtml(item.tierLabel)}</span><a href="${escapeHtml(item.officialUrl)}" target="_blank" rel="noopener noreferrer">官方依据</a></div></article>`).join('');
+}
+function renderCoverage(){
+  const priorities={A:'每日重点',B:'轮换补查',C:'每周覆盖'};
+  const categoryLabels={api:'API','model-platform':'模型平台',coding:'编程',agent:'Agent',chat:'对话',speech:'语音',audio:'音频',image:'图像',video:'视频'};
+  const cn=state.sourceMap.filter(item=>item.region==='CN').length,global=state.sourceMap.length-cn;
+  $('#coverage-summary').innerHTML=`<article><strong>${state.sourceMap.length}</strong><span>重点对象</span></article><article><strong>${cn}</strong><span>中国区产品</span></article><article><strong>${global}</strong><span>海外产品</span></article><article><strong>1 次/天</strong><span>自动工作流</span></article>`;
+  $('#coverage-list').innerHTML=state.sourceMap.map(item=>`<a class="coverage-item" href="${escapeHtml(item.officialUrls[0].url)}" target="_blank" rel="noopener noreferrer"><span><b>${escapeHtml(item.name)}</b><small>${escapeHtml(item.aliases.slice(0,2).join(' · '))}</small></span><span class="coverage-tags"><em>${escapeHtml(priorities[item.priority])}</em>${item.categories.slice(0,2).map(category=>`<i>${escapeHtml(categoryLabels[category]??category)}</i>`).join('')}</span></a>`).join('');
 }
 function renderChanges(){$('#change-list').innerHTML=state.changes.map(item=>`<article><time datetime="${escapeHtml(item.date)}">${escapeHtml(item.date)}</time><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary)}</p></article>`).join('');}
 load().catch(error=>{$('#cards').innerHTML=`<div class="empty"><h3>资料加载失败</h3><p>${escapeHtml(error.message)}。如果你直接打开普通 index.html，请改用 standalone.html。</p></div>`;$('#result-count').textContent='暂时无法显示';});
