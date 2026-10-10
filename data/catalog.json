@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-10-10T08:00:00+08:00",
+  "policyVersion": "admission-v4.0",
+  "items": [
+    {
+      "id": "groq-gpt-oss-120b-free",
+      "title": "GPT OSS 120B 免费 API",
+      "provider": "Groq",
+      "channel": "Groq API Free Plan",
+      "modelId": "openai/gpt-oss-120b",
+      "categories": ["text-api", "coding-api"],
+      "access": ["api"],
+      "offerType": "ongoing_free",
+      "summary": "适合文本推理、代码辅助和结构化输出的免费 API。",
+      "valueReason": "官方 Free Plan 当前列出每日 1,000 次请求、每日 200,000 tokens，足以支持多次个人开发或文本任务。",
+      "allowance": "30 RPM · 1,000 RPD · 8,000 TPM · 200,000 TPD",
+      "capacity": "按官方限额可覆盖多次个人文本或代码任务；具体单项消耗取决于提示词和输出长度。",
+      "limitations": ["多个限额维度同时生效", "限额按组织计算", "实际账号限额以控制台为准", "本站尚未做账号调用测试"],
+      "eligibility": "需注册 Groq 账号并创建 API Key",
+      "regionStatus": "unknown",
+      "evidenceMode": "rule_verified",
+      "evidenceLabel": "规则已核，体验未测",
+      "officialUrl": "https://console.groq.com/docs/rate-limits",
+      "entryUrl": "https://console.groq.com/keys",
+      "api": {
+        "baseUrl": "https://api.groq.com/openai/v1",
+        "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+        "protocol": "OpenAI-compatible chat completions"
+      },
+      "ruleCheckedAt": "2026-10-10T00:00:00Z",
+      "featuredRank": 1,
+      "status": "active"
+    },
+    {
+      "id": "groq-gpt-oss-20b-free",
+      "title": "GPT OSS 20B 免费 API",
+      "provider": "Groq",
+      "channel": "Groq API Free Plan",
+      "modelId": "openai/gpt-oss-20b",
+      "categories": ["text-api", "coding-api"],
+      "access": ["api"],
+      "offerType": "ongoing_free",
+      "summary": "适合响应速度优先的文本与轻量代码任务。",
+      "valueReason": "官方 Free Plan 当前列出每日 1,000 次请求、每日 200,000 tokens，可用于持续的小型个人任务。",
+      "allowance": "30 RPM · 1,000 RPD · 8,000 TPM · 200,000 TPD",
+      "capacity": "按官方限额可覆盖多次个人文本或代码任务；具体单项消耗取决于提示词和输出长度。",
+      "limitations": ["多个限额维度同时生效", "限额按组织计算", "实际账号限额以控制台为准", "本站尚未做账号调用测试"],
+      "eligibility": "需注册 Groq 账号并创建 API Key",
+      "regionStatus": "unknown",
+      "evidenceMode": "rule_verified",
+      "evidenceLabel": "规则已核，体验未测",
+      "officialUrl": "https://console.groq.com/docs/rate-limits",
+      "entryUrl": "https://console.groq.com/keys",
+      "api": {
+        "baseUrl": "https://api.groq.com/openai/v1",
+        "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+        "protocol": "OpenAI-compatible chat completions"
+      },
+      "ruleCheckedAt": "2026-10-10T00:00:00Z",
+      "featuredRank": 2,
+      "status": "active"
+    }
+  ]
+}

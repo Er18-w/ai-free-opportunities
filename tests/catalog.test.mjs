@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs/promises';import path from 'node:path';import {root,readJson} from '../scripts/lib.mjs';
+test('公开目录只包含active记录且ID唯一',async()=>{const data=await readJson('data/catalog.json');assert.equal(new Set(data.items.map(x=>x.id)).size,data.items.length);assert.ok(data.items.every(x=>x.status==='active'));});
+test('公开条目都有可判断实用价值的容量和依据',async()=>{const data=await readJson('data/catalog.json');for(const item of data.items){assert.ok(item.capacity.length>=8);assert.ok(item.valueReason.length>=8);assert.ok(item.allowance.length>=4);}});
+test('页面不用外部CDN且有关键筛选控件',async()=>{const html=await fs.readFile(path.join(root,'src/index.html'),'utf8');assert.equal(/https?:\/\/[^"']+\.(css|js)/.test(html),false);for(const id of ['resources','query','category','access','cards','rules'])assert.match(html,new RegExp(`id="${id}"`));});

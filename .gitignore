@@ -1,0 +1,7 @@
+dist/
+.work/
+.runtime/
+maintenance/
+node_modules/
+.env
+*.log

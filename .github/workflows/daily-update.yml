@@ -1,0 +1,46 @@
+name: Daily source check
+on:
+  schedule:
+    - cron: '37 0 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daily-source-check
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Check public sources
+        id: daily
+        continue-on-error: true
+        run: npm run daily
+      - run: npm test
+      - run: npm run validate
+      - run: npm run build
+      - name: Store review candidates and run report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-review-${{ github.run_number }}
+          path: .runtime/
+          retention-days: 14
+      - name: Commit verified data changes
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sources.json
+          git commit -m "data: daily source check"
+          git push
+      - name: Report source failures
+        if: steps.daily.outcome == 'failure'
+        run: exit 1

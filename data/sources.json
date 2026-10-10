@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "groq-rate-limits",
+      "name": "Groq Free Plan 限额",
+      "url": "https://console.groq.com/docs/rate-limits",
+      "mode": "html",
+      "status": "enabled",
+      "lastSuccessAt": "2026-10-10T00:00:00Z",
+      "lastAttemptAt": "2026-10-10T04:17:13.369Z",
+      "health": "blocked",
+      "lastError": "HTTP 403"
+    },
+    {
+      "id": "openrouter-models",
+      "name": "OpenRouter 模型目录",
+      "url": "https://openrouter.ai/api/v1/models",
+      "mode": "json",
+      "status": "discovery",
+      "lastSuccessAt": "2026-10-10T04:17:13.369Z",
+      "lastAttemptAt": "2026-10-10T04:17:13.369Z",
+      "health": "ok",
+      "lastError": "fetch failed"
+    }
+  ]
+}
