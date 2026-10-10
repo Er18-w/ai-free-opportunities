@@ -15,8 +15,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -32,8 +32,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -49,8 +49,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null,
       "machineUrl": "https://opencode.ai/zen/v1/models"
@@ -67,8 +67,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -84,8 +84,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -101,10 +101,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": null,
-      "health": "failed",
-      "lastError": "fetch failed"
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "health": "ok",
+      "lastError": null
     },
     {
       "id": "S07",
@@ -118,10 +118,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": null,
-      "health": "failed",
-      "lastError": "fetch failed"
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "health": "ok",
+      "lastError": null
     },
     {
       "id": "S08",
@@ -135,10 +135,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": null,
-      "health": "blocked",
-      "lastError": "HTTP 403"
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "health": "ok",
+      "lastError": null
     },
     {
       "id": "S09",
@@ -152,10 +152,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": null,
-      "health": "blocked",
-      "lastError": "HTTP 403"
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "health": "ok",
+      "lastError": null
     },
     {
       "id": "S10",
@@ -169,8 +169,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -186,8 +186,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -203,8 +203,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -220,8 +220,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -237,8 +237,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -254,10 +254,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": null,
-      "health": "blocked",
-      "lastError": "HTTP 403"
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "health": "ok",
+      "lastError": null
     },
     {
       "id": "S16",
@@ -271,8 +271,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -288,10 +288,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
       "lastSuccessAt": null,
-      "health": "failed",
-      "lastError": "fetch failed"
+      "health": "blocked",
+      "lastError": "HTTP 403"
     },
     {
       "id": "S18",
@@ -305,8 +305,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -322,8 +322,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -339,8 +339,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -356,8 +356,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -373,10 +373,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": null,
-      "health": "blocked",
-      "lastError": "HTTP 403"
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "health": "ok",
+      "lastError": null
     },
     {
       "id": "S23",
@@ -390,10 +390,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": null,
-      "health": "failed",
-      "lastError": "fetch failed"
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "health": "ok",
+      "lastError": null
     },
     {
       "id": "S24",
@@ -407,10 +407,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": null,
-      "health": "failed",
-      "lastError": "fetch failed"
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "health": "ok",
+      "lastError": null
     },
     {
       "id": "S25",
@@ -458,10 +458,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": null,
-      "health": "failed",
-      "lastError": "fetch failed"
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
+      "health": "ok",
+      "lastError": null
     },
     {
       "id": "S28",
@@ -475,8 +475,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -492,8 +492,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -509,8 +509,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     },
@@ -526,8 +526,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-10T05:26:24.841Z",
-      "lastSuccessAt": "2026-10-10T05:26:24.841Z",
+      "lastAttemptAt": "2026-10-10T05:32:32.178Z",
+      "lastSuccessAt": "2026-10-10T05:32:32.178Z",
       "health": "ok",
       "lastError": null
     }
