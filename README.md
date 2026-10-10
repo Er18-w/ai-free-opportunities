@@ -15,6 +15,7 @@
 npm test
 npm run validate
 npm run build
+npm run campaign:bootstrap
 npm run campaigns
 npm run preview
 ```
@@ -31,9 +32,10 @@ npm run preview
 - `data/changes.json`：公开机会的实质变化。
 - `.runtime/candidates/`：自动发现但尚未通过准入的临时候选，被 Git 忽略，不进入网站。
 - `docs/DAILY_UPDATE.md`：未来维护 Agent 的独立工作流。
+- `docs/AIHOT_SEARCH_ADAPTATION.md`：AIHOT 搜索机制审查，以及本站的轻量改造方案。
 - `docs/ACCESS.md`：在线地址打不开时的处理方法。
 
-`npm run daily` 核查长期免费模型来源，`npm run campaigns` 独立扫描营销活动。AI 优惠聚合器、iGetoken、AIHOT 和社区只负责生成私有候选；每条线索都要回到厂商官方来源核实。候选补齐免费条件、任务容量、地区、领取门槛和有效期后，才能进入公开活动、雷达或推荐榜。
+`npm run daily` 核查长期免费模型来源。首次建库用 `npm run campaign:bootstrap` 回溯 90 天，之后用 `npm run campaigns` 扫描营销活动增量。AI 优惠聚合器、iGetoken、AIHOT 和社区只负责生成私有候选；每条线索都要回到厂商官方来源核实。候选补齐免费条件、任务容量、地区、领取门槛和有效期后，才能进入公开活动、雷达或推荐榜。
 
 GitHub Actions 每 6 小时执行一次活动扫描，长期来源仍按每日、每周、每月频率判断。候选和报告作为 14 天的私有工作流构件保存；公开仓库只提交来源健康状态。手动运行工作流并选择 `full_scan` 可以强制核查全部非停止来源。
 
@@ -42,3 +44,4 @@ GitHub Actions 每 6 小时执行一次活动扫描，长期来源仍按每日�
 `.github/workflows/pages.yml` 将 `dist/` 发布到 GitHub Pages。推送到 `main` 后会自动测试、构建和部署。
 
 当前公开条目采用“少而有用”的标准。数量增加来自补齐可完成任务的机会，不会把即梦普通领积分、TRAE 每日 100 积分、每月极小额度或 BYOK 工具拿来凑数。
+

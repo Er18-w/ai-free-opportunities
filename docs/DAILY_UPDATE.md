@@ -24,9 +24,11 @@ GitHub Actions 每天北京时间 08:17、14:17、20:17 和次日 02:17 运行�
 
 ## 限时活动情报流程
 
+首次建立库存先运行 `npm run campaign:bootstrap`，默认回溯 90 天；之后才使用 `npm run campaigns` 做 6 小时增量。两种模式的边界、AIHOT 可借鉴与不可照搬的部分见 `docs/AIHOT_SEARCH_ADAPTATION.md`。
+
 运行 `npm run campaigns`。这是独立于长期模型目录的 Hunter → Verifier → Cleaner 流程：
 
-1. Hunter 从 `data/campaign-sources.json` 中读取 AI 优惠聚合器、iGetoken RSS、Linux.do、V2EX、NodeSeek 与 AIHOT。命中“主体词 × 权益动作词”且不触发高风险词的内容写入 `.runtime/candidates/campaigns.json`。
+1. Hunter 从 `data/campaign-sources.json` 中读取 AI 优惠聚合器、iGetoken RSS、Linux.do、V2EX、NodeSeek 与 AIHOT。使用宽进预筛生成候选，再按规范链接、产品、截止日与标题关键词聚成活动；新工具不因未进入主体词表而自动漏掉。
 2. 聚合站和社区只负责发现。候选即使带有官方链接，也必须由维护 Agent 打开官方页面，补齐产品、权益、门槛、起止时间、领取方法、官方来源和风险说明。
 3. Verifier 检查 `data/campaigns.json` 的官方链接是否可达，并记录“活动已结束、已领完、404”等信号。单次不可达或模糊关键词只触发人工复核，不自动删除上次有效记录。
 4. Cleaner 对有绝对截止日且已过期的活动自动改为 `archived`。官方未给绝对日期时不得猜日期；使用 `validityText` 如实说明，并由 Agent 每 48 小时复核候选、每日至少复核公开活动。
@@ -75,3 +77,4 @@ GitHub Actions 每天北京时间 08:17、14:17、20:17 和次日 02:17 运行�
 5. 提交并推送到 `main`。等 Pages 工作流成功后，再验证线上首页、资源数量和筛选。
 
 `daily` 返回 10 表示本轮所有实际尝试的来源都失败。先查看报告；不得因此删除公开记录。没有实质变化时无需制造资讯。
+

@@ -14,10 +14,11 @@
       "status": "active",
       "trust": "medium",
       "notes": "每日两次更新；优先读取官方落地链接、lastSeen、expiresAt 与来源健康信息，verified=false 仍须复核。",
-      "lastSuccessAt": "2026-10-10T06:49:05.145Z",
+      "lastSuccessAt": "2026-10-10T09:54:12.014Z",
       "lastError": null,
       "health": "ok",
-      "lastAttemptAt": "2026-10-10T06:49:05.145Z"
+      "lastAttemptAt": "2026-10-10T09:54:12.014Z",
+      "failureStreak": 0
     },
     {
       "id": "C02",
@@ -31,10 +32,11 @@
       "status": "active",
       "trust": "medium",
       "notes": "人工核实速度快，适合发现倒计时活动；必须回到条目所指官方公告确认。",
-      "lastSuccessAt": "2026-10-10T06:49:05.145Z",
+      "lastSuccessAt": "2026-10-10T09:54:12.014Z",
       "lastError": null,
       "health": "ok",
-      "lastAttemptAt": "2026-10-10T06:49:05.145Z"
+      "lastAttemptAt": "2026-10-10T09:54:12.014Z",
+      "failureStreak": 0
     },
     {
       "id": "C03",
@@ -50,7 +52,8 @@
       "notes": "高密度线报，噪音与推广并存。",
       "lastError": "fetch failed",
       "health": "failed",
-      "lastAttemptAt": "2026-10-10T06:49:05.145Z"
+      "lastAttemptAt": "2026-10-10T09:54:12.014Z",
+      "failureStreak": 1
     },
     {
       "id": "C04",
@@ -66,7 +69,8 @@
       "notes": "只捕获命中权益动作词的主题。",
       "lastError": "fetch failed",
       "health": "failed",
-      "lastAttemptAt": "2026-10-10T06:49:05.145Z"
+      "lastAttemptAt": "2026-10-10T09:54:12.014Z",
+      "failureStreak": 1
     },
     {
       "id": "C05",
@@ -82,7 +86,8 @@
       "notes": "发现用，不采信评论结论。",
       "lastError": "fetch failed",
       "health": "failed",
-      "lastAttemptAt": "2026-10-10T06:49:05.145Z"
+      "lastAttemptAt": "2026-10-10T09:54:12.014Z",
+      "failureStreak": 1
     },
     {
       "id": "C06",
@@ -98,7 +103,8 @@
       "notes": "强制风险词过滤；官方复核前不得公开。",
       "lastError": "fetch failed",
       "health": "failed",
-      "lastAttemptAt": "2026-10-10T06:49:05.145Z"
+      "lastAttemptAt": "2026-10-10T09:54:12.014Z",
+      "failureStreak": 1
     },
     {
       "id": "C07",
@@ -114,7 +120,8 @@
       "notes": "只生成候选。",
       "lastError": "fetch failed",
       "health": "failed",
-      "lastAttemptAt": "2026-10-10T06:49:05.145Z"
+      "lastAttemptAt": "2026-10-10T09:54:12.014Z",
+      "failureStreak": 1
     },
     {
       "id": "C08",
@@ -128,10 +135,11 @@
       "status": "active",
       "trust": "medium",
       "notes": "仅私有候选，不公开镜像摘要。",
-      "lastSuccessAt": "2026-10-10T06:49:05.145Z",
+      "lastSuccessAt": "2026-10-10T09:54:12.014Z",
       "lastError": null,
       "health": "ok",
-      "lastAttemptAt": "2026-10-10T06:49:05.145Z"
+      "lastAttemptAt": "2026-10-10T09:54:12.014Z",
+      "failureStreak": 0
     },
     {
       "id": "O01",
@@ -143,7 +151,8 @@
       "cadenceHours": 24,
       "status": "verify_only",
       "trust": "high",
-      "notes": "权威规则与90天有效期。"
+      "notes": "权威规则与90天有效期。",
+      "failureStreak": 0
     },
     {
       "id": "O02",
@@ -155,7 +164,8 @@
       "cadenceHours": 24,
       "status": "verify_only",
       "trust": "high",
-      "notes": "登录页可见新人权益，具体到账与有效期需账户内复核。"
+      "notes": "登录页可见新人权益，具体到账与有效期需账户内复核。",
+      "failureStreak": 0
     },
     {
       "id": "O03",
@@ -167,7 +177,60 @@
       "cadenceHours": 24,
       "status": "verify_only",
       "trust": "high",
-      "notes": "额度与适用对象的官方说明。"
+      "notes": "额度与适用对象的官方说明。",
+      "failureStreak": 0
+    },
+    {
+      "id": "O04",
+      "name": "商汤日日新 U1.5 Lite 公告",
+      "tier": "official",
+      "role": "官方验真",
+      "url": "https://www.sensetime.com/cn/news/sensenova-u1-5-lite-token-plan-20260911-1741",
+      "mode": "official_html",
+      "cadenceHours": 24,
+      "status": "verify_only",
+      "trust": "high",
+      "notes": "公测免费次数、模型 ID、无水印与能力说明。",
+      "failureStreak": 0
+    },
+    {
+      "id": "O05",
+      "name": "七牛云 AI 推理计费说明",
+      "tier": "official",
+      "role": "官方验真",
+      "url": "https://developer.qiniu.com/aitokenapi/12898/ai-token-api-pricing",
+      "mode": "official_html",
+      "cadenceHours": 24,
+      "status": "verify_only",
+      "trust": "high",
+      "notes": "300 万 Token 新客资源包及额度用尽后自动计费风险。",
+      "failureStreak": 0
+    },
+    {
+      "id": "O06",
+      "name": "扣子模型费用",
+      "tier": "official",
+      "role": "官方验真",
+      "url": "https://docs.coze.cn/coze_pro_model_fee",
+      "mode": "official_html",
+      "cadenceHours": 24,
+      "status": "verify_only",
+      "trust": "high",
+      "notes": "限时免费型号与每模型每天 100 次规则。",
+      "failureStreak": 0
+    },
+    {
+      "id": "O07",
+      "name": "OpenCode Zen 模型目录",
+      "tier": "official",
+      "role": "官方验真",
+      "url": "https://docs.opencode.ai/docs/zen/",
+      "mode": "official_html",
+      "cadenceHours": 24,
+      "status": "verify_only",
+      "trust": "high",
+      "notes": "当前免费型号、价格和数据使用说明。",
+      "failureStreak": 0
     },
     {
       "id": "M01",
@@ -179,7 +242,8 @@
       "cadenceHours": 24,
       "status": "manual",
       "trust": "low",
-      "notes": "登录、反爬与非结构化内容使无人值守采集不可靠。"
+      "notes": "登录、反爬与非结构化内容使无人值守采集不可靠。",
+      "failureStreak": 0
     },
     {
       "id": "M02",
@@ -191,7 +255,8 @@
       "cadenceHours": 24,
       "status": "manual",
       "trust": "medium",
-      "notes": "需要逐社区授权与频道清单。"
+      "notes": "需要逐社区授权与频道清单。",
+      "failureStreak": 0
     },
     {
       "id": "M03",
@@ -203,7 +268,9 @@
       "cadenceHours": 24,
       "status": "manual",
       "trust": "low",
-      "notes": "匿名抓取不稳定，不作为核心自动链路。"
+      "notes": "匿名抓取不稳定，不作为核心自动链路。",
+      "failureStreak": 0
     }
   ]
 }
+
