@@ -2,6 +2,8 @@
 
 目标：维护一个少而有用的免费 AI 机会榜单。普通小额、领取繁琐、排队低效的积分完全排除；即梦普通领积分、TRAE 每日 100 积分等不进入榜单。只有独立的大额权益、完整会员限免或可完成实际任务的免费容量才审核入榜。
 
+前台只有一个排行榜：`data/catalog.json` 与通过审核的 `data/campaigns.json` 会合并展示。默认按 A 持续免费、B 条件免费、C 限时权益排序；切换模型类型后在该类型中重新编号。`data/radar.json` 只是后台候选库存。`data/source-map.json` 与 `data/sources.json` 在前台合并为来源网络，不能当成两套榜单。
+
 ## 开始前
 
 1. 阅读 `AGENTS.md`、本文件、`docs/SOURCE_EXPANSION.md`、`data/source-map.json`、`data/catalog.json`、`data/sources.json` 和最近的 `.runtime/reports/latest.json`。

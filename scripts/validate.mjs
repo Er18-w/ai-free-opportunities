@@ -18,7 +18,7 @@ if(radar.items.length<40)errors.push('完整雷达少于40条，可能丢失交�
 const campaignIds=new Set();
 for(const item of campaigns.items){
   if(campaignIds.has(item.id))errors.push(`重复活动ID: ${item.id}`);campaignIds.add(item.id);
-  for(const key of ['id','targetProduct','title','benefitType','benefit','accessThreshold','claimMethod','validityText','status','evidenceStatus','sourceUrl','entryUrl','riskNotes','lastVerifiedAt'])if(!item[key])errors.push(`${item.id??'未知活动'} 缺少 ${key}`);
+  for(const key of ['id','targetProduct','title','benefitType','benefit','categories','access','regionStatus','accessThreshold','claimMethod','validityText','status','evidenceStatus','sourceUrl','entryUrl','riskNotes','lastVerifiedAt'])if(!item[key])errors.push(`${item.id??'未知活动'} 缺少 ${key}`);
   if(!['active','archived'].includes(item.status))errors.push(`${item.id} 活动状态无效`);
   if(!item.sourceUrl.startsWith('https://')||!item.entryUrl.startsWith('https://'))errors.push(`${item.id} 活动URL必须为HTTPS`);
   if(item.status==='active'&&item.validUntil&&new Date(`${item.validUntil}T23:59:59+08:00`)<new Date())errors.push(`${item.id} 已过期却仍为active`);
@@ -33,4 +33,4 @@ for(const item of sourceMap.items){
   if(!['A','B','C'].includes(item.priority))errors.push(`${item.id} 优先级无效`);
   if(!Array.isArray(item.officialUrls)||!item.officialUrls.length||item.officialUrls.some(page=>!page.url?.startsWith('https://')))errors.push(`${item.id} 缺少有效官方URL`);
 }
-if(errors.length){console.error(errors.join('\n'));process.exit(20);}console.log(`验证通过：${campaigns.items.filter(item=>item.status==='active').length} 条当前福利，${catalog.items.length} 条推荐，${radar.items.length} 条雷达记录，${sourceMap.items.length} 个重点监控对象，${sources.items.length} 个长期来源，${campaignSources.items.length} 个活动情报源。`);
+if(errors.length){console.error(errors.join('\n'));process.exit(20);}console.log(`验证通过：统一排行榜 ${catalog.items.length+campaigns.items.filter(item=>item.status==='active').length} 条，后台雷达 ${radar.items.length} 条，来源网络 ${sourceMap.items.length+sources.items.length} 个节点，${campaignSources.items.length} 个活动情报源。`);

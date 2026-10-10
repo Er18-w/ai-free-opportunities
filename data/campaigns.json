@@ -6,6 +6,9 @@
     {
       "id": "alibaba-bailian-new-user-quota",
       "targetProduct": "阿里云百炼",
+      "categories": ["text-api", "coding-api"],
+      "access": ["api"],
+      "regionStatus": "cn_service",
       "title": "各模型独立新人免费额度",
       "benefitType": "新用户 API 额度",
       "benefit": "首次开通后，各模型按官方价格表分别获得免费额度",
@@ -25,6 +28,9 @@
     {
       "id": "zhipu-new-user-20m",
       "targetProduct": "智谱开放平台",
+      "categories": ["text-api", "coding-api"],
+      "access": ["api"],
+      "regionStatus": "cn_service",
       "title": "新用户 2,000 万 Tokens 体验包",
       "benefitType": "新用户 API 额度",
       "benefit": "新用户注册赠送 2,000 万 Tokens",
@@ -44,6 +50,9 @@
     {
       "id": "volcengine-ark-free-quota",
       "targetProduct": "火山引擎方舟",
+      "categories": ["text-api", "coding-api"],
+      "access": ["api"],
+      "regionStatus": "cn_service",
       "title": "文本、图像与视频模型免费额度",
       "benefitType": "模型 API 免费额度",
       "benefit": "文本每模型 50 万 Tokens；图像每模型 200 张；视频每模型 200 万 Tokens",
@@ -63,6 +72,9 @@
     {
       "id": "sensetime-sensenova-u15-lite-beta",
       "targetProduct": "商汤日日新 Token Plan",
+      "categories": ["text-api", "coding-api"],
+      "access": ["api"],
+      "regionStatus": "cn_service",
       "title": "U1.5 Lite 生图与编辑公测免费",
       "benefitType": "公测期免费模型 API",
       "benefit": "每 5 小时 1,500 次请求，支持生图与参考图编辑，最高 4K，公测期间可免费关闭水印",
@@ -82,6 +94,9 @@
     {
       "id": "qiniu-ai-new-user-3m",
       "targetProduct": "七牛云 AI 大模型推理",
+      "categories": ["text-api", "coding-api"],
+      "access": ["api"],
+      "regionStatus": "cn_service",
       "title": "新用户全系列共享 300 万 Tokens",
       "benefitType": "新用户 API 资源包",
       "benefit": "AI 推理新客户获得全系列共享 300 万 Tokens，可使用 OpenAI 或 Anthropic 兼容接口",
@@ -101,6 +116,9 @@
     {
       "id": "coze-limited-free-models",
       "targetProduct": "扣子 Coze",
+      "categories": ["general-agent"],
+      "access": ["web"],
+      "regionStatus": "cn_service",
       "title": "Kimi 与阶跃星辰等模型每天免费调用",
       "benefitType": "限时免费模型调用",
       "benefit": "官方列出的限时免费模型每个模型每天 100 次调用，不扣减扣子积分",
@@ -120,6 +138,9 @@
     {
       "id": "opencode-zen-free-models",
       "targetProduct": "OpenCode Zen",
+      "categories": ["coding-agent", "coding-api"],
+      "access": ["client", "api"],
+      "regionStatus": "global",
       "title": "多款编程模型限时免费",
       "benefitType": "限时免费模型 API",
       "benefit": "官方 Zen 目录当前列出 MiMo、Ling、Nemotron、LongCat、Space Bunny、Jev 等多个免费型号",

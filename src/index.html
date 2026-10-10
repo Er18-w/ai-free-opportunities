@@ -3,114 +3,93 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="严格筛选真正够用的免费 AI 模型、API 与限时权益。">
-  <title>AI 免费机会情报站</title>
+  <meta name="description" content="按免费稳定性和任务类型排列的 AI 模型与工具榜单。">
+  <title>AI 免费机会排行榜</title>
   <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
   <header class="site-header">
     <div class="shell nav-wrap">
-      <a class="brand" href="./">AI 免费机会情报站</a>
+      <a class="brand" href="./">AI 免费机会排行榜</a>
       <nav aria-label="主导航">
-        <a href="#campaigns">限时福利</a>
-        <a href="#resources">推荐</a>
-        <a href="#radar">完整雷达</a>
-        <a href="#coverage">监控范围</a>
+        <a href="#ranking">排行榜</a>
+        <a href="#source-network">来源网络</a>
         <a href="#changes">更新</a>
-        <a href="#rules">收录规则</a>
+        <a href="#rules">排名规则</a>
       </nav>
     </div>
   </header>
   <main id="main">
     <section class="hero shell">
-      <p class="eyebrow">少而有用 · 官方证据 · 每日核查</p>
-      <h1>免费机会很多，<br><span>真正够用的并不多。</span></h1>
-      <p class="lead">这里只收录能够完成实际任务的免费 AI 资源。小额、低效、领取麻烦的积分不会拿来凑榜。</p>
+      <p class="eyebrow">先看稳定性 · 再按任务选模型</p>
+      <h1>真正能用的免费 AI，<br><span>应该排出先后。</span></h1>
+      <p class="lead">总榜优先排列持续、规则清楚且容量够用的免费资源；切换模型类型后，会在该类型中重新排名。限时活动和新人权益直接标在对应资源上。</p>
       <div class="hero-actions">
-        <a class="primary" href="#resources">查看当前机会</a>
-        <a class="secondary" href="#rules">了解筛选标准</a>
+        <a class="primary" href="#ranking">查看稳定性总榜</a>
+        <a class="secondary" href="#rules">了解排名依据</a>
       </div>
       <div class="status-strip" aria-label="网站状态">
-        <div><strong id="campaign-count">—</strong><span>当前福利</span></div>
-        <div><strong id="resource-count">—</strong><span>严格推荐</span></div>
-        <div><strong id="radar-count">—</strong><span>完整雷达记录</span></div>
-        <div><strong id="vendor-count">—</strong><span>重点监控对象</span></div>
-        <div><strong id="source-count">—</strong><span>搜索与核查路径</span></div>
+        <div><strong id="ranking-count">—</strong><span>当前上榜机会</span></div>
+        <div><strong id="category-count">—</strong><span>覆盖任务类型</span></div>
+        <div><strong id="network-count">—</strong><span>来源网络节点</span></div>
         <div><strong id="updated-at">—</strong><span>资料更新时间</span></div>
       </div>
     </section>
 
-    <section id="campaigns" class="section campaign-section">
-      <div class="shell">
-        <div class="section-heading"><div><p class="eyebrow">现在值得领</p><h2>限时活动与高额新人权益</h2></div><p>聚合站和社区负责发现，只有回到厂商官方页面核实、且额度足够完成实际任务的机会才会显示在这里。</p></div>
-        <div class="result-meta"><span id="campaign-result-count">正在加载…</span><span>每日发现 · 到期自动归档</span></div>
-        <div id="campaign-cards" class="campaign-cards" aria-live="polite"></div>
-      </div>
-    </section>
-
-    <section id="resources" class="section shell">
-      <div class="section-heading">
-        <div><p class="eyebrow">当前可用</p><h2>按任务找资源</h2></div>
-        <p>每条机会都说明能做什么、免费多少、需要什么条件，以及哪些内容尚未实测。</p>
-      </div>
-      <form class="filters" id="filters" role="search">
-        <label class="search-box"><span>搜索</span><input id="query" type="search" placeholder="模型、平台或用途" autocomplete="off"></label>
-        <label><span>用途</span><select id="category"><option value="all">全部用途</option><option value="text-api">文本 API</option><option value="coding-api">编程 API</option><option value="coding-agent">编程 Agent</option><option value="general-agent">通用 Agent</option><option value="image">生图</option><option value="video">视频</option><option value="speech">语音</option><option value="dev-tools">开发工具</option></select></label>
-        <label><span>使用方式</span><select id="access"><option value="all">全部方式</option><option value="api">API</option><option value="web">网页</option><option value="client">客户端</option></select></label>
-        <button type="button" class="reset" id="reset">重置</button>
-      </form>
-      <div class="result-meta"><span id="result-count">正在加载…</span><span>排序：实用价值</span></div>
-      <div id="cards" class="cards" aria-live="polite"></div>
-      <div id="empty" class="empty" hidden><h3>没有符合条件的机会</h3><p>可以清空筛选条件再查看。网站不会用小额试用填满列表。</p></div>
-    </section>
-
-    <section id="radar" class="section section-tint">
+    <section id="ranking" class="section ranking-section">
       <div class="shell">
         <div class="section-heading">
-          <div><p class="eyebrow">完整覆盖</p><h2>机会雷达</h2></div>
-          <p>这里展示官方已列出的模型渠道和权益库存。它用于发现和比较，不等于推荐榜；容量、资格或体验没有完成验证的记录会明确标出。</p>
+          <div><p class="eyebrow">免费稳定性总榜</p><h2>按长期可用程度排序</h2></div>
+          <p>持续免费层排在限期试用和新人权益之前。同一稳定性档位内，再比较任务容量、使用门槛和证据完整度。</p>
         </div>
-        <form class="filters radar-filters" id="radar-filters" role="search">
-          <label class="search-box"><span>搜索雷达</span><input id="radar-query" type="search" placeholder="平台、模型、权益或用途" autocomplete="off"></label>
-          <label><span>状态</span><select id="radar-tier"><option value="all">全部状态</option><option value="featured">已进入推荐榜</option><option value="listed_unverified">官方列出，容量待测</option><option value="candidate">规则已核，容量待测</option><option value="reference">低额或容量待测参考</option><option value="existing_member">已有会员权益</option></select></label>
-          <label><span>类型</span><select id="radar-kind"><option value="all">全部类型</option><option value="model_channel">模型渠道</option><option value="benefit">额度与会员</option></select></label>
-          <button type="button" class="reset" id="radar-reset">重置</button>
+        <form class="filters" id="filters" role="search">
+          <label class="search-box"><span>搜索</span><input id="query" type="search" placeholder="模型、平台或用途" autocomplete="off"></label>
+          <label><span>模型类型</span><select id="category"><option value="all">稳定性总榜</option><option value="text-api">文本模型 / API</option><option value="coding-api">编程模型 / API</option><option value="coding-agent">编程 Agent</option><option value="general-agent">通用 Agent</option><option value="image">图像生成</option><option value="video">视频生成</option><option value="speech">语音</option><option value="dev-tools">开发工具</option></select></label>
+          <label><span>使用方式</span><select id="access"><option value="all">全部方式</option><option value="api">API</option><option value="web">网页</option><option value="client">客户端</option></select></label>
+          <button type="button" class="reset" id="reset">重置</button>
         </form>
-        <div class="result-meta"><span id="radar-result-count">正在加载…</span><span>推荐与线索严格分层</span></div>
-        <div id="radar-list" class="radar-list" aria-live="polite"></div>
-        <div id="radar-empty" class="empty" hidden><h3>没有符合条件的雷达记录</h3><p>请清空筛选条件后重试。</p></div>
+        <div class="result-meta"><span id="result-count">正在加载…</span><span>默认排序：免费稳定性</span></div>
+        <div id="ranking-list" class="ranking-list" aria-live="polite"></div>
+        <div id="empty" class="empty" hidden><h3>该类型暂时没有合格机会</h3><p>候选仍会在后台核验，达不到任务容量门槛的内容不会拿来凑榜。</p></div>
       </div>
     </section>
 
-    <section id="coverage" class="section shell">
-      <div class="section-heading">
-        <div><p class="eyebrow">搜索不只盯聚合站</p><h2>重点监控范围</h2></div>
-        <p>厂商、API 平台、编程 Agent 和创作工具分级轮换检查。这里表示我们会查什么，不表示这些产品当前都有合格的免费权益。</p>
+    <section id="source-network" class="section section-tint">
+      <div class="shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">监控对象与核查路径合并</p><h2>来源网络</h2></div>
+          <p>这里同时展示我们持续关注的产品，以及用于发现和核查信息的官方页、聚合站、社区与搜索路径。进入来源网络不等于已经上榜。</p>
+        </div>
+        <form class="filters network-filters" id="network-filters" role="search">
+          <label class="search-box"><span>搜索来源网络</span><input id="network-query" type="search" placeholder="厂商、产品、社区或核查方式" autocomplete="off"></label>
+          <label><span>节点类型</span><select id="network-kind"><option value="all">全部节点</option><option value="target">监控对象</option><option value="route">发现与核查路径</option></select></label>
+          <button type="button" class="reset" id="network-reset">重置</button>
+        </form>
+        <div class="result-meta"><span id="network-result-count">正在加载…</span><span>一个网络，两类节点</span></div>
+        <div id="network-list" class="network-list" aria-live="polite"></div>
       </div>
-      <div id="coverage-summary" class="coverage-summary"></div>
-      <div id="coverage-list" class="coverage-list" aria-live="polite"></div>
     </section>
 
     <section id="changes" class="section">
       <div class="shell">
-        <div class="section-heading"><div><p class="eyebrow">变更记录</p><h2>最近发生了什么</h2></div><p>只有新增、规则变化和结束等实质事件会出现在这里。每日额度重置不算新闻。</p></div>
+        <div class="section-heading"><div><p class="eyebrow">变更记录</p><h2>最近发生了什么</h2></div><p>只记录新增、规则变化、名次依据变化和结束等实质事件。</p></div>
         <div id="change-list" class="timeline"></div>
       </div>
     </section>
 
     <section id="rules" class="section shell">
-      <div class="section-heading"><div><p class="eyebrow">收录规则</p><h2>进入榜单前要过四道门</h2></div></div>
+      <div class="section-heading"><div><p class="eyebrow">排名规则</p><h2>稳定性优先，再比较实用价值</h2></div></div>
       <div class="rules-grid">
-        <article><b>01</b><h3>真的免费</h3><p>领取、使用、关键功能和导出都不能藏着必要付款。</p></article>
-        <article><b>02</b><h3>够做事情</h3><p>用具体任务判断容量，不能只看积分数字或模型名。</p></article>
-        <article><b>03</b><h3>时间值得</h3><p>排队、领取和改稿成本过高的普通机会直接排除。</p></article>
-        <article><b>04</b><h3>证据可查</h3><p>官方规则对应到具体渠道、型号、资格和有效窗口。</p></article>
+        <article><b>A</b><h3>持续免费</h3><p>官方长期免费层、固定周期额度或稳定开放的免费模型，排在总榜前部。</p></article>
+        <article><b>B</b><h3>条件免费</h3><p>新人额度、地区或账户资格受限，但容量足够完成实际任务。</p></article>
+        <article><b>C</b><h3>限时权益</h3><p>公测、会员试用和限时免费模型；价值可以很高，但稳定性排名靠后。</p></article>
+        <article><b>同档排序</b><h3>容量与门槛</h3><p>同一档位依次比较任务容量、领取成本、地区可用性和官方证据完整度。</p></article>
       </div>
-      <div class="notice"><strong>“规则已核，体验未测”是什么意思？</strong><p>免费条件和容量已有官方依据，但本站没有使用个人账号测试速度、质量或稳定性。它不等于长期保证。</p></div>
+      <div class="notice"><strong>候选为什么没有展示？</strong><p>后台雷达仍保留待核验信息，但没有官方证据、容量不足或体验成本过高的内容不会进入排行榜。</p></div>
     </section>
   </main>
-  <footer><div class="shell"><p>资料仅帮助判断免费机会，最终条件以官方页面与实际账户为准。</p><p><a href="https://github.com/Er18-w/ai-free-opportunities">查看项目代码</a></p></div></footer>
+  <footer><div class="shell"><p>排名依据公开规则与当前核验结果，最终条件以官方页面和实际账户为准。</p><p><a href="https://github.com/Er18-w/ai-free-opportunities">查看项目代码</a></p></div></footer>
   <script type="module" src="./assets/app.js"></script>
 </body>
 </html>
