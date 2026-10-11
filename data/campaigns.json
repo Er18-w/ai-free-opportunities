@@ -6,8 +6,13 @@
     {
       "id": "alibaba-bailian-new-user-quota",
       "targetProduct": "阿里云百炼",
-      "categories": ["text-api", "coding-api"],
-      "access": ["api"],
+      "categories": [
+        "text-api",
+        "coding-api"
+      ],
+      "access": [
+        "api"
+      ],
       "regionStatus": "cn_service",
       "title": "各模型独立新人免费额度",
       "benefitType": "新用户 API 额度",
@@ -28,8 +33,13 @@
     {
       "id": "zhipu-new-user-20m",
       "targetProduct": "智谱开放平台",
-      "categories": ["text-api", "coding-api"],
-      "access": ["api"],
+      "categories": [
+        "text-api",
+        "coding-api"
+      ],
+      "access": [
+        "api"
+      ],
       "regionStatus": "cn_service",
       "title": "新用户 2,000 万 Tokens 体验包",
       "benefitType": "新用户 API 额度",
@@ -50,8 +60,13 @@
     {
       "id": "volcengine-ark-free-quota",
       "targetProduct": "火山引擎方舟",
-      "categories": ["text-api", "coding-api"],
-      "access": ["api"],
+      "categories": [
+        "text-api",
+        "coding-api"
+      ],
+      "access": [
+        "api"
+      ],
       "regionStatus": "cn_service",
       "title": "文本、图像与视频模型免费额度",
       "benefitType": "模型 API 免费额度",
@@ -72,8 +87,13 @@
     {
       "id": "sensetime-sensenova-u15-lite-beta",
       "targetProduct": "商汤日日新 Token Plan",
-      "categories": ["text-api", "coding-api"],
-      "access": ["api"],
+      "categories": [
+        "text-api",
+        "coding-api"
+      ],
+      "access": [
+        "api"
+      ],
       "regionStatus": "cn_service",
       "title": "U1.5 Lite 生图与编辑公测免费",
       "benefitType": "公测期免费模型 API",
@@ -94,8 +114,13 @@
     {
       "id": "qiniu-ai-new-user-3m",
       "targetProduct": "七牛云 AI 大模型推理",
-      "categories": ["text-api", "coding-api"],
-      "access": ["api"],
+      "categories": [
+        "text-api",
+        "coding-api"
+      ],
+      "access": [
+        "api"
+      ],
       "regionStatus": "cn_service",
       "title": "新用户全系列共享 300 万 Tokens",
       "benefitType": "新用户 API 资源包",
@@ -116,8 +141,12 @@
     {
       "id": "coze-limited-free-models",
       "targetProduct": "扣子 Coze",
-      "categories": ["general-agent"],
-      "access": ["web"],
+      "categories": [
+        "general-agent"
+      ],
+      "access": [
+        "web"
+      ],
       "regionStatus": "cn_service",
       "title": "Kimi 与阶跃星辰等模型每天免费调用",
       "benefitType": "限时免费模型调用",
@@ -138,8 +167,14 @@
     {
       "id": "opencode-zen-free-models",
       "targetProduct": "OpenCode Zen",
-      "categories": ["coding-agent", "coding-api"],
-      "access": ["client", "api"],
+      "categories": [
+        "coding-agent",
+        "coding-api"
+      ],
+      "access": [
+        "client",
+        "api"
+      ],
       "regionStatus": "global",
       "title": "多款编程模型限时免费",
       "benefitType": "限时免费模型 API",
