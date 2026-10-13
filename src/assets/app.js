@@ -19,17 +19,34 @@ function renderPlatforms(){
   $('#platform-list').innerHTML=items.map((item,index)=>`<article class="board-row platform-row"><div class="rank"><small>序号</small><b>${index+1}</b></div><div class="row-title"><h3>${escapeHtml(item.name)}</h3><p>${escapeHtml(item.summary)}</p><small>${escapeHtml(item.application??'')}</small></div><div class="row-fact"><small>免费量</small><strong>${escapeHtml(item.freeAmount)}</strong></div><div class="row-tags">${item.access.map(value=>`<span>${escapeHtml(value)}</span>`).join('')}<em>${escapeHtml(item.stability)}</em><span>${escapeHtml(item.mainlandAccess)}</span><a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">来源</a></div><a class="go" href="${escapeHtml(item.entryUrl)}" target="_blank" rel="noopener noreferrer">去使用</a></article>`).join('');
 }
 
-function categoryRank(item){return state.category==='all'?item.featuredRank:(item.categoryRanks?.[state.category]??999);}
+function categoryEvidence(item){const evidence=item.capabilityEvidence;return evidence&&evidence.appliesTo===state.category?evidence:null;}
+function compareModels(a,b){
+  if(state.category==='all')return a.featuredRank-b.featuredRank;
+  const aEvidence=categoryEvidence(a),bEvidence=categoryEvidence(b);
+  if(aEvidence&&bEvidence)return (bEvidence.higherIsBetter?bEvidence.value-aEvidence.value:aEvidence.value-bEvidence.value)||a.featuredRank-b.featuredRank;
+  if(aEvidence)return -1;if(bEvidence)return 1;
+  return a.featuredRank-b.featuredRank;
+}
 function renderModels(){
   const query=$('#model-query').value.trim().toLowerCase();
-  const items=state.models.filter(item=>(state.category==='all'||item.categories.includes(state.category))&&(!query||[item.title,item.provider,item.channel,item.allowance,item.summary,...item.freeChannels.map(c=>c.provider)].join(' ').toLowerCase().includes(query))).sort((a,b)=>categoryRank(a)-categoryRank(b)||a.featuredRank-b.featuredRank);
+  const items=state.models.filter(item=>(state.category==='all'||item.categories.includes(state.category))&&(!query||[item.title,item.provider,item.channel,item.allowance,item.summary,...item.freeChannels.map(c=>c.provider)].join(' ').toLowerCase().includes(query))).sort(compareModels);
+  $('#model-section-note').textContent=state.category==='coding'
+    ?'按公开 SWE-bench Verified 分数排序；不同工具框架会影响分数，仅作同类参考。'
+    :state.category==='all'
+      ?'综合页按展示顺序排列；选择编程后查看有公开依据的能力名次。'
+      :'该分类暂按展示顺序排列；能力名次待统一比较。';
   $('#model-empty').hidden=items.length!==0;
   $('#model-list').innerHTML=items.map((item,index)=>{
     const channel=item.freeChannels[0];
+    const evidence=categoryEvidence(item);
+    const abilityRank=evidence?item.categoryRanks?.[state.category]:null;
+    const rankLabel=state.category==='coding'?(abilityRank?'能力名次':'待比较'):'序号';
+    const rankValue=abilityRank??(state.category==='coding'?'—':index+1);
     const alternatives=item.freeChannels.slice(1).map(c=>`<a href="${escapeHtml(c.entryUrl)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(c.allowance)}">也可用 ${escapeHtml(c.provider)}</a>`).join('');
     const tags=item.categories.map(value=>`<span>${escapeHtml(categoryNames[value]??value)}</span>`).join('');
     const access=[...new Set(item.freeChannels.flatMap(value=>value.access??[]))].map(value=>`<span>${escapeHtml(accessNames[value]??value)}</span>`).join('');
-    return `<article class="board-row model-row"><div class="rank"><small>序号</small><b>${index+1}</b></div><div class="row-title"><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary)}</p><small>${escapeHtml(channel.provider)} · ${escapeHtml(item.channel)}</small></div><div class="row-fact"><small>免费方式</small><strong>${escapeHtml(item.allowance)}</strong></div><div class="row-tags">${tags}${access}${alternatives}<span>核实 ${escapeHtml(formatDate(item.ruleCheckedAt))}</span><a href="${escapeHtml(item.officialUrl)}" target="_blank" rel="noopener noreferrer">来源</a></div><a class="go" href="${escapeHtml(channel.entryUrl)}" target="_blank" rel="noopener noreferrer">去使用</a></article>`;
+    const evidenceTag=evidence?`<a class="evidence-tag" href="${escapeHtml(evidence.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(evidence.benchmark)} ${escapeHtml(evidence.value)}${escapeHtml(evidence.unit??'')}</a>`:(state.category==='coding'?'<span>暂无同基准数据</span>':'');
+    return `<article class="board-row model-row"><div class="rank${abilityRank?' ability-rank':''}"><small>${rankLabel}</small><b>${rankValue}</b></div><div class="row-title"><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary)}</p><small>${escapeHtml(channel.provider)} · ${escapeHtml(item.channel)}</small></div><div class="row-fact"><small>免费方式</small><strong>${escapeHtml(item.allowance)}</strong></div><div class="row-tags">${tags}${access}${evidenceTag}${alternatives}<span>核实 ${escapeHtml(formatDate(item.ruleCheckedAt))}</span><a href="${escapeHtml(item.officialUrl)}" target="_blank" rel="noopener noreferrer">来源</a></div><a class="go" href="${escapeHtml(channel.entryUrl)}" target="_blank" rel="noopener noreferrer">去使用</a></article>`;
   }).join('');
 }
 

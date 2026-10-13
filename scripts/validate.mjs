@@ -4,7 +4,7 @@ import {readJson} from './lib.mjs';
 const [platforms,catalog,offers,campaignSources,sourceMap,modelSources,sources,changes]=await Promise.all([
   readJson('data/platforms.json'),readJson('data/catalog.json'),readJson('data/offers.json'),readJson('data/campaign-sources.json'),readJson('data/source-map.json'),readJson('data/model-sources.json'),readJson('data/sources.json'),readJson('data/changes.json')
 ]);
-const errors=[],ids=new Set(),tierRanks=new Map();
+const errors=[],ids=new Set(),tierRanks=new Map(),rankedEvidence=[];
 const validTiers=new Set(['A','B','C']),validClasses=new Set([1,2,3]),validRegions=new Set(['cn_service','global','unknown']);
 const validDate=value=>/^\d{4}-\d{2}-\d{2}/.test(value)&&!Number.isNaN(Date.parse(value));
 if(!catalog.schemaVersion?.startsWith('2.'))errors.push('catalog schemaVersion 必须为 2.x');
@@ -31,7 +31,19 @@ for(const item of catalog.items){
     if(!evidence.url?.startsWith('https://'))errors.push(`${item.id} capabilityEvidence.url 必须为 HTTPS`);
     if(!validDate(evidence.asOf))errors.push(`${item.id} capabilityEvidence.asOf 日期无效`);
     if(!item.categories.includes(evidence.appliesTo))errors.push(`${item.id} capabilityEvidence.appliesTo 不在任务类型中`);
+    if(item.rankingStatus!=='ranked')errors.push(`${item.id} 有能力依据但 rankingStatus 不是 ranked`);
+    const categoryRank=item.categoryRanks?.[evidence.appliesTo];
+    if(!Number.isInteger(categoryRank)||categoryRank<1)errors.push(`${item.id} 缺少可复算的能力名次`);
+    rankedEvidence.push({item,evidence,categoryRank});
+  }else if(item.rankingStatus==='ranked'){
+    errors.push(`${item.id} 标为 ranked 但没有能力依据`);
   }
+}
+for(const category of new Set(rankedEvidence.map(x=>x.evidence.appliesTo))){
+  const group=rankedEvidence.filter(x=>x.evidence.appliesTo===category).sort((a,b)=>a.categoryRank-b.categoryRank);
+  const signature=new Set(group.map(x=>`${x.evidence.benchmark}|${x.evidence.version}|${x.evidence.metric}|${x.evidence.higherIsBetter}`));
+  if(signature.size!==1)errors.push(`${category} 能力榜混入不可直接比较的基准`);
+  group.forEach((entry,index)=>{if(entry.categoryRank!==index+1)errors.push(`${category} 能力名次不连续`);if(index&&((entry.evidence.higherIsBetter&&group[index-1].evidence.value<entry.evidence.value)||(!entry.evidence.higherIsBetter&&group[index-1].evidence.value>entry.evidence.value)))errors.push(`${category} 能力名次与分数不一致`);});
 }
 if(catalog.items.length<10)errors.push('公开模型少于10个，可能发生数据退化');
 const platformIds=new Set(),platformRanks=new Set();

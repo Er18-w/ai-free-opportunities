@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "updatedAt": "2026-10-13T05:15:51.430Z",
+  "updatedAt": "2026-10-13T14:30:00+08:00",
   "policyVersion": "admission-v5-model-first",
   "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
@@ -201,7 +201,18 @@
       "offerType": "limited_free",
       "stabilityTier": "C",
       "freeSourceClass": 1,
-      "capabilityEvidence": null,
+      "capabilityEvidence": {
+        "benchmark": "SWE-bench Verified",
+        "version": "500 tasks",
+        "metric": "resolved",
+        "value": 66.2,
+        "unit": "%",
+        "asOf": "2026-09-24",
+        "url": "https://mimo.mi.com/docs/en-US/news/latest/v2-6",
+        "confidence": "official",
+        "appliesTo": "coding",
+        "higherIsBetter": true
+      },
       "sourceKind": "model",
       "summary": "用于编程、代码修改与Agent任务；免费型号随活动轮换。",
       "valueReason": "型号名称带 Free 且出现在官方实时目录；未公布统一结束日。",
@@ -241,9 +252,10 @@
       },
       "featuredRank": 4,
       "categoryRanks": {
-        "coding": 3,
+        "coding": 5,
         "text": 5
-      }
+      },
+      "rankingStatus": "ranked"
     },
     {
       "id": "opencode-zen-longcat-2.5-preview-free",
@@ -346,7 +358,18 @@
       "featuredRank": 6,
       "stabilityTier": "A",
       "freeSourceClass": 1,
-      "capabilityEvidence": null,
+      "capabilityEvidence": {
+        "benchmark": "SWE-bench Verified",
+        "version": "500 tasks",
+        "metric": "resolved",
+        "value": 62.4,
+        "unit": "%",
+        "asOf": "2025-08-05",
+        "url": "https://deploymentsafety.openai.com/gpt-oss",
+        "confidence": "official",
+        "appliesTo": "coding",
+        "higherIsBetter": true
+      },
       "freeChannels": [
         {
           "provider": "Groq",
@@ -366,8 +389,9 @@
       "categoryRanks": {
         "general": 6,
         "text": 6,
-        "coding": 7
-      }
+        "coding": 6
+      },
+      "rankingStatus": "ranked"
     },
     {
       "id": "opencode-zen-ling-3.1-flash-free",
@@ -686,7 +710,9 @@
       "categories": [
         "coding"
       ],
-      "categoryRanks": {},
+      "categoryRanks": {
+        "coding": 3
+      },
       "access": [
         "client"
       ],
@@ -694,7 +720,18 @@
       "offerType": "ongoing_free",
       "stabilityTier": "B",
       "freeSourceClass": 1,
-      "capabilityEvidence": null,
+      "capabilityEvidence": {
+        "benchmark": "SWE-bench Verified",
+        "version": "500 tasks",
+        "metric": "resolved",
+        "value": 77.2,
+        "unit": "%",
+        "asOf": "2025-09-29",
+        "url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+        "confidence": "official",
+        "appliesTo": "coding",
+        "higherIsBetter": true
+      },
       "sourceKind": "model",
       "summary": "可在 Kiro 免费档执行编程 Agent 任务。",
       "valueReason": "官方模型矩阵明确允许 Free 账户选择，免费量每月恢复。",
@@ -712,7 +749,7 @@
       "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
       "status": "active",
       "featuredRank": 112,
-      "rankingStatus": "pending",
+      "rankingStatus": "ranked",
       "freeChannels": [
         {
           "provider": "Kiro",
@@ -738,7 +775,9 @@
       "categories": [
         "coding"
       ],
-      "categoryRanks": {},
+      "categoryRanks": {
+        "coding": 1
+      },
       "access": [
         "client"
       ],
@@ -746,7 +785,18 @@
       "offerType": "ongoing_free",
       "stabilityTier": "B",
       "freeSourceClass": 1,
-      "capabilityEvidence": null,
+      "capabilityEvidence": {
+        "benchmark": "SWE-bench Verified",
+        "version": "500 tasks",
+        "metric": "resolved",
+        "value": 80.2,
+        "unit": "%",
+        "asOf": "2026-02-12",
+        "url": "https://www.minimax.io/news/minimax-m25",
+        "confidence": "official",
+        "appliesTo": "coding",
+        "higherIsBetter": true
+      },
       "sourceKind": "model",
       "summary": "可在 Kiro 免费档执行编程 Agent 任务。",
       "valueReason": "官方模型矩阵明确允许 Free 账户选择，免费量每月恢复。",
@@ -764,7 +814,7 @@
       "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
       "status": "active",
       "featuredRank": 113,
-      "rankingStatus": "pending",
+      "rankingStatus": "ranked",
       "freeChannels": [
         {
           "provider": "Kiro",
@@ -790,7 +840,9 @@
       "categories": [
         "coding"
       ],
-      "categoryRanks": {},
+      "categoryRanks": {
+        "coding": 2
+      },
       "access": [
         "client"
       ],
@@ -798,7 +850,18 @@
       "offerType": "ongoing_free",
       "stabilityTier": "B",
       "freeSourceClass": 1,
-      "capabilityEvidence": null,
+      "capabilityEvidence": {
+        "benchmark": "SWE-bench Verified",
+        "version": "500 tasks",
+        "metric": "resolved",
+        "value": 77.8,
+        "unit": "%",
+        "asOf": "2026-10-13",
+        "url": "https://huggingface.co/zai-org/GLM-5/blob/main/.eval_results/swe_bench_verified.yaml",
+        "confidence": "official",
+        "appliesTo": "coding",
+        "higherIsBetter": true
+      },
       "sourceKind": "model",
       "summary": "可在 Kiro 免费档执行编程 Agent 任务。",
       "valueReason": "官方模型矩阵明确允许 Free 账户选择，免费量每月恢复。",
@@ -816,7 +879,7 @@
       "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
       "status": "active",
       "featuredRank": 114,
-      "rankingStatus": "pending",
+      "rankingStatus": "ranked",
       "freeChannels": [
         {
           "provider": "Kiro",
@@ -842,7 +905,9 @@
       "categories": [
         "coding"
       ],
-      "categoryRanks": {},
+      "categoryRanks": {
+        "coding": 4
+      },
       "access": [
         "client"
       ],
@@ -850,7 +915,18 @@
       "offerType": "ongoing_free",
       "stabilityTier": "B",
       "freeSourceClass": 1,
-      "capabilityEvidence": null,
+      "capabilityEvidence": {
+        "benchmark": "SWE-bench Verified",
+        "version": "500 tasks",
+        "metric": "resolved",
+        "value": 70.6,
+        "unit": "%",
+        "asOf": "2026-03-16",
+        "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/main/.eval_results/swe_bench_verified.yaml",
+        "confidence": "official",
+        "appliesTo": "coding",
+        "higherIsBetter": true
+      },
       "sourceKind": "model",
       "summary": "可在 Kiro 免费档执行编程 Agent 任务。",
       "valueReason": "官方模型矩阵明确允许 Free 账户选择，免费量每月恢复。",
@@ -868,7 +944,7 @@
       "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
       "status": "active",
       "featuredRank": 115,
-      "rankingStatus": "pending",
+      "rankingStatus": "ranked",
       "freeChannels": [
         {
           "provider": "Kiro",
@@ -2020,10 +2096,23 @@
       "stabilityTier": "A",
       "freeSourceClass": 1,
       "sourceKind": "model",
-      "capabilityEvidence": null,
-      "categoryRanks": {},
+      "capabilityEvidence": {
+        "benchmark": "SWE-bench Verified",
+        "version": "500 tasks",
+        "metric": "resolved",
+        "value": 60.7,
+        "unit": "%",
+        "asOf": "2025-08-05",
+        "url": "https://deploymentsafety.openai.com/gpt-oss",
+        "confidence": "official",
+        "appliesTo": "coding",
+        "higherIsBetter": true
+      },
+      "categoryRanks": {
+        "coding": 7
+      },
       "featuredRank": 335,
-      "rankingStatus": "pending",
+      "rankingStatus": "ranked",
       "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
       "eligibility": "注册 Groq 免费账户，自行创建 API Key",
       "limitations": [

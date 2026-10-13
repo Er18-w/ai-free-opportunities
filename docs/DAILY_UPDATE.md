@@ -192,3 +192,9 @@ AMD官方目录可按页面原有POST目录请求及detail_url读取，免费标
 公开模型目前统一显示展示序号，不宣称现有顺序是能力名次；前文关于pending条目不显示数字的旧展示说明以本节为准。真正能力排名必须补同用途的可比证据，不能直接沿用featuredRank作为评测结论。平台搜索、模型用途及核实日期已加入行式列表。
 
 规则更新时同时检查平台、模型freeChannels与福利三个位置。商汤U1.5旧聚合额度条目已移回候选，当前Token Plan明确6.8 Flash Lite/U1 Fast。WorkBuddy公开套餐只证明共享500积分/月，HY3/HY4额外限免截止日期及每日量需官方活动原文或账户内证据，第三方延期消息不等同本站已核实。常规月池不重复作为限时福利，小额度及消耗折扣不直接上榜。详见docs/STRUCTURE_REVIEW_2026-10-13.md。
+
+## 能力排名证据规则（2026-10-13第一批）
+
+编程分类已有第一批可复算名次，只纳入公开SWE-bench Verified、500题、resolved百分比口径。模型必须保存数字、原始链接、发布日期和明确型号；不同基准不混排。页面同时提醒不同Agent工具框架会影响分数，因此名次是公开报告的同类参考，不等于本站账户实测。
+
+当前已排名7项：MiniMax M2.5、GLM-5、Claude Sonnet 4.5、Qwen3 Coder Next、MiMo V2.6 Flash、GPT OSS 120B、GPT OSS 20B。后续新证据只有在benchmark、version、metric和higherIsBetter全部一致时才能加入这一组，并按value自动复算categoryRanks。没有同基准证据的模型保留在编程分类末尾，显示“待比较”，禁止用厂商宣传语或AI主观判断补位。通用、推理、图像和语音仍是展示顺序，建立各自统一基准后再启用能力名次。
