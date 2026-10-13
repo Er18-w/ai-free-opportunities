@@ -1,0 +1,459 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-10-12T14:30:00+08:00",
+  "policyVersion": "admission-v5-offers",
+  "note": "平台套餐、会员、试用与额度单独展示，不参与模型排名；第4类内容不进入本文件。",
+  "items": [
+    {
+      "id": "coze-limited-free-models",
+      "title": "Kimi 与阶跃星辰等模型每天免费调用",
+      "provider": "扣子 Coze",
+      "productType": "platform_offer",
+      "freeSourceClass": 1,
+      "stabilityTier": "A",
+      "categories": [
+        "general"
+      ],
+      "access": [
+        "web"
+      ],
+      "regionStatus": "cn_service",
+      "summary": "官方列出的限时免费模型每个模型每天 100 次调用，不扣减扣子积分",
+      "benefit": "官方列出的限时免费模型每个模型每天 100 次调用，不扣减扣子积分",
+      "allowance": "官方列出的限时免费模型每个模型每天 100 次调用，不扣减扣子积分",
+      "capacity": "官方未给统一截止日与固定型号清单，按控制台当天展示为准",
+      "eligibility": "注册扣子并在智能体或工作流模型节点选择标为限时免费的模型",
+      "claimMethod": "进入扣子创建智能体或工作流，在模型列表选择 Kimi、阶跃星辰等限时免费型号",
+      "limitations": [
+        "免费型号会轮换；方舟自开通模型另行收费，选择模型时必须确认“限时免费”标识。"
+      ],
+      "evidenceLabel": "官方规则已核",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://docs.coze.cn/coze_pro_model_fee",
+      "entryUrl": "https://www.coze.cn/",
+      "validUntil": null,
+      "validityText": "官方未给统一截止日与固定型号清单，按控制台当天展示为准",
+      "lastVerifiedAt": "2026-10-10T17:55:00+08:00",
+      "status": "active",
+      "models": [],
+      "sourceKind": "offer",
+      "featuredRank": 1
+    },
+    {
+      "id": "sensetime-sensenova-u15-lite-beta",
+      "title": "U1.5 Lite 生图与编辑公测免费",
+      "provider": "商汤日日新 Token Plan",
+      "productType": "platform_offer",
+      "freeSourceClass": 1,
+      "stabilityTier": "A",
+      "categories": [
+        "text",
+        "coding"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "cn_service",
+      "summary": "每 5 小时 1,500 次请求，支持生图与参考图编辑，最高 4K，公测期间可免费关闭水印",
+      "benefit": "每 5 小时 1,500 次请求，支持生图与参考图编辑，最高 4K，公测期间可免费关闭水印",
+      "allowance": "每 5 小时 1,500 次请求，支持生图与参考图编辑，最高 4K，公测期间可免费关闭水印",
+      "capacity": "公测期间免费；无绝对截止日，需每日复核官方公告",
+      "eligibility": "注册商汤日日新平台并创建 API Key；官方未公布统一截止日",
+      "claimMethod": "进入日日新控制台获取 API Key，调用 sensenova-u1.5-lite",
+      "limitations": [
+        "公测可能随时结束；不要上传隐私、未授权人物或商业机密图片。"
+      ],
+      "evidenceLabel": "官方规则已核",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://www.sensetime.com/cn/news/sensenova-u1-5-lite-token-plan-20260911-1741",
+      "entryUrl": "https://platform.sensenova.cn/",
+      "validUntil": null,
+      "validityText": "公测期间免费；无绝对截止日，需每日复核官方公告",
+      "lastVerifiedAt": "2026-10-10T17:55:00+08:00",
+      "status": "active",
+      "models": [],
+      "sourceKind": "offer",
+      "featuredRank": 2
+    },
+    {
+      "id": "workbuddy-free-plan-500",
+      "title": "WorkBuddy / CodeBuddy 免费体验版月池",
+      "provider": "Buddy AI",
+      "productType": "agent_offer",
+      "freeSourceClass": 1,
+      "stabilityTier": "B",
+      "categories": [
+        "coding",
+        "general"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "cn_service",
+      "summary": "WorkBuddy 与 CodeBuddy 共用免费体验版，每月 500 基础积分。",
+      "benefit": "500 基础积分/月，支持 Auto 模型调度；具体可选模型以客户端为准",
+      "allowance": "500 基础积分/月",
+      "capacity": "官方未公开不同任务的积分消耗，复杂任务容量需实测。",
+      "eligibility": "注册 Buddy AI 中国版账号",
+      "claimMethod": "登录 WorkBuddy 或 CodeBuddy，进入套餐与积分页核对体验版月池",
+      "limitations": [
+        "WorkBuddy 与 CodeBuddy 共用积分",
+        "2026 年 7 月起旧体验版 500 积分规则有过调整",
+        "复杂任务消耗未公开"
+      ],
+      "evidenceLabel": "官方套餐已核，容量待实测",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://www.codebuddy.cn/docs/workbuddy/Pricing",
+      "entryUrl": "https://www.workbuddy.cn/",
+      "validUntil": null,
+      "validityText": "按月刷新；具体到账以账号为准",
+      "lastVerifiedAt": "2026-10-11T22:37:11+08:00",
+      "status": "active",
+      "models": [
+        "Hy4 preview",
+        "腾讯混元"
+      ],
+      "sourceKind": "offer",
+      "featuredRank": 3
+    },
+    {
+      "id": "opencode-zen-free-models",
+      "title": "多款编程模型限时免费",
+      "provider": "OpenCode Zen",
+      "productType": "platform_offer",
+      "freeSourceClass": 1,
+      "stabilityTier": "A",
+      "categories": [
+        "coding"
+      ],
+      "access": [
+        "client",
+        "api"
+      ],
+      "regionStatus": "global",
+      "summary": "官方 Zen 目录当前列出 MiMo、Ling、Nemotron、LongCat、Space Bunny、Jev 等多个免费型号",
+      "benefit": "官方 Zen 目录当前列出 MiMo、Ling、Nemotron、LongCat、Space Bunny、Jev 等多个免费型号",
+      "allowance": "官方 Zen 目录当前列出 MiMo、Ling、Nemotron、LongCat、Space Bunny、Jev 等多个免费型号",
+      "capacity": "多数型号仅标注 limited time，未给绝对截止日；每日读取模型目录复核",
+      "eligibility": "创建 OpenCode Zen 账户和 API Key；选择名称带 Free 或目录价格为 0 的型号",
+      "claimMethod": "按官方 Zen 文档创建 API Key，通过 OpenAI 兼容端点调用当前免费型号",
+      "limitations": [
+        "部分免费型号会记录输入输出用于改进模型，不能提交隐私或机密代码；自动充值应保持关闭。"
+      ],
+      "evidenceLabel": "官方规则已核",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://docs.opencode.ai/docs/zen/",
+      "entryUrl": "https://opencode.ai/",
+      "validUntil": null,
+      "validityText": "多数型号仅标注 limited time，未给绝对截止日；每日读取模型目录复核",
+      "lastVerifiedAt": "2026-10-10T17:55:00+08:00",
+      "status": "active",
+      "models": [],
+      "sourceKind": "offer",
+      "featuredRank": 4
+    },
+    {
+      "id": "claude-artifact-usage-promotion",
+      "title": "Claude 免费版 Artifact 用量五折活动",
+      "provider": "Claude",
+      "productType": "usage_promotion",
+      "freeSourceClass": 1,
+      "stabilityTier": "C",
+      "categories": [
+        "general",
+        "text"
+      ],
+      "access": [
+        "web",
+        "client"
+      ],
+      "regionStatus": "global",
+      "summary": "Claude 免费版创建或编辑 Artifact 后，接下来的 10 条消息只按 50% 计入五小时会话限额。",
+      "benefit": "Artifact 触发后，接下来 10 条消息少计 50% 的五小时会话用量；每条回复最多前 15 个步骤享受折扣。",
+      "allowance": "每次创建或编辑 Artifact 后，后续 10 条消息按五折计入五小时会话限额。",
+      "capacity": "适合集中完成文档、演示稿或设计任务；重新创建或编辑 Artifact 可重新触发计数。",
+      "eligibility": "Claude Free 用户自 2026-10-07 起自动参加，无需兑换码或付费。",
+      "claimMethod": "登录 Claude，在网页、桌面端或移动端创建或编辑 Document、Presentation 或 Design Artifact，优惠自动生效。",
+      "limitations": [
+        "截至 2026-10-15 23:59 PT，Anthropic 可提前调整或结束活动。",
+        "只减少五小时会话限额的计入量，不改变周限额。",
+        "不适用于 Claude Code、Claude API、Slack、定时任务、本地 Cowork 和用量积分收费。"
+      ],
+      "evidenceLabel": "官方活动规则已核",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://support.claude.com/en/articles/17274727-artifact-usage-promotion",
+      "entryUrl": "https://claude.ai/",
+      "validUntil": "2026-10-15",
+      "validityText": "免费版活动截至 2026-10-15 23:59 PT",
+      "lastVerifiedAt": "2026-10-12T14:30:00+08:00",
+      "status": "active",
+      "models": [],
+      "sourceKind": "offer",
+      "featuredRank": 5
+    },
+    {
+      "id": "doubao-work-30-day-subscription",
+      "title": "豆包工作 30 天订阅权益",
+      "provider": "豆包",
+      "productType": "membership_offer",
+      "freeSourceClass": 2,
+      "stabilityTier": "C",
+      "categories": [
+        "general",
+        "text",
+        "coding"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "cn_service",
+      "summary": "下载或升级豆包工作电脑版 / 豆包电脑版后，当前可领取 30 天订阅权益。",
+      "benefit": "30 天标准订阅权益；已领取上一轮或已付费用户按活动规则顺延",
+      "allowance": "30 天订阅权益",
+      "capacity": "期限超过 3 天；具体高级功能额度以客户端订阅与额度页为准。",
+      "eligibility": "新老用户均可参与；需下载或升级电脑端并登录",
+      "claimMethod": "在 2026-10-17 前下载或升级官方电脑端，登录后到“订阅与额度管理”核对领取状态",
+      "limitations": [
+        "官方公开网页未提供独立活动详情页，领取状态必须在客户端核对",
+        "订阅内各高级功能共享额度",
+        "不要开启不需要的自动续费"
+      ],
+      "evidenceLabel": "官方协议与两家媒体交叉核对，客户端内需确认",
+      "evidenceStatus": "media_correlated_official_claim_path",
+      "sourceUrl": "https://www.doubao.com/legal/ey01",
+      "supportingUrls": [
+        "https://m.thepaper.cn/newsDetail_forward_34140771",
+        "https://www.cnu.com.cn/industry/202609/294991.html"
+      ],
+      "entryUrl": "https://www.doubao.com/download/desktop",
+      "validUntil": "2026-10-17",
+      "validityText": "领取窗口截至 2026-10-17；领取后权益状态以客户端为准",
+      "lastVerifiedAt": "2026-10-11T22:37:11+08:00",
+      "status": "active",
+      "models": [
+        "豆包 2.1 Pro"
+      ],
+      "sourceKind": "offer",
+      "featuredRank": 1
+    },
+    {
+      "id": "qoder-pro-trial",
+      "title": "Qoder 14 天 Pro 完整试用",
+      "provider": "Qoder",
+      "productType": "agent_offer",
+      "freeSourceClass": 2,
+      "stabilityTier": "C",
+      "categories": [
+        "coding"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "summary": "首次在客户端登录可试用完整 Pro 功能，包括 Agent、Quest 和代码知识能力。",
+      "benefit": "14 天 Pro · 300 credits · 补全与 Next Edit 不限量",
+      "allowance": "14 天 Pro · 300 credits · 补全与 Next Edit 不限量",
+      "capacity": "可集中体验 Agent、Experts Mode、Quest、Repo Wiki 与 Knowledge Card；具体 Agent 次数取决于任务复杂度。",
+      "eligibility": "Qoder 新用户，首次在符合条件的客户端登录",
+      "claimMethod": "前往 Qoder 官方入口注册并按页面提示开通",
+      "limitations": [
+        "首次客户端登录触发",
+        "需使用最新版客户端",
+        "虚拟机环境不提供试用",
+        "300 credits 的任务换算随功能而变"
+      ],
+      "evidenceLabel": "试用规则已核",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://docs.qoder.com/account/pricing",
+      "entryUrl": "https://qoder.com/download",
+      "validUntil": null,
+      "validityText": "可集中体验 Agent、Experts Mode、Quest、Repo Wiki 与 Knowledge Card；具体 Agent 次数取决于任务复杂度。",
+      "lastVerifiedAt": "2026-10-10T00:00:00Z",
+      "status": "active",
+      "models": [],
+      "sourceKind": "offer",
+      "featuredRank": 2
+    },
+    {
+      "id": "alibaba-bailian-new-user-quota",
+      "title": "各模型独立新人免费额度",
+      "provider": "阿里云百炼",
+      "productType": "platform_offer",
+      "freeSourceClass": 3,
+      "stabilityTier": "B",
+      "categories": [
+        "text",
+        "coding"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "cn_service",
+      "summary": "首次开通后，各模型按官方价格表分别获得免费额度",
+      "benefit": "首次开通后，各模型按官方价格表分别获得免费额度",
+      "allowance": "首次开通后，各模型按官方价格表分别获得免费额度",
+      "capacity": "自开通、模型发布或申请通过之日起 90 天，以较晚者为准",
+      "eligibility": "首次开通百炼；仅华北2（北京）地域；无需手动领取",
+      "claimMethod": "登录百炼并同意协议，系统自动发放；建议开启“免费额度用完即停”",
+      "limitations": [
+        "已认证账号在额度用尽后可能转为按量付费；请先开启用完即停。"
+      ],
+      "evidenceLabel": "官方规则已核",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://help.aliyun.com/zh/model-studio/new-free-quota",
+      "entryUrl": "https://bailian.console.aliyun.com/",
+      "validUntil": null,
+      "validityText": "自开通、模型发布或申请通过之日起 90 天，以较晚者为准",
+      "lastVerifiedAt": "2026-10-10T00:00:00+08:00",
+      "status": "active",
+      "models": [],
+      "sourceKind": "offer",
+      "featuredRank": 1
+    },
+    {
+      "id": "volcengine-ark-free-quota",
+      "title": "文本、图像与视频模型免费额度",
+      "provider": "火山引擎方舟",
+      "productType": "platform_offer",
+      "freeSourceClass": 3,
+      "stabilityTier": "B",
+      "categories": [
+        "text",
+        "coding"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "cn_service",
+      "summary": "文本每模型 50 万 Tokens；图像每模型 200 张；视频每模型 200 万 Tokens",
+      "benefit": "文本每模型 50 万 Tokens；图像每模型 200 张；视频每模型 200 万 Tokens",
+      "allowance": "文本每模型 50 万 Tokens；图像每模型 200 张；视频每模型 200 万 Tokens",
+      "capacity": "官方福利页未标注统一截止日，以资源包页面显示为准",
+      "eligibility": "注册火山引擎；开通模型前需按官方要求完成账号认证",
+      "claimMethod": "进入火山方舟开通对应模型，免费额度用于抵扣 Token 消耗",
+      "limitations": [
+        "额度耗尽后可能产生按量费用；使用前核对资源包余额与计费设置。"
+      ],
+      "evidenceLabel": "官方规则已核",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://docs.volcengine.com/docs/87301/2106521",
+      "entryUrl": "https://console.volcengine.com/ark/",
+      "validUntil": null,
+      "validityText": "官方福利页未标注统一截止日，以资源包页面显示为准",
+      "lastVerifiedAt": "2026-10-10T00:00:00+08:00",
+      "status": "active",
+      "models": [],
+      "sourceKind": "offer",
+      "featuredRank": 2
+    },
+    {
+      "id": "qiniu-ai-new-user-3m",
+      "title": "新用户全系列共享 300 万 Tokens",
+      "provider": "七牛云 AI 大模型推理",
+      "productType": "platform_offer",
+      "freeSourceClass": 3,
+      "stabilityTier": "B",
+      "categories": [
+        "text",
+        "coding"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "cn_service",
+      "summary": "AI 推理新客户获得全系列共享 300 万 Tokens，可使用 OpenAI 或 Anthropic 兼容接口",
+      "benefit": "AI 推理新客户获得全系列共享 300 万 Tokens，可使用 OpenAI 或 Anthropic 兼容接口",
+      "allowance": "AI 推理新客户获得全系列共享 300 万 Tokens，可使用 OpenAI 或 Anthropic 兼容接口",
+      "capacity": "官方当前仍展示上线活动；资源包具体过期时间以账户内为准",
+      "eligibility": "中国大陆账号；首次创建 API Key 或首次产生计费用量后激活，长期使用需实名认证",
+      "claimMethod": "注册 qiniu.com/ai，创建 API Key；等待资源包到账后再开始批量调用",
+      "limitations": [
+        "额度用尽后自动转按量计费，且账单和余额可能延迟约 15 分钟；先设置 API Key 总限额，确认资源包到账后再调用。"
+      ],
+      "evidenceLabel": "官方规则已核",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://developer.qiniu.com/aitokenapi/12898/ai-token-api-pricing",
+      "entryUrl": "https://www.qiniu.com/ai",
+      "validUntil": null,
+      "validityText": "官方当前仍展示上线活动；资源包具体过期时间以账户内为准",
+      "lastVerifiedAt": "2026-10-10T17:55:00+08:00",
+      "status": "active",
+      "models": [],
+      "sourceKind": "offer",
+      "featuredRank": 3
+    },
+    {
+      "id": "zhipu-new-user-20m",
+      "title": "新用户 2,000 万 Tokens 体验包",
+      "provider": "智谱开放平台",
+      "productType": "platform_offer",
+      "freeSourceClass": 3,
+      "stabilityTier": "B",
+      "categories": [
+        "text",
+        "coding"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "cn_service",
+      "summary": "新用户注册赠送 2,000 万 Tokens",
+      "benefit": "新用户注册赠送 2,000 万 Tokens",
+      "allowance": "新用户注册赠送 2,000 万 Tokens",
+      "capacity": "活动结束时间与到账后有效期未在公开登录页注明，以控制台为准",
+      "eligibility": "手机号注册或账号登录；官方页面未公开完整到账限制",
+      "claimMethod": "在智谱开放平台注册，登录后到控制台核对到账额度与期限",
+      "limitations": [
+        "公开页面可确认额度，但有效期需登录后人工核对；不标记为永久。"
+      ],
+      "evidenceLabel": "官方入口部分已核",
+      "evidenceStatus": "official_partial",
+      "sourceUrl": "https://open.bigmodel.cn/console",
+      "entryUrl": "https://open.bigmodel.cn/console",
+      "validUntil": null,
+      "validityText": "活动结束时间与到账后有效期未在公开登录页注明，以控制台为准",
+      "lastVerifiedAt": "2026-10-10T00:00:00+08:00",
+      "status": "active",
+      "models": [],
+      "sourceKind": "offer",
+      "featuredRank": 4
+    },
+    {
+      "id": "trae-new-user-4000",
+      "title": "TRAE 新用户 4,000 积分",
+      "provider": "TRAE",
+      "productType": "agent_offer",
+      "freeSourceClass": 3,
+      "stabilityTier": "B",
+      "categories": [
+        "coding"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "cn_service",
+      "summary": "首次注册可获得一笔足以完整体验编程 Agent 的限时积分。",
+      "benefit": "新用户一次性 4,000 积分 · 31 天有效",
+      "allowance": "新用户一次性 4,000 积分 · 31 天有效",
+      "capacity": "容量受所选模型和 Agent 步骤影响，但明显高于零散签到积分，足以进行一段集中开发试用。",
+      "eligibility": "注册并登录 TRAE 中国版账号",
+      "claimMethod": "前往 TRAE 官方入口注册并按页面提示开通",
+      "limitations": [
+        "仅新用户首次注册",
+        "积分 31 天后到期",
+        "模型与 Agent 操作消耗不同"
+      ],
+      "evidenceLabel": "限时权益已核",
+      "evidenceStatus": "official_verified",
+      "sourceUrl": "https://docs.trae.cn/ide_plans-and-billing",
+      "entryUrl": "https://www.trae.cn/",
+      "validUntil": null,
+      "validityText": "容量受所选模型和 Agent 步骤影响，但明显高于零散签到积分，足以进行一段集中开发试用。",
+      "lastVerifiedAt": "2026-10-10T00:00:00Z",
+      "status": "active",
+      "models": [],
+      "sourceKind": "offer",
+      "featuredRank": 5
+    }
+  ]
+}

@@ -1,8 +1,428 @@
 {
-  "schemaVersion": "1.1.0",
-  "updatedAt": "2026-10-10T14:30:00+08:00",
-  "policyVersion": "admission-v4.1",
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2026-10-13T09:00:00+08:00",
+  "policyVersion": "admission-v5-model-first",
+  "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
+    {
+      "id": "opencode-zen-step-5-preview-free",
+      "title": "Step 5 Preview",
+      "provider": "OpenCode Zen",
+      "channel": "Zen 限时免费模型",
+      "modelId": "step-5-preview-free",
+      "categories": [
+        "coding",
+        "general"
+      ],
+      "access": [
+        "api",
+        "client"
+      ],
+      "regionStatus": "global",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "OpenCode Zen 官方机器目录当前列出的零价格编程模型。",
+      "valueReason": "型号名称带 Free 且出现在官方实时目录；未公布统一结束日。",
+      "allowance": "输入与输出价格为 0；统一请求上限未公开",
+      "capacity": "官方未公布统一请求上限；适合当前试用，不能承诺大型任务容量。",
+      "limitations": [
+        "限时免费结束日未公布",
+        "部分型号可能收集输入输出用于模型改进",
+        "创建账户时需检查充值与自动续费设置"
+      ],
+      "eligibility": "创建 OpenCode Zen 账户和 API Key；不提交隐私或机密代码",
+      "evidenceLabel": "官方零价目录已核，容量待实测",
+      "officialUrl": "https://opencode.ai/docs/zen/",
+      "entryUrl": "https://opencode.ai/",
+      "ruleCheckedAt": "2026-10-12T14:30:00+08:00",
+      "status": "active",
+      "freeChannels": [
+        {
+          "provider": "OpenCode Zen",
+          "channel": "Zen 限时免费模型",
+          "class": 1,
+          "access": [
+            "api",
+            "client"
+          ],
+          "regionStatus": "global",
+          "allowance": "零价格；上限未公开",
+          "sourceUrl": "https://opencode.ai/zen/v1/models",
+          "entryUrl": "https://opencode.ai/",
+          "validUntil": null
+        }
+      ],
+      "api": {
+        "baseUrl": "https://opencode.ai/zen/v1",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "protocol": "OpenAI-compatible chat completions"
+      },
+      "featuredRank": 1,
+      "categoryRanks": {
+        "coding": 1,
+        "general": 5
+      }
+    },
+    {
+      "id": "chatgpt-gpt-6-luna-free",
+      "title": "GPT-6 Luna",
+      "provider": "OpenAI",
+      "channel": "ChatGPT 免费版",
+      "modelId": "gpt-6-luna",
+      "categories": [
+        "general",
+        "text",
+        "coding"
+      ],
+      "categoryRanks": {
+        "general": 1,
+        "text": 1,
+        "coding": 10
+      },
+      "access": [
+        "web",
+        "client"
+      ],
+      "regionStatus": "global",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "ChatGPT 免费档当前面向日常使用的模型，适合通用问答、写作和轻量编程。",
+      "valueReason": "模型能力强且有官方免费档，适合作为通用入口。",
+      "allowance": "免费档动态限额；达到上限后按产品提示恢复",
+      "capacity": "足以完成日常文本任务；高峰期与复杂工具会更快消耗额度。",
+      "limitations": [
+        "具体上限动态变化",
+        "中国大陆网络可达性需用户自行确认",
+        "免费档模型会随官方调整"
+      ],
+      "eligibility": "注册 ChatGPT 免费账户",
+      "evidenceLabel": "官方免费档已核，实时限额以产品为准",
+      "officialUrl": "https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt",
+      "entryUrl": "https://chatgpt.com/",
+      "ruleCheckedAt": "2026-10-12T18:00:00+08:00",
+      "status": "active",
+      "freeChannels": [
+        {
+          "provider": "ChatGPT",
+          "channel": "免费版",
+          "class": 1,
+          "access": [
+            "web",
+            "client"
+          ],
+          "regionStatus": "global",
+          "allowance": "动态限额",
+          "sourceUrl": "https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt",
+          "entryUrl": "https://chatgpt.com/",
+          "validUntil": null
+        }
+      ],
+      "featuredRank": 1
+    },
+    {
+      "id": "opencode-zen-muse-spark-1.3-contributor-free",
+      "title": "Muse Spark 1.3 Contributor",
+      "provider": "OpenCode Zen",
+      "channel": "Zen 限时免费模型",
+      "modelId": "muse-spark-1.3-contributor-free",
+      "categories": [
+        "coding"
+      ],
+      "access": [
+        "api",
+        "client"
+      ],
+      "regionStatus": "global",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "OpenCode Zen 官方机器目录当前列出的零价格编程模型。",
+      "valueReason": "型号名称带 Free 且出现在官方实时目录；未公布统一结束日。",
+      "allowance": "输入与输出价格为 0；统一请求上限未公开",
+      "capacity": "官方未公布统一请求上限；适合当前试用，不能承诺大型任务容量。",
+      "limitations": [
+        "限时免费结束日未公布",
+        "部分型号可能收集输入输出用于模型改进",
+        "创建账户时需检查充值与自动续费设置"
+      ],
+      "eligibility": "创建 OpenCode Zen 账户和 API Key；不提交隐私或机密代码",
+      "evidenceLabel": "官方零价目录已核，容量待实测",
+      "officialUrl": "https://opencode.ai/docs/zen/",
+      "entryUrl": "https://opencode.ai/",
+      "ruleCheckedAt": "2026-10-12T14:30:00+08:00",
+      "status": "active",
+      "freeChannels": [
+        {
+          "provider": "OpenCode Zen",
+          "channel": "Zen 限时免费模型",
+          "class": 1,
+          "access": [
+            "api",
+            "client"
+          ],
+          "regionStatus": "global",
+          "allowance": "零价格；上限未公开",
+          "sourceUrl": "https://opencode.ai/zen/v1/models",
+          "entryUrl": "https://opencode.ai/",
+          "validUntil": null
+        }
+      ],
+      "api": {
+        "baseUrl": "https://opencode.ai/zen/v1",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "protocol": "OpenAI-compatible chat completions"
+      },
+      "featuredRank": 2,
+      "categoryRanks": {
+        "coding": 2
+      }
+    },
+    {
+      "id": "deepseek-v4-1-flash-web-free",
+      "title": "DeepSeek V4.1 Flash",
+      "provider": "DeepSeek",
+      "channel": "官方网页与客户端",
+      "modelId": "DeepSeek-V4.1-Flash",
+      "categories": [
+        "general",
+        "text",
+        "coding"
+      ],
+      "categoryRanks": {
+        "general": 2,
+        "text": 2,
+        "coding": 9
+      },
+      "access": [
+        "web",
+        "client"
+      ],
+      "regionStatus": "cn_service",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "DeepSeek 官方助手当前提供的主力免费模型，适合推理、写作和一般编程任务。",
+      "valueReason": "官方网页和客户端可直接使用，使用门槛低。",
+      "allowance": "免费使用；官方未公布固定次数",
+      "capacity": "可以持续完成日常对话与文档任务，繁忙时段可能触发频率限制。",
+      "limitations": [
+        "官方未承诺无限使用",
+        "繁忙时可能限流",
+        "API 与网页端规则不同"
+      ],
+      "eligibility": "注册或直接进入 DeepSeek 官方网页，按页面提示使用",
+      "evidenceLabel": "官方入口已核，频控未公开",
+      "officialUrl": "https://www.deepseek.com/",
+      "entryUrl": "https://chat.deepseek.com/",
+      "ruleCheckedAt": "2026-10-12T18:00:00+08:00",
+      "status": "active",
+      "freeChannels": [
+        {
+          "provider": "DeepSeek",
+          "channel": "官方网页与客户端",
+          "class": 1,
+          "access": [
+            "web",
+            "client"
+          ],
+          "regionStatus": "cn_service",
+          "allowance": "免费使用；固定上限未公开",
+          "sourceUrl": "https://www.deepseek.com/",
+          "entryUrl": "https://chat.deepseek.com/",
+          "validUntil": null
+        }
+      ],
+      "featuredRank": 2
+    },
+    {
+      "id": "workbuddy-hy4-preview-free-plan",
+      "title": "Hy4 Preview",
+      "provider": "WorkBuddy",
+      "channel": "Buddy AI 体验版",
+      "modelId": "Hy4 preview",
+      "categories": [
+        "text",
+        "general",
+        "coding"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "cn_service",
+      "offerType": "ongoing_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "WorkBuddy 内置的腾讯混元新一代模型，可在免费体验版的模型调度中选择。",
+      "valueReason": "官方模型配置页列出 Hy4 preview，官方定价页列出免费体验版与每月 500 基础积分。",
+      "allowance": "体验版 500 基础积分/月；模型单次消耗未公开",
+      "capacity": "免费月池存在，但官方未公开该模型每项任务的积分消耗，任务容量仍需实测。",
+      "limitations": [
+        "不同任务与工具调用消耗不同",
+        "免费体验版的可选模型可能随产品调整",
+        "500 积分能否覆盖复杂任务需实测"
+      ],
+      "eligibility": "注册并登录 WorkBuddy 中国版体验版",
+      "evidenceLabel": "模型与免费月池已核，容量待实测",
+      "officialUrl": "https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model",
+      "entryUrl": "https://www.workbuddy.cn/",
+      "ruleCheckedAt": "2026-10-11T22:37:11+08:00",
+      "status": "active",
+      "freeChannels": [
+        {
+          "provider": "WorkBuddy",
+          "channel": "Buddy AI 体验版",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "cn_service",
+          "allowance": "500 基础积分/月",
+          "sourceUrl": "https://www.codebuddy.cn/docs/workbuddy/Pricing",
+          "entryUrl": "https://www.workbuddy.cn/",
+          "validUntil": null
+        }
+      ],
+      "featuredRank": 3,
+      "categoryRanks": {
+        "general": 3,
+        "text": 4,
+        "coding": 6
+      }
+    },
+    {
+      "id": "opencode-zen-mimo-v2.6-flash-free",
+      "title": "Mimo v2.6 Flash",
+      "provider": "OpenCode Zen",
+      "channel": "Zen 限时免费模型",
+      "modelId": "mimo-v2.6-flash-free",
+      "categories": [
+        "coding",
+        "text"
+      ],
+      "access": [
+        "api",
+        "client"
+      ],
+      "regionStatus": "global",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "OpenCode Zen 官方机器目录当前列出的零价格编程模型。",
+      "valueReason": "型号名称带 Free 且出现在官方实时目录；未公布统一结束日。",
+      "allowance": "输入与输出价格为 0；统一请求上限未公开",
+      "capacity": "官方未公布统一请求上限；适合当前试用，不能承诺大型任务容量。",
+      "limitations": [
+        "限时免费结束日未公布",
+        "部分型号可能收集输入输出用于模型改进",
+        "创建账户时需检查充值与自动续费设置"
+      ],
+      "eligibility": "创建 OpenCode Zen 账户和 API Key；不提交隐私或机密代码",
+      "evidenceLabel": "官方零价目录已核，容量待实测",
+      "officialUrl": "https://opencode.ai/docs/zen/",
+      "entryUrl": "https://opencode.ai/",
+      "ruleCheckedAt": "2026-10-12T14:30:00+08:00",
+      "status": "active",
+      "freeChannels": [
+        {
+          "provider": "OpenCode Zen",
+          "channel": "Zen 限时免费模型",
+          "class": 1,
+          "access": [
+            "api",
+            "client"
+          ],
+          "regionStatus": "global",
+          "allowance": "零价格；上限未公开",
+          "sourceUrl": "https://opencode.ai/zen/v1/models",
+          "entryUrl": "https://opencode.ai/",
+          "validUntil": null
+        }
+      ],
+      "api": {
+        "baseUrl": "https://opencode.ai/zen/v1",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "protocol": "OpenAI-compatible chat completions"
+      },
+      "featuredRank": 4,
+      "categoryRanks": {
+        "coding": 3,
+        "text": 5
+      }
+    },
+    {
+      "id": "opencode-zen-longcat-2.5-preview-free",
+      "title": "Longcat 2.5 Preview",
+      "provider": "OpenCode Zen",
+      "channel": "Zen 限时免费模型",
+      "modelId": "longcat-2.5-preview-free",
+      "categories": [
+        "coding"
+      ],
+      "access": [
+        "api",
+        "client"
+      ],
+      "regionStatus": "global",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "OpenCode Zen 官方机器目录当前列出的零价格编程模型。",
+      "valueReason": "型号名称带 Free 且出现在官方实时目录；未公布统一结束日。",
+      "allowance": "输入与输出价格为 0；统一请求上限未公开",
+      "capacity": "官方未公布统一请求上限；适合当前试用，不能承诺大型任务容量。",
+      "limitations": [
+        "限时免费结束日未公布",
+        "部分型号可能收集输入输出用于模型改进",
+        "创建账户时需检查充值与自动续费设置"
+      ],
+      "eligibility": "创建 OpenCode Zen 账户和 API Key；不提交隐私或机密代码",
+      "evidenceLabel": "官方零价目录已核，容量待实测",
+      "officialUrl": "https://opencode.ai/docs/zen/",
+      "entryUrl": "https://opencode.ai/",
+      "ruleCheckedAt": "2026-10-12T14:30:00+08:00",
+      "status": "active",
+      "freeChannels": [
+        {
+          "provider": "OpenCode Zen",
+          "channel": "Zen 限时免费模型",
+          "class": 1,
+          "access": [
+            "api",
+            "client"
+          ],
+          "regionStatus": "global",
+          "allowance": "零价格；上限未公开",
+          "sourceUrl": "https://opencode.ai/zen/v1/models",
+          "entryUrl": "https://opencode.ai/",
+          "validUntil": null
+        }
+      ],
+      "api": {
+        "baseUrl": "https://opencode.ai/zen/v1",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "protocol": "OpenAI-compatible chat completions"
+      },
+      "featuredRank": 5,
+      "categoryRanks": {
+        "coding": 4
+      }
+    },
     {
       "regionStatus": "unknown",
       "evidenceMode": "rule_verified",
@@ -14,8 +434,9 @@
       "channel": "Groq API Free Plan",
       "modelId": "openai/gpt-oss-120b",
       "categories": [
-        "text-api",
-        "coding-api"
+        "text",
+        "coding",
+        "general"
       ],
       "access": [
         "api"
@@ -40,381 +461,263 @@
         "endpoint": "https://api.groq.com/openai/v1/chat/completions",
         "protocol": "OpenAI-compatible chat completions"
       },
-      "featuredRank": 1
+      "featuredRank": 6,
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "freeChannels": [
+        {
+          "provider": "Groq",
+          "channel": "Groq API Free Plan",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "30 RPM · 1,000 RPD · 8,000 TPM · 200,000 TPD",
+          "sourceUrl": "https://console.groq.com/docs/rate-limits",
+          "entryUrl": "https://console.groq.com/keys",
+          "validUntil": null
+        }
+      ],
+      "sourceKind": "model",
+      "categoryRanks": {
+        "general": 6,
+        "text": 6,
+        "coding": 7
+      }
     },
     {
-      "regionStatus": "unknown",
-      "evidenceMode": "rule_verified",
-      "ruleCheckedAt": "2026-10-10T00:00:00Z",
-      "status": "active",
-      "id": "groq-gpt-oss-20b-free",
-      "title": "GPT OSS 20B 免费 API",
-      "provider": "Groq",
-      "channel": "Groq API Free Plan",
-      "modelId": "openai/gpt-oss-20b",
+      "id": "opencode-zen-ling-3.1-flash-free",
+      "title": "Ling 3.1 Flash",
+      "provider": "OpenCode Zen",
+      "channel": "Zen 限时免费模型",
+      "modelId": "ling-3.1-flash-free",
       "categories": [
-        "text-api",
-        "coding-api"
-      ],
-      "access": [
-        "api"
-      ],
-      "offerType": "ongoing_free",
-      "summary": "适合响应速度优先的文本与轻量代码任务。",
-      "valueReason": "官方 Free Plan 当前列出每日 1,000 次请求、每日 200,000 tokens，可用于持续的小型个人任务。",
-      "allowance": "30 RPM · 1,000 RPD · 8,000 TPM · 200,000 TPD",
-      "capacity": "按官方限额可覆盖多次个人文本或代码任务；具体单项消耗取决于提示词和输出长度。",
-      "limitations": [
-        "多个限额维度同时生效",
-        "限额按组织计算",
-        "实际账号限额以控制台为准",
-        "本站尚未做账号调用测试"
-      ],
-      "eligibility": "需注册 Groq 账号并创建 API Key",
-      "evidenceLabel": "规则已核，体验未测",
-      "officialUrl": "https://console.groq.com/docs/rate-limits",
-      "entryUrl": "https://console.groq.com/keys",
-      "api": {
-        "baseUrl": "https://api.groq.com/openai/v1",
-        "endpoint": "https://api.groq.com/openai/v1/chat/completions",
-        "protocol": "OpenAI-compatible chat completions"
-      },
-      "featuredRank": 2
-    },
-    {
-      "regionStatus": "unknown",
-      "evidenceMode": "rule_verified",
-      "ruleCheckedAt": "2026-10-10T00:00:00Z",
-      "status": "active",
-      "id": "openrouter-nemotron-ultra-free",
-      "title": "Nemotron 3 Ultra 550B 免费 API",
-      "provider": "OpenRouter",
-      "channel": "OpenRouter Free",
-      "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "categories": [
-        "text-api",
-        "coding-api"
+        "coding",
+        "text"
       ],
       "access": [
         "api",
-        "web"
+        "client"
       ],
-      "offerType": "ongoing_free",
-      "summary": "适合复杂文本、推理和代码试用的大型免费模型。",
-      "valueReason": "模型当前在官方目录中标为零价格；OpenRouter 免费方案提供每日 50 次共享请求，足以完成一批实际试用任务。",
-      "allowance": "与其他免费模型共享 50 次请求/日",
-      "capacity": "若只使用本模型，最多约 50 次请求/日；上下文和单次输出仍受模型与平台限制。",
+      "regionStatus": "global",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "OpenCode Zen 官方机器目录当前列出的零价格编程模型。",
+      "valueReason": "型号名称带 Free 且出现在官方实时目录；未公布统一结束日。",
+      "allowance": "输入与输出价格为 0；统一请求上限未公开",
+      "capacity": "官方未公布统一请求上限；适合当前试用，不能承诺大型任务容量。",
       "limitations": [
-        "免费模型共享每日请求池",
-        "免费型号可能更换或下线",
-        "高峰期稳定性与实际质量未实测"
+        "限时免费结束日未公布",
+        "部分型号可能收集输入输出用于模型改进",
+        "创建账户时需检查充值与自动续费设置"
       ],
-      "eligibility": "注册 OpenRouter 账号；API 使用需创建 Key",
-      "evidenceLabel": "目录与额度已核",
-      "officialUrl": "https://openrouter.ai/pricing",
-      "entryUrl": "https://openrouter.ai/models",
+      "eligibility": "创建 OpenCode Zen 账户和 API Key；不提交隐私或机密代码",
+      "evidenceLabel": "官方零价目录已核，容量待实测",
+      "officialUrl": "https://opencode.ai/docs/zen/",
+      "entryUrl": "https://opencode.ai/",
+      "ruleCheckedAt": "2026-10-12T14:30:00+08:00",
+      "status": "active",
+      "freeChannels": [
+        {
+          "provider": "OpenCode Zen",
+          "channel": "Zen 限时免费模型",
+          "class": 1,
+          "access": [
+            "api",
+            "client"
+          ],
+          "regionStatus": "global",
+          "allowance": "零价格；上限未公开",
+          "sourceUrl": "https://opencode.ai/zen/v1/models",
+          "entryUrl": "https://opencode.ai/",
+          "validUntil": null
+        }
+      ],
       "api": {
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+        "baseUrl": "https://opencode.ai/zen/v1",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
         "protocol": "OpenAI-compatible chat completions"
       },
-      "featuredRank": 3
+      "featuredRank": 7,
+      "categoryRanks": {
+        "coding": 5,
+        "text": 7
+      }
     },
     {
-      "regionStatus": "unknown",
-      "evidenceMode": "rule_verified",
-      "ruleCheckedAt": "2026-10-10T00:00:00Z",
-      "status": "active",
-      "id": "openrouter-nemotron-lightning-free",
-      "title": "Nemotron 3.5 Lightning 免费 API",
-      "provider": "OpenRouter",
-      "channel": "OpenRouter Free",
-      "modelId": "nvidia/nemotron-3.5-lightning:free",
+      "id": "doubao-2.1-pro-membership-trial",
+      "title": "豆包 2.1 Pro",
+      "provider": "豆包",
+      "channel": "豆包工作 30 天订阅权益",
+      "modelId": "doubao-2.1-pro",
       "categories": [
-        "text-api",
-        "coding-api"
+        "general",
+        "text",
+        "coding"
       ],
       "access": [
-        "api",
-        "web"
+        "client"
       ],
-      "offerType": "ongoing_free",
-      "summary": "偏速度的免费文本与代码模型，适合交互式试用和小型自动化。",
-      "valueReason": "模型当前在官方目录中标为零价格；OpenRouter 免费方案提供每日 50 次共享请求，足以完成一批实际试用任务。",
-      "allowance": "与其他免费模型共享 50 次请求/日",
-      "capacity": "可在共享池内完成约 50 次日请求，适合短文本处理和代码问答。",
-      "limitations": [
-        "免费模型共享每日请求池",
-        "免费型号可能更换或下线",
-        "高峰期稳定性与实际质量未实测"
-      ],
-      "eligibility": "注册 OpenRouter 账号；API 使用需创建 Key",
-      "evidenceLabel": "目录与额度已核",
-      "officialUrl": "https://openrouter.ai/pricing",
-      "entryUrl": "https://openrouter.ai/models",
-      "api": {
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
-        "protocol": "OpenAI-compatible chat completions"
-      },
-      "featuredRank": 4
-    },
-    {
-      "regionStatus": "unknown",
-      "evidenceMode": "rule_verified",
-      "ruleCheckedAt": "2026-10-10T00:00:00Z",
-      "status": "active",
-      "id": "openrouter-north-mini-code-free",
-      "title": "North Mini Code 免费 API",
-      "provider": "OpenRouter",
-      "channel": "OpenRouter Free",
-      "modelId": "cohere/north-mini-code:free",
-      "categories": [
-        "coding-api"
-      ],
-      "access": [
-        "api",
-        "web"
-      ],
-      "offerType": "ongoing_free",
-      "summary": "面向编程任务的免费模型入口，适合代码解释、修改和小型生成。",
-      "valueReason": "模型当前在官方目录中标为零价格；OpenRouter 免费方案提供每日 50 次共享请求，足以完成一批实际试用任务。",
-      "allowance": "与其他免费模型共享 50 次请求/日",
-      "capacity": "最多约 50 次请求/日，适合数轮代码问答或小型脚本迭代。",
-      "limitations": [
-        "免费模型共享每日请求池",
-        "免费型号可能更换或下线",
-        "高峰期稳定性与实际质量未实测"
-      ],
-      "eligibility": "注册 OpenRouter 账号；API 使用需创建 Key",
-      "evidenceLabel": "目录与额度已核",
-      "officialUrl": "https://openrouter.ai/pricing",
-      "entryUrl": "https://openrouter.ai/models",
-      "api": {
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
-        "protocol": "OpenAI-compatible chat completions"
-      },
-      "featuredRank": 5
-    },
-    {
-      "regionStatus": "unknown",
-      "evidenceMode": "rule_verified",
-      "ruleCheckedAt": "2026-10-10T00:00:00Z",
-      "status": "active",
-      "id": "openrouter-gemma-4-31b-free",
-      "title": "Gemma 4 31B 免费 API",
-      "provider": "OpenRouter",
-      "channel": "OpenRouter Free",
-      "modelId": "google/gemma-4-31b-it:free",
-      "categories": [
-        "text-api",
-        "coding-api"
-      ],
-      "access": [
-        "api",
-        "web"
-      ],
-      "offerType": "ongoing_free",
-      "summary": "Google Gemma 系列的免费指令模型入口，可用于文本和基础代码任务。",
-      "valueReason": "模型当前在官方目录中标为零价格；OpenRouter 免费方案提供每日 50 次共享请求，足以完成一批实际试用任务。",
-      "allowance": "与其他免费模型共享 50 次请求/日",
-      "capacity": "适合每天完成数十次短至中等长度的文本或代码请求。",
-      "limitations": [
-        "免费模型共享每日请求池",
-        "免费型号可能更换或下线",
-        "高峰期稳定性与实际质量未实测"
-      ],
-      "eligibility": "注册 OpenRouter 账号；API 使用需创建 Key",
-      "evidenceLabel": "目录与额度已核",
-      "officialUrl": "https://openrouter.ai/pricing",
-      "entryUrl": "https://openrouter.ai/models",
-      "api": {
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
-        "protocol": "OpenAI-compatible chat completions"
-      },
-      "featuredRank": 6
-    },
-    {
-      "regionStatus": "unknown",
-      "evidenceMode": "rule_verified",
-      "ruleCheckedAt": "2026-10-10T00:00:00Z",
-      "status": "active",
-      "id": "openrouter-inkling-free",
-      "title": "Inkling 免费 API",
-      "provider": "OpenRouter",
-      "channel": "OpenRouter Free",
-      "modelId": "thinkingmachines/inkling:free",
-      "categories": [
-        "text-api"
-      ],
-      "access": [
-        "api",
-        "web"
-      ],
-      "offerType": "ongoing_free",
-      "summary": "当前零价格的通用文本模型入口，适合比较不同模型表现。",
-      "valueReason": "模型当前在官方目录中标为零价格；OpenRouter 免费方案提供每日 50 次共享请求，足以完成一批实际试用任务。",
-      "allowance": "与其他免费模型共享 50 次请求/日",
-      "capacity": "每天可在共享池内进行多轮文本任务或模型对比。",
-      "limitations": [
-        "免费模型共享每日请求池",
-        "免费型号可能更换或下线",
-        "高峰期稳定性与实际质量未实测"
-      ],
-      "eligibility": "注册 OpenRouter 账号；API 使用需创建 Key",
-      "evidenceLabel": "目录与额度已核",
-      "officialUrl": "https://openrouter.ai/pricing",
-      "entryUrl": "https://openrouter.ai/models",
-      "api": {
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
-        "protocol": "OpenAI-compatible chat completions"
-      },
-      "featuredRank": 7
-    },
-    {
       "regionStatus": "cn_service",
-      "evidenceMode": "rule_verified",
-      "ruleCheckedAt": "2026-10-10T00:00:00Z",
-      "status": "active",
-      "id": "trae-new-user-4000",
-      "title": "TRAE 新用户 4,000 积分",
-      "provider": "TRAE",
-      "channel": "中国版新用户权益",
-      "modelId": "TRAE IDE Agent",
-      "categories": [
-        "coding-agent"
-      ],
-      "access": [
-        "client"
-      ],
-      "offerType": "new_user",
-      "summary": "首次注册可获得一笔足以完整体验编程 Agent 的限时积分。",
-      "valueReason": "4,000 积分是当前 Lite 月度 2,000 积分的两倍，能完成真实编程任务；普通每日 100 和月登录 500 不单独入榜。",
-      "allowance": "新用户一次性 4,000 积分 · 31 天有效",
-      "capacity": "容量受所选模型和 Agent 步骤影响，但明显高于零散签到积分，足以进行一段集中开发试用。",
+      "offerType": "membership_trial",
+      "stabilityTier": "C",
+      "freeSourceClass": 2,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "豆包工作电脑端当前 30 天订阅权益内可使用的高级模型；领取状态需在客户端确认。",
+      "valueReason": "30 天期限达到第 2 类门槛，且活动说明指向豆包 2.1 Pro；公开网页没有独立活动详情页，因此证据状态明确降级。",
+      "allowance": "30 天订阅权益；具体高级功能共享额度以客户端为准",
+      "capacity": "期限足够完成持续任务，但各功能共享额度和单次消耗未公开，不能承诺固定次数。",
       "limitations": [
-        "仅新用户首次注册",
-        "积分 31 天后到期",
-        "模型与 Agent 操作消耗不同"
+        "领取窗口截至 2026-10-17",
+        "公开官网没有独立活动详情页，需在客户端核对领取状态",
+        "订阅内高级功能共享额度",
+        "不要开启不需要的自动续费"
       ],
-      "eligibility": "注册并登录 TRAE 中国版账号",
-      "evidenceLabel": "限时权益已核",
-      "officialUrl": "https://docs.trae.cn/ide_plans-and-billing",
-      "entryUrl": "https://www.trae.cn/",
-      "featuredRank": 8
+      "eligibility": "新老用户下载或升级豆包工作电脑端并登录，在订阅与额度管理中确认权益",
+      "evidenceLabel": "官方协议与两家媒体交叉核对，客户端内需确认",
+      "officialUrl": "https://www.doubao.com/legal/ey01",
+      "entryUrl": "https://www.doubao.com/download/desktop",
+      "ruleCheckedAt": "2026-10-11T22:37:11+08:00",
+      "status": "active",
+      "freeChannels": [
+        {
+          "provider": "豆包",
+          "channel": "豆包工作 30 天订阅权益",
+          "class": 2,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "cn_service",
+          "allowance": "30 天订阅权益；共享额度以客户端为准",
+          "sourceUrl": "https://www.doubao.com/legal/ey01",
+          "entryUrl": "https://www.doubao.com/download/desktop",
+          "validUntil": "2026-10-17"
+        }
+      ],
+      "featuredRank": 8,
+      "categoryRanks": {
+        "general": 4,
+        "text": 3,
+        "coding": 8
+      }
     },
     {
-      "regionStatus": "unknown",
-      "evidenceMode": "rule_verified",
-      "ruleCheckedAt": "2026-10-10T00:00:00Z",
-      "status": "active",
-      "id": "qoder-pro-trial",
-      "title": "Qoder 14 天 Pro 完整试用",
-      "provider": "Qoder",
-      "channel": "国际版新用户试用",
-      "modelId": "Qoder Pro",
+      "id": "workbuddy-hy3-daily-free",
+      "title": "Hy3",
+      "provider": "WorkBuddy",
+      "channel": "HY3 每日免费活动",
+      "modelId": "Hy3",
       "categories": [
-        "coding-agent"
+        "general",
+        "text",
+        "coding"
       ],
+      "categoryRanks": {
+        "general": 4,
+        "text": 6,
+        "coding": 6
+      },
       "access": [
         "client"
       ],
-      "offerType": "free_trial",
-      "summary": "首次在客户端登录可试用完整 Pro 功能，包括 Agent、Quest 和代码知识能力。",
-      "valueReason": "虽然只有 300 credits，但同时开放 14 天完整 Pro 功能，价值来自会员能力而不只是积分数字。",
-      "allowance": "14 天 Pro · 300 credits · 补全与 Next Edit 不限量",
-      "capacity": "可集中体验 Agent、Experts Mode、Quest、Repo Wiki 与 Knowledge Card；具体 Agent 次数取决于任务复杂度。",
+      "regionStatus": "cn_service",
+      "offerType": "limited_campaign",
+      "stabilityTier": "C",
+      "freeSourceClass": 2,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "WorkBuddy 内可选的混元模型，当前活动提供每日恢复的免费使用量。",
+      "valueReason": "活动期内每天恢复，适合持续体验混元模型。",
+      "allowance": "每日免费额度；活动至 2026-10-31",
+      "capacity": "每日额度足以体验和完成若干任务，确切次数以客户端当日显示为准。",
       "limitations": [
-        "首次客户端登录触发",
-        "需使用最新版客户端",
-        "虚拟机环境不提供试用",
-        "300 credits 的任务换算随功能而变"
+        "活动截至 2026-10-31",
+        "每日具体数量未在公开页写明",
+        "需要 WorkBuddy 客户端"
       ],
-      "eligibility": "Qoder 新用户，首次在符合条件的客户端登录",
-      "evidenceLabel": "试用规则已核",
-      "officialUrl": "https://docs.qoder.com/account/pricing",
-      "entryUrl": "https://qoder.com/download",
+      "eligibility": "注册并登录 WorkBuddy，在模型列表选择 Hy3",
+      "evidenceLabel": "活动规则交叉核对，数量需客户端确认",
+      "officialUrl": "https://www.workbuddy.cn/docs/workbuddy/Pricing",
+      "entryUrl": "https://www.workbuddy.cn/",
+      "ruleCheckedAt": "2026-10-12T18:00:00+08:00",
+      "status": "active",
+      "freeChannels": [
+        {
+          "provider": "WorkBuddy",
+          "channel": "HY3 每日免费活动",
+          "class": 2,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "cn_service",
+          "allowance": "每日恢复，数量以客户端为准",
+          "sourceUrl": "https://igetoken.com/",
+          "entryUrl": "https://www.workbuddy.cn/",
+          "validUntil": "2026-10-31"
+        }
+      ],
       "featuredRank": 9
     },
     {
-      "regionStatus": "unknown",
-      "evidenceMode": "calculated_from_official_rate",
-      "ruleCheckedAt": "2026-10-10T00:00:00Z",
-      "status": "active",
-      "id": "cloudflare-gemma-4-26b-free",
-      "title": "Gemma 4 26B Workers AI 免费池",
-      "provider": "Cloudflare",
-      "channel": "Workers AI",
-      "modelId": "@cf/google/gemma-4-26b-a4b-it",
+      "id": "sensenova-u15-lite-beta-image",
+      "title": "SenseNova U1.5 Lite",
+      "provider": "商汤日日新",
+      "channel": "公测免费池",
+      "modelId": "SenseNova-U1.5-Lite",
       "categories": [
-        "text-api",
-        "coding-api",
-        "dev-tools"
+        "image"
       ],
+      "categoryRanks": {
+        "image": 1
+      },
       "access": [
+        "web",
         "api"
       ],
-      "offerType": "ongoing_free",
-      "summary": "在 Workers AI 每日免费计算池内运行的文本模型，适合个人 API 和边缘应用。",
-      "valueReason": "官方每天提供 10,000 Neurons 免费池；按当前费率估算，可完成约 137 次 2K 输入加 2K 输出的请求。",
-      "allowance": "共享 10,000 Neurons/日",
-      "capacity": "估算约 137 次 2K 输入 + 2K 输出请求/日；这是按公开费率计算的近似值。",
+      "regionStatus": "cn_service",
+      "offerType": "beta_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 2,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "商汤日日新面向图像生成与编辑的公测模型，当前有周期恢复的免费池。",
+      "valueReason": "免费池规模明显高于普通签到积分，适合连续生图与编辑。",
+      "allowance": "聚合信息显示按周及每 5 小时恢复；官方账户内复核",
+      "capacity": "预计足以完成成组图片任务；确切消耗与恢复量需要账户实测。",
       "limitations": [
-        "所有 Workers AI 模型共享免费池",
-        "估算会随输入输出长度变化",
-        "部分新模型仅付费账号可用"
+        "公开聚合信息需在官方控制台复核",
+        "模型任务会消耗不同积分",
+        "活动规则可能调整"
       ],
-      "eligibility": "需 Cloudflare 账号并启用 Workers AI",
-      "evidenceLabel": "规则已核，容量为估算",
-      "officialUrl": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
-      "entryUrl": "https://dash.cloudflare.com/",
-      "api": {
-        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run",
-        "endpoint": "按账号与模型拼接",
-        "protocol": "Cloudflare Workers AI REST API"
-      },
+      "eligibility": "注册商汤日日新平台，在公测入口查看当前免费池",
+      "evidenceLabel": "强候选，官方账户内待复核",
+      "officialUrl": "https://platform.sensenova.cn/docs",
+      "entryUrl": "https://platform.sensenova.cn/",
+      "ruleCheckedAt": "2026-10-12T18:00:00+08:00",
+      "status": "active",
+      "freeChannels": [
+        {
+          "provider": "商汤日日新",
+          "channel": "公测免费池",
+          "class": 2,
+          "access": [
+            "web",
+            "api"
+          ],
+          "regionStatus": "cn_service",
+          "allowance": "周期恢复；精确数量待官方账户复核",
+          "sourceUrl": "https://platform.sensenova.cn/docs",
+          "entryUrl": "https://platform.sensenova.cn/",
+          "validUntil": null
+        }
+      ],
       "featuredRank": 10
-    },
-    {
-      "regionStatus": "unknown",
-      "evidenceMode": "calculated_from_official_rate",
-      "ruleCheckedAt": "2026-10-10T00:00:00Z",
-      "status": "active",
-      "id": "cloudflare-whisper-free",
-      "title": "Whisper Large V3 Turbo 免费语音识别",
-      "provider": "Cloudflare",
-      "channel": "Workers AI",
-      "modelId": "@cf/openai/whisper-large-v3-turbo",
-      "categories": [
-        "speech",
-        "dev-tools"
-      ],
-      "access": [
-        "api"
-      ],
-      "offerType": "ongoing_free",
-      "summary": "可把音频转成文字的免费 API，适合会议、访谈和视频字幕初稿。",
-      "valueReason": "按官方 46.63 Neurons/分钟费率估算，完整免费池每天约可转写 214 分钟音频。",
-      "allowance": "共享 10,000 Neurons/日",
-      "capacity": "若免费池只用于该模型，估算约 214 分钟音频/日。",
-      "limitations": [
-        "与其他 Workers AI 模型共享免费池",
-        "214 分钟为费率换算值",
-        "识别质量和上传限制未实测"
-      ],
-      "eligibility": "需 Cloudflare 账号并启用 Workers AI",
-      "evidenceLabel": "规则已核，容量为估算",
-      "officialUrl": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
-      "entryUrl": "https://dash.cloudflare.com/",
-      "api": {
-        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run",
-        "endpoint": "按账号与模型拼接",
-        "protocol": "Cloudflare Workers AI REST API"
-      },
-      "featuredRank": 11
     },
     {
       "regionStatus": "unknown",
@@ -427,8 +730,7 @@
       "channel": "Workers AI",
       "modelId": "@cf/black-forest-labs/flux-1-schnell",
       "categories": [
-        "image",
-        "dev-tools"
+        "image"
       ],
       "access": [
         "api"
@@ -452,7 +754,88 @@
         "endpoint": "按账号与模型拼接",
         "protocol": "Cloudflare Workers AI REST API"
       },
-      "featuredRank": 12
+      "featuredRank": 11,
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "freeChannels": [
+        {
+          "provider": "Cloudflare",
+          "channel": "Workers AI",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "共享 10,000 Neurons/日；4.80/512px tile + 9.60/step",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        }
+      ],
+      "sourceKind": "model",
+      "categoryRanks": {
+        "image": 2
+      }
+    },
+    {
+      "regionStatus": "unknown",
+      "evidenceMode": "calculated_from_official_rate",
+      "ruleCheckedAt": "2026-10-10T00:00:00Z",
+      "status": "active",
+      "id": "cloudflare-whisper-free",
+      "title": "Whisper Large V3 Turbo 免费语音识别",
+      "provider": "Cloudflare",
+      "channel": "Workers AI",
+      "modelId": "@cf/openai/whisper-large-v3-turbo",
+      "categories": [
+        "speech"
+      ],
+      "access": [
+        "api"
+      ],
+      "offerType": "ongoing_free",
+      "summary": "可把音频转成文字的免费 API，适合会议、访谈和视频字幕初稿。",
+      "valueReason": "按官方 46.63 Neurons/分钟费率估算，完整免费池每天约可转写 214 分钟音频。",
+      "allowance": "共享 10,000 Neurons/日",
+      "capacity": "若免费池只用于该模型，估算约 214 分钟音频/日。",
+      "limitations": [
+        "与其他 Workers AI 模型共享免费池",
+        "214 分钟为费率换算值",
+        "识别质量和上传限制未实测"
+      ],
+      "eligibility": "需 Cloudflare 账号并启用 Workers AI",
+      "evidenceLabel": "规则已核，容量为估算",
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "api": {
+        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run",
+        "endpoint": "按账号与模型拼接",
+        "protocol": "Cloudflare Workers AI REST API"
+      },
+      "featuredRank": 12,
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "freeChannels": [
+        {
+          "provider": "Cloudflare",
+          "channel": "Workers AI",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "共享 10,000 Neurons/日",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        }
+      ],
+      "sourceKind": "model",
+      "categoryRanks": {
+        "speech": 1
+      }
     }
   ]
 }
