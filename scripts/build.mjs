@@ -21,15 +21,16 @@ const manifest={
 };
 await fs.writeFile(path.join(dist,'release.json'),JSON.stringify(manifest,null,2)+'\n');
 
-const [html,css,app]=await Promise.all([
+const [html,css,app,freshness]=await Promise.all([
   fs.readFile(path.join(root,'src/index.html'),'utf8'),
   fs.readFile(path.join(root,'src/assets/styles.css'),'utf8'),
-  fs.readFile(path.join(root,'src/assets/app.js'),'utf8')
+  fs.readFile(path.join(root,'src/assets/app.js'),'utf8'),
+  fs.readFile(path.join(root,'src/assets/freshness.js'),'utf8')
 ]);
 const embedded=JSON.stringify({platforms,catalog,offers}).replace(/</g,'\\u003c');
 const standalone=html
   .replace('<link rel="stylesheet" href="./assets/styles.css">',`<style>${css}</style>`)
-  .replace('<script type="module" src="./assets/app.js"></script>',`<script>globalThis.__AI_OPPORTUNITY_DATA__=${embedded};</script><script type="module">${app}</script>`);
+  .replace('<script type="module" src="./assets/app.js"></script>',`<script>globalThis.__AI_OPPORTUNITY_DATA__=${embedded};</script><script type="module">${freshness.replace('export function','function')}\n${app.replace("import {reviewState} from './freshness.js';",'')}</script>`);
 await fs.writeFile(path.join(dist,'standalone.html'),standalone);
 await fs.writeFile(path.join(root,'standalone.html'),standalone);
 console.log(`构建完成：平台 ${platforms.items.length} 个，模型 ${catalog.items.length} 个，限时福利 ${offers.items.filter(item=>item.status==='active').length} 个；已生成 standalone.html。`);

@@ -8,11 +8,13 @@
     "test": "node --test",
     "validate": "node scripts/validate.mjs",
     "daily": "node scripts/daily-update.mjs",
+    "discovery:bootstrap": "node scripts/daily-update.mjs --bootstrap",
     "campaigns": "node scripts/campaign-monitor.mjs",
     "campaign:bootstrap": "node scripts/campaign-monitor.mjs --bootstrap --reset",
     "sources:plan": "node scripts/source-expansion.mjs",
     "sources:bootstrap": "node scripts/source-expansion.mjs --bootstrap",
-    "preview": "node scripts/serve.mjs"
+    "preview": "node scripts/serve.mjs",
+    "review:queue": "node scripts/review-queue.mjs"
   },
   "engines": {
     "node": ">=22"

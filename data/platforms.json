@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T11:56:55.085Z",
+  "updatedAt": "2026-10-13T13:46:56.516Z",
   "items": [
     {
       "id": "workbuddy",
       "rank": 1,
       "name": "WorkBuddy",
-      "summary": "可执行编程和办公任务；HY3、HY4额外限免活动待核。",
-      "freeAmount": "体验版共用500积分/月；额外活动额度待核",
+      "summary": "客户端可执行编程和办公任务；每日限免与月积分分别核查。",
+      "freeAmount": "全部模型共用500积分/月；额外每日限免待核实",
       "models": [
         "Hy3",
         "Hy4 Preview",
@@ -16,11 +16,13 @@
       "access": [
         "客户端"
       ],
-      "mainlandAccess": "中国大陆可直接使用",
+      "mainlandAccess": "提供大陆入口；实际调用体验待核实",
       "stability": "月度恢复；活动另核",
       "evidenceStatus": "免费套餐已核；活动待官方复核",
       "sourceUrl": "https://www.workbuddy.cn/docs/workbuddy/Pricing",
-      "entryUrl": "https://www.workbuddy.cn/"
+      "entryUrl": "https://www.workbuddy.cn/",
+      "application": "下载安装后登录体验版，选择模型；实际任务消耗待实测。",
+      "lastVerifiedAt": "2026-10-13T13:46:56.516Z"
     },
     {
       "id": "modelscope",
@@ -35,7 +37,7 @@
         "网页",
         "API"
       ],
-      "mainlandAccess": "中国大陆可直接使用",
+      "mainlandAccess": "提供大陆入口；实际调用体验待核实",
       "stability": "每日恢复",
       "evidenceStatus": "新版魔粒规则已核",
       "sourceUrl": "https://www.modelscope.cn/posts/435591",
@@ -96,7 +98,7 @@
       "access": [
         "客户端"
       ],
-      "mainlandAccess": "中国大陆可直接使用",
+      "mainlandAccess": "提供大陆入口；实际调用体验待核实",
       "stability": "每日恢复",
       "evidenceStatus": "免费机制已核，数量待核",
       "sourceUrl": "https://marvis.qq.com/",
@@ -106,21 +108,22 @@
       "id": "doubao",
       "rank": 6,
       "name": "豆包",
-      "summary": "基础功能每天有免费次数，近期另有 30 天会员赠送。",
-      "freeAmount": "每日免费次数；会员共享额度以客户端为准",
+      "summary": "支持文本和办公任务；会员赠送的当前领取条件待核。",
+      "freeAmount": "基础免费量以客户端为准；暂不承诺赠送30天会员",
       "models": [
-        "豆包 2.1 Pro",
-        "豆包主力模型"
+        "免费功能以客户端当前可选模型为准"
       ],
       "access": [
         "网页",
         "客户端"
       ],
-      "mainlandAccess": "中国大陆可直接使用",
-      "stability": "每日恢复 + 限时会员",
-      "evidenceStatus": "官方条款已核，次数以客户端为准",
+      "mainlandAccess": "提供大陆入口；实际调用体验待核实",
+      "stability": "免费基础功能；会员活动待核",
+      "evidenceStatus": "会员活动证据不足，不作为已确认免费会员推荐",
       "sourceUrl": "https://www.doubao.com/legal/ey01",
-      "entryUrl": "https://www.doubao.com/"
+      "entryUrl": "https://www.doubao.com/",
+      "application": "官网下载并登录；在订阅与额度管理中查看账号当前权益。",
+      "lastVerifiedAt": "2026-10-13T13:46:56.516Z"
     },
     {
       "id": "zhipu",
@@ -134,7 +137,7 @@
       "access": [
         "API"
       ],
-      "mainlandAccess": "中国大陆可直接使用",
+      "mainlandAccess": "提供大陆入口；实际调用体验待核实",
       "stability": "一次性新人包",
       "evidenceStatus": "官方活动页已核",
       "sourceUrl": "https://bigmodel.cn/activity/trial-card/GBG6IX0OID",
@@ -382,7 +385,7 @@
         "Intern-S2",
         "Qwen3 Embedding"
       ],
-      "sourceUrl": "https://ai.gitee.com/serverless-api?model=F5-TTS",
+      "sourceUrl": "https://ai.gitee.com/serverless-api",
       "entryUrl": "https://ai.gitee.com/serverless-api",
       "application": "登录工作台创建访问令牌，在模型页复制调用示例",
       "stability": "常设免费 + 限时",
@@ -391,7 +394,7 @@
         "API"
       ],
       "mainlandAccess": "大陆网络待实测",
-      "evidenceStatus": "已有官方规则记录；本轮动态目录读取不完整，完整免费名单待复核",
+      "evidenceStatus": "当前免费型号清单待复核",
       "lastVerifiedAt": "2026-10-13T03:39:00.843Z",
       "rankingStatus": "pending"
     },

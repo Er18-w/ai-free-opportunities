@@ -67,7 +67,7 @@ for(const item of offers.items){
   if(item.status==='active'&&item.validUntil&&new Date(`${item.validUntil}T23:59:59+08:00`)<new Date())errors.push(`${item.id} 已过期却仍为 active`);
   const rankKey=`${item.freeSourceClass}:${item.featuredRank}`;if(classRanks.has(rankKey))errors.push(`${item.id} 与 ${classRanks.get(rankKey)} 同类 featuredRank 重复`);else classRanks.set(rankKey,item.id);
 }
-if(!offers.items.some(item=>item.id.includes('doubao')))errors.push('豆包机会缺失');
+if(offers.items.some(item=>item.id==='doubao-work-30-day-subscription'&&item.sourceUrl==='https://www.doubao.com/legal/ey01'))errors.push('付费协议不能证明豆包赠送活动');
 if(!catalog.items.some(item=>/opencode-zen/.test(item.id)))errors.push('OpenCode Zen 模型缺失');
 if(!catalog.items.some(item=>/workbuddy|hunyuan/.test(item.id)))errors.push('WorkBuddy / 混元模型缺失');
 if(!Array.isArray(sources.items)||!Array.isArray(changes.items))errors.push('sources/changes 格式错误');

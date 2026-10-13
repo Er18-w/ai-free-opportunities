@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-12T14:30:00+08:00",
+  "updatedAt": "2026-10-13T13:46:56.516Z",
   "policyVersion": "admission-v5-offers",
   "note": "平台套餐、会员、试用与额度单独展示，不参与模型排名；第4类内容不进入本文件。",
   "items": [
@@ -115,51 +115,6 @@
       "models": [],
       "sourceKind": "offer",
       "featuredRank": 4
-    },
-    {
-      "id": "doubao-work-30-day-subscription",
-      "title": "豆包工作 30 天订阅权益",
-      "provider": "豆包",
-      "productType": "membership_offer",
-      "freeSourceClass": 2,
-      "stabilityTier": "C",
-      "categories": [
-        "general",
-        "text",
-        "coding"
-      ],
-      "access": [
-        "client"
-      ],
-      "regionStatus": "cn_service",
-      "summary": "下载或升级豆包工作电脑版 / 豆包电脑版后，当前可领取 30 天订阅权益。",
-      "benefit": "30 天标准订阅权益；已领取上一轮或已付费用户按活动规则顺延",
-      "allowance": "30 天订阅权益",
-      "capacity": "期限超过 3 天；具体高级功能额度以客户端订阅与额度页为准。",
-      "eligibility": "新老用户均可参与；需下载或升级电脑端并登录",
-      "claimMethod": "在 2026-10-17 前下载或升级官方电脑端，登录后到“订阅与额度管理”核对领取状态",
-      "limitations": [
-        "官方公开网页未提供独立活动详情页，领取状态必须在客户端核对",
-        "订阅内各高级功能共享额度",
-        "不要开启不需要的自动续费"
-      ],
-      "evidenceLabel": "官方协议与两家媒体交叉核对，客户端内需确认",
-      "evidenceStatus": "media_correlated_official_claim_path",
-      "sourceUrl": "https://www.doubao.com/legal/ey01",
-      "supportingUrls": [
-        "https://m.thepaper.cn/newsDetail_forward_34140771",
-        "https://www.cnu.com.cn/industry/202609/294991.html"
-      ],
-      "entryUrl": "https://www.doubao.com/download/desktop",
-      "validUntil": "2026-10-17",
-      "validityText": "领取窗口截至 2026-10-17；领取后权益状态以客户端为准",
-      "lastVerifiedAt": "2026-10-11T22:37:11+08:00",
-      "status": "active",
-      "models": [
-        "豆包 2.1 Pro"
-      ],
-      "sourceKind": "offer",
-      "featuredRank": 1
     },
     {
       "id": "qoder-pro-trial",

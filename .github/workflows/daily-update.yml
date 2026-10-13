@@ -48,6 +48,9 @@ jobs:
         id: source_plan
         continue-on-error: true
         run: ${{ github.event_name == 'workflow_dispatch' && inputs.full_scan && 'npm run sources:bootstrap' || 'npm run sources:plan' }}
+      - name: Prepare evidence review queue
+        if: always()
+        run: npm run review:queue
       - run: npm test
       - run: npm run validate
       - run: npm run build
@@ -62,12 +65,12 @@ jobs:
       - name: Commit verified data changes
         shell: bash
         run: |
-          if git diff --quiet; then
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/sources.json data/campaign-sources.json data/offers.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
           git commit -m "data: daily source check"
           git push
       - name: Report source failures
