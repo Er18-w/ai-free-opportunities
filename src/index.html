@@ -19,16 +19,18 @@
     <section class="hero shell">
       <p class="eyebrow">只收录真正够用的免费机会</p>
       <h1>免费 AI，<span>直接看榜。</span></h1>
-      <p class="lead">平台看免费量和稳定性；模型按能力分类排行；会员、试用和赠送额度单独放在限时福利。</p>
+      <p class="lead">平台看免费量与恢复周期；模型按用途查看；限时会员、试用和大额赠送单独列出。</p>
       <div class="hero-meta"><span><b id="platform-count">—</b> 个平台</span><span><b id="model-count">—</b> 个模型</span><span>更新于 <b id="updated-at">—</b></span></div>
     </section>
     <section id="platforms" class="section"><div class="shell">
-      <div class="section-heading"><div><p class="eyebrow">免费平台榜</p><h2>哪里最好用</h2></div><p>按免费量、恢复周期、模型价值和使用门槛综合排列。</p></div>
+      <div class="section-heading"><div><p class="eyebrow">免费平台榜</p><h2>平台榜</h2></div><p>免费量、恢复周期与限制，一行看清。</p></div>
+      <div class="platform-toolbar"><label class="search"><span class="sr-only">搜索平台</span><input id="platform-query" type="search" placeholder="搜索平台或模型"></label></div>
       <div id="platform-list" class="board" aria-live="polite"></div>
+      <p id="platform-empty" class="empty" hidden>没有找到这个平台或模型。</p>
     </div></section>
     <section id="models" class="section dark-section"><div class="shell">
-      <div class="section-heading"><div><p class="eyebrow">免费模型榜</p><h2>哪个模型更强</h2></div><p>一个模型一行；右侧直接标明在哪里免费用。</p></div>
-      <div class="model-toolbar"><div id="category-tabs" class="tabs" role="tablist" aria-label="模型分类"></div><label class="search"><span class="sr-only">搜索模型</span><input id="model-query" type="search" placeholder="搜索模型或平台"></label></div>
+      <div class="section-heading"><div><p class="eyebrow">免费模型榜</p><h2>模型榜</h2></div><p>数字为展示序号；能力名次待统一比较。</p></div>
+      <div class="model-toolbar"><div id="category-tabs" class="tabs" role="group" aria-label="模型分类"></div><label class="search"><span class="sr-only">搜索模型</span><input id="model-query" type="search" placeholder="搜索模型、平台或用途"></label></div>
       <div id="model-list" class="board model-board" aria-live="polite"></div>
       <p id="model-empty" class="empty" hidden>这一类暂时没有达到准入线的模型。</p>
     </div></section>

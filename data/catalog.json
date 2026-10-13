@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "updatedAt": "2026-10-13T05:04:10.596Z",
+  "updatedAt": "2026-10-13T05:15:51.430Z",
   "policyVersion": "admission-v5-model-first",
   "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
@@ -24,7 +24,7 @@
       "freeSourceClass": 1,
       "capabilityEvidence": null,
       "sourceKind": "model",
-      "summary": "OpenCode Zen 官方机器目录当前列出的零价格编程模型。",
+      "summary": "用于编程、代码修改与Agent任务；免费型号随活动轮换。",
       "valueReason": "型号名称带 Free 且出现在官方实时目录；未公布统一结束日。",
       "allowance": "输入与输出价格为 0；统一请求上限未公开",
       "capacity": "官方未公布统一请求上限；适合当前试用，不能承诺大型任务容量。",
@@ -85,7 +85,7 @@
       "freeSourceClass": 1,
       "capabilityEvidence": null,
       "sourceKind": "model",
-      "summary": "OpenCode Zen 官方机器目录当前列出的零价格编程模型。",
+      "summary": "用于编程、代码修改与Agent任务；免费型号随活动轮换。",
       "valueReason": "型号名称带 Free 且出现在官方实时目录；未公布统一结束日。",
       "allowance": "输入与输出价格为 0；统一请求上限未公开",
       "capacity": "官方未公布统一请求上限；适合当前试用，不能承诺大型任务容量。",
@@ -146,7 +146,7 @@
       "freeSourceClass": 1,
       "capabilityEvidence": null,
       "sourceKind": "model",
-      "summary": "WorkBuddy 内置的腾讯混元新一代模型，可在免费体验版的模型调度中选择。",
+      "summary": "在WorkBuddy中执行编程和办公任务。",
       "valueReason": "官方模型配置页列出 Hy4 preview，官方定价页列出免费体验版与每月 500 基础积分。",
       "allowance": "体验版 500 基础积分/月；模型单次消耗未公开",
       "capacity": "免费月池存在，但官方未公开该模型每项任务的积分消耗，任务容量仍需实测。",
@@ -203,7 +203,7 @@
       "freeSourceClass": 1,
       "capabilityEvidence": null,
       "sourceKind": "model",
-      "summary": "OpenCode Zen 官方机器目录当前列出的零价格编程模型。",
+      "summary": "用于编程、代码修改与Agent任务；免费型号随活动轮换。",
       "valueReason": "型号名称带 Free 且出现在官方实时目录；未公布统一结束日。",
       "allowance": "输入与输出价格为 0；统一请求上限未公开",
       "capacity": "官方未公布统一请求上限；适合当前试用，不能承诺大型任务容量。",
@@ -264,7 +264,7 @@
       "freeSourceClass": 1,
       "capabilityEvidence": null,
       "sourceKind": "model",
-      "summary": "OpenCode Zen 官方机器目录当前列出的零价格编程模型。",
+      "summary": "用于编程、代码修改与Agent任务；免费型号随活动轮换。",
       "valueReason": "型号名称带 Free 且出现在官方实时目录；未公布统一结束日。",
       "allowance": "输入与输出价格为 0；统一请求上限未公开",
       "capacity": "官方未公布统一请求上限；适合当前试用，不能承诺大型任务容量。",
@@ -389,7 +389,7 @@
       "freeSourceClass": 1,
       "capabilityEvidence": null,
       "sourceKind": "model",
-      "summary": "OpenCode Zen 官方机器目录当前列出的零价格编程模型。",
+      "summary": "用于编程、代码修改与Agent任务；免费型号随活动轮换。",
       "valueReason": "型号名称带 Free 且出现在官方实时目录；未公布统一结束日。",
       "allowance": "输入与输出价格为 0；统一请求上限未公开",
       "capacity": "官方未公布统一请求上限；适合当前试用，不能承诺大型任务容量。",
@@ -464,7 +464,7 @@
       "freeSourceClass": 2,
       "capabilityEvidence": null,
       "sourceKind": "model",
-      "summary": "豆包工作电脑端当前 30 天订阅权益内可使用的高级模型；领取状态需在客户端确认。",
+      "summary": "在豆包工作中处理办公、文本与代码任务。",
       "valueReason": "30 天期限达到第 2 类门槛，且活动说明指向豆包 2.1 Pro；公开网页没有独立活动详情页，因此证据状态明确降级。",
       "allowance": "30 天订阅权益；具体高级功能共享额度以客户端为准",
       "capacity": "期限足够完成持续任务，但各功能共享额度和单次消耗未公开，不能承诺固定次数。",
@@ -529,18 +529,18 @@
       "sourceKind": "model",
       "summary": "WorkBuddy 内可选的混元模型，当前活动提供每日恢复的免费使用量。",
       "valueReason": "活动期内每天恢复，适合持续体验混元模型。",
-      "allowance": "每日免费额度；活动至 2026-10-31",
-      "capacity": "每日额度足以体验和完成若干任务，确切次数以客户端当日显示为准。",
+      "allowance": "体验版共用500积分/月；每日限免活动待官方复核",
+      "capacity": "普通免费月池存在；每日限免额度、资格及截止日期待官方确认。",
       "limitations": [
         "活动截至 2026-10-31",
         "每日具体数量未在公开页写明",
         "需要 WorkBuddy 客户端"
       ],
       "eligibility": "注册并登录 WorkBuddy，在模型列表选择 Hy3",
-      "evidenceLabel": "活动规则交叉核对，数量需客户端确认",
+      "evidenceLabel": "模型与免费套餐已核；额外限免活动待核",
       "officialUrl": "https://www.workbuddy.cn/docs/workbuddy/Pricing",
       "entryUrl": "https://www.workbuddy.cn/",
-      "ruleCheckedAt": "2026-10-12T18:00:00+08:00",
+      "ruleCheckedAt": "2026-10-13T05:15:51.429Z",
       "status": "active",
       "freeChannels": [
         {
@@ -551,68 +551,13 @@
             "client"
           ],
           "regionStatus": "cn_service",
-          "allowance": "每日恢复，数量以客户端为准",
-          "sourceUrl": "https://igetoken.com/",
+          "allowance": "体验版共用500积分/月；每日限免活动待官方复核",
+          "sourceUrl": "https://www.workbuddy.cn/docs/workbuddy/Pricing",
           "entryUrl": "https://www.workbuddy.cn/",
-          "validUntil": "2026-10-31"
-        }
-      ],
-      "featuredRank": 9
-    },
-    {
-      "id": "sensenova-u15-lite-beta-image",
-      "title": "SenseNova U1.5 Lite",
-      "provider": "商汤日日新",
-      "channel": "公测免费池",
-      "modelId": "SenseNova-U1.5-Lite",
-      "categories": [
-        "image"
-      ],
-      "categoryRanks": {
-        "image": 1
-      },
-      "access": [
-        "web",
-        "api"
-      ],
-      "regionStatus": "cn_service",
-      "offerType": "beta_free",
-      "stabilityTier": "B",
-      "freeSourceClass": 2,
-      "capabilityEvidence": null,
-      "sourceKind": "model",
-      "summary": "商汤日日新面向图像生成与编辑的公测模型，当前有周期恢复的免费池。",
-      "valueReason": "免费池规模明显高于普通签到积分，适合连续生图与编辑。",
-      "allowance": "聚合信息显示按周及每 5 小时恢复；官方账户内复核",
-      "capacity": "预计足以完成成组图片任务；确切消耗与恢复量需要账户实测。",
-      "limitations": [
-        "公开聚合信息需在官方控制台复核",
-        "模型任务会消耗不同积分",
-        "活动规则可能调整"
-      ],
-      "eligibility": "注册商汤日日新平台，在公测入口查看当前免费池",
-      "evidenceLabel": "强候选，官方账户内待复核",
-      "officialUrl": "https://platform.sensenova.cn/docs",
-      "entryUrl": "https://platform.sensenova.cn/",
-      "ruleCheckedAt": "2026-10-12T18:00:00+08:00",
-      "status": "active",
-      "freeChannels": [
-        {
-          "provider": "商汤日日新",
-          "channel": "公测免费池",
-          "class": 2,
-          "access": [
-            "web",
-            "api"
-          ],
-          "regionStatus": "cn_service",
-          "allowance": "周期恢复；精确数量待官方账户复核",
-          "sourceUrl": "https://platform.sensenova.cn/docs",
-          "entryUrl": "https://platform.sensenova.cn/",
           "validUntil": null
         }
       ],
-      "featuredRank": 10
+      "featuredRank": 9
     },
     {
       "regionStatus": "unknown",

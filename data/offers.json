@@ -41,80 +41,44 @@
     },
     {
       "id": "sensetime-sensenova-u15-lite-beta",
-      "title": "U1.5 Lite 生图与编辑公测免费",
+      "title": "商汤 Token Plan 公测免费",
       "provider": "商汤日日新 Token Plan",
       "productType": "platform_offer",
       "freeSourceClass": 1,
       "stabilityTier": "A",
       "categories": [
-        "text",
-        "coding"
+        "general",
+        "vision",
+        "image"
       ],
       "access": [
         "api"
       ],
       "regionStatus": "cn_service",
-      "summary": "每 5 小时 1,500 次请求，支持生图与参考图编辑，最高 4K，公测期间可免费关闭水印",
-      "benefit": "每 5 小时 1,500 次请求，支持生图与参考图编辑，最高 4K，公测期间可免费关闭水印",
-      "allowance": "每 5 小时 1,500 次请求，支持生图与参考图编辑，最高 4K，公测期间可免费关闭水印",
-      "capacity": "公测期间免费；无绝对截止日，需每日复核官方公告",
-      "eligibility": "注册商汤日日新平台并创建 API Key；官方未公布统一截止日",
-      "claimMethod": "进入日日新控制台获取 API Key，调用 sensenova-u1.5-lite",
+      "summary": "公测池支持办公Agent与图像工作流，特殊型号按规则扣量。",
+      "benefit": "公测免费API池",
+      "allowance": "共用60,000积分/5小时；不是固定调用次数",
+      "capacity": "积分消耗以模型规则为准，实际任务容量待账户实测",
+      "eligibility": "注册中国内地平台，申请公测Token Plan并创建Key",
+      "claimMethod": "进入Token Plan免费套餐，可接Hermes/OpenClaw",
       "limitations": [
-        "公测可能随时结束；不要上传隐私、未授权人物或商业机密图片。"
+        "公测结束时间未公布",
+        "不要将旧1500次/5小时口径用于当前型号"
       ],
       "evidenceLabel": "官方规则已核",
       "evidenceStatus": "official_verified",
-      "sourceUrl": "https://www.sensetime.com/cn/news/sensenova-u1-5-lite-token-plan-20260911-1741",
-      "entryUrl": "https://platform.sensenova.cn/",
+      "sourceUrl": "https://www.sensenova.cn/token-plan",
+      "entryUrl": "https://platform.sensenova.cn/token-plan",
       "validUntil": null,
       "validityText": "公测期间免费；无绝对截止日，需每日复核官方公告",
-      "lastVerifiedAt": "2026-10-10T17:55:00+08:00",
-      "status": "active",
-      "models": [],
-      "sourceKind": "offer",
-      "featuredRank": 2
-    },
-    {
-      "id": "workbuddy-free-plan-500",
-      "title": "WorkBuddy / CodeBuddy 免费体验版月池",
-      "provider": "Buddy AI",
-      "productType": "agent_offer",
-      "freeSourceClass": 1,
-      "stabilityTier": "B",
-      "categories": [
-        "coding",
-        "general"
-      ],
-      "access": [
-        "client"
-      ],
-      "regionStatus": "cn_service",
-      "summary": "WorkBuddy 与 CodeBuddy 共用免费体验版，每月 500 基础积分。",
-      "benefit": "500 基础积分/月，支持 Auto 模型调度；具体可选模型以客户端为准",
-      "allowance": "500 基础积分/月",
-      "capacity": "官方未公开不同任务的积分消耗，复杂任务容量需实测。",
-      "eligibility": "注册 Buddy AI 中国版账号",
-      "claimMethod": "登录 WorkBuddy 或 CodeBuddy，进入套餐与积分页核对体验版月池",
-      "limitations": [
-        "WorkBuddy 与 CodeBuddy 共用积分",
-        "2026 年 7 月起旧体验版 500 积分规则有过调整",
-        "复杂任务消耗未公开"
-      ],
-      "evidenceLabel": "官方套餐已核，容量待实测",
-      "evidenceStatus": "official_verified",
-      "sourceUrl": "https://www.codebuddy.cn/docs/workbuddy/Pricing",
-      "entryUrl": "https://www.workbuddy.cn/",
-      "validUntil": null,
-      "validityText": "按月刷新；具体到账以账号为准",
-      "lastVerifiedAt": "2026-10-11T22:37:11+08:00",
+      "lastVerifiedAt": "2026-10-13T05:12:17.939Z",
       "status": "active",
       "models": [
-        "Hy4 preview",
-        "腾讯混元"
+        "SenseNova 6.8 Flash Lite",
+        "SenseNova U1 Fast"
       ],
       "sourceKind": "offer",
-      "featuredRank": 3
+      "featuredRank": 2
     },
     {
       "id": "opencode-zen-free-models",
@@ -151,45 +115,6 @@
       "models": [],
       "sourceKind": "offer",
       "featuredRank": 4
-    },
-    {
-      "id": "claude-artifact-usage-promotion",
-      "title": "Claude 免费版 Artifact 用量五折活动",
-      "provider": "Claude",
-      "productType": "usage_promotion",
-      "freeSourceClass": 1,
-      "stabilityTier": "C",
-      "categories": [
-        "general",
-        "text"
-      ],
-      "access": [
-        "web",
-        "client"
-      ],
-      "regionStatus": "global",
-      "summary": "Claude 免费版创建或编辑 Artifact 后，接下来的 10 条消息只按 50% 计入五小时会话限额。",
-      "benefit": "Artifact 触发后，接下来 10 条消息少计 50% 的五小时会话用量；每条回复最多前 15 个步骤享受折扣。",
-      "allowance": "每次创建或编辑 Artifact 后，后续 10 条消息按五折计入五小时会话限额。",
-      "capacity": "适合集中完成文档、演示稿或设计任务；重新创建或编辑 Artifact 可重新触发计数。",
-      "eligibility": "Claude Free 用户自 2026-10-07 起自动参加，无需兑换码或付费。",
-      "claimMethod": "登录 Claude，在网页、桌面端或移动端创建或编辑 Document、Presentation 或 Design Artifact，优惠自动生效。",
-      "limitations": [
-        "截至 2026-10-15 23:59 PT，Anthropic 可提前调整或结束活动。",
-        "只减少五小时会话限额的计入量，不改变周限额。",
-        "不适用于 Claude Code、Claude API、Slack、定时任务、本地 Cowork 和用量积分收费。"
-      ],
-      "evidenceLabel": "官方活动规则已核",
-      "evidenceStatus": "official_verified",
-      "sourceUrl": "https://support.claude.com/en/articles/17274727-artifact-usage-promotion",
-      "entryUrl": "https://claude.ai/",
-      "validUntil": "2026-10-15",
-      "validityText": "免费版活动截至 2026-10-15 23:59 PT",
-      "lastVerifiedAt": "2026-10-12T14:30:00+08:00",
-      "status": "active",
-      "models": [],
-      "sourceKind": "offer",
-      "featuredRank": 5
     },
     {
       "id": "doubao-work-30-day-subscription",
@@ -275,51 +200,15 @@
       "featuredRank": 2
     },
     {
-      "id": "alibaba-bailian-new-user-quota",
-      "title": "各模型独立新人免费额度",
-      "provider": "阿里云百炼",
-      "productType": "platform_offer",
-      "freeSourceClass": 3,
-      "stabilityTier": "B",
-      "categories": [
-        "text",
-        "coding"
-      ],
-      "access": [
-        "api"
-      ],
-      "regionStatus": "cn_service",
-      "summary": "首次开通后，各模型按官方价格表分别获得免费额度",
-      "benefit": "首次开通后，各模型按官方价格表分别获得免费额度",
-      "allowance": "首次开通后，各模型按官方价格表分别获得免费额度",
-      "capacity": "自开通、模型发布或申请通过之日起 90 天，以较晚者为准",
-      "eligibility": "首次开通百炼；仅华北2（北京）地域；无需手动领取",
-      "claimMethod": "登录百炼并同意协议，系统自动发放；建议开启“免费额度用完即停”",
-      "limitations": [
-        "已认证账号在额度用尽后可能转为按量付费；请先开启用完即停。"
-      ],
-      "evidenceLabel": "官方规则已核",
-      "evidenceStatus": "official_verified",
-      "sourceUrl": "https://help.aliyun.com/zh/model-studio/new-free-quota",
-      "entryUrl": "https://bailian.console.aliyun.com/",
-      "validUntil": null,
-      "validityText": "自开通、模型发布或申请通过之日起 90 天，以较晚者为准",
-      "lastVerifiedAt": "2026-10-10T00:00:00+08:00",
-      "status": "active",
-      "models": [],
-      "sourceKind": "offer",
-      "featuredRank": 1
-    },
-    {
       "id": "volcengine-ark-free-quota",
-      "title": "文本、图像与视频模型免费额度",
+      "title": "图像与视频模型新人额度",
       "provider": "火山引擎方舟",
       "productType": "platform_offer",
       "freeSourceClass": 3,
       "stabilityTier": "B",
       "categories": [
-        "text",
-        "coding"
+        "image",
+        "video"
       ],
       "access": [
         "api"
@@ -327,7 +216,7 @@
       "regionStatus": "cn_service",
       "summary": "文本每模型 50 万 Tokens；图像每模型 200 张；视频每模型 200 万 Tokens",
       "benefit": "文本每模型 50 万 Tokens；图像每模型 200 张；视频每模型 200 万 Tokens",
-      "allowance": "文本每模型 50 万 Tokens；图像每模型 200 张；视频每模型 200 万 Tokens",
+      "allowance": "图像每模型200张；视频每模型200万Tokens",
       "capacity": "官方福利页未标注统一截止日，以资源包页面显示为准",
       "eligibility": "注册火山引擎；开通模型前需按官方要求完成账号认证",
       "claimMethod": "进入火山方舟开通对应模型，免费额度用于抵扣 Token 消耗",
