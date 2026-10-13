@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "updatedAt": "2026-10-13T15:30:00+08:00",
+  "updatedAt": "2026-10-13T11:56:55.085Z",
   "policyVersion": "admission-v5-model-first",
   "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
@@ -750,6 +750,23 @@
           "sourceUrl": "https://kilo.ai/landing/free-models",
           "entryUrl": "https://kilo.ai/",
           "validUntil": null
+        },
+        {
+          "provider": "OpenRouter",
+          "channel": "免费备用API",
+          "modelId": "nvidia/nemotron-3-super-120b-a12b:free",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "普通免费档全模型共享50次/日、20次/分钟；每天恢复，适合短任务备用；大陆网络待实测",
+          "sourceUrl": "https://openrouter.ai/docs/api_reference/limits",
+          "modelsUrl": "https://openrouter.ai/api/v1/models",
+          "entryUrl": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free",
+          "validUntil": null,
+          "claimMethod": "注册创建API Key，选择带:free的型号；勿误用收费同名版本。",
+          "lastVerifiedAt": "2026-10-13T11:56:55.085Z"
         }
       ]
     },
@@ -815,6 +832,23 @@
           "sourceUrl": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b",
           "entryUrl": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b",
           "validUntil": null
+        },
+        {
+          "provider": "OpenRouter",
+          "channel": "免费备用API",
+          "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "普通免费档全模型共享50次/日、20次/分钟；每天恢复，适合短任务备用；大陆网络待实测",
+          "sourceUrl": "https://openrouter.ai/docs/api_reference/limits",
+          "modelsUrl": "https://openrouter.ai/api/v1/models",
+          "entryUrl": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+          "validUntil": null,
+          "claimMethod": "注册创建API Key，选择带:free的型号；勿误用收费同名版本。",
+          "lastVerifiedAt": "2026-10-13T11:56:55.085Z"
         }
       ]
     },
@@ -867,6 +901,23 @@
           "sourceUrl": "https://kilo.ai/landing/free-models",
           "entryUrl": "https://kilo.ai/",
           "validUntil": null
+        },
+        {
+          "provider": "OpenRouter",
+          "channel": "免费备用API",
+          "modelId": "poolside/laguna-s-2.1:free",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "普通免费档全模型共享50次/日、20次/分钟；每天恢复，适合短任务备用；大陆网络待实测",
+          "sourceUrl": "https://openrouter.ai/docs/api_reference/limits",
+          "modelsUrl": "https://openrouter.ai/api/v1/models",
+          "entryUrl": "https://openrouter.ai/poolside/laguna-s-2.1:free",
+          "validUntil": null,
+          "claimMethod": "注册创建API Key，选择带:free的型号；勿误用收费同名版本。",
+          "lastVerifiedAt": "2026-10-13T11:56:55.085Z"
         }
       ]
     },
@@ -1098,6 +1149,23 @@
           "sourceUrl": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
           "entryUrl": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
           "validUntil": null
+        },
+        {
+          "provider": "OpenRouter",
+          "channel": "免费备用API",
+          "modelId": "nvidia/nemotron-3.5-lightning:free",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "普通免费档全模型共享50次/日、20次/分钟；每天恢复，适合短任务备用；大陆网络待实测",
+          "sourceUrl": "https://openrouter.ai/docs/api_reference/limits",
+          "modelsUrl": "https://openrouter.ai/api/v1/models",
+          "entryUrl": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+          "validUntil": null,
+          "claimMethod": "注册创建API Key，选择带:free的型号；勿误用收费同名版本。",
+          "lastVerifiedAt": "2026-10-13T11:56:55.085Z"
         }
       ]
     },
@@ -1212,6 +1280,23 @@
           "sourceUrl": "https://build.nvidia.com/poolside/laguna-xs-2.1",
           "entryUrl": "https://build.nvidia.com/poolside/laguna-xs-2.1",
           "validUntil": null
+        },
+        {
+          "provider": "OpenRouter",
+          "channel": "免费备用API",
+          "modelId": "poolside/laguna-xs-2.1:free",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "普通免费档全模型共享50次/日、20次/分钟；每天恢复，适合短任务备用；大陆网络待实测",
+          "sourceUrl": "https://openrouter.ai/docs/api_reference/limits",
+          "modelsUrl": "https://openrouter.ai/api/v1/models",
+          "entryUrl": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
+          "validUntil": null,
+          "claimMethod": "注册创建API Key，选择带:free的型号；勿误用收费同名版本。",
+          "lastVerifiedAt": "2026-10-13T11:56:55.085Z"
         }
       ]
     },
@@ -1328,6 +1413,23 @@
           "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/gemma-4-26b-a4b-it/",
           "entryUrl": "https://dash.cloudflare.com/",
           "validUntil": null
+        },
+        {
+          "provider": "OpenRouter",
+          "channel": "免费备用API",
+          "modelId": "google/gemma-4-26b-a4b-it:free",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "普通免费档全模型共享50次/日、20次/分钟；每天恢复，适合短任务备用；大陆网络待实测",
+          "sourceUrl": "https://openrouter.ai/docs/api_reference/limits",
+          "modelsUrl": "https://openrouter.ai/api/v1/models",
+          "entryUrl": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+          "validUntil": null,
+          "claimMethod": "注册创建API Key，选择带:free的型号；勿误用收费同名版本。",
+          "lastVerifiedAt": "2026-10-13T11:56:55.085Z"
         }
       ]
     },
@@ -2801,6 +2903,23 @@
           "validUntil": null,
           "claimMethod": "注册验证后创建 API Key，用于原型与开发",
           "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        },
+        {
+          "provider": "OpenRouter",
+          "channel": "免费备用API",
+          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "普通免费档全模型共享50次/日、20次/分钟；每天恢复，适合短任务备用；大陆网络待实测",
+          "sourceUrl": "https://openrouter.ai/docs/api_reference/limits",
+          "modelsUrl": "https://openrouter.ai/api/v1/models",
+          "entryUrl": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "validUntil": null,
+          "claimMethod": "注册创建API Key，选择带:free的型号；勿误用收费同名版本。",
+          "lastVerifiedAt": "2026-10-13T11:56:55.085Z"
         }
       ],
       "api": {
@@ -3388,7 +3507,192 @@
         "protocol": "OpenAI-compatible chat completions"
       },
       "modelDocumentationUrl": "https://github.com/OpenSenseNova/SenseNova-Skills/blob/main/INSTALL_CN.md"
+    },
+    {
+      "id": "agnes-30-flash",
+      "title": "Agnes 3.0 Flash",
+      "modelId": "agnes-3.0-flash",
+      "provider": "Agnes AI 爱思（国际站）",
+      "channel": "官方免费API",
+      "categories": [
+        "coding",
+        "general",
+        "reasoning",
+        "vision"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "可接编程Agent和工具调用；支持文字与图片输入。",
+      "valueReason": "官方指定模型当前零价，可执行完整生成或工具调用任务；不是一次性小额注册奖励。",
+      "allowance": "当前输入、输出零价；免费档共用10次/分钟，日量未公布",
+      "capacity": "官方支持512K上下文；免费档适合低频个人任务，完成速度未实测。",
+      "limitations": [
+        "文本接口限速9月23日已下调；不沿用旧20次/分钟。",
+        "免费同类型Key共享限速；多建Key不叠加。",
+        "促销截止日未公布；以逐型号价格页为准，不标永久免费。",
+        "本次核实国际站；大陆能否直接使用、是否需特殊网络条件待实测。"
+      ],
+      "eligibility": "在爱思国际站注册，开发者后台创建Free / Default Key；复制对应模型ID接入工具，无需订阅Token Plan。",
+      "evidenceLabel": "官方价格及免费档规则已核；实际调用待实测",
+      "officialUrl": "https://wiki.agnes-ai.com/en/docs/pricing",
+      "entryUrl": "https://platform.agnes-ai.com",
+      "ruleCheckedAt": "2026-10-13T11:56:55.085Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1062,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Agnes AI 爱思（国际站）",
+          "channel": "官方免费API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "当前输入、输出零价；免费档共用10次/分钟，日量未公布",
+          "sourceUrl": "https://wiki.agnes-ai.com/en/docs/pricing",
+          "limitsUrl": "https://wiki.agnes-ai.com/en/docs/tokenplan",
+          "entryUrl": "https://platform.agnes-ai.com",
+          "validUntil": null,
+          "claimMethod": "在爱思国际站注册，开发者后台创建Free / Default Key；复制对应模型ID接入工具，无需订阅Token Plan。",
+          "lastVerifiedAt": "2026-10-13T11:56:55.085Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://apihub.agnes-ai.com/v1",
+        "protocol": "OpenAI-compatible Chat Completions / Responses"
+      },
+      "modelDocumentationUrl": "https://wiki.agnes-ai.com/en/docs/agnes-30-flash"
+    },
+    {
+      "id": "agnes-image25-flash",
+      "title": "Agnes Image 2.5 Flash",
+      "modelId": "agnes-image-2.5-flash",
+      "provider": "Agnes AI 爱思（国际站）",
+      "channel": "官方免费API",
+      "categories": [
+        "image"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "生图、改图与多图参考，可通过API接入工作流。",
+      "valueReason": "官方指定模型当前零价，可执行完整生成或工具调用任务；不是一次性小额注册奖励。",
+      "allowance": "当前1K–4K零价；1K共用10次/分钟，2K 5次，3K/4K 1次",
+      "capacity": "可生成完整图片；未公布免费日总量，完成速度未实测。",
+      "limitations": [
+        "4,000张/日属于付费Token Plan，不是免费档额度。",
+        "免费同类型Key共享限速；多建Key不叠加。",
+        "促销截止日未公布；以逐型号价格页为准，不标永久免费。",
+        "本次核实国际站；大陆能否直接使用、是否需特殊网络条件待实测。"
+      ],
+      "eligibility": "在爱思国际站注册，开发者后台创建Free / Default Key；复制对应模型ID接入工具，无需订阅Token Plan。",
+      "evidenceLabel": "官方价格及免费档规则已核；实际调用待实测",
+      "officialUrl": "https://wiki.agnes-ai.com/en/docs/pricing",
+      "entryUrl": "https://platform.agnes-ai.com",
+      "ruleCheckedAt": "2026-10-13T11:56:55.085Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1063,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Agnes AI 爱思（国际站）",
+          "channel": "官方免费API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "当前1K–4K零价；1K共用10次/分钟，2K 5次，3K/4K 1次",
+          "sourceUrl": "https://wiki.agnes-ai.com/en/docs/pricing",
+          "limitsUrl": "https://wiki.agnes-ai.com/en/docs/tokenplan",
+          "entryUrl": "https://platform.agnes-ai.com",
+          "validUntil": null,
+          "claimMethod": "在爱思国际站注册，开发者后台创建Free / Default Key；复制对应模型ID接入工具，无需订阅Token Plan。",
+          "lastVerifiedAt": "2026-10-13T11:56:55.085Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://apihub.agnes-ai.com/v1",
+        "protocol": "OpenAI-compatible Images"
+      },
+      "modelDocumentationUrl": "https://wiki.agnes-ai.com/en/docs/agnes-image-25-flash"
+    },
+    {
+      "id": "agnes-video25-flash",
+      "title": "Agnes Video 2.5 Flash",
+      "modelId": "agnes-video-2.5-flash",
+      "provider": "Agnes AI 爱思（国际站）",
+      "channel": "官方免费API",
+      "categories": [
+        "video"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "720P文生视频、首尾帧及图片参考，可接API。",
+      "valueReason": "官方指定模型当前零价，可执行完整生成或工具调用任务；不是一次性小额注册奖励。",
+      "allowance": "限时零价；免费档共用1次/分钟，免费每日总秒数待核实",
+      "capacity": "单次支持4–12秒完整片段；未实测排队时间与成功率。",
+      "limitations": [
+        "500秒/日属于付费Token Plan；免费档也有每日时长限制，但数值未公开。",
+        "免费同类型Key共享限速；多建Key不叠加。",
+        "促销截止日未公布；以逐型号价格页为准，不标永久免费。",
+        "本次核实国际站；大陆能否直接使用、是否需特殊网络条件待实测。"
+      ],
+      "eligibility": "在爱思国际站注册，开发者后台创建Free / Default Key；复制对应模型ID接入工具，无需订阅Token Plan。",
+      "evidenceLabel": "官方价格及免费档规则已核；实际调用待实测",
+      "officialUrl": "https://wiki.agnes-ai.com/en/docs/pricing",
+      "entryUrl": "https://platform.agnes-ai.com",
+      "ruleCheckedAt": "2026-10-13T11:56:55.085Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1064,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Agnes AI 爱思（国际站）",
+          "channel": "官方免费API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "限时零价；免费档共用1次/分钟，免费每日总秒数待核实",
+          "sourceUrl": "https://wiki.agnes-ai.com/en/docs/pricing",
+          "limitsUrl": "https://wiki.agnes-ai.com/en/docs/tokenplan",
+          "entryUrl": "https://platform.agnes-ai.com",
+          "validUntil": null,
+          "claimMethod": "在爱思国际站注册，开发者后台创建Free / Default Key；复制对应模型ID接入工具，无需订阅Token Plan。",
+          "lastVerifiedAt": "2026-10-13T11:56:55.085Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://apihub.agnes-ai.com/v1",
+        "protocol": "OpenAI-compatible Videos"
+      },
+      "modelDocumentationUrl": "https://wiki.agnes-ai.com/en/docs/agnes-video-25-flash"
     }
   ]
 }
-

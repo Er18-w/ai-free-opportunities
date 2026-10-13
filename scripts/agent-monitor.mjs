@@ -2,8 +2,13 @@ import {readJson,writeJson,sha256} from './lib.mjs';
 import {shouldInspectSource} from './source-policy.mjs';
 
 export function evidenceLines(html){
-  const text=html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,'').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,'').replace(/<[^>]+>/g,'\n').replace(/&nbsp;/g,' ');
-  return [...new Set(text.split('\n').map(x=>x.replace(/\s+/g,' ').trim()).filter(x=>x.length>3&&/free|quota|credit|model|trial|limit|免费|模型|额度|积分|公测|限时|会员|停止/i.test(x)))].slice(0,250);
+  const text=html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,'').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,'').replace(/<tr\b[^>]*>[\s\S]*?<\/tr>/gi,row=>'\n'+row.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ')+'\n').replace(/<[^>]+>/g,'\n').replace(/&nbsp;/g,' ');
+  return [...new Set(text.split('\n').map(x=>x.replace(/\s+/g,' ').trim()).filter(x=>x.length>3&&/free|quota|credit|model|trial|limit|\$|RPM|免费|模型|额度|积分|公测|限时|会员|停止/i.test(x)))].slice(0,250);
+}
+
+export function compareEvidence(prior,lines){
+  const old=Array.isArray(prior?.lines)?prior:null;
+  return {kind:old?'rules_changed':'baseline',additions:old?lines.filter(x=>!old.lines.includes(x)):lines,removals:old?old.lines.filter(x=>!lines.includes(x)):[]};
 }
 
 export async function runAgentMonitor(){
@@ -25,10 +30,8 @@ export async function runAgentMonitor(){
       if(!response.ok)throw new Error(`HTTP ${response.status}`);
       const lines=evidenceLines(await response.text());
       if(lines.length<3)throw new Error('需浏览器人工核查：有效规则文本不足');
-      const hash=sha256(JSON.stringify(lines)),old=previous.items[source.id];
-      const additions=old?lines.filter(x=>!old.lines.includes(x)):lines;
-      const removals=old?old.lines.filter(x=>!lines.includes(x)):[];
-      if(!old||old.hash!==hash)report.changes.push({id:source.id,name:source.name,sourceUrl:source.url,status:'pending',kind:old?'rules_changed':'baseline',additions,removals,checkedAt:report.runAt});
+      const hash=sha256(JSON.stringify(lines)),old=Array.isArray(prior.lines)?prior:null;
+      if(!old||old.hash!==hash)report.changes.push({id:source.id,name:source.name,sourceUrl:source.url,status:'pending',...compareEvidence(old,lines),checkedAt:report.runAt});
       previous.items[source.id]={hash,lines,lastAttemptAt:report.runAt,lastSuccessAt:report.runAt,etag:response.headers.get('etag'),lastModified:response.headers.get('last-modified')};
       report.sources.push({id:source.id,outcome:'ok',changed:Boolean(old&&old.hash!==hash)});
     }catch(error){report.sources.push({id:source.id,outcome:'manual_required',error:error.message});}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-10",
+  "updatedAt": "2026-10-13T11:56:55.085Z",
   "note": "厂商与产品监控地图。登记表示需要检查，不表示当前存在可入榜免费权益；只有完成官方核验和任务容量评估后才能公开。",
   "priorityCadenceDays": {
     "A": 7,
@@ -1253,6 +1253,41 @@
         {
           "kind": "models",
           "url": "https://fal.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "V044",
+      "name": "Agnes AI 爱思",
+      "region": "GLOBAL",
+      "categories": [
+        "api",
+        "agent",
+        "image",
+        "video"
+      ],
+      "priority": "A",
+      "aliases": [
+        "Agnes AI",
+        "爱思AI",
+        "Agnes Code"
+      ],
+      "opportunityTypes": [
+        "free-model",
+        "campaign"
+      ],
+      "officialUrls": [
+        {
+          "kind": "pricing",
+          "url": "https://wiki.agnes-ai.com/en/docs/pricing.md"
+        },
+        {
+          "kind": "limits",
+          "url": "https://wiki.agnes-ai.com/en/docs/tokenplan.md"
+        },
+        {
+          "kind": "models",
+          "url": "https://wiki.agnes-ai.com/llms.txt"
         }
       ]
     }

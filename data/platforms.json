@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T15:30:00+08:00",
+  "updatedAt": "2026-10-13T11:56:55.085Z",
   "items": [
     {
       "id": "workbuddy",
@@ -26,8 +26,8 @@
       "id": "modelscope",
       "rank": 2,
       "name": "ModelScope 魔搭",
-      "summary": "免费模型多，魔粒每天恢复，适合持续试用不同模型。",
-      "freeAmount": "200 魔粒/日；绑定阿里账号可增加 50",
+      "summary": "文本、图像、视频模型聚合；单次扣量各异，不能把目录都当免费API。",
+      "freeAmount": "登录领200魔粒/日；绑定阿里云另加50，所有模型共用",
       "models": [
         "多款文本、图像与视频模型"
       ],
@@ -39,7 +39,9 @@
       "stability": "每日恢复",
       "evidenceStatus": "新版魔粒规则已核",
       "sourceUrl": "https://www.modelscope.cn/posts/435591",
-      "entryUrl": "https://www.modelscope.cn/"
+      "entryUrl": "https://www.modelscope.cn/",
+      "application": "登录领取魔粒→模型页确认API资格与单次扣量→创建访问令牌；官方示例主流文本约1魔粒/次。",
+      "lastVerifiedAt": "2026-10-13T11:56:55.085Z"
     },
     {
       "id": "groq",
@@ -142,12 +144,11 @@
       "id": "sensenova",
       "rank": 8,
       "name": "商汤日日新",
-      "summary": "当前公测池支持办公Agent和图像工作流。",
+      "summary": "自家模型免费公测，支持办公Agent和图像工作流；与多厂商聚合站分开理解。",
       "freeAmount": "共用60,000积分/5小时；特殊型号看规则",
       "models": [
         "SenseNova 6.8 Flash Lite",
-        "SenseNova U1 Fast",
-        "其他公测型号"
+        "SenseNova U1 Fast"
       ],
       "access": [
         "网页",
@@ -276,13 +277,14 @@
     {
       "id": "nvidia-nim",
       "name": "NVIDIA NIM",
-      "summary": "免费开发 API 可接入 Agent，覆盖 Kimi、GLM、Nemotron 等强模型。",
+      "summary": "汇集多家文本与多模态模型；仅Free Endpoint代表可免费接云端API。",
       "freeAmount": "官方标 Free Endpoint；日上限未统一公开",
       "models": [
         "Kimi K3",
         "GLM-5.3",
         "GLM-5.3 Flash",
-        "Nemotron 3.5 Lightning"
+        "Nemotron 3.5 Lightning",
+        "Nemotron 3 Ultra"
       ],
       "sourceUrl": "https://build.nvidia.com/models",
       "entryUrl": "https://build.nvidia.com/",
@@ -294,7 +296,7 @@
       ],
       "mainlandAccess": "账号资格和中国大陆网络可达性待实测",
       "evidenceStatus": "官方免费条件已核；任务体验未实测",
-      "lastVerifiedAt": "2026-10-13T03:15:46.319Z",
+      "lastVerifiedAt": "2026-10-13T11:56:55.085Z",
       "rankingStatus": "pending"
     },
     {
@@ -347,9 +349,10 @@
     {
       "id": "siliconflow",
       "name": "硅基流动",
-      "summary": "有翻译、OCR、生图、语音和知识库免费API。",
+      "summary": "聚合多家模型；当前零价覆盖星辰对话、翻译、OCR、生图、语音和检索。",
       "freeAmount": "调用零价；逐模型限速，数值以模型页为准",
       "models": [
+        "Xing4.0 29B",
         "Hunyuan MT 7B",
         "PaddleOCR VL 1.5",
         "Kolors",
@@ -366,13 +369,13 @@
       ],
       "mainlandAccess": "大陆网络待实测",
       "evidenceStatus": "官方规则已核，任务容量待实测",
-      "lastVerifiedAt": "2026-10-13T03:39:00.843Z",
+      "lastVerifiedAt": "2026-10-13T11:56:55.085Z",
       "rankingStatus": "pending"
     },
     {
       "id": "gitee-ai",
       "name": "模力方舟 Gitee AI",
-      "summary": "补充科研Agent、图文知识库与语音API。",
+      "summary": "国产模型聚合API，补充科研、图文检索与语音；免费资格逐型号看。",
       "freeAmount": "指定型号零价；日量待核实",
       "models": [
         "Atria Dawn Preview",
@@ -388,7 +391,7 @@
         "API"
       ],
       "mainlandAccess": "大陆网络待实测",
-      "evidenceStatus": "官方规则已核，任务容量待实测",
+      "evidenceStatus": "已有官方规则记录；本轮动态目录读取不完整，完整免费名单待复核",
       "lastVerifiedAt": "2026-10-13T03:39:00.843Z",
       "rankingStatus": "pending"
     },
@@ -586,7 +589,53 @@
       "application": "注册并实名认证，创建API Key，选择带preview的免费型号",
       "lastVerifiedAt": "2026-10-13T05:04:10.596Z",
       "rankingStatus": "pending"
+    },
+    {
+      "id": "agnes-ai",
+      "rank": 28,
+      "name": "Agnes AI 爱思（国际站）",
+      "summary": "指定文本、生图、视频模型零价；可接入Agent和生成工作流。",
+      "freeAmount": "文本10次/分钟；1K图10次/分钟；视频1次/分钟。免费日量未明示",
+      "models": [
+        "Agnes 3.0 Flash",
+        "Agnes Image 2.5 Flash",
+        "Agnes Video 2.5 Flash"
+      ],
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "大陆直连及特殊网络要求待实测；中国站权益另核",
+      "stability": "当前零价；视频限时免费",
+      "evidenceStatus": "官方价格和免费档已核；未实测",
+      "sourceUrl": "https://wiki.agnes-ai.com/en/docs/pricing",
+      "entryUrl": "https://platform.agnes-ai.com",
+      "application": "注册→开发者后台创建免费Key；不要选付费Token Plan。免费同类Key共用限速。",
+      "lastVerifiedAt": "2026-10-13T11:56:55.085Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "openrouter",
+      "rank": 29,
+      "name": "OpenRouter",
+      "summary": "统一API切换多家模型；免费型号适合短任务和备用，目录也用于发现新模型。",
+      "freeAmount": "普通免费档共用50次/日、20次/分钟；不是每个模型各50次",
+      "models": [
+        "Nemotron 3.5 Lightning",
+        "Nemotron 3 Ultra",
+        "Laguna S 2.1",
+        "Gemma 4 26B A4B"
+      ],
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "大陆直连及特殊网络要求待实测",
+      "stability": "每日恢复；免费型号会轮换",
+      "evidenceStatus": "官方限额与实时零价目录已核",
+      "sourceUrl": "https://openrouter.ai/docs/api_reference/limits",
+      "entryUrl": "https://openrouter.ai/models",
+      "application": "注册→创建API Key→选择:free型号；付费充值提额不计入免费福利。",
+      "lastVerifiedAt": "2026-10-13T11:56:55.085Z",
+      "rankingStatus": "pending"
     }
   ]
 }
-

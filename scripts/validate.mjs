@@ -72,8 +72,10 @@ if(!catalog.items.some(item=>/opencode-zen/.test(item.id)))errors.push('OpenCode
 if(!catalog.items.some(item=>/workbuddy|hunyuan/.test(item.id)))errors.push('WorkBuddy / 混元模型缺失');
 if(!Array.isArray(sources.items)||!Array.isArray(changes.items))errors.push('sources/changes 格式错误');
 if(sources.items.length<30)errors.push('搜索与核查路径少于30条');
-if(sourceMap.items.length!==43)errors.push(`重点监控对象应为43个，当前 ${sourceMap.items.length}`);
-if(modelSources.items.length!==8)errors.push(`模型清单源应为8个，当前 ${modelSources.items.length}`);
+if(sourceMap.items.length<43)errors.push(`重点监控对象少于已有43个，当前 ${sourceMap.items.length}`);
+if(modelSources.items.length<8)errors.push(`模型清单源少于已有8个，当前 ${modelSources.items.length}`);
+for(const [name,data] of [['source-map',sourceMap],['model-sources',modelSources]])if(new Set(data.items.map(x=>x.id)).size!==data.items.length)errors.push(`${name} 存在重复来源ID`);
+for(const source of modelSources.items)if(!sourceMap.items.some(v=>v.id===source.vendorId))errors.push(`${source.id} 缺少对应监控对象`);
 for(const source of modelSources.items){if(!source.url?.startsWith('https://'))errors.push(`${source.id} 模型清单 URL 无效`);if(source.mode==='manual_js'&&!source.manualReason)errors.push(`${source.id} 人工清单源缺少原因`);}
 if(!campaignSources.items.some(item=>item.tier==='official')||!campaignSources.items.some(item=>item.tier==='aggregator')||!campaignSources.items.some(item=>item.tier==='community'))errors.push('活动情报源必须覆盖官方、聚合站和社区三层');
 for(const source of sources.items)for(const key of ['id','name','role','url','mode','cadence','status'])if(!source[key])errors.push(`${source.id??'未知来源'} 缺少 ${key}`);

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-11T22:37:11+08:00",
-  "note": "八条最低模型清单路径。自动结果只进入 .runtime/candidates，不能直接公开。",
+  "updatedAt": "2026-10-13T11:56:55.085Z",
+  "note": "完整目录用于发现候选；免费价格、限速与用途另核，不能自动上榜。",
   "items": [
     {
       "id": "MS01",
@@ -98,6 +98,48 @@
       "patterns": [
         "@cf/[A-Za-z0-9._-]+/[A-Za-z0-9._:-]+"
       ],
+      "status": "active",
+      "cadenceDays": 7
+    },
+    {
+      "id": "MS09",
+      "name": "OpenRouter实时模型目录",
+      "vendorId": "V016",
+      "url": "https://openrouter.ai/api/v1/models",
+      "documentationUrl": "https://openrouter.ai/docs/api_reference/limits",
+      "mode": "json_data",
+      "status": "active",
+      "cadenceDays": 1
+    },
+    {
+      "id": "MS10",
+      "name": "爱思逐模型价格表",
+      "vendorId": "V044",
+      "url": "https://wiki.agnes-ai.com/en/docs/pricing.md",
+      "mode": "html_regex",
+      "patterns": [
+        "agnes-(?:image-|video-)?[0-9]+\\.[0-9]+-(?:flash-max|flash|pro-beta|pro)"
+      ],
+      "status": "active",
+      "cadenceDays": 1
+    },
+    {
+      "id": "MS11",
+      "name": "NVIDIA完整模型目录",
+      "vendorId": "V021",
+      "url": "https://build.nvidia.com/models",
+      "mode": "manual_js",
+      "manualReason": "目录有分页和Free Endpoint/Downloadable不同状态；需遍历页面核实，不能把下载模型当免费API。",
+      "status": "active",
+      "cadenceDays": 7
+    },
+    {
+      "id": "MS12",
+      "name": "魔搭完整模型与API目录",
+      "vendorId": "V009",
+      "url": "https://www.modelscope.cn/models",
+      "mode": "manual_js",
+      "manualReason": "动态目录；须核实API可用标记、魔粒扣量和账号资格，下载模型不等于免费托管。",
       "status": "active",
       "cadenceDays": 7
     }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T03:41:28.406Z",
+  "updatedAt": "2026-10-13T11:56:55.085Z",
   "items": [
     {
       "id": "kilo",
@@ -353,6 +353,38 @@
       "status": "active",
       "type": "official_page",
       "cadenceDays": 1
+    },
+    {
+      "id": "agnes-price",
+      "name": "爱思当前价格",
+      "url": "https://wiki.agnes-ai.com/en/docs/pricing.md",
+      "status": "active",
+      "type": "official_page",
+      "cadenceDays": 1
+    },
+    {
+      "id": "agnes-limits",
+      "name": "爱思免费档与订阅额度",
+      "url": "https://wiki.agnes-ai.com/en/docs/tokenplan.md",
+      "status": "active",
+      "type": "official_page",
+      "cadenceDays": 1
+    },
+    {
+      "id": "openrouter-limits-current",
+      "name": "OpenRouter共享免费限额",
+      "url": "https://openrouter.ai/docs/api_reference/limits.md",
+      "status": "active",
+      "type": "official_page",
+      "cadenceDays": 7
+    },
+    {
+      "id": "modelscope-grains",
+      "name": "魔搭当前魔粒规则",
+      "url": "https://www.modelscope.cn/posts/435591",
+      "status": "active",
+      "type": "official_page",
+      "cadenceDays": 7
     }
   ]
 }
