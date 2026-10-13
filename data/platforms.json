@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T05:15:51.430Z",
+  "updatedAt": "2026-10-13T15:30:00+08:00",
   "items": [
     {
       "id": "workbuddy",
@@ -230,33 +230,8 @@
       "rankingNote": "新增条目，未做与旧榜可比的实测排名"
     },
     {
-      "id": "kiro",
-      "rank": 12,
-      "name": "Kiro",
-      "sourceUrl": "https://kiro.dev/docs/models/",
-      "entryUrl": "https://kiro.dev/",
-      "freeAmount": "50 credits/月；Qwen Coder Next 为 Auto 的 0.05 倍消耗",
-      "application": "注册免费账户，优先选低倍率模型；不是 50 次固定任务",
-      "summary": "从需求、代码修改到测试；额度共享，复杂任务消耗更多",
-      "models": [
-        "Claude Sonnet 4.5",
-        "MiniMax M2.5",
-        "GLM-5",
-        "Qwen3 Coder Next"
-      ],
-      "stability": "月度恢复",
-      "access": [
-        "Agent"
-      ],
-      "mainlandAccess": "服务地区及中国大陆网络可达性待实测",
-      "evidenceStatus": "官方规则已核；真实任务容量尚未实测",
-      "lastVerifiedAt": "2026-10-13T12:00:00+08:00",
-      "rankingStatus": "pending",
-      "rankingNote": "新增条目，未做与旧榜可比的实测排名"
-    },
-    {
       "id": "trae",
-      "rank": 13,
+      "rank": 12,
       "name": "TRAE 中国版",
       "sourceUrl": "https://docs.trae.cn/ide_plans-and-billing",
       "entryUrl": "https://www.trae.cn/",
@@ -278,7 +253,7 @@
     },
     {
       "id": "qoder",
-      "rank": 14,
+      "rank": 13,
       "name": "Qoder",
       "sourceUrl": "https://forum.qoder.com/t/pro-trial-credits-not-applied/11451",
       "entryUrl": "https://qoder.com/",
@@ -313,7 +288,7 @@
       "entryUrl": "https://build.nvidia.com/",
       "stability": "开发试用端点",
       "application": "注册验证后自行创建 Key；适用于开发与原型",
-      "rank": 15,
+      "rank": 14,
       "access": [
         "API"
       ],
@@ -339,7 +314,7 @@
       "entryUrl": "https://dash.cloudflare.com/",
       "stability": "每日恢复",
       "application": "注册 Free 账户，创建 API Token；部分旗舰模型必须付费，不纳入免费池",
-      "rank": 16,
+      "rank": 15,
       "access": [
         "API"
       ],
@@ -360,7 +335,7 @@
       "entryUrl": "https://maas.antdigital.com/",
       "stability": "一次性新人包",
       "application": "注册后在 Token Plan 领取免费版；有效期以控制台为准",
-      "rank": 17,
+      "rank": 16,
       "access": [
         "API"
       ],
@@ -385,7 +360,7 @@
       "entryUrl": "https://cloud.siliconflow.cn/",
       "application": "注册、实名认证，在 API 密钥页创建 Key",
       "stability": "免费型号零价",
-      "rank": 18,
+      "rank": 17,
       "access": [
         "API"
       ],
@@ -408,7 +383,7 @@
       "entryUrl": "https://ai.gitee.com/serverless-api",
       "application": "登录工作台创建访问令牌，在模型页复制调用示例",
       "stability": "常设免费 + 限时",
-      "rank": 19,
+      "rank": 18,
       "access": [
         "API"
       ],
@@ -430,7 +405,7 @@
       "entryUrl": "https://dashboard.cohere.com/",
       "application": "注册后在 API Keys 创建评估 Key；付费生产环境另算",
       "stability": "月度免费评估",
-      "rank": 20,
+      "rank": 19,
       "access": [
         "API"
       ],
@@ -452,7 +427,7 @@
       "entryUrl": "https://developer.ant-ling.com/",
       "application": "注册并开通计费账户，查看抵扣券；领取当月不补发月券",
       "stability": "每月恢复",
-      "rank": 21,
+      "rank": 20,
       "access": [
         "API"
       ],
@@ -473,7 +448,7 @@
       "entryUrl": "https://moma.cmecloud.cn/",
       "application": "移动云注册实名后进入MoMA领取，创建密钥；不等于300款模型全免费",
       "stability": "一次性新人包",
-      "rank": 22,
+      "rank": 21,
       "access": [
         "API"
       ],
@@ -494,7 +469,7 @@
       "entryUrl": "https://www.scnet.cn/",
       "application": "注册后进入核心节点快速体验，选择领取大模型API；不是所有型号免费",
       "stability": "活动试用",
-      "rank": 23,
+      "rank": 22,
       "access": [
         "API"
       ],
@@ -515,7 +490,7 @@
       "entryUrl": "https://www.streamlake.com/product/kat-coder",
       "application": "注册开通万擎，创建 Key，选择 kat-coder-air-v1；其他型号可能后付费",
       "stability": "指定型号零价",
-      "rank": 24,
+      "rank": 23,
       "access": [
         "API"
       ],
@@ -527,7 +502,7 @@
     {
       "id": "junie-lite",
       "name": "Junie Lite",
-      "rank": 25,
+      "rank": 24,
       "summary": "改代码、写测试和维护项目；当前底层模型可轮换",
       "freeAmount": "正常使用近乎不限量；触及容量上限会暂停",
       "models": [
@@ -548,7 +523,7 @@
     {
       "id": "jules",
       "name": "Jules",
-      "rank": 26,
+      "rank": 25,
       "summary": "连接GitHub，让Agent修改代码、跑测试并交付修改",
       "freeAmount": "滚动24小时15个任务；最多3个同时执行",
       "models": [
@@ -569,7 +544,7 @@
     {
       "id": "antigravity",
       "name": "Google Antigravity",
-      "rank": 27,
+      "rank": 26,
       "summary": "编程、终端执行与浏览器协作；免费套餐官方矩阵可选",
       "freeAmount": "免费池每周恢复；任务复杂度影响消耗，次数未公开",
       "models": [
@@ -590,7 +565,7 @@
     },
     {
       "id": "stepfun-audio",
-      "rank": 28,
+      "rank": 27,
       "name": "阶跃星辰",
       "summary": "四个音频预览API限免，可做语音Agent、配音和音乐。",
       "freeAmount": "四款指定preview接口限免；共用零充值档限速",
@@ -614,3 +589,4 @@
     }
   ]
 }
+

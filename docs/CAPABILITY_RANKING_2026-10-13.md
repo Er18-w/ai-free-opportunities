@@ -14,14 +14,11 @@
 
 | 名次 | 模型 | 分数 | 证据 |
 | --- | --- | ---: | --- |
-| 1 | MiniMax M2.5 | 80.2% | [MiniMax官方发布](https://www.minimax.io/news/minimax-m25) |
-| 2 | GLM-5 | 77.8% | [Z.ai官方模型卡评测字段](https://huggingface.co/zai-org/GLM-5/blob/main/.eval_results/swe_bench_verified.yaml) |
-| 3 | Claude Sonnet 4.5 | 77.2% | [Anthropic官方发布](https://www.anthropic.com/news/claude-sonnet-4-5) |
-| 4 | Qwen3 Coder Next | 70.6% | [Qwen官方模型卡评测字段](https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/main/.eval_results/swe_bench_verified.yaml) |
-| 5 | MiMo V2.6 Flash | 66.2% | [小米MiMo官方发布](https://mimo.mi.com/docs/en-US/news/latest/v2-6) |
-| 6 | GPT OSS 120B | 62.4% | [OpenAI模型卡](https://deploymentsafety.openai.com/gpt-oss) |
-| 7 | GPT OSS 20B | 60.7% | [OpenAI模型卡](https://deploymentsafety.openai.com/gpt-oss) |
+| 1 | MiMo V2.6 Flash | 66.2% | [小米MiMo官方发布](https://mimo.mi.com/docs/en-US/news/latest/v2-6) |
+| 2 | GPT OSS 120B | 62.4% | [OpenAI模型卡](https://deploymentsafety.openai.com/gpt-oss) |
+| 3 | GPT OSS 20B | 60.7% | [OpenAI模型卡](https://deploymentsafety.openai.com/gpt-oss) |
 
-Claude Sonnet 4.5采用Anthropic主报告的77.2%，没有采用带并行尝试和内部挑选的82.0%高算力结果。GLM-5采用模型卡标注的厂商报告77.8%，没有把社区72.8分替换为同一条证据。
+Kiro免费档只有所有模型共享的50 credits/月，无法证明能够稳定完成足量任务。2026-10-13按准入规则移除Kiro平台，并移除仅通过Kiro免费档进入公开榜单的MiniMax M2.5、GLM-5、Claude Sonnet 4.5和Qwen3 Coder Next。模型本身的能力不受这一决定影响；移除原因只是本站不接受额度过小的免费渠道。
 
 Kimi K3、GLM-5.3等模型公开了DeepSWE、Terminal-Bench等成绩，但这些分数不能直接与本组SWE-bench Verified数值混排，因此本轮仍显示待比较。生图、语音生成、语音识别也不是同一种任务，后续必须分别建口径。
+

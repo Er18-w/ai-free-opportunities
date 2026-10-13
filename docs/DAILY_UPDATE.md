@@ -197,4 +197,7 @@ AMD官方目录可按页面原有POST目录请求及detail_url读取，免费标
 
 编程分类已有第一批可复算名次，只纳入公开SWE-bench Verified、500题、resolved百分比口径。模型必须保存数字、原始链接、发布日期和明确型号；不同基准不混排。页面同时提醒不同Agent工具框架会影响分数，因此名次是公开报告的同类参考，不等于本站账户实测。
 
-当前已排名7项：MiniMax M2.5、GLM-5、Claude Sonnet 4.5、Qwen3 Coder Next、MiMo V2.6 Flash、GPT OSS 120B、GPT OSS 20B。后续新证据只有在benchmark、version、metric和higherIsBetter全部一致时才能加入这一组，并按value自动复算categoryRanks。没有同基准证据的模型保留在编程分类末尾，显示“待比较”，禁止用厂商宣传语或AI主观判断补位。通用、推理、图像和语音仍是展示顺序，建立各自统一基准后再启用能力名次。
+当前已排名3项：MiMo V2.6 Flash、GPT OSS 120B、GPT OSS 20B。后续新证据只有在benchmark、version、metric和higherIsBetter全部一致时才能加入这一组，并按value自动复算categoryRanks。没有同基准证据的模型保留在编程分类末尾，显示“待比较”，禁止用厂商宣传语或AI主观判断补位。通用、推理、图像和语音仍是展示顺序，建立各自统一基准后再启用能力名次。
+
+Kiro免费档只有所有模型共享的50 credits/月，低于本站“可持续完成实际任务”的准入要求。公开平台目录不收Kiro，仅依赖Kiro免费档的模型也不得进入公开模型榜。后台可以继续监控其规则变化；只有官方免费量显著提高，或找到同一模型更充足的合格免费渠道时，才能重新提名。
+
