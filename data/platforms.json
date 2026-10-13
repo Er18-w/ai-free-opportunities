@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T03:15:46.319Z",
+  "updatedAt": "2026-10-13T03:41:28.406Z",
   "items": [
     {
       "id": "workbuddy",
@@ -363,6 +363,225 @@
       "mainlandAccess": "账号资格和中国大陆网络可达性待实测",
       "evidenceStatus": "官方免费条件已核；任务体验未实测",
       "lastVerifiedAt": "2026-10-13T03:15:46.319Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "siliconflow",
+      "name": "硅基流动",
+      "summary": "有翻译、OCR、生图、语音和知识库免费API。",
+      "freeAmount": "调用零价；逐模型限速，数值以模型页为准",
+      "models": [
+        "Hunyuan MT 7B",
+        "PaddleOCR VL 1.5",
+        "Kolors",
+        "SenseVoice",
+        "BGE"
+      ],
+      "sourceUrl": "https://www.siliconflow.cn/pricing",
+      "entryUrl": "https://cloud.siliconflow.cn/",
+      "application": "注册、实名认证，在 API 密钥页创建 Key",
+      "stability": "免费型号零价",
+      "rank": 18,
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "大陆网络待实测",
+      "evidenceStatus": "官方规则已核，任务容量待实测",
+      "lastVerifiedAt": "2026-10-13T03:39:00.843Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "gitee-ai",
+      "name": "模力方舟 Gitee AI",
+      "summary": "补充科研Agent、图文知识库与语音API。",
+      "freeAmount": "指定型号零价；日量待核实",
+      "models": [
+        "Atria Dawn Preview",
+        "Intern-S2",
+        "Qwen3 Embedding"
+      ],
+      "sourceUrl": "https://ai.gitee.com/serverless-api?model=F5-TTS",
+      "entryUrl": "https://ai.gitee.com/serverless-api",
+      "application": "登录工作台创建访问令牌，在模型页复制调用示例",
+      "stability": "常设免费 + 限时",
+      "rank": 19,
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "大陆网络待实测",
+      "evidenceStatus": "官方规则已核，任务容量待实测",
+      "lastVerifiedAt": "2026-10-13T03:39:00.843Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "summary": "适合工具调用、资料检索与多模态Agent原型。",
+      "freeAmount": "评估 Key 共用1,000次/月；Chat 20次/分钟",
+      "models": [
+        "Command A+",
+        "Command A Reasoning"
+      ],
+      "sourceUrl": "https://docs.cohere.com/v2/docs/rate-limits",
+      "entryUrl": "https://dashboard.cohere.com/",
+      "application": "注册后在 API Keys 创建评估 Key；付费生产环境另算",
+      "stability": "月度免费评估",
+      "rank": 20,
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "大陆网络待实测",
+      "evidenceStatus": "官方规则已核，任务容量待实测",
+      "lastVerifiedAt": "2026-10-13T03:39:00.843Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "ant-ling",
+      "name": "蚂蚁百灵",
+      "summary": "新版持续月券，可接Agent；不沿用旧日额度。",
+      "freeAmount": "新人20元券；每月1日10元券，月底失效",
+      "models": [
+        "Ling 3.0 Flash",
+        "Ling 2.6 Flash"
+      ],
+      "sourceUrl": "https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/billing-upgrade/",
+      "entryUrl": "https://developer.ant-ling.com/",
+      "application": "注册并开通计费账户，查看抵扣券；领取当月不补发月券",
+      "stability": "每月恢复",
+      "rank": 21,
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "大陆网络待实测",
+      "evidenceStatus": "官方规则已核，任务容量待实测",
+      "lastVerifiedAt": "2026-10-13T03:39:00.843Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "moma",
+      "name": "中国移动 MoMA",
+      "summary": "官方聚合API，新人包体量大。",
+      "freeAmount": "新认证用户2,500万Token；有效期以领取页为准",
+      "models": [
+        "自营可领取型号以账户为准"
+      ],
+      "sourceUrl": "https://www1.10086.cn/aboutus/news/groupnews/index_detail_55572.html",
+      "entryUrl": "https://moma.cmecloud.cn/",
+      "application": "移动云注册实名后进入MoMA领取，创建密钥；不等于300款模型全免费",
+      "stability": "一次性新人包",
+      "rank": 22,
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "大陆网络待实测",
+      "evidenceStatus": "官方规则已核，任务容量待实测",
+      "lastVerifiedAt": "2026-10-13T03:39:00.843Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "scnet",
+      "name": "国家超算互联网",
+      "summary": "官方核心节点体验支持大模型API额度。",
+      "freeAmount": "核心节点体验1,000万Token；型号和期限看领取页",
+      "models": [
+        "活动指定模型"
+      ],
+      "sourceUrl": "https://www.scnet.cn/help/docs/mainsite/activity/invite/quick-test/index.html",
+      "entryUrl": "https://www.scnet.cn/",
+      "application": "注册后进入核心节点快速体验，选择领取大模型API；不是所有型号免费",
+      "stability": "活动试用",
+      "rank": 23,
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "大陆网络待实测",
+      "evidenceStatus": "官方规则已核，任务容量待实测",
+      "lastVerifiedAt": "2026-10-13T03:39:00.843Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "streamlake",
+      "name": "快手万擎 StreamLake",
+      "summary": "KAT Air V1免费API可接编程Agent。",
+      "freeAmount": "Air V1输入输出零价；限速以账户为准",
+      "models": [
+        "KAT Coder Air V1"
+      ],
+      "sourceUrl": "https://streamlake.com/document/WANQING/mdsorb4ejjptsmfyrn",
+      "entryUrl": "https://www.streamlake.com/product/kat-coder",
+      "application": "注册开通万擎，创建 Key，选择 kat-coder-air-v1；其他型号可能后付费",
+      "stability": "指定型号零价",
+      "rank": 24,
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "大陆网络待实测",
+      "evidenceStatus": "官方规则已核，任务容量待实测",
+      "lastVerifiedAt": "2026-10-13T03:39:00.843Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "junie-lite",
+      "name": "Junie Lite",
+      "rank": 25,
+      "summary": "改代码、写测试和维护项目；当前底层模型可轮换",
+      "freeAmount": "正常使用近乎不限量；触及容量上限会暂停",
+      "models": [
+        "Qwen3.6 27B"
+      ],
+      "access": [
+        "平台内Agent"
+      ],
+      "mainlandAccess": "地区资格与大陆网络待核实",
+      "stability": "常设免费层",
+      "evidenceStatus": "官方规则已核，实际任务待实测",
+      "sourceUrl": "https://junie.jetbrains.com/docs/junie-lite.html",
+      "entryUrl": "https://junie.jetbrains.com/",
+      "application": "JetBrains账号登录Junie CLI或Air，选择Junie Lite；无需绑卡",
+      "lastVerifiedAt": "2026-10-13T03:41:28.406Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "jules",
+      "name": "Jules",
+      "rank": 26,
+      "summary": "连接GitHub，让Agent修改代码、跑测试并交付修改",
+      "freeAmount": "滚动24小时15个任务；最多3个同时执行",
+      "models": [
+        "Gemini 2.5 Pro"
+      ],
+      "access": [
+        "平台内Agent"
+      ],
+      "mainlandAccess": "地区资格与大陆网络待核实",
+      "stability": "滚动每日恢复",
+      "evidenceStatus": "官方规则已核，实际任务待实测",
+      "sourceUrl": "https://jules.google/docs/usage-limits/",
+      "entryUrl": "https://jules.google.com/",
+      "application": "Google账号登录，授权指定GitHub仓库，提交代码任务；需满18岁",
+      "lastVerifiedAt": "2026-10-13T03:41:28.406Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "antigravity",
+      "name": "Google Antigravity",
+      "rank": 27,
+      "summary": "编程、终端执行与浏览器协作；免费套餐官方矩阵可选",
+      "freeAmount": "免费池每周恢复；任务复杂度影响消耗，次数未公开",
+      "models": [
+        "Gemini 3.8 Flash",
+        "Gemini 3.1 Pro"
+      ],
+      "access": [
+        "平台内Agent"
+      ],
+      "mainlandAccess": "地区资格与大陆网络待核实",
+      "stability": "每周恢复",
+      "evidenceStatus": "官方规则已核，实际任务待实测",
+      "sourceUrl": "https://antigravity.google/docs/models",
+      "entryUrl": "https://antigravity.google/",
+      "application": "下载并用符合资格的Google个人账号登录，在模型选择器选择",
+      "lastVerifiedAt": "2026-10-13T03:41:28.406Z",
       "rankingStatus": "pending"
     }
   ]

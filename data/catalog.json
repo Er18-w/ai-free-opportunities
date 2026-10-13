@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "updatedAt": "2026-10-13T03:15:46.319Z",
+  "updatedAt": "2026-10-13T03:41:28.406Z",
   "policyVersion": "admission-v5-model-first",
   "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
@@ -1979,6 +1979,21 @@
           "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/bge-m3/",
           "entryUrl": "https://dash.cloudflare.com/",
           "validUntil": null
+        },
+        {
+          "provider": "硅基流动",
+          "channel": "免费向量API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "调用零价；逐模型限速，数值以模型页为准",
+          "sourceUrl": "https://www.siliconflow.cn/pricing",
+          "entryUrl": "https://cloud.siliconflow.cn/",
+          "validUntil": null,
+          "claimMethod": "注册、实名认证，在 API 密钥页创建 Key",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
         }
       ]
     },
@@ -2092,6 +2107,1208 @@
           "sourceUrl": "https://console.groq.com/docs/rate-limits",
           "entryUrl": "https://console.groq.com/",
           "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "gitee-atria",
+      "title": "Atria Dawn Preview",
+      "modelId": "Atria-Dawn-Preview",
+      "provider": "模力方舟 Gitee AI",
+      "channel": "官方目录免费接口",
+      "categories": [
+        "coding",
+        "reasoning",
+        "general"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "面向编程、科研和办公的长程智能体模型",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "官方目录标免费；每日量与限速待核实",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "动态目录部分依赖官方搜索索引，调用体验待实测",
+        "Atria 为限时免费，结束时间未公开",
+        "不把其他收费模型或故障转移线路当作免费"
+      ],
+      "eligibility": "登录工作台创建访问令牌，在模型页复制调用示例",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://ai.gitee.com/serverless-api?model=F5-TTS",
+      "entryUrl": "https://ai.gitee.com/serverless-api",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1036,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "模力方舟 Gitee AI",
+          "channel": "官方目录免费接口",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "官方目录标免费；每日量与限速待核实",
+          "sourceUrl": "https://ai.gitee.com/serverless-api?model=F5-TTS",
+          "entryUrl": "https://ai.gitee.com/serverless-api",
+          "validUntil": null,
+          "claimMethod": "登录工作台创建访问令牌，在模型页复制调用示例",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ]
+    },
+    {
+      "id": "gitee-intern-s2",
+      "title": "Intern-S2",
+      "modelId": "Intern-S2",
+      "provider": "模力方舟 Gitee AI",
+      "channel": "官方目录免费接口",
+      "categories": [
+        "reasoning",
+        "vision"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "科学资料理解与科研智能体任务",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "官方目录标免费；每日量与限速待核实",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "动态目录部分依赖官方搜索索引，调用体验待实测",
+        "Atria 为限时免费，结束时间未公开",
+        "不把其他收费模型或故障转移线路当作免费"
+      ],
+      "eligibility": "登录工作台创建访问令牌，在模型页复制调用示例",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://ai.gitee.com/serverless-api?model=F5-TTS",
+      "entryUrl": "https://ai.gitee.com/serverless-api",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1037,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "模力方舟 Gitee AI",
+          "channel": "官方目录免费接口",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "官方目录标免费；每日量与限速待核实",
+          "sourceUrl": "https://ai.gitee.com/serverless-api?model=F5-TTS",
+          "entryUrl": "https://ai.gitee.com/serverless-api",
+          "validUntil": null,
+          "claimMethod": "登录工作台创建访问令牌，在模型页复制调用示例",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ]
+    },
+    {
+      "id": "gitee-qwen-embedding8",
+      "title": "Qwen3 Embedding 8B",
+      "modelId": "Qwen3-Embedding-8B",
+      "provider": "模力方舟 Gitee AI",
+      "channel": "官方目录免费接口",
+      "categories": [
+        "retrieval"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "文本、代码和多语言知识库索引",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "官方目录标免费；每日量与限速待核实",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "动态目录部分依赖官方搜索索引，调用体验待实测",
+        "Atria 为限时免费，结束时间未公开",
+        "不把其他收费模型或故障转移线路当作免费"
+      ],
+      "eligibility": "登录工作台创建访问令牌，在模型页复制调用示例",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://ai.gitee.com/serverless-api?model=F5-TTS",
+      "entryUrl": "https://ai.gitee.com/serverless-api",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1038,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "模力方舟 Gitee AI",
+          "channel": "官方目录免费接口",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "官方目录标免费；每日量与限速待核实",
+          "sourceUrl": "https://ai.gitee.com/serverless-api?model=F5-TTS",
+          "entryUrl": "https://ai.gitee.com/serverless-api",
+          "validUntil": null,
+          "claimMethod": "登录工作台创建访问令牌，在模型页复制调用示例",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ]
+    },
+    {
+      "id": "gitee-qwen-vl-embedding8",
+      "title": "Qwen3 VL Embedding 8B",
+      "modelId": "Qwen3-VL-Embedding-8B",
+      "provider": "模力方舟 Gitee AI",
+      "channel": "官方目录免费接口",
+      "categories": [
+        "retrieval",
+        "vision"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "图片、截图与文字放进同一知识库检索",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "官方目录标免费；每日量与限速待核实",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "动态目录部分依赖官方搜索索引，调用体验待实测",
+        "Atria 为限时免费，结束时间未公开",
+        "不把其他收费模型或故障转移线路当作免费"
+      ],
+      "eligibility": "登录工作台创建访问令牌，在模型页复制调用示例",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://ai.gitee.com/serverless-api?model=F5-TTS",
+      "entryUrl": "https://ai.gitee.com/serverless-api",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1039,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "模力方舟 Gitee AI",
+          "channel": "官方目录免费接口",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "官方目录标免费；每日量与限速待核实",
+          "sourceUrl": "https://ai.gitee.com/serverless-api?model=F5-TTS",
+          "entryUrl": "https://ai.gitee.com/serverless-api",
+          "validUntil": null,
+          "claimMethod": "登录工作台创建访问令牌，在模型页复制调用示例",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ]
+    },
+    {
+      "id": "sf-hunyuan-mt",
+      "title": "Hunyuan MT 7B",
+      "modelId": "tencent/Hunyuan-MT-7B",
+      "provider": "硅基流动",
+      "channel": "免费 API 型号",
+      "categories": [
+        "text"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "专门翻译模型，可接翻译工作流",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "调用零价；逐模型限速，数值以模型页为准",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "只使用免费型号，Pro 版本通常收费",
+        "免费模型固定限速；不代表无限并发",
+        "大陆网络与实际任务速度待实测"
+      ],
+      "eligibility": "注册、实名认证，在 API 密钥页创建 Key",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://www.siliconflow.cn/pricing",
+      "entryUrl": "https://cloud.siliconflow.cn/",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1040,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "硅基流动",
+          "channel": "免费 API 型号",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "调用零价；逐模型限速，数值以模型页为准",
+          "sourceUrl": "https://www.siliconflow.cn/pricing",
+          "entryUrl": "https://cloud.siliconflow.cn/",
+          "validUntil": null,
+          "claimMethod": "注册、实名认证，在 API 密钥页创建 Key",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "sf-paddleocr15",
+      "title": "PaddleOCR VL 1.5",
+      "modelId": "PaddlePaddle/PaddleOCR-VL-1.5",
+      "provider": "硅基流动",
+      "channel": "免费 API 型号",
+      "categories": [
+        "vision"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "文档图片、表格与版面识别",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "调用零价；逐模型限速，数值以模型页为准",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "只使用免费型号，Pro 版本通常收费",
+        "免费模型固定限速；不代表无限并发",
+        "大陆网络与实际任务速度待实测"
+      ],
+      "eligibility": "注册、实名认证，在 API 密钥页创建 Key",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://www.siliconflow.cn/pricing",
+      "entryUrl": "https://cloud.siliconflow.cn/",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1041,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "硅基流动",
+          "channel": "免费 API 型号",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "调用零价；逐模型限速，数值以模型页为准",
+          "sourceUrl": "https://www.siliconflow.cn/pricing",
+          "entryUrl": "https://cloud.siliconflow.cn/",
+          "validUntil": null,
+          "claimMethod": "注册、实名认证，在 API 密钥页创建 Key",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "sf-kolors",
+      "title": "Kolors",
+      "modelId": "Kwai-Kolors/Kolors",
+      "provider": "硅基流动",
+      "channel": "免费 API 型号",
+      "categories": [
+        "image"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "中文提示词生图，可接批量创作流程",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "调用零价；逐模型限速，数值以模型页为准",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "只使用免费型号，Pro 版本通常收费",
+        "免费模型固定限速；不代表无限并发",
+        "大陆网络与实际任务速度待实测"
+      ],
+      "eligibility": "注册、实名认证，在 API 密钥页创建 Key",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://www.siliconflow.cn/pricing",
+      "entryUrl": "https://cloud.siliconflow.cn/",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1042,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "硅基流动",
+          "channel": "免费 API 型号",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "调用零价；逐模型限速，数值以模型页为准",
+          "sourceUrl": "https://www.siliconflow.cn/pricing",
+          "entryUrl": "https://cloud.siliconflow.cn/",
+          "validUntil": null,
+          "claimMethod": "注册、实名认证，在 API 密钥页创建 Key",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "sf-sensevoice",
+      "title": "SenseVoice Small",
+      "modelId": "FunAudioLLM/SenseVoiceSmall",
+      "provider": "硅基流动",
+      "channel": "免费 API 型号",
+      "categories": [
+        "speech"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "多语言语音识别，适合转写工作流",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "调用零价；逐模型限速，数值以模型页为准",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "只使用免费型号，Pro 版本通常收费",
+        "免费模型固定限速；不代表无限并发",
+        "大陆网络与实际任务速度待实测"
+      ],
+      "eligibility": "注册、实名认证，在 API 密钥页创建 Key",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://www.siliconflow.cn/pricing",
+      "entryUrl": "https://cloud.siliconflow.cn/",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1043,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "硅基流动",
+          "channel": "免费 API 型号",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "调用零价；逐模型限速，数值以模型页为准",
+          "sourceUrl": "https://www.siliconflow.cn/pricing",
+          "entryUrl": "https://cloud.siliconflow.cn/",
+          "validUntil": null,
+          "claimMethod": "注册、实名认证，在 API 密钥页创建 Key",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "sf-xing4",
+      "title": "Xing4.0 29B",
+      "modelId": "XingChenAGI/Xing4.0-29B",
+      "provider": "硅基流动",
+      "channel": "免费 API 型号",
+      "categories": [
+        "text",
+        "general"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "中文文本整理与内容处理",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "调用零价；逐模型限速，数值以模型页为准",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "只使用免费型号，Pro 版本通常收费",
+        "免费模型固定限速；不代表无限并发",
+        "大陆网络与实际任务速度待实测"
+      ],
+      "eligibility": "注册、实名认证，在 API 密钥页创建 Key",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://www.siliconflow.cn/pricing",
+      "entryUrl": "https://cloud.siliconflow.cn/",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1044,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "硅基流动",
+          "channel": "免费 API 型号",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "调用零价；逐模型限速，数值以模型页为准",
+          "sourceUrl": "https://www.siliconflow.cn/pricing",
+          "entryUrl": "https://cloud.siliconflow.cn/",
+          "validUntil": null,
+          "claimMethod": "注册、实名认证，在 API 密钥页创建 Key",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "sf-xing-asr-ultra",
+      "title": "XingChen ASR V3.2 Ultra",
+      "modelId": "XingChenAGI/XingChenASR-V3.2-Ultra",
+      "provider": "硅基流动",
+      "channel": "免费 API 型号",
+      "categories": [
+        "speech"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "会议与长音频转写",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "调用零价；逐模型限速，数值以模型页为准",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "只使用免费型号，Pro 版本通常收费",
+        "免费模型固定限速；不代表无限并发",
+        "大陆网络与实际任务速度待实测"
+      ],
+      "eligibility": "注册、实名认证，在 API 密钥页创建 Key",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://www.siliconflow.cn/pricing",
+      "entryUrl": "https://cloud.siliconflow.cn/",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1045,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "硅基流动",
+          "channel": "免费 API 型号",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "调用零价；逐模型限速，数值以模型页为准",
+          "sourceUrl": "https://www.siliconflow.cn/pricing",
+          "entryUrl": "https://cloud.siliconflow.cn/",
+          "validUntil": null,
+          "claimMethod": "注册、实名认证，在 API 密钥页创建 Key",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "sf-bge-reranker",
+      "title": "BGE Reranker V2 M3",
+      "modelId": "BAAI/bge-reranker-v2-m3",
+      "provider": "硅基流动",
+      "channel": "免费 API 型号",
+      "categories": [
+        "retrieval"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "知识库搜索结果重排，提高检索相关性",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "调用零价；逐模型限速，数值以模型页为准",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "只使用免费型号，Pro 版本通常收费",
+        "免费模型固定限速；不代表无限并发",
+        "大陆网络与实际任务速度待实测"
+      ],
+      "eligibility": "注册、实名认证，在 API 密钥页创建 Key",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://www.siliconflow.cn/pricing",
+      "entryUrl": "https://cloud.siliconflow.cn/",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1046,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "硅基流动",
+          "channel": "免费 API 型号",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "调用零价；逐模型限速，数值以模型页为准",
+          "sourceUrl": "https://www.siliconflow.cn/pricing",
+          "entryUrl": "https://cloud.siliconflow.cn/",
+          "validUntil": null,
+          "claimMethod": "注册、实名认证，在 API 密钥页创建 Key",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "cohere-command-plus",
+      "title": "Command A+",
+      "modelId": "command-a-plus-05-2026",
+      "provider": "Cohere",
+      "channel": "免费评估 API",
+      "categories": [
+        "coding",
+        "reasoning",
+        "vision",
+        "general"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "多模态工具调用与智能体任务",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "评估 Key 共用1,000次/月；Chat 20次/分钟",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "多个模型共用评估额度，Agent 每一步调用分别扣次数",
+        "免费评估与付费生产服务分开",
+        "大陆网络、账户资格和月度恢复时点待实测"
+      ],
+      "eligibility": "注册后在 API Keys 创建评估 Key；付费生产环境另算",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://docs.cohere.com/v2/docs/command-a-plus",
+      "entryUrl": "https://dashboard.cohere.com/",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1047,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Cohere",
+          "channel": "免费评估 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "评估 Key 共用1,000次/月；Chat 20次/分钟",
+          "sourceUrl": "https://docs.cohere.com/v2/docs/rate-limits",
+          "entryUrl": "https://dashboard.cohere.com/",
+          "validUntil": null,
+          "claimMethod": "注册后在 API Keys 创建评估 Key；付费生产环境另算",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.cohere.ai/compatibility/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "cohere-command-reasoning",
+      "title": "Command A Reasoning",
+      "modelId": "command-a-reasoning-08-2025",
+      "provider": "Cohere",
+      "channel": "免费评估 API",
+      "categories": [
+        "reasoning",
+        "general"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "多步工具调用与资料检索推理",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "评估 Key 共用1,000次/月；Chat 20次/分钟",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "多个模型共用评估额度，Agent 每一步调用分别扣次数",
+        "免费评估与付费生产服务分开",
+        "大陆网络、账户资格和月度恢复时点待实测"
+      ],
+      "eligibility": "注册后在 API Keys 创建评估 Key；付费生产环境另算",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://docs.cohere.com/v2/docs/command-a-reasoning",
+      "entryUrl": "https://dashboard.cohere.com/",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1048,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Cohere",
+          "channel": "免费评估 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "评估 Key 共用1,000次/月；Chat 20次/分钟",
+          "sourceUrl": "https://docs.cohere.com/v2/docs/rate-limits",
+          "entryUrl": "https://dashboard.cohere.com/",
+          "validUntil": null,
+          "claimMethod": "注册后在 API Keys 创建评估 Key；付费生产环境另算",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.cohere.ai/compatibility/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "ling30flash",
+      "title": "Ling 3.0 Flash",
+      "modelId": "Ling-3.0-flash",
+      "provider": "蚂蚁百灵",
+      "channel": "新版月度 Token 抵扣券",
+      "categories": [
+        "coding",
+        "general"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_credits",
+      "stabilityTier": "B",
+      "freeSourceClass": 3,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "工具调用与高频智能体执行",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "新人20元券；每月1日10元券，月底失效",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "共享券按输入输出价格扣费，不能当作每模型独享",
+        "旧每日50万Token规则停止，10月31日统一迁移",
+        "实际10月价格、自动扣费设置和大陆网络待账户核实"
+      ],
+      "eligibility": "注册并开通计费账户，查看抵扣券；领取当月不补发月券",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/billing-upgrade/",
+      "entryUrl": "https://developer.ant-ling.com/",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1049,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "蚂蚁百灵",
+          "channel": "新版月度 Token 抵扣券",
+          "class": 3,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "新人20元券；每月1日10元券，月底失效",
+          "sourceUrl": "https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/billing-upgrade/",
+          "entryUrl": "https://developer.ant-ling.com/",
+          "validUntil": null,
+          "claimMethod": "注册并开通计费账户，查看抵扣券；领取当月不补发月券",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.ant-ling.com/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "ling26flash",
+      "title": "Ling 2.6 Flash",
+      "modelId": "Ling-2.6-flash",
+      "provider": "蚂蚁百灵",
+      "channel": "新版月度 Token 抵扣券",
+      "categories": [
+        "text",
+        "general"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_credits",
+      "stabilityTier": "B",
+      "freeSourceClass": 3,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "低成本文本工作流与工具调用",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "新人20元券；每月1日10元券，月底失效",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "共享券按输入输出价格扣费，不能当作每模型独享",
+        "旧每日50万Token规则停止，10月31日统一迁移",
+        "实际10月价格、自动扣费设置和大陆网络待账户核实"
+      ],
+      "eligibility": "注册并开通计费账户，查看抵扣券；领取当月不补发月券",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/billing-upgrade/",
+      "entryUrl": "https://developer.ant-ling.com/",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1050,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "蚂蚁百灵",
+          "channel": "新版月度 Token 抵扣券",
+          "class": 3,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "新人20元券；每月1日10元券，月底失效",
+          "sourceUrl": "https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/billing-upgrade/",
+          "entryUrl": "https://developer.ant-ling.com/",
+          "validUntil": null,
+          "claimMethod": "注册并开通计费账户，查看抵扣券；领取当月不补发月券",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.ant-ling.com/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "nim-nano-omni",
+      "title": "Nemotron 3 Nano Omni",
+      "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "provider": "NVIDIA NIM",
+      "channel": "免费开发 API",
+      "categories": [
+        "vision",
+        "reasoning",
+        "general"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "图片、视频和语音理解，用作多模态 Agent 后端",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "开发端点免费；日量未统一公开",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "免费开发端点不是生产服务承诺",
+        "日量、延迟和大陆网络待实测"
+      ],
+      "eligibility": "注册验证后创建 API Key，用于原型与开发",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "entryUrl": "https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1051,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "NVIDIA NIM",
+          "channel": "免费开发 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "开发端点免费；日量未统一公开",
+          "sourceUrl": "https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+          "entryUrl": "https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+          "validUntil": null,
+          "claimMethod": "注册验证后创建 API Key，用于原型与开发",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://integrate.api.nvidia.com/v1",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "kat-air-v1",
+      "title": "KAT Coder Air V1",
+      "modelId": "kat-coder-air-v1",
+      "provider": "快手万擎",
+      "channel": "KAT 免费 API",
+      "categories": [
+        "coding"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "支持 OpenCode 与函数工具调用的编程模型",
+      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
+      "allowance": "Air V1输入输出零价；限速以账户为准",
+      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
+      "limitations": [
+        "Air V2.5与Pro型号收费，不可混用",
+        "万擎默认后付费，切换收费型号可能产生账单",
+        "免费型号调用速度与大陆网络待实测"
+      ],
+      "eligibility": "注册开通万擎，创建 Key，选择 kat-coder-air-v1",
+      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
+      "officialUrl": "https://streamlake.com/document/WANQING/mdsorb4ejjptsmfyrn",
+      "entryUrl": "https://www.streamlake.com/product/kat-coder",
+      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1052,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "快手万擎",
+          "channel": "KAT 免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "Air V1输入输出零价；限速以账户为准",
+          "sourceUrl": "https://streamlake.com/document/WANQING/mdsorb4ejjptsmfyrn",
+          "entryUrl": "https://www.streamlake.com/product/kat-coder",
+          "validUntil": null,
+          "claimMethod": "注册开通万擎，创建 Key，选择 kat-coder-air-v1",
+          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://wanqing.streamlakeapi.com/api/gateway/v1/endpoints",
+        "protocol": "OpenAI-compatible;非文本接口按官方文档"
+      }
+    },
+    {
+      "id": "junie-qwen36",
+      "title": "Qwen3.6 27B",
+      "modelId": "Qwen3.6-27B",
+      "provider": "Junie Lite",
+      "channel": "常设免费编程Agent",
+      "categories": [
+        "coding",
+        "general"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "改代码、写测试和维护项目；当前底层模型可轮换",
+      "valueReason": "免费Agent能执行代码任务，并有持续免费或任务恢复规则。",
+      "allowance": "正常使用近乎不限量；触及容量上限会暂停",
+      "capacity": "官方免费规则已核，未带账户实测任务交付。",
+      "limitations": [
+        "官方未承诺固定次数，不能写成无条件无限",
+        "不在AI Assistant中提供；底层型号可能替换",
+        "大陆账号资格与网络条件待实测"
+      ],
+      "eligibility": "JetBrains账号登录Junie CLI或Air，选择Junie Lite；无需绑卡",
+      "evidenceLabel": "官方免费套餐已核，网络与任务体验待实测",
+      "officialUrl": "https://junie.jetbrains.com/docs/junie-lite.html",
+      "entryUrl": "https://junie.jetbrains.com/",
+      "ruleCheckedAt": "2026-10-13T03:41:28.406Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1053,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Junie Lite",
+          "channel": "常设免费编程Agent",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "正常使用近乎不限量；触及容量上限会暂停",
+          "sourceUrl": "https://junie.jetbrains.com/docs/junie-lite.html",
+          "entryUrl": "https://junie.jetbrains.com/",
+          "validUntil": null,
+          "claimMethod": "JetBrains账号登录Junie CLI或Air，选择Junie Lite；无需绑卡",
+          "lastVerifiedAt": "2026-10-13T03:41:28.406Z"
+        }
+      ]
+    },
+    {
+      "id": "jules-gemini25",
+      "title": "Gemini 2.5 Pro",
+      "modelId": "Gemini-2.5-Pro",
+      "provider": "Jules",
+      "channel": "免费代码任务Agent",
+      "categories": [
+        "coding",
+        "general"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "连接GitHub，让Agent修改代码、跑测试并交付修改",
+      "valueReason": "免费Agent能执行代码任务，并有持续免费或任务恢复规则。",
+      "allowance": "滚动24小时15个任务；最多3个同时执行",
+      "capacity": "官方免费规则已核，未带账户实测任务交付。",
+      "limitations": [
+        "免费任务使用2.5 Pro，不冒充最新付费型号",
+        "限额按任务计算，不是裸模型API额度",
+        "大陆网络和支持地区待核实"
+      ],
+      "eligibility": "Google账号登录，授权指定GitHub仓库，提交代码任务；需满18岁",
+      "evidenceLabel": "官方免费套餐已核，网络与任务体验待实测",
+      "officialUrl": "https://jules.google/docs/usage-limits/",
+      "entryUrl": "https://jules.google.com/",
+      "ruleCheckedAt": "2026-10-13T03:41:28.406Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1054,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Jules",
+          "channel": "免费代码任务Agent",
+          "class": 1,
+          "access": [
+            "web"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "滚动24小时15个任务；最多3个同时执行",
+          "sourceUrl": "https://jules.google/docs/usage-limits/",
+          "entryUrl": "https://jules.google.com/",
+          "validUntil": null,
+          "claimMethod": "Google账号登录，授权指定GitHub仓库，提交代码任务；需满18岁",
+          "lastVerifiedAt": "2026-10-13T03:41:28.406Z"
+        }
+      ]
+    },
+    {
+      "id": "ag-gemini38",
+      "title": "Gemini 3.8 Flash",
+      "modelId": "Gemini-3.8-Flash",
+      "provider": "Google Antigravity",
+      "channel": "个人免费Agent套餐",
+      "categories": [
+        "coding",
+        "general"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "编程、终端执行与浏览器协作；免费套餐官方矩阵可选",
+      "valueReason": "免费Agent能执行代码任务，并有持续免费或任务恢复规则。",
+      "allowance": "免费池每周恢复；任务复杂度影响消耗，次数未公开",
+      "capacity": "官方免费规则已核，未带账户实测任务交付。",
+      "limitations": [
+        "免费层按周恢复，不能套用付费层每5小时刷新",
+        "不提供免费裸模型API；不能抽取转售",
+        "地区资格和大陆网络待核实，非直接可用承诺"
+      ],
+      "eligibility": "下载并用符合资格的Google个人账号登录，在模型选择器选择",
+      "evidenceLabel": "官方免费套餐已核，网络与任务体验待实测",
+      "officialUrl": "https://antigravity.google/docs/models",
+      "entryUrl": "https://antigravity.google/",
+      "ruleCheckedAt": "2026-10-13T03:41:28.406Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1055,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Google Antigravity",
+          "channel": "个人免费Agent套餐",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "免费池每周恢复；任务复杂度影响消耗，次数未公开",
+          "sourceUrl": "https://antigravity.google/docs/models",
+          "entryUrl": "https://antigravity.google/",
+          "validUntil": null,
+          "claimMethod": "下载并用符合资格的Google个人账号登录，在模型选择器选择",
+          "lastVerifiedAt": "2026-10-13T03:41:28.406Z"
+        }
+      ]
+    },
+    {
+      "id": "ag-gemini31",
+      "title": "Gemini 3.1 Pro",
+      "modelId": "Gemini-3.1-Pro",
+      "provider": "Google Antigravity",
+      "channel": "个人免费Agent套餐",
+      "categories": [
+        "coding",
+        "general"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "free_tier",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "编程、终端执行与浏览器协作；免费套餐官方矩阵可选",
+      "valueReason": "免费Agent能执行代码任务，并有持续免费或任务恢复规则。",
+      "allowance": "免费池每周恢复；任务复杂度影响消耗，次数未公开",
+      "capacity": "官方免费规则已核，未带账户实测任务交付。",
+      "limitations": [
+        "免费层按周恢复，不能套用付费层每5小时刷新",
+        "不提供免费裸模型API；不能抽取转售",
+        "地区资格和大陆网络待核实，非直接可用承诺"
+      ],
+      "eligibility": "下载并用符合资格的Google个人账号登录，在模型选择器选择",
+      "evidenceLabel": "官方免费套餐已核，网络与任务体验待实测",
+      "officialUrl": "https://antigravity.google/docs/models",
+      "entryUrl": "https://antigravity.google/",
+      "ruleCheckedAt": "2026-10-13T03:41:28.406Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1056,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Google Antigravity",
+          "channel": "个人免费Agent套餐",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "免费池每周恢复；任务复杂度影响消耗，次数未公开",
+          "sourceUrl": "https://antigravity.google/docs/models",
+          "entryUrl": "https://antigravity.google/",
+          "validUntil": null,
+          "claimMethod": "下载并用符合资格的Google个人账号登录，在模型选择器选择",
+          "lastVerifiedAt": "2026-10-13T03:41:28.406Z"
         }
       ]
     }
