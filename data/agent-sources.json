@@ -7,294 +7,336 @@
       "name": "Kilo Code",
       "url": "https://kilo.ai/docs/getting-started/using-kilo-for-free",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "cline",
       "name": "Cline",
       "url": "https://docs.cline.bot/core-workflows/task-management",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "gemini-cli",
       "name": "Gemini CLI / Code Assist Agent",
       "url": "https://geminicli.com/docs/resources/quota-and-pricing/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "kiro",
       "name": "Kiro",
       "url": "https://kiro.dev/docs/models/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "trae",
       "name": "TRAE 中国版",
       "url": "https://docs.trae.cn/ide_plans-and-billing",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "qoder",
       "name": "Qoder",
       "url": "https://forum.qoder.com/t/pro-trial-credits-not-applied/11451",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "kiro-billing",
       "name": "Kiro 额度与恢复周期",
       "url": "https://kiro.dev/docs/billing/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "kilo-catalog",
       "name": "Kilo 免费模型动态目录",
       "url": "https://kilo.ai/landing/free-models",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 1
     },
     {
       "id": "qwen-auth",
       "name": "Qwen Code 免费层停止与新授权",
       "url": "https://qwenlm.github.io/qwen-code-docs/en/users/configuration/auth/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "manus-limits",
       "name": "Manus 免费月度上限",
       "url": "https://help.manus.im/en/articles/11985189-what-should-i-do-if-my-daily-refresh-credits-have-not-refreshed",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "mistral-subscription",
       "name": "Mistral Vibe 免费用量",
       "url": "https://docs.mistral.ai/admin/billing-usage/subscriptions",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "nim-directory",
       "name": "NVIDIA 免费模型目录",
       "url": "https://build.nvidia.com/models",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 1
     },
     {
       "id": "groq-quota",
       "name": "Groq 模型与免费限额",
       "url": "https://console.groq.com/docs/rate-limits",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "cf-directory",
       "name": "Cloudflare 完整模型目录",
       "url": "https://developers.cloudflare.com/workers-ai/models/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 1
     },
     {
       "id": "cf-pricing",
       "name": "Cloudflare 免费池和付费例外",
       "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "dtmaas-official",
       "name": "DTMaaS 新版免费计划",
       "url": "https://maas.antdigital.com/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "ling-billing",
       "name": "百灵免费权益迁移",
       "url": "https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/billing-upgrade/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 1
     },
     {
       "id": "atria-official",
       "name": "Atria 模型与官方接入",
       "url": "https://github.com/atria-asi/Atria-Dawn-Preview",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "gitee-models",
       "name": "模力方舟模型目录",
       "url": "https://ai.gitee.com/docs/products/apis",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "amd-tokenfactory",
       "name": "AMD Token Factory",
       "url": "https://developer.amd.com.cn/radeon/tokenfactory",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "step-plan",
       "name": "阶跃 Step Plan 活动",
       "url": "https://platform.stepfun.com/docs/zh/step-plan/overview",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "sf-prices",
       "name": "硅基流动价格",
       "url": "https://www.siliconflow.cn/pricing",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 1
     },
     {
       "id": "sf-limits",
       "name": "硅基流动免费限速",
       "url": "https://docs.siliconflow.cn/docs/userguide/faqs/rate-limit-and-upgradation",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "sf-changelog",
       "name": "硅基流动下线与计费变更",
       "url": "https://docs.siliconflow.cn/docs/release-notes/overview",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "gitee-live",
       "name": "模力方舟实时免费目录",
       "url": "https://ai.gitee.com/serverless-api?model=F5-TTS",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 1
     },
     {
       "id": "cohere-limits",
       "name": "Cohere评估额度",
       "url": "https://docs.cohere.com/v2/docs/rate-limits",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "cohere-plus",
       "name": "Cohere多模态Agent",
       "url": "https://docs.cohere.com/v2/docs/command-a-plus",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "ling-deprecation",
       "name": "百灵型号迁移",
       "url": "https://developer.ant-ling.com/zh-CN/docs/models/deprecation/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "ling-price",
       "name": "百灵价格与优惠变化",
       "url": "https://developer.ant-ling.com/zh-CN/docs/models/price/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "moma-official",
       "name": "MoMA官方新人包",
       "url": "https://www1.10086.cn/aboutus/news/groupnews/index_detail_55572.html",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "scnet-official",
       "name": "SCNet官方体验包",
       "url": "https://www.scnet.cn/help/docs/mainsite/activity/invite/quick-test/index.html",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "kat-price",
       "name": "KAT免费与收费型号",
       "url": "https://streamlake.com/document/WANQING/mdsorb4ejjptsmfyrn",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "longcat-current",
       "name": "LongCat当前定价",
       "url": "https://longcat.chat/platform/docs/zh/pricing/longcat-2.5",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "tokenrouter-current",
       "name": "TokenRouter当前模型目录",
       "url": "https://www.tokenrouter.com/models/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "tokenharbor-rules",
       "name": "TokenHarbor免费恢复周期",
       "url": "https://tokenharbor.ai/faq",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "tokenrhythm-rules",
       "name": "TokenRhythm当前权益",
       "url": "https://tokenrhythm.studio/docs/overview",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "mistral-rules",
       "name": "Mistral免费限额",
       "url": "https://help.mistral.ai/en/articles/698531-why-am-i-hitting-api-rate-limits-and-how-do-i-increase-them",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "junie-lite",
       "name": "Junie免费层与底层型号",
       "url": "https://junie.jetbrains.com/docs/junie-lite.html",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "jules-limits",
       "name": "Jules任务额度",
       "url": "https://jules.google/docs/usage-limits/",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "antigravity-models",
       "name": "Antigravity套餐型号",
       "url": "https://antigravity.google/docs/models",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 1
     },
     {
       "id": "antigravity-plans",
       "name": "Antigravity恢复周期",
       "url": "https://antigravity.google/docs/plans",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     },
     {
       "id": "cerebras-limits",
       "name": "Cerebras试用变化",
       "url": "https://inference-docs.cerebras.ai/support/rate-limits",
       "status": "active",
-      "type": "official_page"
+      "type": "official_page",
+      "cadenceDays": 7
     }
   ]
 }

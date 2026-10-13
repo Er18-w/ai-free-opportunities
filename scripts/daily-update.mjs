@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {root,readJson,writeJson,sha256} from './lib.mjs';
 import {runAgentMonitor} from './agent-monitor.mjs';
+import {shouldInspectSource} from './source-policy.mjs';
 
 const now=new Date(),nowIso=now.toISOString();
 const forceAll=process.env.FORCE_ALL_SOURCES==='1';
@@ -9,6 +10,8 @@ const bootstrap=process.argv.includes('--bootstrap');
 const discoveryStart=process.env.DISCOVERY_START||'2026-06-01';
 const report={runAt:nowIso,forceAll,bootstrap,discoveryStart,sources:[],modelSources:[],publicDataChanged:false,candidateCount:0,warnings:[],backfillNotes:[]};
 const [sources,modelSources]=await Promise.all([readJson('data/sources.json'),readJson('data/model-sources.json')]);
+let modelState={items:{}};try{modelState=await readJson('.runtime/state/model-source-state.json');}catch{}
+let discoveryCandidates=[];try{discoveryCandidates=(await readJson('.runtime/candidates/campaigns.json')).items??[];}catch{}
 const cadenceDays={daily:1,weekly:6,monthly:27};
 
 function due(source){if(source.status==='stopped')return false;if(forceAll||bootstrap||!source.lastAttemptAt)return true;return now-new Date(source.lastAttemptAt)>=cadenceDays[source.cadence]*86400000;}
@@ -27,6 +30,8 @@ function parseModelSource(source,text){
   return [...found].map(value=>({id:value,name:value,sourceUrl:source.url,status:'pending',discoveredAt:nowIso}));
 }
 async function inspectModelSource(source){
+  if(!shouldInspectSource(source,modelState.items[source.id],{now,force:forceAll||bootstrap,candidates:discoveryCandidates})){report.modelSources.push({id:source.id,outcome:'not_due'});return;}
+  modelState.items[source.id]={...modelState.items[source.id],lastAttemptAt:nowIso};
   if(source.mode==='manual_js'){
     try{
       await fetchText(source.url);
@@ -43,6 +48,7 @@ async function inspectModelSource(source){
   catch(error){report.modelSources.push({id:source.id,name:source.name,url:source.url,outcome:/HTTP (401|403|429)/.test(String(error.message))?'blocked':'failed',error:String(error.message??error)});report.warnings.push(`${source.id} ${source.name}: ${error.message}；转人工核查，不删除上次候选。`);}
 }
 async function inspect(source){
+  if(source.discoveryOwner==='campaigns'){report.sources.push({id:source.id,outcome:'handled_by_campaigns'});return;}
   if(!due(source)){report.sources.push({id:source.id,outcome:'not_due'});return;}source.lastAttemptAt=nowIso;
   try{
     const text=await fetchText(source.machineUrl??source.url);let candidates=0;
@@ -68,6 +74,7 @@ async function inspect(source){
 const queue=sources.items.filter(source=>source.status!=='stopped');for(let i=0;i<queue.length;i+=5)await Promise.all(queue.slice(i,i+5).map(inspect));
 for(const source of sources.items.filter(source=>source.status==='stopped'))report.sources.push({id:source.id,outcome:'stopped'});
 const modelQueue=modelSources.items.filter(source=>source.status==='active');for(let i=0;i<modelQueue.length;i+=4)await Promise.all(modelQueue.slice(i,i+4).map(inspectModelSource));
+await writeJson('.runtime/state/model-source-state.json',modelState);
 await writeJson('data/sources.json',sources);await fs.mkdir(path.join(root,'.runtime/reports'),{recursive:true});
 const agentReport=await runAgentMonitor();report.agentSources=agentReport.sources;report.agentChangeCount=agentReport.changes.length;
 await fs.writeFile(path.join(root,'.runtime/reports',bootstrap?'bootstrap-latest.json':'latest.json'),JSON.stringify({...report,reportHash:sha256(JSON.stringify(report))},null,2)+'\n');

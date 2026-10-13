@@ -54,6 +54,6 @@ export function clusterCandidates(items){
 }
 export function mergeLedger(previous=[],current=[],nowIso=new Date().toISOString()){
   const map=new Map(previous.map(item=>[item.clusterId,{...item,seenThisRun:false}]));
-  for(const item of current){const old=map.get(item.clusterId);map.set(item.clusterId,{...old,...item,firstSeenAt:old?.firstSeenAt??nowIso,lastSeenAt:nowIso,seenThisRun:true,status:'candidate'});}
+  for(const item of current){const old=map.get(item.clusterId);const changed=!old||['title','benefitType','validUntil','accessThreshold','claimMethod','discoveryExcerpt'].some(key=>old[key]!==item[key]);map.set(item.clusterId,{...old,...item,firstSeenAt:old?.firstSeenAt??nowIso,revisionChangedAt:changed?nowIso:old.revisionChangedAt??old.firstSeenAt,lastSeenAt:nowIso,seenThisRun:true,status:'candidate'});}
   return [...map.values()].map(item=>({...item,status:item.seenThisRun?'candidate':'not_seen_this_run'})).sort((a,b)=>b.discoveryScore-a.discoveryScore||String(b.lastSeenAt).localeCompare(String(a.lastSeenAt)));
 }

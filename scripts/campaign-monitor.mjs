@@ -2,13 +2,15 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {root,readJson,writeJson,sha256} from './lib.mjs';
 import {clean,lower,matchesBenefit,hasRiskSignal,parseDate,canonicalUrl,discoveryScore,clusterCandidates,mergeLedger} from './campaign-core.mjs';
+import {resourceLinks} from './source-policy.mjs';
 
 const now=new Date(),nowIso=now.toISOString();
 const bootstrap=process.argv.includes('--bootstrap')||process.env.CAMPAIGN_BOOTSTRAP==='1';
-const bootstrapDays=Number(process.env.BOOTSTRAP_DAYS||90);
-const cutoff=new Date(now.valueOf()-bootstrapDays*86400000);
-const [sourceData,keywords,campaigns]=await Promise.all([readJson('data/campaign-sources.json'),readJson('data/campaign-keywords.json'),readJson('data/campaigns.json')]);
-const report={runAt:nowIso,mode:bootstrap?'bootstrap':'incremental',bootstrapDays,sources:[],candidateCount:0,clusterCount:0,publicChecks:[],warnings:[]};
+const bootstrapStart=process.env.DISCOVERY_START||'2026-06-01';
+const cutoff=new Date(`${bootstrapStart}T00:00:00Z`);
+const bootstrapDays=Math.ceil((now-cutoff)/86400000);
+const [sourceData,keywords,offers]=await Promise.all([readJson('data/campaign-sources.json'),readJson('data/campaign-keywords.json'),readJson('data/offers.json')]);
+const report={runAt:nowIso,mode:bootstrap?'bootstrap':'incremental',bootstrapStart:bootstrap?bootstrapStart:null,bootstrapDays,sources:[],candidateCount:0,clusterCount:0,publicChecks:[],warnings:[]};
 const statePath='.runtime/state/campaign-state.json';
 let state={sources:{},ledger:[]};try{state=await readJson(statePath);}catch{}
 if(process.argv.includes('--reset')){state={sources:{},ledger:[]};for(const source of sourceData.items)source.failureStreak=0;}
@@ -45,6 +47,7 @@ for(const source of sourceData.items.filter(item=>item.status==='active')){
   try{
     const result=await fetchText(source);if(result.notModified){source.lastAttemptAt=nowIso;report.sources.push({id:source.id,outcome:'not_modified'});continue;}
     let items=[];if(source.mode==='rss')items=rssItems(result.text,source);if(source.mode==='deals_json')items=dealItems(JSON.parse(result.text),source);if(source.mode==='aihot_json')items=aihotItems(JSON.parse(result.text),source);
+    if(source.mode==='model_resource_html')items=resourceLinks(result.text,source.machineUrl).filter(item=>matchesBenefit(item.summary,keywords.benefits)&&!hasRiskSignal(item.summary,keywords.riskTerms)).map(item=>baseItem(source,item.title,item.url,null,{summary:item.summary,discoveryUrl:item.url,riskNotes:'聚合资源目录；无可信发布时间，不能直接公开。官方地址和免费规则需补齐。'}));
     const accepted=items.filter(item=>item.discoveryScore>=(bootstrap?22:30)).sort((a,b)=>b.discoveryScore-a.discoveryScore).slice(0,bootstrap?500:150);
     candidates.push(...accepted);source.lastSuccessAt=nowIso;source.lastError=null;source.health='ok';source.failureStreak=0;report.sources.push({id:source.id,outcome:'ok',candidates:accepted.length});
   }catch(error){source.lastError=String(error.message??error);source.health=/HTTP (401|403|429)/.test(source.lastError)?'blocked':'failed';source.failureStreak=(source.failureStreak??0)+1;report.sources.push({id:source.id,outcome:source.health,error:source.lastError,failureStreak:source.failureStreak});report.warnings.push(`${source.name}: ${source.lastError}`);}
@@ -54,11 +57,11 @@ const exact=[...new Map(candidates.map(item=>[`${lower(item.title)}|${canonicalU
 state.ledger=mergeLedger(state.ledger??[],clustered,nowIso).slice(0,2000);state.updatedAt=nowIso;await writeJson(statePath,state);
 await writeJson('.runtime/candidates/campaigns.json',{schemaVersion:'2.0.0',generatedAt:nowIso,mode:report.mode,windowStart:bootstrap?cutoff.toISOString():null,note:'私有候选事件。发现分仅用于安排复核顺序，不代表可以公开；必须回到厂商官方页补齐字段并通过任务容量门槛。',items:state.ledger});
 report.candidateCount=exact.length;report.clusterCount=clustered.length;
-for(const item of campaigns.items){
+for(const item of offers.items){
   if(item.validUntil&&new Date(`${item.validUntil}T23:59:59+08:00`)<now){item.status='archived';report.publicChecks.push({id:item.id,outcome:'expired'});continue;}
   try{const result=await fetchText({id:`public-${item.id}`,machineUrl:item.sourceUrl},'text/html,application/json;q=0.8,*/*;q=0.5');const page=lower(result.text??''),ended=/活动已结束|优惠已结束|已领完|page not found|404 not found/.test(page);report.publicChecks.push({id:item.id,outcome:ended?'needs_manual_review':'reachable'});if(ended)report.warnings.push(`${item.title}: 官方页出现结束或失效关键词，需要人工确认；本轮不自动删除。`);}
   catch(error){report.publicChecks.push({id:item.id,outcome:'unreachable',error:String(error.message??error)});report.warnings.push(`${item.title}: 官方页暂不可达，保留上次有效状态。`);}
 }
-await writeJson('data/campaign-sources.json',sourceData);await writeJson('data/campaigns.json',campaigns);
+await writeJson('data/campaign-sources.json',sourceData);await writeJson('data/offers.json',offers);
 await fs.mkdir(path.join(root,'.runtime/reports'),{recursive:true});await fs.writeFile(path.join(root,'.runtime/reports',bootstrap?'campaign-bootstrap.json':'campaign-latest.json'),JSON.stringify({...report,reportHash:sha256(JSON.stringify(report))},null,2)+'\n');
 console.log(JSON.stringify(report,null,2));const attempted=report.sources.filter(source=>!['not_due','not_modified'].includes(source.outcome));if(attempted.length&&!attempted.some(source=>source.outcome==='ok'))process.exitCode=10;

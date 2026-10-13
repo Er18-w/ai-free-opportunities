@@ -34,20 +34,20 @@ jobs:
           key: campaign-state-${{ github.run_id }}
           restore-keys: |
             campaign-state-
+      - name: Discover and deduplicate opportunities first
+        id: campaigns
+        continue-on-error: true
+        run: ${{ github.event_name == 'workflow_dispatch' && inputs.full_scan && 'npm run campaign:bootstrap' || 'npm run campaigns' }}
       - name: Check public sources
         id: daily
         continue-on-error: true
         env:
           FORCE_ALL_SOURCES: ${{ github.event_name == 'workflow_dispatch' && inputs.full_scan && '1' || '0' }}
-        run: npm run daily
+        run: ${{ github.event_name == 'workflow_dispatch' && inputs.full_scan && 'npm run discovery:bootstrap' || 'npm run daily' }}
       - name: Build source search plan and check official pages
         id: source_plan
         continue-on-error: true
         run: ${{ github.event_name == 'workflow_dispatch' && inputs.full_scan && 'npm run sources:bootstrap' || 'npm run sources:plan' }}
-      - name: Hunt and verify campaign opportunities
-        id: campaigns
-        continue-on-error: true
-        run: ${{ github.event_name == 'workflow_dispatch' && inputs.full_scan && 'npm run campaign:bootstrap' || 'npm run campaigns' }}
       - run: npm test
       - run: npm run validate
       - run: npm run build
@@ -67,7 +67,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/sources.json data/campaign-sources.json data/campaigns.json
+          git add data/sources.json data/campaign-sources.json data/offers.json
           git commit -m "data: daily source check"
           git push
       - name: Report source failures

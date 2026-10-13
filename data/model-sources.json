@@ -9,8 +9,12 @@
       "vendorId": "V003",
       "url": "https://cloud.tencent.com/document/product/1729/97731",
       "mode": "html_regex",
-      "patterns": ["Hunyuan-[A-Za-z0-9._-]+", "Tencent HY [A-Za-z0-9. -]+"],
-      "status": "active"
+      "patterns": [
+        "Hunyuan-[A-Za-z0-9._-]+",
+        "Tencent HY [A-Za-z0-9. -]+"
+      ],
+      "status": "active",
+      "cadenceDays": 7
     },
     {
       "id": "MS02",
@@ -19,7 +23,8 @@
       "url": "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
       "mode": "manual_js",
       "manualReason": "官方页可达，但模型表由脚本渲染；无稳定公开接口时转人工核查，不能把空结果写成无模型。",
-      "status": "active"
+      "status": "active",
+      "cadenceDays": 7
     },
     {
       "id": "MS03",
@@ -27,8 +32,15 @@
       "vendorId": "V034",
       "url": "https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model",
       "mode": "html_regex",
-      "patterns": ["Hy[0-9]+(?: preview)?", "GLM-[A-Za-z0-9.:-]+", "MiniMax-[A-Za-z0-9.:-]+", "Kimi-[A-Za-z0-9.:-]+", "Deepseek-[A-Za-z0-9.:-]+"],
-      "status": "active"
+      "patterns": [
+        "Hy[0-9]+(?: preview)?",
+        "GLM-[A-Za-z0-9.:-]+",
+        "MiniMax-[A-Za-z0-9.:-]+",
+        "Kimi-[A-Za-z0-9.:-]+",
+        "Deepseek-[A-Za-z0-9.:-]+"
+      ],
+      "status": "active",
+      "cadenceDays": 7
     },
     {
       "id": "MS04",
@@ -37,7 +49,8 @@
       "url": "https://opencode.ai/zen/v1/models",
       "documentationUrl": "https://opencode.ai/docs/zen/",
       "mode": "json_data",
-      "status": "active"
+      "status": "active",
+      "cadenceDays": 7
     },
     {
       "id": "MS05",
@@ -46,7 +59,8 @@
       "url": "https://cloud.siliconflow.cn/models",
       "mode": "manual_js",
       "manualReason": "模型广场需登录且由脚本渲染；静态 HTML 只含资源路径，正则解析会制造假模型。",
-      "status": "active"
+      "status": "active",
+      "cadenceDays": 7
     },
     {
       "id": "MS06",
@@ -54,8 +68,12 @@
       "vendorId": "V019",
       "url": "https://console.groq.com/docs/models",
       "mode": "html_regex",
-      "patterns": ["(?:openai|meta-llama|moonshotai|qwen|groq)/[A-Za-z0-9._:-]+", "llama-[A-Za-z0-9._:-]+"],
-      "status": "active"
+      "patterns": [
+        "(?:openai|meta-llama|moonshotai|qwen|groq)/[A-Za-z0-9._:-]+",
+        "llama-[A-Za-z0-9._:-]+"
+      ],
+      "status": "active",
+      "cadenceDays": 7
     },
     {
       "id": "MS07",
@@ -63,8 +81,11 @@
       "vendorId": "V024",
       "url": "https://docs.mistral.ai/getting-started/models/",
       "mode": "html_regex",
-      "patterns": ["(?:mistral|codestral|ministral|pixtral)-[a-z0-9._-]+"],
-      "status": "active"
+      "patterns": [
+        "(?:mistral|codestral|ministral|pixtral)-[a-z0-9._-]+"
+      ],
+      "status": "active",
+      "cadenceDays": 7
     },
     {
       "id": "MS08",
@@ -74,8 +95,11 @@
       "documentationUrl": "https://developers.cloudflare.com/workers-ai/models/",
       "mode": "manual_js",
       "manualReason": "官方目录可达但索引页未暴露稳定完整的机器清单；每日记录可达性，模型变化转人工核查。",
-      "patterns": ["@cf/[A-Za-z0-9._-]+/[A-Za-z0-9._:-]+"],
-      "status": "active"
+      "patterns": [
+        "@cf/[A-Za-z0-9._-]+/[A-Za-z0-9._:-]+"
+      ],
+      "status": "active",
+      "cadenceDays": 7
     }
   ]
 }
