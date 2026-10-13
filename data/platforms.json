@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T13:46:56.516Z",
+  "updatedAt": "2026-10-13T14:19:00.000Z",
   "items": [
     {
       "id": "workbuddy",
@@ -62,14 +62,15 @@
       "stability": "长期免费层",
       "evidenceStatus": "官方限额已核",
       "sourceUrl": "https://console.groq.com/docs/rate-limits",
-      "entryUrl": "https://console.groq.com/"
+      "entryUrl": "https://console.groq.com/",
+      "lastVerifiedAt": "2026-10-13T22:19:00+08:00"
     },
     {
       "id": "opencode",
       "rank": 4,
       "name": "OpenCode Zen",
       "summary": "经常轮换开放高价值编程模型，适合写代码。",
-      "freeAmount": "多款模型价格为 0；统一上限未公开",
+      "freeAmount": "实时目录现有 11 个 Free 型号；统一上限未公开",
       "models": [
         "Step 5 Preview",
         "Muse Spark 1.3",
@@ -83,8 +84,9 @@
       "mainlandAccess": "网络条件需实测",
       "stability": "模型轮换",
       "evidenceStatus": "当前免费名单需每日核对",
-      "sourceUrl": "https://opencode.ai/zen",
-      "entryUrl": "https://opencode.ai/"
+      "sourceUrl": "https://docs.opencode.ai/docs/zen/",
+      "entryUrl": "https://opencode.ai/",
+      "lastVerifiedAt": "2026-10-13T22:19:00+08:00"
     },
     {
       "id": "marvis",
