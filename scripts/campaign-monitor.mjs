@@ -6,6 +6,7 @@ import {resourceLinks} from './source-policy.mjs';
 
 const now=new Date(),nowIso=now.toISOString();
 const bootstrap=process.argv.includes('--bootstrap')||process.env.CAMPAIGN_BOOTSTRAP==='1';
+const forceDiscovery=process.argv.includes('--force')||process.env.FORCE_ALL_SOURCES==='1';
 const bootstrapStart=process.env.DISCOVERY_START||'2026-06-01';
 const cutoff=new Date(`${bootstrapStart}T00:00:00Z`);
 const bootstrapDays=Math.ceil((now-cutoff)/86400000);
@@ -15,7 +16,7 @@ const statePath='.runtime/state/campaign-state.json';
 let state={sources:{},ledger:[]};try{state=await readJson(statePath);}catch{}
 if(process.argv.includes('--reset')){state={sources:{},ledger:[]};for(const source of sourceData.items)source.failureStreak=0;}
 
-function due(source){if(bootstrap)return true;const last=source.lastAttemptAt&&parseDate(source.lastAttemptAt);return !last||now-last>=Number(source.cadenceHours||6)*3600000;}
+function due(source){if(bootstrap||forceDiscovery)return true;const last=source.lastAttemptAt&&parseDate(source.lastAttemptAt);return !last||now-last>=Number(source.cadenceHours||6)*3600000;}
 async function fetchText(source,accept='application/json,text/xml,application/rss+xml,text/html;q=0.8,*/*;q=0.5'){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000),prior=state.sources[source.id]??{};
   const headers={'user-agent':'ai-free-opportunities-campaign-monitor/2.0','accept':accept};

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "updatedAt": "2026-10-13T03:41:28.406Z",
+  "updatedAt": "2026-10-13T05:04:10.596Z",
   "policyVersion": "admission-v5-model-first",
   "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
@@ -3311,6 +3311,309 @@
           "lastVerifiedAt": "2026-10-13T03:41:28.406Z"
         }
       ]
+    },
+    {
+      "id": "stepaudio3-realtime",
+      "title": "StepAudio 3 Realtime",
+      "modelId": "stepaudio-3-realtime-preview",
+      "provider": "阶跃星辰",
+      "channel": "普通API限时免费",
+      "categories": [
+        "speech",
+        "general"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "实时语音Agent：听说、自然打断与工具调用",
+      "valueReason": "官方当前免费接口具有明确工作流用途；非小额领取奖励。",
+      "allowance": "当前限免；零充值档共用100请求/分钟，日量未公布",
+      "capacity": "官方免费规则与速率已核，完整任务容量未带账户实测。",
+      "limitations": [
+        "零充值档共用5并发、50万Token/分钟，不能复制成每个模型独享",
+        "限免截止日未公布；预览结束会下线，正式型号另收费",
+        "普通API与Step Plan套餐不互通，勿选收费语音型号",
+        "大陆网络及实际任务体验待实测"
+      ],
+      "eligibility": "注册并实名认证，创建API Key，选择带preview的免费型号",
+      "evidenceLabel": "官方规则已核；调用体验待实测",
+      "officialUrl": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "entryUrl": "https://platform.stepfun.com/",
+      "ruleCheckedAt": "2026-10-13T05:04:10.596Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1057,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "阶跃星辰",
+          "channel": "普通API限时免费",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "当前限免；零充值档共用100请求/分钟，日量未公布",
+          "sourceUrl": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+          "entryUrl": "https://platform.stepfun.com/",
+          "validUntil": null,
+          "claimMethod": "注册并实名认证，创建API Key，选择带preview的免费型号",
+          "lastVerifiedAt": "2026-10-13T05:04:10.596Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.stepfun.com/v1",
+        "protocol": "WebSocket Realtime"
+      },
+      "modelDocumentationUrl": "https://platform.stepfun.com/docs/zh/guides/models/stepaudio-3-realtime"
+    },
+    {
+      "id": "stepaudio3-chat",
+      "title": "StepAudio 3 Chat",
+      "modelId": "stepaudio-3-chat-preview",
+      "provider": "阶跃星辰",
+      "channel": "普通API限时免费",
+      "categories": [
+        "speech",
+        "general"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "音频理解与工具调用，可接语音工作流",
+      "valueReason": "官方当前免费接口具有明确工作流用途；非小额领取奖励。",
+      "allowance": "当前限免；零充值档共用100请求/分钟，日量未公布",
+      "capacity": "官方免费规则与速率已核，完整任务容量未带账户实测。",
+      "limitations": [
+        "零充值档共用5并发、50万Token/分钟，不能复制成每个模型独享",
+        "限免截止日未公布；预览结束会下线，正式型号另收费",
+        "普通API与Step Plan套餐不互通，勿选收费语音型号",
+        "大陆网络及实际任务体验待实测"
+      ],
+      "eligibility": "注册并实名认证，创建API Key，选择带preview的免费型号",
+      "evidenceLabel": "官方规则已核；调用体验待实测",
+      "officialUrl": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "entryUrl": "https://platform.stepfun.com/",
+      "ruleCheckedAt": "2026-10-13T05:04:10.596Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1058,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "阶跃星辰",
+          "channel": "普通API限时免费",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "当前限免；零充值档共用100请求/分钟，日量未公布",
+          "sourceUrl": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+          "entryUrl": "https://platform.stepfun.com/",
+          "validUntil": null,
+          "claimMethod": "注册并实名认证，创建API Key，选择带preview的免费型号",
+          "lastVerifiedAt": "2026-10-13T05:04:10.596Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.stepfun.com/v1",
+        "protocol": "OpenAI-compatible chat completions"
+      },
+      "modelDocumentationUrl": "https://platform.stepfun.com/docs/zh/guides/models/stepaudio-3-realtime"
+    },
+    {
+      "id": "stepaudio3-gen",
+      "title": "StepAudio 3 Gen",
+      "modelId": "stepaudio-3-gen-preview",
+      "provider": "阶跃星辰",
+      "channel": "普通API限时免费",
+      "categories": [
+        "speech"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "生成配音、多角色对白与环境音",
+      "valueReason": "官方当前免费接口具有明确工作流用途；非小额领取奖励。",
+      "allowance": "当前限免；零充值档共用100请求/分钟，日量未公布",
+      "capacity": "官方免费规则与速率已核，完整任务容量未带账户实测。",
+      "limitations": [
+        "零充值档共用5并发、50万Token/分钟，不能复制成每个模型独享",
+        "限免截止日未公布；预览结束会下线，正式型号另收费",
+        "普通API与Step Plan套餐不互通，勿选收费语音型号",
+        "大陆网络及实际任务体验待实测"
+      ],
+      "eligibility": "注册并实名认证，创建API Key，选择带preview的免费型号",
+      "evidenceLabel": "官方规则已核；调用体验待实测",
+      "officialUrl": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "entryUrl": "https://platform.stepfun.com/",
+      "ruleCheckedAt": "2026-10-13T05:04:10.596Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1059,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "阶跃星辰",
+          "channel": "普通API限时免费",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "当前限免；零充值档共用100请求/分钟，日量未公布",
+          "sourceUrl": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+          "entryUrl": "https://platform.stepfun.com/",
+          "validUntil": null,
+          "claimMethod": "注册并实名认证，创建API Key，选择带preview的免费型号",
+          "lastVerifiedAt": "2026-10-13T05:04:10.596Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.stepfun.com/v1",
+        "protocol": "HTTP audio task"
+      },
+      "modelDocumentationUrl": "https://platform.stepfun.com/docs/zh/guides/models/stepaudio-3-gen"
+    },
+    {
+      "id": "stepaudio3-music",
+      "title": "StepAudio 3 Music",
+      "modelId": "stepaudio-3-music-preview",
+      "provider": "阶跃星辰",
+      "channel": "普通API限时免费",
+      "categories": [
+        "speech"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "歌曲、纯音乐与参考音频创作",
+      "valueReason": "官方当前免费接口具有明确工作流用途；非小额领取奖励。",
+      "allowance": "当前限免；零充值档共用100请求/分钟，日量未公布",
+      "capacity": "官方免费规则与速率已核，完整任务容量未带账户实测。",
+      "limitations": [
+        "零充值档共用5并发、50万Token/分钟，不能复制成每个模型独享",
+        "限免截止日未公布；预览结束会下线，正式型号另收费",
+        "普通API与Step Plan套餐不互通，勿选收费语音型号",
+        "大陆网络及实际任务体验待实测"
+      ],
+      "eligibility": "注册并实名认证，创建API Key，选择带preview的免费型号",
+      "evidenceLabel": "官方规则已核；调用体验待实测",
+      "officialUrl": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "entryUrl": "https://platform.stepfun.com/",
+      "ruleCheckedAt": "2026-10-13T05:04:10.596Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1060,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "阶跃星辰",
+          "channel": "普通API限时免费",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "当前限免；零充值档共用100请求/分钟，日量未公布",
+          "sourceUrl": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+          "entryUrl": "https://platform.stepfun.com/",
+          "validUntil": null,
+          "claimMethod": "注册并实名认证，创建API Key，选择带preview的免费型号",
+          "lastVerifiedAt": "2026-10-13T05:04:10.596Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://api.stepfun.com/v1",
+        "protocol": "HTTP audio task"
+      },
+      "modelDocumentationUrl": "https://platform.stepfun.com/docs/zh/guides/models/stepaudio-3-music"
+    },
+    {
+      "id": "sensenova68-flash-lite",
+      "title": "SenseNova 6.8 Flash Lite",
+      "modelId": "sensenova-6.8-flash-lite",
+      "provider": "商汤日日新",
+      "channel": "Token Plan公测免费池",
+      "categories": [
+        "general",
+        "reasoning",
+        "vision"
+      ],
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_free",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "办公Agent后端：文档、表格、数据分析与长程任务",
+      "valueReason": "官方当前免费接口具有明确工作流用途；非小额领取奖励。",
+      "allowance": "共用60,000积分/5小时；不能等同调用次数",
+      "capacity": "官方免费规则与速率已核，完整任务容量未带账户实测。",
+      "limitations": [
+        "公测免费结束时间未公布",
+        "特殊模型扣量不同，积分不能当作Token数或固定任务数",
+        "实际消耗、周期机制与大陆网络待账户实测"
+      ],
+      "eligibility": "中国内地入口注册，申请免费Token Plan并创建API Key，可接Hermes/OpenClaw",
+      "evidenceLabel": "官方规则已核；调用体验待实测",
+      "officialUrl": "https://www.sensenova.cn/token-plan",
+      "entryUrl": "https://platform.sensenova.cn/token-plan",
+      "ruleCheckedAt": "2026-10-13T05:04:10.596Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1061,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "商汤日日新",
+          "channel": "Token Plan公测免费池",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "共用60,000积分/5小时；不能等同调用次数",
+          "sourceUrl": "https://www.sensenova.cn/token-plan",
+          "entryUrl": "https://platform.sensenova.cn/token-plan",
+          "validUntil": null,
+          "claimMethod": "中国内地入口注册，申请免费Token Plan并创建API Key，可接Hermes/OpenClaw",
+          "lastVerifiedAt": "2026-10-13T05:04:10.596Z"
+        }
+      ],
+      "api": {
+        "baseUrl": "https://token.sensenova.cn/v1",
+        "protocol": "OpenAI-compatible chat completions"
+      },
+      "modelDocumentationUrl": "https://github.com/OpenSenseNova/SenseNova-Skills/blob/main/INSTALL_CN.md"
     }
   ]
 }

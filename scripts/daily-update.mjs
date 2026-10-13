@@ -79,4 +79,4 @@ await writeJson('data/sources.json',sources);await fs.mkdir(path.join(root,'.run
 const agentReport=await runAgentMonitor();report.agentSources=agentReport.sources;report.agentChangeCount=agentReport.changes.length;
 await fs.writeFile(path.join(root,'.runtime/reports',bootstrap?'bootstrap-latest.json':'latest.json'),JSON.stringify({...report,reportHash:sha256(JSON.stringify(report))},null,2)+'\n');
 console.log(JSON.stringify(report,null,2));
-const attempted=report.sources.filter(source=>!['not_due','stopped'].includes(source.outcome));if(attempted.length&&!attempted.some(source=>source.outcome==='ok'))process.exitCode=10;
+const attempted=report.sources.filter(source=>!['not_due','stopped','handled_by_campaigns'].includes(source.outcome));if(attempted.length&&!attempted.some(source=>source.outcome==='ok'))process.exitCode=10;

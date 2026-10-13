@@ -337,6 +337,22 @@
       "status": "active",
       "type": "official_page",
       "cadenceDays": 7
+    },
+    {
+      "id": "step-prices-current",
+      "name": "阶跃普通API免费与计费",
+      "url": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "status": "active",
+      "type": "official_page",
+      "cadenceDays": 1
+    },
+    {
+      "id": "sense-current-plan",
+      "name": "商汤当前公测池",
+      "url": "https://www.sensenova.cn/token-plan",
+      "status": "active",
+      "type": "official_page",
+      "cadenceDays": 1
     }
   ]
 }

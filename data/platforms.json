@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T03:41:28.406Z",
+  "updatedAt": "2026-10-13T05:04:10.596Z",
   "items": [
     {
       "id": "workbuddy",
@@ -142,20 +142,24 @@
       "id": "sensenova",
       "rank": 8,
       "name": "商汤日日新",
-      "summary": "图像公测免费池较大，适合生图与编辑。",
-      "freeAmount": "周期恢复免费池；精确数量待账户核实",
+      "summary": "当前公测池支持办公Agent和图像工作流。",
+      "freeAmount": "共用60,000积分/5小时；特殊型号看规则",
       "models": [
-        "SenseNova U1.5 Lite"
+        "SenseNova 6.8 Flash Lite",
+        "SenseNova U1 Fast",
+        "其他公测型号"
       ],
       "access": [
         "网页",
         "API"
       ],
-      "mainlandAccess": "中国大陆可直接使用",
-      "stability": "公测期",
-      "evidenceStatus": "官方入口已核，额度待账户复核",
-      "sourceUrl": "https://platform.sensenova.cn/docs",
-      "entryUrl": "https://platform.sensenova.cn/"
+      "mainlandAccess": "官方提供中国内地入口；网络待实测",
+      "stability": "公测期周期额度",
+      "evidenceStatus": "当前官方套餐已核，实际消耗待账户验证",
+      "sourceUrl": "https://www.sensenova.cn/token-plan",
+      "entryUrl": "https://platform.sensenova.cn/token-plan",
+      "application": "中国内地入口注册，申请免费Token Plan并创建API Key，可接Hermes/OpenClaw",
+      "lastVerifiedAt": "2026-10-13T05:04:10.596Z"
     },
     {
       "id": "kilo",
@@ -582,6 +586,30 @@
       "entryUrl": "https://antigravity.google/",
       "application": "下载并用符合资格的Google个人账号登录，在模型选择器选择",
       "lastVerifiedAt": "2026-10-13T03:41:28.406Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "stepfun-audio",
+      "rank": 28,
+      "name": "阶跃星辰",
+      "summary": "四个音频预览API限免，可做语音Agent、配音和音乐。",
+      "freeAmount": "四款指定preview接口限免；共用零充值档限速",
+      "models": [
+        "StepAudio 3 Realtime",
+        "StepAudio 3 Chat",
+        "StepAudio 3 Gen",
+        "StepAudio 3 Music"
+      ],
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "大陆网络待实测",
+      "stability": "限时免费",
+      "evidenceStatus": "官方价格与限速已核；截止日未公布",
+      "sourceUrl": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "entryUrl": "https://platform.stepfun.com/",
+      "application": "注册并实名认证，创建API Key，选择带preview的免费型号",
+      "lastVerifiedAt": "2026-10-13T05:04:10.596Z",
       "rankingStatus": "pending"
     }
   ]
