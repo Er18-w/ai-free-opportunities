@@ -13,7 +13,7 @@ async function readData(){
 }
 
 function renderPlatforms(){
-  $('#platform-list').innerHTML=state.platforms.map(item=>`<article class="board-row platform-row"><div class="rank"><small>NO.</small><b>${item.rank}</b></div><div class="row-title"><h3>${escapeHtml(item.name)}</h3><p>${escapeHtml(item.summary)}</p></div><div class="row-fact"><small>免费量</small><strong>${escapeHtml(item.freeAmount)}</strong></div><div class="row-tags">${item.access.map(value=>`<span>${escapeHtml(value)}</span>`).join('')}<em>${escapeHtml(item.stability)}</em></div><a class="go" href="${escapeHtml(item.entryUrl)}" target="_blank" rel="noopener noreferrer">去使用</a></article>`).join('');
+  $('#platform-list').innerHTML=state.platforms.map(item=>`<article class="board-row platform-row"><div class="rank"><small>NO.</small><b>${item.rankingStatus==='pending'?'—':item.rank}</b></div><div class="row-title"><h3>${escapeHtml(item.name)}</h3><p>${escapeHtml(item.summary)}</p><small>${escapeHtml(item.application??'')}</small></div><div class="row-fact"><small>免费量</small><strong>${escapeHtml(item.freeAmount)}</strong></div><div class="row-tags">${item.access.map(value=>`<span>${escapeHtml(value)}</span>`).join('')}<em>${escapeHtml(item.stability)}</em><span>${escapeHtml(item.mainlandAccess)}</span><a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">来源</a></div><a class="go" href="${escapeHtml(item.entryUrl)}" target="_blank" rel="noopener noreferrer">去使用</a></article>`).join('');
 }
 
 function categoryRank(item){return state.category==='all'?item.featuredRank:(item.categoryRanks?.[state.category]??999);}
@@ -25,7 +25,7 @@ function renderModels(){
     const channel=item.freeChannels[0];
     const tags=item.categories.map(value=>`<span>${escapeHtml(categoryNames[value]??value)}</span>`).join('');
     const access=[...new Set(item.freeChannels.flatMap(value=>value.access??[]))].map(value=>`<span>${escapeHtml(accessNames[value]??value)}</span>`).join('');
-    return `<article class="board-row model-row"><div class="rank"><small>NO.</small><b>${index+1}</b></div><div class="row-title"><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.provider)} · ${escapeHtml(item.channel)}</p></div><div class="row-fact"><small>免费方式</small><strong>${escapeHtml(item.allowance)}</strong></div><div class="row-tags">${tags}${access}</div><a class="go" href="${escapeHtml(channel.entryUrl)}" target="_blank" rel="noopener noreferrer">去使用</a></article>`;
+    return `<article class="board-row model-row"><div class="rank"><small>NO.</small><b>${item.rankingStatus==='pending'?'—':index+1}</b></div><div class="row-title"><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.provider)} · ${escapeHtml(item.channel)}</p></div><div class="row-fact"><small>免费方式</small><strong>${escapeHtml(item.allowance)}</strong></div><div class="row-tags">${tags}${access}${item.rankingStatus==='pending'?'<em>新收录 · 名次待评</em>':''}<a href="${escapeHtml(item.officialUrl)}" target="_blank" rel="noopener noreferrer">来源</a></div><a class="go" href="${escapeHtml(channel.entryUrl)}" target="_blank" rel="noopener noreferrer">去使用</a></article>`;
   }).join('');
 }
 

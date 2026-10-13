@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "updatedAt": "2026-10-13T09:00:00+08:00",
+  "updatedAt": "2026-10-13T12:00:00+08:00",
   "policyVersion": "admission-v5-model-first",
   "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
@@ -67,65 +67,6 @@
       }
     },
     {
-      "id": "chatgpt-gpt-6-luna-free",
-      "title": "GPT-6 Luna",
-      "provider": "OpenAI",
-      "channel": "ChatGPT 免费版",
-      "modelId": "gpt-6-luna",
-      "categories": [
-        "general",
-        "text",
-        "coding"
-      ],
-      "categoryRanks": {
-        "general": 1,
-        "text": 1,
-        "coding": 10
-      },
-      "access": [
-        "web",
-        "client"
-      ],
-      "regionStatus": "global",
-      "offerType": "ongoing_free",
-      "stabilityTier": "A",
-      "freeSourceClass": 1,
-      "capabilityEvidence": null,
-      "sourceKind": "model",
-      "summary": "ChatGPT 免费档当前面向日常使用的模型，适合通用问答、写作和轻量编程。",
-      "valueReason": "模型能力强且有官方免费档，适合作为通用入口。",
-      "allowance": "免费档动态限额；达到上限后按产品提示恢复",
-      "capacity": "足以完成日常文本任务；高峰期与复杂工具会更快消耗额度。",
-      "limitations": [
-        "具体上限动态变化",
-        "中国大陆网络可达性需用户自行确认",
-        "免费档模型会随官方调整"
-      ],
-      "eligibility": "注册 ChatGPT 免费账户",
-      "evidenceLabel": "官方免费档已核，实时限额以产品为准",
-      "officialUrl": "https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt",
-      "entryUrl": "https://chatgpt.com/",
-      "ruleCheckedAt": "2026-10-12T18:00:00+08:00",
-      "status": "active",
-      "freeChannels": [
-        {
-          "provider": "ChatGPT",
-          "channel": "免费版",
-          "class": 1,
-          "access": [
-            "web",
-            "client"
-          ],
-          "regionStatus": "global",
-          "allowance": "动态限额",
-          "sourceUrl": "https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt",
-          "entryUrl": "https://chatgpt.com/",
-          "validUntil": null
-        }
-      ],
-      "featuredRank": 1
-    },
-    {
       "id": "opencode-zen-muse-spark-1.3-contributor-free",
       "title": "Muse Spark 1.3 Contributor",
       "provider": "OpenCode Zen",
@@ -184,65 +125,6 @@
       "categoryRanks": {
         "coding": 2
       }
-    },
-    {
-      "id": "deepseek-v4-1-flash-web-free",
-      "title": "DeepSeek V4.1 Flash",
-      "provider": "DeepSeek",
-      "channel": "官方网页与客户端",
-      "modelId": "DeepSeek-V4.1-Flash",
-      "categories": [
-        "general",
-        "text",
-        "coding"
-      ],
-      "categoryRanks": {
-        "general": 2,
-        "text": 2,
-        "coding": 9
-      },
-      "access": [
-        "web",
-        "client"
-      ],
-      "regionStatus": "cn_service",
-      "offerType": "ongoing_free",
-      "stabilityTier": "A",
-      "freeSourceClass": 1,
-      "capabilityEvidence": null,
-      "sourceKind": "model",
-      "summary": "DeepSeek 官方助手当前提供的主力免费模型，适合推理、写作和一般编程任务。",
-      "valueReason": "官方网页和客户端可直接使用，使用门槛低。",
-      "allowance": "免费使用；官方未公布固定次数",
-      "capacity": "可以持续完成日常对话与文档任务，繁忙时段可能触发频率限制。",
-      "limitations": [
-        "官方未承诺无限使用",
-        "繁忙时可能限流",
-        "API 与网页端规则不同"
-      ],
-      "eligibility": "注册或直接进入 DeepSeek 官方网页，按页面提示使用",
-      "evidenceLabel": "官方入口已核，频控未公开",
-      "officialUrl": "https://www.deepseek.com/",
-      "entryUrl": "https://chat.deepseek.com/",
-      "ruleCheckedAt": "2026-10-12T18:00:00+08:00",
-      "status": "active",
-      "freeChannels": [
-        {
-          "provider": "DeepSeek",
-          "channel": "官方网页与客户端",
-          "class": 1,
-          "access": [
-            "web",
-            "client"
-          ],
-          "regionStatus": "cn_service",
-          "allowance": "免费使用；固定上限未公开",
-          "sourceUrl": "https://www.deepseek.com/",
-          "entryUrl": "https://chat.deepseek.com/",
-          "validUntil": null
-        }
-      ],
-      "featuredRank": 2
     },
     {
       "id": "workbuddy-hy4-preview-free-plan",
@@ -535,6 +417,19 @@
           "allowance": "零价格；上限未公开",
           "sourceUrl": "https://opencode.ai/zen/v1/models",
           "entryUrl": "https://opencode.ai/",
+          "validUntil": null
+        },
+        {
+          "provider": "Kilo",
+          "channel": "免费模型池",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "输入输出零价格；上游限流",
+          "sourceUrl": "https://kilo.ai/landing/free-models",
+          "entryUrl": "https://kilo.ai/",
           "validUntil": null
         }
       ],
@@ -836,6 +731,370 @@
       "categoryRanks": {
         "speech": 1
       }
+    },
+    {
+      "id": "claude-sonnet-45-kiro",
+      "title": "Claude Sonnet 4.5",
+      "provider": "Anthropic",
+      "channel": "Kiro 免费档",
+      "modelId": "Claude Sonnet 4.5",
+      "categories": [
+        "coding"
+      ],
+      "categoryRanks": {},
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "可在 Kiro 免费档执行编程 Agent 任务。",
+      "valueReason": "官方模型矩阵明确允许 Free 账户选择，免费量每月恢复。",
+      "allowance": "共享 50 credits/月；消耗为 Auto 的 1.3 倍",
+      "capacity": "不同任务长度影响消耗；尚未实测可完成多少任务，不承诺无限。",
+      "limitations": [
+        "所有模型共享月池",
+        "中国大陆网络与服务地区资格待实测",
+        "有免费档速率限制"
+      ],
+      "eligibility": "注册 Kiro 免费账户，在模型列表选择该模型",
+      "evidenceLabel": "官方 Free 列及倍率已核；容量待实测",
+      "officialUrl": "https://kiro.dev/docs/models/",
+      "entryUrl": "https://kiro.dev/",
+      "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
+      "status": "active",
+      "featuredRank": 112,
+      "rankingStatus": "pending",
+      "freeChannels": [
+        {
+          "provider": "Kiro",
+          "channel": "免费档",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "50 credits/月共享；1.3 倍",
+          "sourceUrl": "https://kiro.dev/docs/models/",
+          "entryUrl": "https://kiro.dev/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "minimax-m25-kiro",
+      "title": "MiniMax M2.5",
+      "provider": "MiniMax",
+      "channel": "Kiro 免费档",
+      "modelId": "MiniMax M2.5",
+      "categories": [
+        "coding"
+      ],
+      "categoryRanks": {},
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "可在 Kiro 免费档执行编程 Agent 任务。",
+      "valueReason": "官方模型矩阵明确允许 Free 账户选择，免费量每月恢复。",
+      "allowance": "共享 50 credits/月；消耗为 Auto 的 0.25 倍",
+      "capacity": "不同任务长度影响消耗；尚未实测可完成多少任务，不承诺无限。",
+      "limitations": [
+        "所有模型共享月池",
+        "中国大陆网络与服务地区资格待实测",
+        "有免费档速率限制"
+      ],
+      "eligibility": "注册 Kiro 免费账户，在模型列表选择该模型",
+      "evidenceLabel": "官方 Free 列及倍率已核；容量待实测",
+      "officialUrl": "https://kiro.dev/docs/models/",
+      "entryUrl": "https://kiro.dev/",
+      "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
+      "status": "active",
+      "featuredRank": 113,
+      "rankingStatus": "pending",
+      "freeChannels": [
+        {
+          "provider": "Kiro",
+          "channel": "免费档",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "50 credits/月共享；0.25 倍",
+          "sourceUrl": "https://kiro.dev/docs/models/",
+          "entryUrl": "https://kiro.dev/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "glm5-kiro",
+      "title": "GLM-5",
+      "provider": "智谱",
+      "channel": "Kiro 免费档",
+      "modelId": "GLM-5",
+      "categories": [
+        "coding"
+      ],
+      "categoryRanks": {},
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "可在 Kiro 免费档执行编程 Agent 任务。",
+      "valueReason": "官方模型矩阵明确允许 Free 账户选择，免费量每月恢复。",
+      "allowance": "共享 50 credits/月；消耗为 Auto 的 0.5 倍",
+      "capacity": "不同任务长度影响消耗；尚未实测可完成多少任务，不承诺无限。",
+      "limitations": [
+        "所有模型共享月池",
+        "中国大陆网络与服务地区资格待实测",
+        "有免费档速率限制"
+      ],
+      "eligibility": "注册 Kiro 免费账户，在模型列表选择该模型",
+      "evidenceLabel": "官方 Free 列及倍率已核；容量待实测",
+      "officialUrl": "https://kiro.dev/docs/models/",
+      "entryUrl": "https://kiro.dev/",
+      "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
+      "status": "active",
+      "featuredRank": 114,
+      "rankingStatus": "pending",
+      "freeChannels": [
+        {
+          "provider": "Kiro",
+          "channel": "免费档",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "50 credits/月共享；0.5 倍",
+          "sourceUrl": "https://kiro.dev/docs/models/",
+          "entryUrl": "https://kiro.dev/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "qwen-coder-next-kiro",
+      "title": "Qwen3 Coder Next",
+      "provider": "阿里千问",
+      "channel": "Kiro 免费档",
+      "modelId": "Qwen3 Coder Next",
+      "categories": [
+        "coding"
+      ],
+      "categoryRanks": {},
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "可在 Kiro 免费档执行编程 Agent 任务。",
+      "valueReason": "官方模型矩阵明确允许 Free 账户选择，免费量每月恢复。",
+      "allowance": "共享 50 credits/月；消耗为 Auto 的 0.05 倍",
+      "capacity": "不同任务长度影响消耗；尚未实测可完成多少任务，不承诺无限。",
+      "limitations": [
+        "所有模型共享月池",
+        "中国大陆网络与服务地区资格待实测",
+        "有免费档速率限制"
+      ],
+      "eligibility": "注册 Kiro 免费账户，在模型列表选择该模型",
+      "evidenceLabel": "官方 Free 列及倍率已核；容量待实测",
+      "officialUrl": "https://kiro.dev/docs/models/",
+      "entryUrl": "https://kiro.dev/",
+      "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
+      "status": "active",
+      "featuredRank": 115,
+      "rankingStatus": "pending",
+      "freeChannels": [
+        {
+          "provider": "Kiro",
+          "channel": "免费档",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "50 credits/月共享；0.05 倍",
+          "sourceUrl": "https://kiro.dev/docs/models/",
+          "entryUrl": "https://kiro.dev/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "kilo-nemotron-super",
+      "title": "Nemotron 3 Super",
+      "provider": "NVIDIA",
+      "channel": "Kilo 免费模型池",
+      "modelId": "Nemotron 3 Super",
+      "categories": [
+        "coding"
+      ],
+      "categoryRanks": {},
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_campaign",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "在 Kilo 编程 Agent 内选择 Free 型号即可使用。",
+      "valueReason": "官方实时免费目录列出零输入、零输出价格型号，面向实际代码任务。",
+      "allowance": "输入输出零价格；上游频控及活动期限未统一公开",
+      "capacity": "可用于读写项目、调试和重构；连续任务容量待实测。",
+      "limitations": [
+        "免费名单可能变化",
+        "后台摘要和补全需要单独设置免费模型",
+        "部分上游会记录输入输出，不提交机密资料"
+      ],
+      "eligibility": "注册 Kilo 免费账户，在模型选择器选对应 Free 型号",
+      "evidenceLabel": "官方免费目录已核；频控未公开",
+      "officialUrl": "https://kilo.ai/landing/free-models",
+      "entryUrl": "https://kilo.ai/",
+      "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
+      "status": "active",
+      "featuredRank": 116,
+      "rankingStatus": "pending",
+      "freeChannels": [
+        {
+          "provider": "Kilo",
+          "channel": "Free 型号",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "零 Token 费用；频控以服务为准",
+          "sourceUrl": "https://kilo.ai/landing/free-models",
+          "entryUrl": "https://kilo.ai/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "kilo-nemotron-ultra",
+      "title": "Nemotron 3 Ultra",
+      "provider": "NVIDIA",
+      "channel": "Kilo 免费模型池",
+      "modelId": "Nemotron 3 Ultra",
+      "categories": [
+        "coding"
+      ],
+      "categoryRanks": {},
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_campaign",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "在 Kilo 编程 Agent 内选择 Free 型号即可使用。",
+      "valueReason": "官方实时免费目录列出零输入、零输出价格型号，面向实际代码任务。",
+      "allowance": "输入输出零价格；上游频控及活动期限未统一公开",
+      "capacity": "可用于读写项目、调试和重构；连续任务容量待实测。",
+      "limitations": [
+        "免费名单可能变化",
+        "后台摘要和补全需要单独设置免费模型",
+        "部分上游会记录输入输出，不提交机密资料"
+      ],
+      "eligibility": "注册 Kilo 免费账户，在模型选择器选对应 Free 型号",
+      "evidenceLabel": "官方免费目录已核；频控未公开",
+      "officialUrl": "https://kilo.ai/landing/free-models",
+      "entryUrl": "https://kilo.ai/",
+      "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
+      "status": "active",
+      "featuredRank": 117,
+      "rankingStatus": "pending",
+      "freeChannels": [
+        {
+          "provider": "Kilo",
+          "channel": "Free 型号",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "零 Token 费用；频控以服务为准",
+          "sourceUrl": "https://kilo.ai/landing/free-models",
+          "entryUrl": "https://kilo.ai/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "kilo-laguna-s",
+      "title": "Laguna S 2.1",
+      "provider": "Poolside",
+      "channel": "Kilo 免费模型池",
+      "modelId": "Laguna S 2.1",
+      "categories": [
+        "coding"
+      ],
+      "categoryRanks": {},
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_campaign",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "在 Kilo 编程 Agent 内选择 Free 型号即可使用。",
+      "valueReason": "官方实时免费目录列出零输入、零输出价格型号，面向实际代码任务。",
+      "allowance": "输入输出零价格；上游频控及活动期限未统一公开",
+      "capacity": "可用于读写项目、调试和重构；连续任务容量待实测。",
+      "limitations": [
+        "免费名单可能变化",
+        "后台摘要和补全需要单独设置免费模型",
+        "部分上游会记录输入输出，不提交机密资料"
+      ],
+      "eligibility": "注册 Kilo 免费账户，在模型选择器选对应 Free 型号",
+      "evidenceLabel": "官方免费目录已核；频控未公开",
+      "officialUrl": "https://kilo.ai/landing/free-models",
+      "entryUrl": "https://kilo.ai/",
+      "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
+      "status": "active",
+      "featuredRank": 118,
+      "rankingStatus": "pending",
+      "freeChannels": [
+        {
+          "provider": "Kilo",
+          "channel": "Free 型号",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "零 Token 费用；频控以服务为准",
+          "sourceUrl": "https://kilo.ai/landing/free-models",
+          "entryUrl": "https://kilo.ai/",
+          "validUntil": null
+        }
+      ]
     }
   ]
 }

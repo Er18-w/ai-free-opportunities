@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T09:00:00+08:00",
+  "updatedAt": "2026-10-13T12:00:00+08:00",
   "items": [
     {
       "id": "workbuddy",
@@ -61,27 +61,8 @@
       "entryUrl": "https://console.groq.com/"
     },
     {
-      "id": "deepseek",
-      "rank": 4,
-      "name": "DeepSeek",
-      "summary": "无需配置 API，打开网页即可免费使用主力模型。",
-      "freeAmount": "免费使用；固定次数未公开",
-      "models": [
-        "DeepSeek V4.1 Flash"
-      ],
-      "access": [
-        "网页",
-        "客户端"
-      ],
-      "mainlandAccess": "中国大陆可直接使用",
-      "stability": "长期入口",
-      "evidenceStatus": "入口已核，频控未公开",
-      "sourceUrl": "https://www.deepseek.com/",
-      "entryUrl": "https://chat.deepseek.com/"
-    },
-    {
       "id": "opencode",
-      "rank": 5,
+      "rank": 4,
       "name": "OpenCode Zen",
       "summary": "经常轮换开放高价值编程模型，适合写代码。",
       "freeAmount": "多款模型价格为 0；统一上限未公开",
@@ -103,7 +84,7 @@
     },
     {
       "id": "marvis",
-      "rank": 6,
+      "rank": 5,
       "name": "腾讯马维斯 Marvis",
       "summary": "腾讯桌面 AI 助手，可切换模型并提供每日免费 Token。",
       "freeAmount": "每日免费 Token；准确数量待产品内核实",
@@ -121,7 +102,7 @@
     },
     {
       "id": "doubao",
-      "rank": 7,
+      "rank": 6,
       "name": "豆包",
       "summary": "基础功能每天有免费次数，近期另有 30 天会员赠送。",
       "freeAmount": "每日免费次数；会员共享额度以客户端为准",
@@ -140,27 +121,8 @@
       "entryUrl": "https://www.doubao.com/"
     },
     {
-      "id": "chatgpt",
-      "rank": 8,
-      "name": "ChatGPT 免费版",
-      "summary": "通用能力强，免费档可完成日常写作、问答和轻量编程。",
-      "freeAmount": "动态限额，达到上限后恢复",
-      "models": [
-        "GPT-6 Luna"
-      ],
-      "access": [
-        "网页",
-        "客户端"
-      ],
-      "mainlandAccess": "需满足服务地区与网络条件",
-      "stability": "长期免费档",
-      "evidenceStatus": "官方免费档已核",
-      "sourceUrl": "https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt",
-      "entryUrl": "https://chatgpt.com/"
-    },
-    {
       "id": "zhipu",
-      "rank": 9,
+      "rank": 7,
       "name": "智谱开放平台",
       "summary": "新人包额度大，适合完整 API 项目试用。",
       "freeAmount": "新用户 2,000 万 Token；另有 120 次图像视频资源包",
@@ -178,7 +140,7 @@
     },
     {
       "id": "sensenova",
-      "rank": 10,
+      "rank": 8,
       "name": "商汤日日新",
       "summary": "图像公测免费池较大，适合生图与编辑。",
       "freeAmount": "周期恢复免费池；精确数量待账户核实",
@@ -194,6 +156,143 @@
       "evidenceStatus": "官方入口已核，额度待账户复核",
       "sourceUrl": "https://platform.sensenova.cn/docs",
       "entryUrl": "https://platform.sensenova.cn/"
+    },
+    {
+      "id": "kilo",
+      "rank": 9,
+      "name": "Kilo Code",
+      "sourceUrl": "https://kilo.ai/docs/getting-started/using-kilo-for-free",
+      "entryUrl": "https://kilo.ai/",
+      "freeAmount": "免费模型输入、输出零价格；上限随上游变化",
+      "application": "选 Auto Free；后台摘要也需选免费模型",
+      "summary": "改代码、运行命令、调试；免费模型池轮换",
+      "models": [
+        "Ling 3.1 Flash",
+        "Nemotron 3 Super",
+        "Nemotron 3 Ultra"
+      ],
+      "stability": "免费模型池",
+      "access": [
+        "Agent"
+      ],
+      "mainlandAccess": "服务地区及中国大陆网络可达性待实测",
+      "evidenceStatus": "官方规则已核；真实任务容量尚未实测",
+      "lastVerifiedAt": "2026-10-13T12:00:00+08:00",
+      "rankingStatus": "pending",
+      "rankingNote": "新增条目，未做与旧榜可比的实测排名"
+    },
+    {
+      "id": "cline",
+      "rank": 10,
+      "name": "Cline",
+      "sourceUrl": "https://docs.cline.bot/core-workflows/task-management",
+      "entryUrl": "https://cline.bot/",
+      "freeAmount": "内置 FREE 模型；数量与限流以选择器为准",
+      "application": "注册后在 Cline provider 搜索 free；选择 FREE 型号",
+      "summary": "读写项目文件、运行测试；云端 Agent 可交付代码分支",
+      "models": [
+        "FREE 标记模型"
+      ],
+      "stability": "免费模型池",
+      "access": [
+        "Agent"
+      ],
+      "mainlandAccess": "服务地区及中国大陆网络可达性待实测",
+      "evidenceStatus": "官方规则已核；真实任务容量尚未实测",
+      "lastVerifiedAt": "2026-10-13T12:00:00+08:00",
+      "rankingStatus": "pending",
+      "rankingNote": "新增条目，未做与旧榜可比的实测排名"
+    },
+    {
+      "id": "gemini-cli",
+      "rank": 11,
+      "name": "Gemini CLI / Code Assist Agent",
+      "sourceUrl": "https://geminicli.com/docs/resources/quota-and-pricing/",
+      "entryUrl": "https://geminicli.com/",
+      "freeAmount": "个人 Google 登录最多 1,000 次模型请求/日",
+      "application": "安装 Gemini CLI 后使用个人 Google 账户登录",
+      "summary": "编程、文件处理、运行命令；一次任务会使用多次模型请求",
+      "models": [
+        "Gemini 模型家族（按账户开放）"
+      ],
+      "stability": "每日恢复",
+      "access": [
+        "Agent"
+      ],
+      "mainlandAccess": "服务地区及中国大陆网络可达性待实测",
+      "evidenceStatus": "官方规则已核；真实任务容量尚未实测",
+      "lastVerifiedAt": "2026-10-13T12:00:00+08:00",
+      "rankingStatus": "pending",
+      "rankingNote": "新增条目，未做与旧榜可比的实测排名"
+    },
+    {
+      "id": "kiro",
+      "rank": 12,
+      "name": "Kiro",
+      "sourceUrl": "https://kiro.dev/docs/models/",
+      "entryUrl": "https://kiro.dev/",
+      "freeAmount": "50 credits/月；Qwen Coder Next 为 Auto 的 0.05 倍消耗",
+      "application": "注册免费账户，优先选低倍率模型；不是 50 次固定任务",
+      "summary": "从需求、代码修改到测试；额度共享，复杂任务消耗更多",
+      "models": [
+        "Claude Sonnet 4.5",
+        "MiniMax M2.5",
+        "GLM-5",
+        "Qwen3 Coder Next"
+      ],
+      "stability": "月度恢复",
+      "access": [
+        "Agent"
+      ],
+      "mainlandAccess": "服务地区及中国大陆网络可达性待实测",
+      "evidenceStatus": "官方规则已核；真实任务容量尚未实测",
+      "lastVerifiedAt": "2026-10-13T12:00:00+08:00",
+      "rankingStatus": "pending",
+      "rankingNote": "新增条目，未做与旧榜可比的实测排名"
+    },
+    {
+      "id": "trae",
+      "rank": 13,
+      "name": "TRAE 中国版",
+      "sourceUrl": "https://docs.trae.cn/ide_plans-and-billing",
+      "entryUrl": "https://www.trae.cn/",
+      "freeAmount": "新用户 4,000 积分/31 天；每月登录另送 500",
+      "application": "注册登录；老用户升级新版计费亦有 4,000 积分福利",
+      "summary": "编程与任务执行；只记录新人包和月池，不记录签到奖励",
+      "models": [
+        "内置模型（按免费账户列表）"
+      ],
+      "stability": "新人包 + 月度恢复",
+      "access": [
+        "Agent"
+      ],
+      "mainlandAccess": "中国版服务；实际网络可达性待实测",
+      "evidenceStatus": "官方规则已核；真实任务容量尚未实测",
+      "lastVerifiedAt": "2026-10-13T12:00:00+08:00",
+      "rankingStatus": "pending",
+      "rankingNote": "新增条目，未做与旧榜可比的实测排名"
+    },
+    {
+      "id": "qoder",
+      "rank": 14,
+      "name": "Qoder",
+      "sourceUrl": "https://forum.qoder.com/t/pro-trial-credits-not-applied/11451",
+      "entryUrl": "https://qoder.com/",
+      "freeAmount": "新人 14 天 Pro 试用，300 credits",
+      "application": "首次登录最新版真实设备客户端；结束自动降为 Free",
+      "summary": "多文件编程、Agent 任务、项目理解；未用试用积分到期清空",
+      "models": [
+        "内置 Agent 模型"
+      ],
+      "stability": "14 天试用",
+      "access": [
+        "Agent"
+      ],
+      "mainlandAccess": "服务地区及中国大陆网络可达性待实测",
+      "evidenceStatus": "官方规则已核；真实任务容量尚未实测",
+      "lastVerifiedAt": "2026-10-13T12:00:00+08:00",
+      "rankingStatus": "pending",
+      "rankingNote": "新增条目，未做与旧榜可比的实测排名"
     }
   ]
 }

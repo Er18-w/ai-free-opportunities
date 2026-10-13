@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {root,readJson,writeJson,sha256} from './lib.mjs';
+import {runAgentMonitor} from './agent-monitor.mjs';
 
 const now=new Date(),nowIso=now.toISOString();
 const forceAll=process.env.FORCE_ALL_SOURCES==='1';
@@ -68,7 +69,7 @@ const queue=sources.items.filter(source=>source.status!=='stopped');for(let i=0;
 for(const source of sources.items.filter(source=>source.status==='stopped'))report.sources.push({id:source.id,outcome:'stopped'});
 const modelQueue=modelSources.items.filter(source=>source.status==='active');for(let i=0;i<modelQueue.length;i+=4)await Promise.all(modelQueue.slice(i,i+4).map(inspectModelSource));
 await writeJson('data/sources.json',sources);await fs.mkdir(path.join(root,'.runtime/reports'),{recursive:true});
+const agentReport=await runAgentMonitor();report.agentSources=agentReport.sources;report.agentChangeCount=agentReport.changes.length;
 await fs.writeFile(path.join(root,'.runtime/reports',bootstrap?'bootstrap-latest.json':'latest.json'),JSON.stringify({...report,reportHash:sha256(JSON.stringify(report))},null,2)+'\n');
 console.log(JSON.stringify(report,null,2));
 const attempted=report.sources.filter(source=>!['not_due','stopped'].includes(source.outcome));if(attempted.length&&!attempted.some(source=>source.outcome==='ok'))process.exitCode=10;
-

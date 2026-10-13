@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-10-13T12:00:00+08:00",
+  "items": [
+    {
+      "id": "kilo",
+      "name": "Kilo Code",
+      "url": "https://kilo.ai/docs/getting-started/using-kilo-for-free",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "url": "https://docs.cline.bot/core-workflows/task-management",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI / Code Assist Agent",
+      "url": "https://geminicli.com/docs/resources/quota-and-pricing/",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "kiro",
+      "name": "Kiro",
+      "url": "https://kiro.dev/docs/models/",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "trae",
+      "name": "TRAE 中国版",
+      "url": "https://docs.trae.cn/ide_plans-and-billing",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "qoder",
+      "name": "Qoder",
+      "url": "https://forum.qoder.com/t/pro-trial-credits-not-applied/11451",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "kiro-billing",
+      "name": "Kiro 额度与恢复周期",
+      "url": "https://kiro.dev/docs/billing/",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "kilo-catalog",
+      "name": "Kilo 免费模型动态目录",
+      "url": "https://kilo.ai/landing/free-models",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "qwen-auth",
+      "name": "Qwen Code 免费层停止与新授权",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/configuration/auth/",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "manus-limits",
+      "name": "Manus 免费月度上限",
+      "url": "https://help.manus.im/en/articles/11985189-what-should-i-do-if-my-daily-refresh-credits-have-not-refreshed",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "mistral-subscription",
+      "name": "Mistral Vibe 免费用量",
+      "url": "https://docs.mistral.ai/admin/billing-usage/subscriptions",
+      "status": "active",
+      "type": "official_page"
+    }
+  ]
+}
