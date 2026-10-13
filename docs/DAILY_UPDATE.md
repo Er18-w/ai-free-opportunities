@@ -158,3 +158,7 @@ npm run build
 - Qwen Code OAuth 免费层已于 2026-04-15 停止；不再引用旧的每日免费请求宣传。
 - Manus 仅 Lite 支持每日积分且免费月总额 1500，仍在候选区核验任务容量，不标为每天无限恢复。
 - 自动化负责每天捕捉变化，维护 Agent 负责官方复核和准入；当前流程不等于全自动上新。
+
+## 完整目录补查（2026-10-13第二批）
+
+Agent官方路径已扩大到21条，详见data/agent-sources.json。本轮补充NVIDIA、Cloudflare目录和Groq限额表；规则核查记录在docs/MODEL_EXPANSION_2026-10-13.md。Cloudflare付费例外不得放进无支付方式免费入口；图片与音频估算必须标明独占共享池假设。模型有多个渠道时合并在freeChannels，不复制成多个模型。

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "updatedAt": "2026-10-13T12:00:00+08:00",
+  "updatedAt": "2026-10-13T03:15:46.319Z",
   "policyVersion": "admission-v5-model-first",
   "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
@@ -1041,6 +1041,19 @@
           "sourceUrl": "https://kilo.ai/landing/free-models",
           "entryUrl": "https://kilo.ai/",
           "validUntil": null
+        },
+        {
+          "provider": "NVIDIA NIM",
+          "channel": "免费开发API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "开发端点免费；日上限未统一公开",
+          "sourceUrl": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b",
+          "entryUrl": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b",
+          "validUntil": null
         }
       ]
     },
@@ -1092,6 +1105,992 @@
           "allowance": "零 Token 费用；频控以服务为准",
           "sourceUrl": "https://kilo.ai/landing/free-models",
           "entryUrl": "https://kilo.ai/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "nim-kimi-k3",
+      "title": "Kimi K3",
+      "provider": "Moonshot",
+      "modelId": "moonshotai/kimi-k3",
+      "categories": [
+        "coding",
+        "general",
+        "vision"
+      ],
+      "summary": "长程编程、工具调用与图像理解",
+      "allowance": "官方免费开发 API；统一日上限未公开",
+      "capacity": "官方提供长上下文开发端点，可用于 Agent 原型；限流及完成率待实测。",
+      "channel": "NVIDIA NIM",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "prototype_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 319,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 NVIDIA 开发者账户，按要求验证，再自行创建 API Key",
+      "limitations": [
+        "仅开发与原型用途，遵守 NVIDIA 试用条款",
+        "上游限流或排队可能影响长任务",
+        "账号资格及中国大陆网络可达性待实测",
+        "不将未知额度写成无限"
+      ],
+      "officialUrl": "https://build.nvidia.com/moonshotai/kimi-k3",
+      "entryUrl": "https://build.nvidia.com/moonshotai/kimi-k3",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://integrate.api.nvidia.com/v1"
+      },
+      "freeChannels": [
+        {
+          "provider": "NVIDIA NIM",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "官方免费开发 API；统一日上限未公开",
+          "sourceUrl": "https://build.nvidia.com/moonshotai/kimi-k3",
+          "entryUrl": "https://build.nvidia.com/moonshotai/kimi-k3",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "nim-glm-5-3",
+      "title": "GLM-5.3",
+      "provider": "智谱",
+      "modelId": "z-ai/glm-5.3",
+      "categories": [
+        "coding",
+        "general",
+        "reasoning"
+      ],
+      "summary": "代码仓库任务、复杂推理与工具调用",
+      "allowance": "官方免费开发 API；统一日上限未公开",
+      "capacity": "官方提供长上下文开发端点，可用于 Agent 原型；限流及完成率待实测。",
+      "channel": "NVIDIA NIM",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "prototype_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 320,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 NVIDIA 开发者账户，按要求验证，再自行创建 API Key",
+      "limitations": [
+        "仅开发与原型用途，遵守 NVIDIA 试用条款",
+        "上游限流或排队可能影响长任务",
+        "账号资格及中国大陆网络可达性待实测",
+        "不将未知额度写成无限"
+      ],
+      "officialUrl": "https://build.nvidia.com/z-ai/glm-5-3",
+      "entryUrl": "https://build.nvidia.com/z-ai/glm-5-3",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://integrate.api.nvidia.com/v1"
+      },
+      "freeChannels": [
+        {
+          "provider": "NVIDIA NIM",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "官方免费开发 API；统一日上限未公开",
+          "sourceUrl": "https://build.nvidia.com/z-ai/glm-5-3",
+          "entryUrl": "https://build.nvidia.com/z-ai/glm-5-3",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "nim-glm-5-3-flash",
+      "title": "GLM-5.3 Flash",
+      "provider": "智谱",
+      "modelId": "z-ai/glm-5.3-flash",
+      "categories": [
+        "coding",
+        "general",
+        "vision"
+      ],
+      "summary": "多模态工具调用与编程任务",
+      "allowance": "官方免费开发 API；统一日上限未公开",
+      "capacity": "官方提供长上下文开发端点，可用于 Agent 原型；限流及完成率待实测。",
+      "channel": "NVIDIA NIM",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "prototype_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 321,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 NVIDIA 开发者账户，按要求验证，再自行创建 API Key",
+      "limitations": [
+        "仅开发与原型用途，遵守 NVIDIA 试用条款",
+        "上游限流或排队可能影响长任务",
+        "账号资格及中国大陆网络可达性待实测",
+        "不将未知额度写成无限"
+      ],
+      "officialUrl": "https://build.nvidia.com/z-ai/glm-5-3-flash",
+      "entryUrl": "https://build.nvidia.com/z-ai/glm-5-3-flash",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://integrate.api.nvidia.com/v1"
+      },
+      "freeChannels": [
+        {
+          "provider": "NVIDIA NIM",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "官方免费开发 API；统一日上限未公开",
+          "sourceUrl": "https://build.nvidia.com/z-ai/glm-5-3-flash",
+          "entryUrl": "https://build.nvidia.com/z-ai/glm-5-3-flash",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "nim-nemotron-lightning",
+      "title": "Nemotron 3.5 Lightning",
+      "provider": "NVIDIA",
+      "modelId": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "categories": [
+        "coding",
+        "general"
+      ],
+      "summary": "高速推理与 Agent 工具调用",
+      "allowance": "官方免费开发 API；统一日上限未公开",
+      "capacity": "官方提供长上下文开发端点，可用于 Agent 原型；限流及完成率待实测。",
+      "channel": "NVIDIA NIM",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "prototype_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 322,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 NVIDIA 开发者账户，按要求验证，再自行创建 API Key",
+      "limitations": [
+        "仅开发与原型用途，遵守 NVIDIA 试用条款",
+        "上游限流或排队可能影响长任务",
+        "账号资格及中国大陆网络可达性待实测",
+        "不将未知额度写成无限"
+      ],
+      "officialUrl": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
+      "entryUrl": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://integrate.api.nvidia.com/v1"
+      },
+      "freeChannels": [
+        {
+          "provider": "NVIDIA NIM",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "官方免费开发 API；统一日上限未公开",
+          "sourceUrl": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
+          "entryUrl": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "nim-muse-glimmer",
+      "title": "Muse Glimmer 30B",
+      "provider": "Meta",
+      "modelId": "meta/muse-glimmer-30b",
+      "categories": [
+        "vision",
+        "reasoning",
+        "general"
+      ],
+      "summary": "图像推理与工具调用",
+      "allowance": "官方免费开发 API；统一日上限未公开",
+      "capacity": "官方提供长上下文开发端点，可用于 Agent 原型；限流及完成率待实测。",
+      "channel": "NVIDIA NIM",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "prototype_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 323,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 NVIDIA 开发者账户，按要求验证，再自行创建 API Key",
+      "limitations": [
+        "仅开发与原型用途，遵守 NVIDIA 试用条款",
+        "上游限流或排队可能影响长任务",
+        "账号资格及中国大陆网络可达性待实测",
+        "不将未知额度写成无限"
+      ],
+      "officialUrl": "https://build.nvidia.com/meta/muse-glimmer-30b",
+      "entryUrl": "https://build.nvidia.com/meta/muse-glimmer-30b",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://integrate.api.nvidia.com/v1"
+      },
+      "freeChannels": [
+        {
+          "provider": "NVIDIA NIM",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "官方免费开发 API；统一日上限未公开",
+          "sourceUrl": "https://build.nvidia.com/meta/muse-glimmer-30b",
+          "entryUrl": "https://build.nvidia.com/meta/muse-glimmer-30b",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "nim-laguna-xs",
+      "title": "Laguna XS 2.1",
+      "provider": "Poolside",
+      "modelId": "poolside/laguna-xs-2.1",
+      "categories": [
+        "coding"
+      ],
+      "summary": "终端执行与持续编程任务",
+      "allowance": "官方免费开发 API；统一日上限未公开",
+      "capacity": "官方提供长上下文开发端点，可用于 Agent 原型；限流及完成率待实测。",
+      "channel": "NVIDIA NIM",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "prototype_free",
+      "stabilityTier": "B",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 324,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 NVIDIA 开发者账户，按要求验证，再自行创建 API Key",
+      "limitations": [
+        "仅开发与原型用途，遵守 NVIDIA 试用条款",
+        "上游限流或排队可能影响长任务",
+        "账号资格及中国大陆网络可达性待实测",
+        "不将未知额度写成无限"
+      ],
+      "officialUrl": "https://build.nvidia.com/poolside/laguna-xs-2.1",
+      "entryUrl": "https://build.nvidia.com/poolside/laguna-xs-2.1",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://integrate.api.nvidia.com/v1"
+      },
+      "freeChannels": [
+        {
+          "provider": "NVIDIA NIM",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "官方免费开发 API；统一日上限未公开",
+          "sourceUrl": "https://build.nvidia.com/poolside/laguna-xs-2.1",
+          "entryUrl": "https://build.nvidia.com/poolside/laguna-xs-2.1",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "cf-glm47",
+      "title": "GLM-4.7 Flash",
+      "provider": "智谱",
+      "modelId": "@cf/zai-org/glm-4.7-flash",
+      "categories": [
+        "coding",
+        "text",
+        "reasoning"
+      ],
+      "summary": "多轮工具调用与编程",
+      "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+      "capacity": "适合文档、推理或有限 Agent 任务；共享日池，输入与输出都会消耗，不能按单个模型重复领取。",
+      "channel": "Cloudflare Workers AI",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 325,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 Cloudflare 免费账户，自行创建 Account ID 与 API Token；在 Agent 中选择兼容接口",
+      "limitations": [
+        "输入 5,500、输出 36,400 Neurons/百万 Token",
+        "日池跨模型共享",
+        "账户保持 Free 档，超额报错；升级 Paid 会按量计费",
+        "网络可达性及任务延迟待实测"
+      ],
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/models/glm-4.7-flash/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai"
+      },
+      "freeChannels": [
+        {
+          "provider": "Cloudflare Workers AI",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/glm-4.7-flash/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "cf-gemma4",
+      "title": "Gemma 4 26B A4B",
+      "provider": "Google",
+      "modelId": "@cf/google/gemma-4-26b-a4b-it",
+      "categories": [
+        "coding",
+        "text",
+        "vision"
+      ],
+      "summary": "文本、视觉与工具调用",
+      "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+      "capacity": "适合文档、推理或有限 Agent 任务；共享日池，输入与输出都会消耗，不能按单个模型重复领取。",
+      "channel": "Cloudflare Workers AI",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 326,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 Cloudflare 免费账户，自行创建 Account ID 与 API Token；在 Agent 中选择兼容接口",
+      "limitations": [
+        "输入 9,091、输出 27,273 Neurons/百万 Token",
+        "日池跨模型共享",
+        "账户保持 Free 档，超额报错；升级 Paid 会按量计费",
+        "网络可达性及任务延迟待实测"
+      ],
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/models/gemma-4-26b-a4b-it/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai"
+      },
+      "freeChannels": [
+        {
+          "provider": "Cloudflare Workers AI",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/gemma-4-26b-a4b-it/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "cf-qwen38",
+      "title": "Qwen3.8 27B",
+      "provider": "阿里千问",
+      "modelId": "@cf/qwen/qwen3.8-27b",
+      "categories": [
+        "coding",
+        "text",
+        "vision"
+      ],
+      "summary": "视觉理解与 Agent 工作流",
+      "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+      "capacity": "适合文档、推理或有限 Agent 任务；共享日池，输入与输出都会消耗，不能按单个模型重复领取。",
+      "channel": "Cloudflare Workers AI",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 327,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 Cloudflare 免费账户，自行创建 Account ID 与 API Token；在 Agent 中选择兼容接口",
+      "limitations": [
+        "不同输入、输出消耗请看官方费率",
+        "日池跨模型共享",
+        "账户保持 Free 档，超额报错；升级 Paid 会按量计费",
+        "网络可达性及任务延迟待实测"
+      ],
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai"
+      },
+      "freeChannels": [
+        {
+          "provider": "Cloudflare Workers AI",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        },
+        {
+          "provider": "Groq",
+          "channel": "Free Plan",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "1,000请求/日、200,000 Token/日；8,000 Token/分钟",
+          "sourceUrl": "https://console.groq.com/docs/rate-limits",
+          "entryUrl": "https://console.groq.com/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "cf-qwen30",
+      "title": "Qwen3 30B A3B",
+      "provider": "阿里千问",
+      "modelId": "@cf/qwen/qwen3-30b-a3b-fp8",
+      "categories": [
+        "coding",
+        "text",
+        "reasoning"
+      ],
+      "summary": "高频工具调用、文本处理",
+      "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+      "capacity": "适合文档、推理或有限 Agent 任务；共享日池，输入与输出都会消耗，不能按单个模型重复领取。",
+      "channel": "Cloudflare Workers AI",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 328,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 Cloudflare 免费账户，自行创建 Account ID 与 API Token；在 Agent 中选择兼容接口",
+      "limitations": [
+        "不同输入、输出消耗请看官方费率",
+        "日池跨模型共享",
+        "账户保持 Free 档，超额报错；升级 Paid 会按量计费",
+        "网络可达性及任务延迟待实测"
+      ],
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai"
+      },
+      "freeChannels": [
+        {
+          "provider": "Cloudflare Workers AI",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "cf-llama70",
+      "title": "Llama 3.3 70B",
+      "provider": "Meta",
+      "modelId": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "categories": [
+        "general",
+        "text"
+      ],
+      "summary": "文档整理与多语言任务",
+      "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+      "capacity": "适合文档、推理或有限 Agent 任务；共享日池，输入与输出都会消耗，不能按单个模型重复领取。",
+      "channel": "Cloudflare Workers AI",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 329,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 Cloudflare 免费账户，自行创建 Account ID 与 API Token；在 Agent 中选择兼容接口",
+      "limitations": [
+        "不同输入、输出消耗请看官方费率",
+        "日池跨模型共享",
+        "账户保持 Free 档，超额报错；升级 Paid 会按量计费",
+        "网络可达性及任务延迟待实测"
+      ],
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/models/llama-3.3-70b-instruct-fp8-fast/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai"
+      },
+      "freeChannels": [
+        {
+          "provider": "Cloudflare Workers AI",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/llama-3.3-70b-instruct-fp8-fast/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "cf-mistral-small",
+      "title": "Mistral Small 3.1",
+      "provider": "Mistral",
+      "modelId": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+      "categories": [
+        "general",
+        "vision",
+        "text"
+      ],
+      "summary": "图像理解与文档分析",
+      "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+      "capacity": "适合文档、推理或有限 Agent 任务；共享日池，输入与输出都会消耗，不能按单个模型重复领取。",
+      "channel": "Cloudflare Workers AI",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 330,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 Cloudflare 免费账户，自行创建 Account ID 与 API Token；在 Agent 中选择兼容接口",
+      "limitations": [
+        "不同输入、输出消耗请看官方费率",
+        "日池跨模型共享",
+        "账户保持 Free 档，超额报错；升级 Paid 会按量计费",
+        "网络可达性及任务延迟待实测"
+      ],
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/models/mistral-small-3.1-24b-instruct/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai"
+      },
+      "freeChannels": [
+        {
+          "provider": "Cloudflare Workers AI",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/mistral-small-3.1-24b-instruct/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "cf-flux2klein4",
+      "title": "FLUX.2 Klein 4B",
+      "provider": "Black Forest Labs",
+      "modelId": "@cf/black-forest-labs/flux-2-klein-4b",
+      "categories": [
+        "image"
+      ],
+      "summary": "生图与图片编辑",
+      "allowance": "独占共享日池：约95张1024px纯生图/日；编辑另计",
+      "capacity": "独占日池、1024×1024纯生图，按4图块估算约95张；编辑输入另计。",
+      "channel": "Cloudflare Workers AI",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 331,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 Cloudflare 免费账户，自行创建 Account ID 与 API Token；在 Agent 中选择兼容接口",
+      "limitations": [
+        "每个输出 512px 图块约 26.05 Neurons",
+        "日池跨模型共享",
+        "账户保持 Free 档，超额报错；升级 Paid 会按量计费",
+        "网络可达性及任务延迟待实测"
+      ],
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/models/flux-2-klein-4b/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai"
+      },
+      "freeChannels": [
+        {
+          "provider": "Cloudflare Workers AI",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/flux-2-klein-4b/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "cf-flux2klein9",
+      "title": "FLUX.2 Klein 9B",
+      "provider": "Black Forest Labs",
+      "modelId": "@cf/black-forest-labs/flux-2-klein-9b",
+      "categories": [
+        "image"
+      ],
+      "summary": "生图与多参考图编辑",
+      "allowance": "独占共享日池：约7张1MP纯生图/日；编辑另计",
+      "capacity": "独占日池、无参考图、每张1MP，按费率估算约7张；编辑另计。",
+      "channel": "Cloudflare Workers AI",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 332,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 Cloudflare 免费账户，自行创建 Account ID 与 API Token；在 Agent 中选择兼容接口",
+      "limitations": [
+        "首个百万像素约 1,363.64 Neurons；参考图另计",
+        "日池跨模型共享",
+        "账户保持 Free 档，超额报错；升级 Paid 会按量计费",
+        "网络可达性及任务延迟待实测"
+      ],
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/models/flux-2-klein-9b/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai"
+      },
+      "freeChannels": [
+        {
+          "provider": "Cloudflare Workers AI",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/flux-2-klein-9b/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "cf-bge-m3",
+      "title": "BGE-M3",
+      "provider": "智源",
+      "modelId": "@cf/baai/bge-m3",
+      "categories": [
+        "retrieval"
+      ],
+      "summary": "知识库向量检索",
+      "allowance": "独占共享日池：约930万输入Token/日，用于知识库索引",
+      "capacity": "独占日池按费率估算约930万输入Token，可用于知识库索引。",
+      "channel": "Cloudflare Workers AI",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 333,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 Cloudflare 免费账户，自行创建 Account ID 与 API Token；在 Agent 中选择兼容接口",
+      "limitations": [
+        "每百万输入 Token 约 1,075 Neurons",
+        "日池跨模型共享",
+        "账户保持 Free 档，超额报错；升级 Paid 会按量计费",
+        "网络可达性及任务延迟待实测"
+      ],
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/models/bge-m3/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai"
+      },
+      "freeChannels": [
+        {
+          "provider": "Cloudflare Workers AI",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/bge-m3/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "cf-melotts",
+      "title": "MeloTTS",
+      "provider": "MyShell",
+      "modelId": "@cf/myshell-ai/melotts",
+      "categories": [
+        "speech"
+      ],
+      "summary": "多语言语音合成",
+      "allowance": "独占共享日池：约536分钟合成/日（费率估算）",
+      "capacity": "独占日池按费率估算约536分钟合成；实际以调用计量为准。",
+      "channel": "Cloudflare Workers AI",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 334,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 Cloudflare 免费账户，自行创建 Account ID 与 API Token；在 Agent 中选择兼容接口",
+      "limitations": [
+        "每分钟音频约 18.63 Neurons",
+        "日池跨模型共享",
+        "账户保持 Free 档，超额报错；升级 Paid 会按量计费",
+        "网络可达性及任务延迟待实测"
+      ],
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/models/melotts/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai"
+      },
+      "freeChannels": [
+        {
+          "provider": "Cloudflare Workers AI",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "所有模型共享 10,000 Neurons/日；北京时间08:00恢复",
+          "sourceUrl": "https://developers.cloudflare.com/workers-ai/models/melotts/",
+          "entryUrl": "https://dash.cloudflare.com/",
+          "validUntil": null
+        }
+      ]
+    },
+    {
+      "id": "groq-gpt-oss-20b-free",
+      "title": "GPT OSS 20B",
+      "provider": "OpenAI",
+      "modelId": "openai/gpt-oss-20b",
+      "categories": [
+        "coding",
+        "text",
+        "reasoning"
+      ],
+      "summary": "低延迟工具调用、推理与轻量 Agent 任务",
+      "allowance": "最多1,000请求/日、200,000 Token/日；每分钟8,000 Token",
+      "capacity": "适合多项轻量任务；长代码上下文可能先触发每分钟Token限制。",
+      "channel": "Groq",
+      "access": [
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "ongoing_free",
+      "stabilityTier": "A",
+      "freeSourceClass": 1,
+      "sourceKind": "model",
+      "capabilityEvidence": null,
+      "categoryRanks": {},
+      "featuredRank": 335,
+      "rankingStatus": "pending",
+      "valueReason": "官方模型目录与免费资格已交叉核对；可用作 Agent 后端或任务工具。",
+      "eligibility": "注册 Groq 免费账户，自行创建 API Key",
+      "limitations": [
+        "同时受30请求/分钟等限制",
+        "组织内共享额度，具体以账户Limits页为准",
+        "地区与网络条件待实测"
+      ],
+      "officialUrl": "https://console.groq.com/docs/rate-limits",
+      "entryUrl": "https://console.groq.com/",
+      "ruleCheckedAt": "2026-10-13T03:15:46.319Z",
+      "evidenceLabel": "官方免费路径已核；端到端任务体验未实测",
+      "status": "active",
+      "api": {
+        "baseUrl": "https://api.groq.com/openai/v1"
+      },
+      "freeChannels": [
+        {
+          "provider": "Groq",
+          "channel": "免费 API",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "最多1,000请求/日、200,000 Token/日；每分钟8,000 Token",
+          "sourceUrl": "https://console.groq.com/docs/rate-limits",
+          "entryUrl": "https://console.groq.com/",
           "validUntil": null
         }
       ]

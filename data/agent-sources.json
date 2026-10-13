@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T12:00:00+08:00",
+  "updatedAt": "2026-10-13T03:15:46.319Z",
   "items": [
     {
       "id": "kilo",
@@ -76,6 +76,76 @@
       "id": "mistral-subscription",
       "name": "Mistral Vibe 免费用量",
       "url": "https://docs.mistral.ai/admin/billing-usage/subscriptions",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "nim-directory",
+      "name": "NVIDIA 免费模型目录",
+      "url": "https://build.nvidia.com/models",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "groq-quota",
+      "name": "Groq 模型与免费限额",
+      "url": "https://console.groq.com/docs/rate-limits",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "cf-directory",
+      "name": "Cloudflare 完整模型目录",
+      "url": "https://developers.cloudflare.com/workers-ai/models/",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "cf-pricing",
+      "name": "Cloudflare 免费池和付费例外",
+      "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "dtmaas-official",
+      "name": "DTMaaS 新版免费计划",
+      "url": "https://maas.antdigital.com/",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "ling-billing",
+      "name": "百灵免费权益迁移",
+      "url": "https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/billing-upgrade/",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "atria-official",
+      "name": "Atria 模型与官方接入",
+      "url": "https://github.com/atria-asi/Atria-Dawn-Preview",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "gitee-models",
+      "name": "模力方舟模型目录",
+      "url": "https://ai.gitee.com/docs/products/apis",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "amd-tokenfactory",
+      "name": "AMD Token Factory",
+      "url": "https://developer.amd.com.cn/radeon/tokenfactory",
+      "status": "active",
+      "type": "official_page"
+    },
+    {
+      "id": "step-plan",
+      "name": "阶跃 Step Plan 活动",
+      "url": "https://platform.stepfun.com/docs/zh/step-plan/overview",
       "status": "active",
       "type": "official_page"
     }

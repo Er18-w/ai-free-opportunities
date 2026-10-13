@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T12:00:00+08:00",
+  "updatedAt": "2026-10-13T03:15:46.319Z",
   "items": [
     {
       "id": "workbuddy",
@@ -293,6 +293,77 @@
       "lastVerifiedAt": "2026-10-13T12:00:00+08:00",
       "rankingStatus": "pending",
       "rankingNote": "新增条目，未做与旧榜可比的实测排名"
+    },
+    {
+      "id": "nvidia-nim",
+      "name": "NVIDIA NIM",
+      "summary": "免费开发 API 可接入 Agent，覆盖 Kimi、GLM、Nemotron 等强模型。",
+      "freeAmount": "官方标 Free Endpoint；日上限未统一公开",
+      "models": [
+        "Kimi K3",
+        "GLM-5.3",
+        "GLM-5.3 Flash",
+        "Nemotron 3.5 Lightning"
+      ],
+      "sourceUrl": "https://build.nvidia.com/models",
+      "entryUrl": "https://build.nvidia.com/",
+      "stability": "开发试用端点",
+      "application": "注册验证后自行创建 Key；适用于开发与原型",
+      "rank": 15,
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "账号资格和中国大陆网络可达性待实测",
+      "evidenceStatus": "官方免费条件已核；任务体验未实测",
+      "lastVerifiedAt": "2026-10-13T03:15:46.319Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "cloudflare-ai",
+      "name": "Cloudflare Workers AI",
+      "summary": "文本、视觉、生图、语音、知识库检索共用每日免费池。",
+      "freeAmount": "10,000 Neurons/日；北京时间08:00恢复",
+      "models": [
+        "GLM-4.7 Flash",
+        "Gemma 4",
+        "Qwen3.8 27B",
+        "FLUX.2 Klein",
+        "BGE-M3",
+        "MeloTTS"
+      ],
+      "sourceUrl": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "entryUrl": "https://dash.cloudflare.com/",
+      "stability": "每日恢复",
+      "application": "注册 Free 账户，创建 API Token；部分旗舰模型必须付费，不纳入免费池",
+      "rank": 16,
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "账号资格和中国大陆网络可达性待实测",
+      "evidenceStatus": "官方免费条件已核；任务体验未实测",
+      "lastVerifiedAt": "2026-10-13T03:15:46.319Z",
+      "rankingStatus": "pending"
+    },
+    {
+      "id": "dtmaas",
+      "name": "蚂蚁数科 DTMaaS",
+      "summary": "面向 Agent 的多模型 API；官方新版新人包提供较完整试用。",
+      "freeAmount": "新客一次1,000 Credit；官方估算约2,000次对话或48张图",
+      "models": [
+        "20+系列，具体可选型号以账户为准"
+      ],
+      "sourceUrl": "https://maas.antdigital.com/",
+      "entryUrl": "https://maas.antdigital.com/",
+      "stability": "一次性新人包",
+      "application": "注册后在 Token Plan 领取免费版；有效期以控制台为准",
+      "rank": 17,
+      "access": [
+        "API"
+      ],
+      "mainlandAccess": "账号资格和中国大陆网络可达性待实测",
+      "evidenceStatus": "官方免费条件已核；任务体验未实测",
+      "lastVerifiedAt": "2026-10-13T03:15:46.319Z",
+      "rankingStatus": "pending"
     }
   ]
 }
