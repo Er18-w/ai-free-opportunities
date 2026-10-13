@@ -1,9 +1,29 @@
-const state={platforms:[],models:[],offers:[],category:'all'};
+const state={platforms:[],models:[],offers:[],category:'all',view:'platforms'};
 const $=selector=>document.querySelector(selector);
 const escapeHtml=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 const categoryNames={all:'综合',general:'通用',coding:'编程',reasoning:'推理',text:'文本',vision:'图像理解',image:'生图',video:'生视频',speech:'语音 / 音乐',retrieval:'知识库检索'};
 const accessNames={api:'API',web:'网页',client:'客户端'};
 const formatDate=value=>new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'numeric',day:'numeric'}).format(new Date(value));
+const viewIds=['platforms','models','offers'];
+
+function activateView(view){
+  state.view=viewIds.includes(view)?view:'platforms';
+  document.querySelectorAll('[data-view-panel]').forEach(panel=>{panel.hidden=panel.id!==state.view;});
+  document.querySelectorAll('[data-view]').forEach(tab=>{const active=tab.dataset.view===state.view;tab.setAttribute('aria-selected',String(active));if(active)tab.setAttribute('aria-current','page');else tab.removeAttribute('aria-current');});
+}
+
+function openView(view,{replace=false,resetScroll=false}={}){
+  const next=viewIds.includes(view)?view:'platforms';
+  const url=`#${next}`;
+  if(location.hash!==url)history[replace?'replaceState':'pushState'](null,'',url);
+  activateView(next);
+  if(resetScroll)window.scrollTo(0,0);
+}
+
+function bindViewTabs(){
+  document.querySelectorAll('[data-view]').forEach(tab=>tab.addEventListener('click',event=>{event.preventDefault();openView(tab.dataset.view,{resetScroll:true});}));
+  window.addEventListener('popstate',()=>activateView(location.hash.slice(1)));
+}
 
 async function readData(){
   if(globalThis.__AI_OPPORTUNITY_DATA__)return globalThis.__AI_OPPORTUNITY_DATA__;
@@ -65,7 +85,8 @@ async function load(){
   const data=await readData();state.platforms=data.platforms.items;state.models=data.catalog.items.filter(item=>item.status==='active');state.offers=data.offers.items;
   $('#platform-count').textContent=state.platforms.length;$('#model-count').textContent=state.models.length;$('#updated-at').textContent=formatDate(data.catalog.updatedAt);
   renderPlatforms();renderTabs();renderModels();renderOffers();$('#model-query').addEventListener('input',renderModels);$('#platform-query').addEventListener('input',renderPlatforms);
-  if(['#platforms','#models','#offers'].includes(location.hash))requestAnimationFrame(()=>document.querySelector(location.hash)?.scrollIntoView({behavior:'instant'}));
+  bindViewTabs();openView(location.hash.slice(1),{replace:!viewIds.includes(location.hash.slice(1))});
 }
 
 load().catch(error=>{document.querySelector('main').innerHTML=`<section class="shell error"><h1>资料加载失败</h1><p>${escapeHtml(error.message)}</p></section>`;});
+

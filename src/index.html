@@ -12,7 +12,7 @@
   <header class="site-header">
     <div class="shell nav-wrap">
       <a class="brand" href="./">AI 免费模型榜</a>
-      <nav aria-label="主导航"><a href="#platforms">平台榜</a><a href="#models">模型榜</a><a href="#offers">限时福利</a></nav>
+      <nav class="view-tabs" aria-label="榜单切换" role="tablist"><a id="tab-platforms" href="#platforms" data-view="platforms" role="tab" aria-controls="platforms">平台榜</a><a id="tab-models" href="#models" data-view="models" role="tab" aria-controls="models">模型榜</a><a id="tab-offers" href="#offers" data-view="offers" role="tab" aria-controls="offers">限时福利</a></nav>
     </div>
   </header>
   <main id="main">
@@ -22,19 +22,19 @@
       <p class="lead">平台看免费量与恢复周期；模型按用途查看；限时会员、试用和大额赠送单独列出。</p>
       <div class="hero-meta"><span><b id="platform-count">—</b> 个平台</span><span><b id="model-count">—</b> 个模型</span><span>更新于 <b id="updated-at">—</b></span></div>
     </section>
-    <section id="platforms" class="section"><div class="shell">
+    <section id="platforms" class="section view-panel" data-view-panel role="tabpanel" aria-labelledby="tab-platforms"><div class="shell">
       <div class="section-heading"><div><p class="eyebrow">免费平台榜</p><h2>平台榜</h2></div><p>免费量、恢复周期与限制，一行看清。</p></div>
       <div class="platform-toolbar"><label class="search"><span class="sr-only">搜索平台</span><input id="platform-query" type="search" placeholder="搜索平台或模型"></label></div>
       <div id="platform-list" class="board" aria-live="polite"></div>
       <p id="platform-empty" class="empty" hidden>没有找到这个平台或模型。</p>
     </div></section>
-    <section id="models" class="section dark-section"><div class="shell">
+    <section id="models" class="section dark-section view-panel" data-view-panel role="tabpanel" aria-labelledby="tab-models" hidden><div class="shell">
       <div class="section-heading"><div><p class="eyebrow">免费模型榜</p><h2>模型榜</h2></div><p id="model-section-note">综合页按展示顺序排列；选择编程后查看有公开依据的能力名次。</p></div>
       <div class="model-toolbar"><div id="category-tabs" class="tabs" role="group" aria-label="模型分类"></div><label class="search"><span class="sr-only">搜索模型</span><input id="model-query" type="search" placeholder="搜索模型、平台或用途"></label></div>
       <div id="model-list" class="board model-board" aria-live="polite"></div>
       <p id="model-empty" class="empty" hidden>这一类暂时没有达到准入线的模型。</p>
     </div></section>
-    <section id="offers" class="section"><div class="shell">
+    <section id="offers" class="section view-panel" data-view-panel role="tabpanel" aria-labelledby="tab-offers" hidden><div class="shell">
       <div class="section-heading"><div><p class="eyebrow">限时福利</p><h2>现在可以领什么</h2></div><p>只展示足以完成实际任务的会员、试用和大额资源包。</p></div>
       <div id="offer-list" class="offer-grid" aria-live="polite"></div>
     </div></section>
@@ -44,3 +44,4 @@
   <script type="module" src="./assets/app.js"></script>
 </body>
 </html>
+
