@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "updatedAt": "2026-10-13T14:19:00.000Z",
+  "updatedAt": "2026-10-14T03:22:30.000Z",
   "policyVersion": "admission-v5-model-first",
   "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
@@ -464,21 +464,6 @@
           "validUntil": null,
           "claimMethod": "创建 OpenCode Zen 账户和 API Key；不提交隐私或机密代码",
           "lastVerifiedAt": "2026-10-13T22:19:00+08:00"
-        },
-        {
-          "provider": "Kilo",
-          "channel": "免费模型池",
-          "class": 1,
-          "access": [
-            "client"
-          ],
-          "regionStatus": "unknown",
-          "allowance": "输入输出零价格；上游限流",
-          "sourceUrl": "https://kilo.ai/landing/free-models",
-          "entryUrl": "https://kilo.ai/",
-          "validUntil": null,
-          "claimMethod": "创建 OpenCode Zen 账户和 API Key；不提交隐私或机密代码",
-          "lastVerifiedAt": "2026-10-12T14:30:00+08:00"
         }
       ],
       "api": {
@@ -711,7 +696,7 @@
       "evidenceLabel": "官方免费目录已核；频控未公开",
       "officialUrl": "https://kilo.ai/landing/free-models",
       "entryUrl": "https://kilo.ai/",
-      "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
+      "ruleCheckedAt": "2026-10-14T11:22:30+08:00",
       "status": "active",
       "featuredRank": 116,
       "rankingStatus": "pending",
@@ -729,7 +714,7 @@
           "entryUrl": "https://kilo.ai/",
           "validUntil": null,
           "claimMethod": "注册 Kilo 免费账户，在模型选择器选对应 Free 型号",
-          "lastVerifiedAt": "2026-10-13T12:00:00+08:00"
+          "lastVerifiedAt": "2026-10-14T11:22:30+08:00"
         },
         {
           "provider": "OpenRouter",
@@ -783,7 +768,7 @@
       "evidenceLabel": "官方免费目录已核；频控未公开",
       "officialUrl": "https://kilo.ai/landing/free-models",
       "entryUrl": "https://kilo.ai/",
-      "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
+      "ruleCheckedAt": "2026-10-14T11:22:30+08:00",
       "status": "active",
       "featuredRank": 117,
       "rankingStatus": "pending",
@@ -801,7 +786,7 @@
           "entryUrl": "https://kilo.ai/",
           "validUntil": null,
           "claimMethod": "注册 Kilo 免费账户，在模型选择器选对应 Free 型号",
-          "lastVerifiedAt": "2026-10-13T12:00:00+08:00"
+          "lastVerifiedAt": "2026-10-14T11:22:30+08:00"
         },
         {
           "provider": "NVIDIA NIM",
@@ -870,7 +855,7 @@
       "evidenceLabel": "官方免费目录已核；频控未公开",
       "officialUrl": "https://kilo.ai/landing/free-models",
       "entryUrl": "https://kilo.ai/",
-      "ruleCheckedAt": "2026-10-13T12:00:00+08:00",
+      "ruleCheckedAt": "2026-10-14T11:22:30+08:00",
       "status": "active",
       "featuredRank": 118,
       "rankingStatus": "pending",
@@ -888,7 +873,7 @@
           "entryUrl": "https://kilo.ai/",
           "validUntil": null,
           "claimMethod": "注册 Kilo 免费账户，在模型选择器选对应 Free 型号",
-          "lastVerifiedAt": "2026-10-13T12:00:00+08:00"
+          "lastVerifiedAt": "2026-10-14T11:22:30+08:00"
         },
         {
           "provider": "OpenRouter",

@@ -14,10 +14,10 @@
       "status": "active",
       "trust": "medium",
       "notes": "每日读取一次；优先读取官方落地链接、lastSeen、expiresAt 与来源健康信息，verified=false 仍须复核。",
-      "lastSuccessAt": "2026-10-13T04:54:37.632Z",
+      "lastSuccessAt": "2026-10-14T03:20:13.622Z",
       "lastError": null,
       "health": "ok",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z",
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z",
       "failureStreak": 0
     },
     {
@@ -35,7 +35,7 @@
       "lastSuccessAt": "2026-10-12T06:24:14.745Z",
       "lastError": null,
       "health": "ok",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z",
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z",
       "failureStreak": 0
     },
     {
@@ -52,8 +52,8 @@
       "notes": "高密度线报，噪音与推广并存。",
       "lastError": "fetch failed",
       "health": "failed",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z",
-      "failureStreak": 3
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z",
+      "failureStreak": 4
     },
     {
       "id": "C04",
@@ -69,8 +69,8 @@
       "notes": "只捕获命中权益动作词的主题。",
       "lastError": "fetch failed",
       "health": "failed",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z",
-      "failureStreak": 3
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z",
+      "failureStreak": 4
     },
     {
       "id": "C05",
@@ -86,8 +86,8 @@
       "notes": "发现用，不采信评论结论。",
       "lastError": "fetch failed",
       "health": "failed",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z",
-      "failureStreak": 3
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z",
+      "failureStreak": 4
     },
     {
       "id": "C06",
@@ -103,8 +103,8 @@
       "notes": "强制风险词过滤；官方复核前不得公开。",
       "lastError": "fetch failed",
       "health": "failed",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z",
-      "failureStreak": 3
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z",
+      "failureStreak": 4
     },
     {
       "id": "C07",
@@ -120,8 +120,8 @@
       "notes": "只生成候选。",
       "lastError": "fetch failed",
       "health": "failed",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z",
-      "failureStreak": 3
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z",
+      "failureStreak": 4
     },
     {
       "id": "C08",
@@ -135,10 +135,10 @@
       "status": "active",
       "trust": "medium",
       "notes": "仅私有候选，不公开镜像摘要。",
-      "lastSuccessAt": "2026-10-13T04:54:37.632Z",
+      "lastSuccessAt": "2026-10-14T03:20:13.622Z",
       "lastError": null,
       "health": "ok",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z",
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z",
       "failureStreak": 0
     },
     {
@@ -154,10 +154,10 @@
       "trust": "very_low",
       "notes": "搜索结果仅作线索；正文命中权益词后才进入私有候选。",
       "failureStreak": 0,
-      "lastSuccessAt": "2026-10-13T04:54:37.632Z",
+      "lastSuccessAt": "2026-10-14T03:20:13.622Z",
       "lastError": null,
       "health": "ok",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z"
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z"
     },
     {
       "id": "C10",
@@ -172,10 +172,10 @@
       "trust": "very_low",
       "notes": "重点补消费级会员活动，必须排除自动续费与非官方兑换码。",
       "failureStreak": 0,
-      "lastSuccessAt": "2026-10-13T04:54:37.632Z",
+      "lastSuccessAt": "2026-10-14T03:20:13.622Z",
       "lastError": null,
       "health": "ok",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z"
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z"
     },
     {
       "id": "C11",
@@ -190,10 +190,10 @@
       "trust": "very_low",
       "notes": "用于发现海外 API 新人额度与公测，官方文档是最终证据。",
       "failureStreak": 0,
-      "lastSuccessAt": "2026-10-13T04:54:37.632Z",
+      "lastSuccessAt": "2026-10-14T03:20:13.622Z",
       "lastError": null,
       "health": "ok",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z"
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z"
     },
     {
       "id": "C12",
@@ -208,10 +208,10 @@
       "trust": "very_low",
       "notes": "用于发现 IDE 与编程 Agent 的限免模型、学生权益和公测。",
       "failureStreak": 0,
-      "lastSuccessAt": "2026-10-13T04:54:37.632Z",
+      "lastSuccessAt": "2026-10-14T03:20:13.622Z",
       "lastError": null,
       "health": "ok",
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z"
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z"
     },
     {
       "id": "O01",
@@ -355,10 +355,11 @@
       "status": "active",
       "trust": "medium",
       "notes": "读取完整资源目录，重复条目先归组；免费资格与额度仍待原始官方资料。",
-      "lastError": "fetch failed",
-      "health": "failed",
-      "failureStreak": 2,
-      "lastAttemptAt": "2026-10-13T04:54:37.632Z"
+      "lastError": null,
+      "health": "ok",
+      "failureStreak": 0,
+      "lastAttemptAt": "2026-10-14T03:20:13.622Z",
+      "lastSuccessAt": "2026-10-14T03:20:13.622Z"
     }
   ]
 }

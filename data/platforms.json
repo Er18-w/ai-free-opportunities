@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T14:19:00.000Z",
+  "updatedAt": "2026-10-14T03:22:30.000Z",
   "items": [
     {
       "id": "workbuddy",
@@ -171,13 +171,14 @@
       "id": "kilo",
       "rank": 9,
       "name": "Kilo Code",
-      "sourceUrl": "https://kilo.ai/docs/getting-started/using-kilo-for-free",
+      "sourceUrl": "https://kilo.ai/landing/free-models",
       "entryUrl": "https://kilo.ai/",
-      "freeAmount": "免费模型输入、输出零价格；上限随上游变化",
-      "application": "选 Auto Free；后台摘要也需选免费模型",
+      "freeAmount": "当前4款托管模型输入、输出零价格；上限随上游变化",
+      "application": "注册免费账户，选择 Auto Free 或标为 Free 的型号；无需信用卡",
       "summary": "改代码、运行命令、调试；免费模型池轮换",
       "models": [
-        "Ling 3.1 Flash",
+        "Dots3-Note Preview",
+        "Laguna S 2.1",
         "Nemotron 3 Super",
         "Nemotron 3 Ultra"
       ],
@@ -187,7 +188,7 @@
       ],
       "mainlandAccess": "服务地区及中国大陆网络可达性待实测",
       "evidenceStatus": "官方规则已核；真实任务容量尚未实测",
-      "lastVerifiedAt": "2026-10-13T12:00:00+08:00",
+      "lastVerifiedAt": "2026-10-14T11:22:30+08:00",
       "rankingStatus": "pending",
       "rankingNote": "新增条目，未做与旧榜可比的实测排名"
     },
@@ -219,8 +220,8 @@
       "name": "Gemini CLI / Code Assist Agent",
       "sourceUrl": "https://geminicli.com/docs/resources/quota-and-pricing/",
       "entryUrl": "https://geminicli.com/",
-      "freeAmount": "个人 Google 登录最多 1,000 次模型请求/日",
-      "application": "安装 Gemini CLI 后使用个人 Google 账户登录",
+      "freeAmount": "个人 Google 登录1,000次/日；免费 API Key 250次/日且仅 Flash",
+      "application": "安装 Gemini CLI；优先使用个人 Google 账户登录获得较高免费量",
       "summary": "编程、文件处理、运行命令；一次任务会使用多次模型请求",
       "models": [
         "Gemini 模型家族（按账户开放）"
@@ -231,7 +232,7 @@
       ],
       "mainlandAccess": "服务地区及中国大陆网络可达性待实测",
       "evidenceStatus": "官方规则已核；真实任务容量尚未实测",
-      "lastVerifiedAt": "2026-10-13T12:00:00+08:00",
+      "lastVerifiedAt": "2026-10-14T11:22:30+08:00",
       "rankingStatus": "pending",
       "rankingNote": "新增条目，未做与旧榜可比的实测排名"
     },
