@@ -2,6 +2,13 @@
   "schemaVersion": "1.0.0",
   "items": [
     {
+      "id": "workbuddy-hy3-limited-free-2026-10-15",
+      "type": "evidence_update",
+      "date": "2026-10-15",
+      "title": "WorkBuddy Hy3限时免费获得官方直接证据",
+      "summary": "官方微信小程序模型选择页已将Hy3的积分消耗标为限时免费；免费量、恢复周期和截止日尚未公布，Hy4额外限免仍待核。"
+    },
+    {
       "id": "campaign-monitor-2026-10-10",
       "type": "monitoring_upgrade",
       "date": "2026-10-10",

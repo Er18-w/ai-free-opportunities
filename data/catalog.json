@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "updatedAt": "2026-10-14T03:22:30.000Z",
+  "updatedAt": "2026-10-15T03:12:00.000Z",
   "policyVersion": "admission-v5-model-first",
   "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
@@ -482,7 +482,7 @@
       "id": "workbuddy-hy3-daily-free",
       "title": "Hy3",
       "provider": "WorkBuddy",
-      "channel": "体验版共享月积分",
+      "channel": "WorkBuddy微信小程序限时免费",
       "modelId": "Hy3",
       "categories": [
         "general",
@@ -495,30 +495,47 @@
         "coding": 6
       },
       "access": [
+        "miniapp",
         "client"
       ],
       "regionStatus": "cn_service",
-      "offerType": "free_tier",
+      "offerType": "limited_free",
       "stabilityTier": "C",
       "freeSourceClass": 1,
       "capabilityEvidence": null,
       "sourceKind": "model",
-      "summary": "在WorkBuddy客户端执行编程与办公任务；额外每日限免待核实。",
-      "valueReason": "官方套餐确认每月500基础积分；任务容量未实测，不以此证明每日模型限免。",
-      "allowance": "所有模型共用500积分/月；额外每日限免待核实",
-      "capacity": "模型单次消耗与能完成的任务数待实测；不承诺大量或无限使用。",
+      "summary": "在WorkBuddy微信小程序执行推理、视觉、编程与办公任务；官方当前标为限时免费。",
+      "valueReason": "官方模型选择页直接将Hy3积分消耗标为“限时免费”；具体免费量与截止日未公布。",
+      "allowance": "Hy3当前限时免费；另有体验版所有模型共享500积分/月",
+      "capacity": "官方未公布Hy3限免次数、恢复周期或任务量，尚未完成账户任务实测。",
       "limitations": [
-        "月积分与额外限免不是同一权益；免费模型选择权限以客户端为准",
-        "额外限免资格、每日量和截止日尚未取得当前官方证据",
-        "需要安装客户端；大陆实际调用体验待核实"
+        "Hy3限免与体验版500积分/月不是同一权益",
+        "官方未公布限免次数、恢复周期和截止日",
+        "需微信登录WorkBuddy小程序；大陆实际任务体验待核实"
       ],
-      "eligibility": "下载安装WorkBuddy并登录体验版，在模型选择器选择该型号；开始前查看积分提示。",
-      "evidenceLabel": "月积分已核；每日限免及任务容量待核",
-      "officialUrl": "https://www.workbuddy.cn/docs/workbuddy/Pricing",
-      "entryUrl": "https://www.workbuddy.cn/",
-      "ruleCheckedAt": "2026-10-13T13:46:56.516Z",
+      "eligibility": "微信进入WorkBuddy小程序并登录；发出任务首句后打开模型选择器，选择Hy3。",
+      "evidenceLabel": "Hy3限时免费已核；免费量、截止日和任务容量待核",
+      "officialUrl": "https://www.codebuddy.cn/docs/workbuddymini/features/Select-Model",
+      "entryUrl": "https://www.codebuddy.cn/docs/workbuddymini/quick-start/Quickstart",
+      "ruleCheckedAt": "2026-10-15T03:12:00.000Z",
       "status": "active",
       "freeChannels": [
+        {
+          "provider": "WorkBuddy",
+          "channel": "微信小程序限时免费",
+          "class": 2,
+          "access": [
+            "miniapp"
+          ],
+          "regionStatus": "cn_service",
+          "allowance": "Hy3当前限时免费；免费量、恢复周期和截止日未公布",
+          "sourceUrl": "https://www.codebuddy.cn/docs/workbuddymini/features/Select-Model",
+          "entryUrl": "https://www.codebuddy.cn/docs/workbuddymini/quick-start/Quickstart",
+          "validUntil": null,
+          "claimMethod": "微信进入WorkBuddy小程序并登录；发出任务首句后打开模型选择器，选择Hy3。",
+          "lastVerifiedAt": "2026-10-15T03:12:00.000Z",
+          "usageNote": "官方已标限时免费；免费量、截止日及实际任务容量待核"
+        },
         {
           "provider": "WorkBuddy",
           "channel": "体验版共享月积分",
@@ -527,13 +544,13 @@
             "client"
           ],
           "regionStatus": "cn_service",
-          "allowance": "所有模型共用500积分/月；额外每日限免待核实",
-          "sourceUrl": "https://www.workbuddy.cn/docs/workbuddy/Pricing",
+          "allowance": "所有模型共用500积分/月",
+          "sourceUrl": "https://www.codebuddy.cn/docs/workbuddy/Pricing",
           "entryUrl": "https://www.workbuddy.cn/",
           "validUntil": null,
           "claimMethod": "下载安装WorkBuddy并登录体验版，在模型选择器选择该型号；开始前查看积分提示。",
-          "lastVerifiedAt": "2026-10-13T13:46:56.516Z",
-          "usageNote": "月积分已核；额外每日限免与实际任务容量待核"
+          "lastVerifiedAt": "2026-10-15T03:12:00.000Z",
+          "usageNote": "500积分为所有模型共享；单次消耗与实际任务容量待核"
         }
       ],
       "featuredRank": 9,

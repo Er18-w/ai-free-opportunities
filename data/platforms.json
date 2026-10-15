@@ -1,28 +1,29 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-14T03:22:30.000Z",
+  "updatedAt": "2026-10-15T03:12:00.000Z",
   "items": [
     {
       "id": "workbuddy",
       "rank": 1,
       "name": "WorkBuddy",
-      "summary": "客户端可执行编程和办公任务；每日限免与月积分分别核查。",
-      "freeAmount": "全部模型共用500积分/月；额外每日限免待核实",
+      "summary": "客户端和微信小程序可执行编程与办公任务；月积分和单模型限免分开计算。",
+      "freeAmount": "体验版500积分/月；Hy3在微信小程序限时免费，免费量与截止日未公布",
       "models": [
         "Hy3",
         "Hy4 Preview",
         "其他活动模型"
       ],
       "access": [
-        "客户端"
+        "客户端",
+        "微信小程序"
       ],
       "mainlandAccess": "提供大陆入口；实际调用体验待核实",
-      "stability": "月度恢复；活动另核",
-      "evidenceStatus": "免费套餐已核；活动待官方复核",
-      "sourceUrl": "https://www.workbuddy.cn/docs/workbuddy/Pricing",
+      "stability": "月积分按月恢复；Hy3限时免费结束时间待官方公布",
+      "evidenceStatus": "体验版500积分/月与Hy3限时免费已核；Hy4额外限免待核",
+      "sourceUrl": "https://www.codebuddy.cn/docs/workbuddymini/features/Select-Model",
       "entryUrl": "https://www.workbuddy.cn/",
-      "application": "下载安装后登录体验版，选择模型；实际任务消耗待实测。",
-      "lastVerifiedAt": "2026-10-13T13:46:56.516Z"
+      "application": "客户端可下载安装使用；Hy3限免需在微信小程序登录并发出任务首句，再从模型选择器选择Hy3。",
+      "lastVerifiedAt": "2026-10-15T03:12:00.000Z"
     },
     {
       "id": "modelscope",
