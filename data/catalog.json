@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "updatedAt": "2026-10-15T03:12:00.000Z",
+  "updatedAt": "2026-10-16T05:53:11.000Z",
   "policyVersion": "admission-v5-model-first",
   "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
@@ -2082,8 +2082,8 @@
           "entryUrl": "https://ai.gitee.com/serverless-api",
           "validUntil": null,
           "claimMethod": "登录工作台创建访问令牌，在模型页复制调用示例",
-        "lastVerifiedAt": "2026-10-13T22:19:00+08:00",
-        "usageNote": "官方目录当前标免费；免费量与任务容量待实测"
+          "lastVerifiedAt": "2026-10-13T22:19:00+08:00",
+          "usageNote": "官方目录当前标免费；免费量与任务容量待实测"
         }
       ],
       "reviewStatus": "needs_task_check",
@@ -2139,8 +2139,8 @@
           "entryUrl": "https://ai.gitee.com/serverless-api",
           "validUntil": null,
           "claimMethod": "登录工作台创建访问令牌，在模型页复制调用示例",
-        "lastVerifiedAt": "2026-10-13T22:19:00+08:00",
-        "usageNote": "官方目录当前标免费；免费量与任务容量待实测"
+          "lastVerifiedAt": "2026-10-13T22:19:00+08:00",
+          "usageNote": "官方目录当前标免费；免费量与任务容量待实测"
         }
       ],
       "reviewStatus": "needs_task_check",
@@ -2195,8 +2195,8 @@
           "entryUrl": "https://ai.gitee.com/serverless-api",
           "validUntil": null,
           "claimMethod": "登录工作台创建访问令牌，在模型页复制调用示例",
-        "lastVerifiedAt": "2026-10-13T22:19:00+08:00",
-        "usageNote": "官方目录当前标免费；免费量与任务容量待实测"
+          "lastVerifiedAt": "2026-10-13T22:19:00+08:00",
+          "usageNote": "官方目录当前标免费；免费量与任务容量待实测"
         }
       ],
       "reviewStatus": "needs_task_check",
@@ -2252,8 +2252,8 @@
           "entryUrl": "https://ai.gitee.com/serverless-api",
           "validUntil": null,
           "claimMethod": "登录工作台创建访问令牌，在模型页复制调用示例",
-        "lastVerifiedAt": "2026-10-13T22:19:00+08:00",
-        "usageNote": "官方目录当前标免费；免费量与任务容量待实测"
+          "lastVerifiedAt": "2026-10-13T22:19:00+08:00",
+          "usageNote": "官方目录当前标免费；免费量与任务容量待实测"
         }
       ],
       "reviewStatus": "needs_task_check",
@@ -3184,7 +3184,7 @@
       "sourceKind": "model",
       "summary": "编程、终端执行与浏览器协作；免费套餐官方矩阵可选",
       "valueReason": "免费Agent能执行代码任务，并有持续免费或任务恢复规则。",
-      "allowance": "免费池每周恢复；任务复杂度影响消耗，次数未公开",
+      "allowance": "免费个人档使用共享每周额度；按任务复杂度消耗，具体数量未公开",
       "capacity": "官方免费规则已核，未带账户实测任务交付。",
       "limitations": [
         "免费层按周恢复，不能套用付费层每5小时刷新",
@@ -3192,10 +3192,10 @@
         "地区资格和大陆网络待核实，非直接可用承诺"
       ],
       "eligibility": "下载并用符合资格的Google个人账号登录，在模型选择器选择",
-      "evidenceLabel": "官方免费套餐已核，网络与任务体验待实测",
+      "evidenceLabel": "官方免费型号矩阵与每周恢复规则已核；实际任务容量未实测",
       "officialUrl": "https://antigravity.google/docs/models",
       "entryUrl": "https://antigravity.google/",
-      "ruleCheckedAt": "2026-10-13T03:41:28.406Z",
+      "ruleCheckedAt": "2026-10-16T05:53:11.000Z",
       "status": "active",
       "rankingStatus": "pending",
       "featuredRank": 1055,
@@ -3209,68 +3209,12 @@
             "client"
           ],
           "regionStatus": "unknown",
-          "allowance": "免费池每周恢复；任务复杂度影响消耗，次数未公开",
+          "allowance": "免费个人档使用共享每周额度；按任务复杂度消耗，具体数量未公开",
           "sourceUrl": "https://antigravity.google/docs/models",
           "entryUrl": "https://antigravity.google/",
           "validUntil": null,
           "claimMethod": "下载并用符合资格的Google个人账号登录，在模型选择器选择",
-          "lastVerifiedAt": "2026-10-13T03:41:28.406Z"
-        }
-      ],
-      "experienceStatus": "not_tested"
-    },
-    {
-      "id": "ag-gemini31",
-      "title": "Gemini 3.1 Pro",
-      "modelId": "Gemini-3.1-Pro",
-      "provider": "Google Antigravity",
-      "channel": "个人免费Agent套餐",
-      "categories": [
-        "coding",
-        "general"
-      ],
-      "access": [
-        "client"
-      ],
-      "regionStatus": "unknown",
-      "offerType": "free_tier",
-      "stabilityTier": "B",
-      "freeSourceClass": 1,
-      "capabilityEvidence": null,
-      "sourceKind": "model",
-      "summary": "编程、终端执行与浏览器协作；免费套餐官方矩阵可选",
-      "valueReason": "免费Agent能执行代码任务，并有持续免费或任务恢复规则。",
-      "allowance": "免费池每周恢复；任务复杂度影响消耗，次数未公开",
-      "capacity": "官方免费规则已核，未带账户实测任务交付。",
-      "limitations": [
-        "免费层按周恢复，不能套用付费层每5小时刷新",
-        "不提供免费裸模型API；不能抽取转售",
-        "地区资格和大陆网络待核实，非直接可用承诺"
-      ],
-      "eligibility": "下载并用符合资格的Google个人账号登录，在模型选择器选择",
-      "evidenceLabel": "官方免费套餐已核，网络与任务体验待实测",
-      "officialUrl": "https://antigravity.google/docs/models",
-      "entryUrl": "https://antigravity.google/",
-      "ruleCheckedAt": "2026-10-13T03:41:28.406Z",
-      "status": "active",
-      "rankingStatus": "pending",
-      "featuredRank": 1056,
-      "categoryRanks": {},
-      "freeChannels": [
-        {
-          "provider": "Google Antigravity",
-          "channel": "个人免费Agent套餐",
-          "class": 1,
-          "access": [
-            "client"
-          ],
-          "regionStatus": "unknown",
-          "allowance": "免费池每周恢复；任务复杂度影响消耗，次数未公开",
-          "sourceUrl": "https://antigravity.google/docs/models",
-          "entryUrl": "https://antigravity.google/",
-          "validUntil": null,
-          "claimMethod": "下载并用符合资格的Google个人账号登录，在模型选择器选择",
-          "lastVerifiedAt": "2026-10-13T03:41:28.406Z"
+          "lastVerifiedAt": "2026-10-16T05:53:11.000Z"
         }
       ],
       "experienceStatus": "not_tested"
@@ -3770,6 +3714,253 @@
         "protocol": "OpenAI-compatible Videos"
       },
       "modelDocumentationUrl": "https://wiki.agnes-ai.com/en/docs/agnes-video-25-flash",
+      "experienceStatus": "not_tested"
+    },
+    {
+      "id": "ag-claude-sonnet-46",
+      "title": "Claude Sonnet 4.6",
+      "modelId": "Claude-Sonnet-4.6",
+      "provider": "Anthropic",
+      "channel": "Google Antigravity个人免费Agent套餐",
+      "categories": [
+        "coding",
+        "general",
+        "reasoning"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_campaign",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "在Antigravity内执行编程、终端和浏览器任务；当前个人免费档可选。",
+      "valueReason": "官方免费型号矩阵明确列入个人免费档，可在Agent内执行真实编程任务。",
+      "allowance": "共享每周额度，具体数量未公开；官方注明2026-11-02移除",
+      "capacity": "可用于编程、终端和浏览器协作；未登录账户实测可完成任务量。",
+      "limitations": [
+        "免费个人档按周恢复，不能套用付费档每5小时刷新规则",
+        "不提供免费裸模型API，只能在Antigravity Agent内使用",
+        "地区资格和中国大陆网络可达性待实测"
+      ],
+      "eligibility": "下载Antigravity并用符合资格的Google个人账号登录，在模型选择器选择",
+      "evidenceLabel": "官方免费型号矩阵已核；2026-11-02移除，任务容量未实测",
+      "officialUrl": "https://antigravity.google/docs/models",
+      "entryUrl": "https://antigravity.google/",
+      "ruleCheckedAt": "2026-10-16T05:53:11.000Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1065,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Google Antigravity",
+          "channel": "个人免费Agent套餐",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "共享每周额度，具体数量未公开；官方注明2026-11-02移除",
+          "sourceUrl": "https://antigravity.google/docs/models",
+          "entryUrl": "https://antigravity.google/",
+          "validUntil": "2026-11-02",
+          "claimMethod": "下载Antigravity并用符合资格的Google个人账号登录，在模型选择器选择",
+          "lastVerifiedAt": "2026-10-16T05:53:11.000Z"
+        }
+      ],
+      "experienceStatus": "not_tested"
+    },
+    {
+      "id": "ag-claude-opus-46",
+      "title": "Claude Opus 4.6",
+      "modelId": "Claude-Opus-4.6",
+      "provider": "Anthropic",
+      "channel": "Google Antigravity个人免费Agent套餐",
+      "categories": [
+        "coding",
+        "general",
+        "reasoning"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_campaign",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "在Antigravity内执行复杂编程与Agent任务；当前个人免费档可选。",
+      "valueReason": "官方免费型号矩阵明确列入个人免费档，可在Agent内执行真实编程任务。",
+      "allowance": "共享每周额度，具体数量未公开；官方注明2026-11-02移除",
+      "capacity": "可用于编程、终端和浏览器协作；未登录账户实测可完成任务量。",
+      "limitations": [
+        "免费个人档按周恢复，不能套用付费档每5小时刷新规则",
+        "不提供免费裸模型API，只能在Antigravity Agent内使用",
+        "地区资格和中国大陆网络可达性待实测"
+      ],
+      "eligibility": "下载Antigravity并用符合资格的Google个人账号登录，在模型选择器选择",
+      "evidenceLabel": "官方免费型号矩阵已核；2026-11-02移除，任务容量未实测",
+      "officialUrl": "https://antigravity.google/docs/models",
+      "entryUrl": "https://antigravity.google/",
+      "ruleCheckedAt": "2026-10-16T05:53:11.000Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1066,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Google Antigravity",
+          "channel": "个人免费Agent套餐",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "共享每周额度，具体数量未公开；官方注明2026-11-02移除",
+          "sourceUrl": "https://antigravity.google/docs/models",
+          "entryUrl": "https://antigravity.google/",
+          "validUntil": "2026-11-02",
+          "claimMethod": "下载Antigravity并用符合资格的Google个人账号登录，在模型选择器选择",
+          "lastVerifiedAt": "2026-10-16T05:53:11.000Z"
+        }
+      ],
+      "experienceStatus": "not_tested"
+    },
+    {
+      "id": "ag-gpt-oss-120b",
+      "title": "GPT OSS 120B",
+      "modelId": "GPT-OSS-120B",
+      "provider": "OpenAI",
+      "channel": "Google Antigravity个人免费Agent套餐",
+      "categories": [
+        "coding",
+        "general",
+        "reasoning"
+      ],
+      "access": [
+        "client"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_campaign",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "在Antigravity内执行编程和Agent任务；当前个人免费档可选。",
+      "valueReason": "官方免费型号矩阵明确列入个人免费档，可在Agent内执行真实编程任务。",
+      "allowance": "共享每周额度，具体数量未公开；官方注明2026-11-02移除",
+      "capacity": "可用于编程、终端和浏览器协作；未登录账户实测可完成任务量。",
+      "limitations": [
+        "免费个人档按周恢复，不能套用付费档每5小时刷新规则",
+        "不提供免费裸模型API，只能在Antigravity Agent内使用",
+        "地区资格和中国大陆网络可达性待实测"
+      ],
+      "eligibility": "下载Antigravity并用符合资格的Google个人账号登录，在模型选择器选择",
+      "evidenceLabel": "官方免费型号矩阵已核；2026-11-02移除，任务容量未实测",
+      "officialUrl": "https://antigravity.google/docs/models",
+      "entryUrl": "https://antigravity.google/",
+      "ruleCheckedAt": "2026-10-16T05:53:11.000Z",
+      "status": "active",
+      "rankingStatus": "pending",
+      "featuredRank": 1067,
+      "categoryRanks": {},
+      "freeChannels": [
+        {
+          "provider": "Google Antigravity",
+          "channel": "个人免费Agent套餐",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "共享每周额度，具体数量未公开；官方注明2026-11-02移除",
+          "sourceUrl": "https://antigravity.google/docs/models",
+          "entryUrl": "https://antigravity.google/",
+          "validUntil": "2026-11-02",
+          "claimMethod": "下载Antigravity并用符合资格的Google个人账号登录，在模型选择器选择",
+          "lastVerifiedAt": "2026-10-16T05:53:11.000Z"
+        }
+      ],
+      "experienceStatus": "not_tested"
+    },
+    {
+      "id": "kilo-nemotron-35-super-vl",
+      "title": "Nemotron 3.5 Super VL",
+      "provider": "NVIDIA",
+      "channel": "Kilo免费模型池 + NVIDIA NIM",
+      "modelId": "nvidia/nemotron-3.5-super-vl:free",
+      "categories": [
+        "coding",
+        "general",
+        "reasoning",
+        "vision"
+      ],
+      "categoryRanks": {},
+      "access": [
+        "client",
+        "api"
+      ],
+      "regionStatus": "unknown",
+      "offerType": "limited_campaign",
+      "stabilityTier": "C",
+      "freeSourceClass": 1,
+      "capabilityEvidence": null,
+      "sourceKind": "model",
+      "summary": "可在Kilo编程Agent内零Token价格使用，也可通过NVIDIA NIM免费开发端点接API。",
+      "valueReason": "Kilo官方免费目录与NVIDIA官方模型页同时给出免费入口，支持文本、图片和视频输入。",
+      "allowance": "Kilo输入输出价格为0；NVIDIA NIM为免费开发端点；双方具体频控未公开",
+      "capacity": "面向多模态理解、文档和编程Agent任务；连续任务容量未实测。",
+      "limitations": [
+        "Kilo免费名单可能变化",
+        "NVIDIA NIM免费端点用于开发和原型，频控以账户页面为准",
+        "账号资格和中国大陆网络可达性待实测"
+      ],
+      "eligibility": "Kilo注册后选择标为Free的型号；或注册NVIDIA NIM并创建API Key",
+      "evidenceLabel": "两处官方免费入口已核；频控和实际任务容量未实测",
+      "officialUrl": "https://kilo.ai/models/nvidia-nemotron-3-5-super-vl-free",
+      "entryUrl": "https://kilo.ai/",
+      "ruleCheckedAt": "2026-10-16T05:53:11.000Z",
+      "status": "active",
+      "featuredRank": 1068,
+      "rankingStatus": "pending",
+      "freeChannels": [
+        {
+          "provider": "Kilo",
+          "channel": "Free型号",
+          "modelId": "nvidia/nemotron-3.5-super-vl:free",
+          "class": 1,
+          "access": [
+            "client"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "输入输出价格为0；具体频控未公开",
+          "sourceUrl": "https://kilo.ai/models/nvidia-nemotron-3-5-super-vl-free",
+          "entryUrl": "https://kilo.ai/",
+          "validUntil": null,
+          "claimMethod": "注册Kilo免费账户，在模型选择器选Nemotron 3.5 Super VL (Free)",
+          "lastVerifiedAt": "2026-10-16T05:53:11.000Z"
+        },
+        {
+          "provider": "NVIDIA NIM",
+          "channel": "免费开发API",
+          "modelId": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "class": 1,
+          "access": [
+            "api"
+          ],
+          "regionStatus": "unknown",
+          "allowance": "免费开发端点；具体日上限未公开",
+          "sourceUrl": "https://build.nvidia.com/nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "entryUrl": "https://build.nvidia.com/nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "validUntil": null,
+          "claimMethod": "注册NVIDIA Build，创建API Key并使用官方模型ID",
+          "lastVerifiedAt": "2026-10-16T05:53:11.000Z"
+        }
+      ],
       "experienceStatus": "not_tested"
     }
   ]

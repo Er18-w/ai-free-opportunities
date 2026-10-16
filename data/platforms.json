@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-15T03:12:00.000Z",
+  "updatedAt": "2026-10-16T05:53:11.000Z",
   "items": [
     {
       "id": "workbuddy",
@@ -174,10 +174,11 @@
       "name": "Kilo Code",
       "sourceUrl": "https://kilo.ai/landing/free-models",
       "entryUrl": "https://kilo.ai/",
-      "freeAmount": "当前4款托管模型输入、输出零价格；上限随上游变化",
+      "freeAmount": "当前5款托管模型输入、输出零价格；上限随上游变化",
       "application": "注册免费账户，选择 Auto Free 或标为 Free 的型号；无需信用卡",
       "summary": "改代码、运行命令、调试；免费模型池轮换",
       "models": [
+        "Nemotron 3.5 Super VL",
         "Dots3-Note Preview",
         "Laguna S 2.1",
         "Nemotron 3 Super",
@@ -188,8 +189,8 @@
         "Agent"
       ],
       "mainlandAccess": "服务地区及中国大陆网络可达性待实测",
-      "evidenceStatus": "官方规则已核；真实任务容量尚未实测",
-      "lastVerifiedAt": "2026-10-14T11:22:30+08:00",
+      "evidenceStatus": "官方5款免费目录已核；真实任务容量尚未实测",
+      "lastVerifiedAt": "2026-10-16T05:53:11.000Z",
       "rankingStatus": "pending",
       "rankingNote": "新增条目，未做与旧榜可比的实测排名"
     },
@@ -287,6 +288,7 @@
       "summary": "汇集多家文本与多模态模型；仅Free Endpoint代表可免费接云端API。",
       "freeAmount": "官方标 Free Endpoint；日上限未统一公开",
       "models": [
+        "Nemotron 3.5 Super VL",
         "Kimi K3",
         "GLM-5.3",
         "GLM-5.3 Flash",
@@ -302,8 +304,8 @@
         "API"
       ],
       "mainlandAccess": "账号资格和中国大陆网络可达性待实测",
-      "evidenceStatus": "官方免费条件已核；任务体验未实测",
-      "lastVerifiedAt": "2026-10-13T11:56:55.085Z",
+      "evidenceStatus": "官方免费端点与新型号已核；任务体验未实测",
+      "lastVerifiedAt": "2026-10-16T05:53:11.000Z",
       "rankingStatus": "pending"
     },
     {
@@ -556,21 +558,23 @@
       "name": "Google Antigravity",
       "rank": 26,
       "summary": "编程、终端执行与浏览器协作；免费套餐官方矩阵可选",
-      "freeAmount": "免费池每周恢复；任务复杂度影响消耗，次数未公开",
+      "freeAmount": "免费个人档使用共享每周额度；按任务复杂度消耗，具体数量未公开",
       "models": [
         "Gemini 3.8 Flash",
-        "Gemini 3.1 Pro"
+        "Claude Sonnet 4.6",
+        "Claude Opus 4.6",
+        "GPT OSS 120B"
       ],
       "access": [
         "平台内Agent"
       ],
       "mainlandAccess": "地区资格与大陆网络待核实",
       "stability": "每周恢复",
-      "evidenceStatus": "官方规则已核，实际任务待实测",
+      "evidenceStatus": "官方免费型号矩阵已核；Claude 4.6与GPT OSS 120B注明2026-11-02移除",
       "sourceUrl": "https://antigravity.google/docs/models",
       "entryUrl": "https://antigravity.google/",
       "application": "下载并用符合资格的Google个人账号登录，在模型选择器选择",
-      "lastVerifiedAt": "2026-10-13T03:41:28.406Z",
+      "lastVerifiedAt": "2026-10-16T05:53:11.000Z",
       "rankingStatus": "pending"
     },
     {
