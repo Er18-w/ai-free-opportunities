@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "updatedAt": "2026-10-16T05:53:11.000Z",
+  "updatedAt": "2026-10-17T03:46:00.000Z",
   "policyVersion": "admission-v5-model-first",
   "note": "模型榜只包含具体模型；使用途径记录在 freeChannels。能力证据仅在相同基准与版本内比较。",
   "items": [
@@ -2993,65 +2993,6 @@
       "experienceStatus": "not_tested"
     },
     {
-      "id": "kat-air-v1",
-      "title": "KAT Coder Air V1",
-      "modelId": "kat-coder-air-v1",
-      "provider": "快手万擎",
-      "channel": "KAT 免费 API",
-      "categories": [
-        "coding"
-      ],
-      "access": [
-        "api"
-      ],
-      "regionStatus": "unknown",
-      "offerType": "free_tier",
-      "stabilityTier": "C",
-      "freeSourceClass": 1,
-      "capabilityEvidence": null,
-      "sourceKind": "model",
-      "summary": "支持 OpenCode 与函数工具调用的编程模型",
-      "valueReason": "免费接口服务明确任务用途；非签到小积分。",
-      "allowance": "Air V1输入输出零价；限速以账户为准",
-      "capacity": "免费条件已核；未进行带账户的完整任务容量测试。",
-      "limitations": [
-        "Air V2.5与Pro型号收费，不可混用",
-        "万擎默认后付费，切换收费型号可能产生账单",
-        "免费型号调用速度与大陆网络待实测"
-      ],
-      "eligibility": "注册开通万擎，创建 Key，选择 kat-coder-air-v1",
-      "evidenceLabel": "官方免费条件已核；具体上限与实际任务体验仍待实测",
-      "officialUrl": "https://streamlake.com/document/WANQING/mdsorb4ejjptsmfyrn",
-      "entryUrl": "https://www.streamlake.com/product/kat-coder",
-      "ruleCheckedAt": "2026-10-13T03:39:00.843Z",
-      "status": "active",
-      "rankingStatus": "pending",
-      "featuredRank": 1052,
-      "categoryRanks": {},
-      "freeChannels": [
-        {
-          "provider": "快手万擎",
-          "channel": "KAT 免费 API",
-          "class": 1,
-          "access": [
-            "api"
-          ],
-          "regionStatus": "unknown",
-          "allowance": "Air V1输入输出零价；限速以账户为准",
-          "sourceUrl": "https://streamlake.com/document/WANQING/mdsorb4ejjptsmfyrn",
-          "entryUrl": "https://www.streamlake.com/product/kat-coder",
-          "validUntil": null,
-          "claimMethod": "注册开通万擎，创建 Key，选择 kat-coder-air-v1",
-          "lastVerifiedAt": "2026-10-13T03:39:00.843Z"
-        }
-      ],
-      "api": {
-        "baseUrl": "https://wanqing.streamlakeapi.com/api/gateway/v1/endpoints",
-        "protocol": "OpenAI-compatible;非文本接口按官方文档"
-      },
-      "experienceStatus": "not_tested"
-    },
-    {
       "id": "junie-qwen36",
       "title": "Qwen3.6 27B",
       "modelId": "Qwen3.6-27B",
@@ -3965,3 +3906,4 @@
     }
   ]
 }
+

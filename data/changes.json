@@ -2,6 +2,13 @@
   "schemaVersion": "1.0.0",
   "items": [
     {
+      "id": "kat-air-v1-offline-2026-10-17",
+      "type": "model_removed",
+      "date": "2026-10-17",
+      "title": "KAT Coder Air V1按官方目录下线",
+      "summary": "快手万擎当前模型列表与发布公告均标记KAT-Coder-Air-V1已下线，已从公开模型榜和网关候选清单移除；旧价格页不再作为可用证据。"
+    },
+    {
       "id": "official-free-model-update-2026-10-16",
       "type": "evidence_update",
       "date": "2026-10-16",
@@ -45,3 +52,4 @@
     }
   ]
 }
+
