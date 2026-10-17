@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-13T14:19:00.000Z",
+  "updatedAt": "2026-10-17T12:50:00.000Z",
   "policyVersion": "admission-v5-offers",
   "note": "平台套餐、会员、试用与额度单独展示，不参与模型排名；第4类内容不进入本文件。",
   "items": [
@@ -83,7 +83,7 @@
     {
       "id": "opencode-zen-free-models",
       "title": "多款编程模型限时免费",
-      "provider": "OpenCode Zen",
+      "provider": "OpenCode Console",
       "productType": "platform_offer",
       "freeSourceClass": 1,
       "stabilityTier": "A",
@@ -95,22 +95,22 @@
         "api"
       ],
       "regionStatus": "global",
-      "summary": "官方实时目录当前列出 11 个名称带 Free 的型号，包括 MiMo、Ling、Step、LongCat、Space Bunny、Jev 等",
-      "benefit": "官方实时目录当前列出 11 个名称带 Free 的型号，包括 MiMo、Ling、Step、LongCat、Space Bunny、Jev 等",
-      "allowance": "11 个当前免费型号；各型号统一请求上限未公开",
-      "capacity": "多数型号仅标注 limited time，未给绝对截止日；每日读取模型目录复核",
-      "eligibility": "创建 OpenCode Zen 账户和 API Key；选择名称带 Free 或目录价格为 0 的型号",
-      "claimMethod": "按官方 Zen 文档创建 API Key，通过 OpenAI 兼容端点调用当前免费型号",
+      "summary": "官方当前列出 14 个按输入、输出和缓存读取均为 Free 的型号，包括 GLM-5.3 Flash、DeepSeek V4.1 Flash、MiMo、Nemotron、LongCat、Space Bunny 与 Jev 等",
+      "benefit": "官方当前列出 14 个按输入、输出和缓存读取均为 Free 的型号，包括 GLM-5.3 Flash、DeepSeek V4.1 Flash、MiMo、Nemotron、LongCat、Space Bunny 与 Jev 等",
+      "allowance": "14 个当前免费型号；统一请求上限未公开",
+      "capacity": "免费型号和价格可能随时调整；官方未公布统一请求上限或绝对截止日，需每日复核官方价格表",
+      "eligibility": "注册 OpenCode Console 并创建 API Key；仅选择官方价格表输入、输出与缓存读取均标为 Free 的型号",
+      "claimMethod": "登录 OpenCode Console 创建 API Key，通过对应官方推理端点调用当前免费型号",
       "limitations": [
-        "部分免费型号会记录输入输出用于改进模型，不能提交隐私或机密代码；自动充值应保持关闭。"
+        "同一目录也包含付费模型；调用前必须核对当前价格表，避免误选付费型号，不要提交隐私或机密代码。"
       ],
       "evidenceLabel": "官方规则已核",
       "evidenceStatus": "official_verified",
-      "sourceUrl": "https://docs.opencode.ai/docs/zen/",
-      "entryUrl": "https://opencode.ai/",
+      "sourceUrl": "https://opencode.ai/docs/zen/",
+      "entryUrl": "https://opencode.ai/console",
       "validUntil": null,
-      "validityText": "多数型号仅标注 limited time，未给绝对截止日；每日读取模型目录复核",
-      "lastVerifiedAt": "2026-10-13T22:19:00+08:00",
+      "validityText": "免费型号和价格可能随时调整；官方未公布统一请求上限或绝对截止日，需每日复核官方价格表",
+      "lastVerifiedAt": "2026-10-17T20:50:00+08:00",
       "status": "active",
       "models": [],
       "sourceKind": "offer",
