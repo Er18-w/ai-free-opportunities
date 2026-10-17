@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {root,copyDir,readJson,sha256} from './lib.mjs';
+import {buildGatewayFeed} from './gateway-feed.mjs';
 
 const dist=path.join(root,'dist');
 await fs.rm(dist,{recursive:true,force:true});
@@ -8,6 +9,8 @@ await fs.mkdir(path.join(dist,'data'),{recursive:true});
 await copyDir(path.join(root,'src'),dist);
 const [platforms,catalog,offers]=await Promise.all(['platforms','catalog','offers'].map(name=>readJson(`data/${name}.json`)));
 for(const name of ['platforms.json','catalog.json','offers.json'])await fs.copyFile(path.join(root,'data',name),path.join(dist,'data',name));
+const gatewayFeed=buildGatewayFeed(catalog);
+await fs.writeFile(path.join(dist,'data','gateway-feed.json'),JSON.stringify(gatewayFeed,null,2)+'\n');
 
 const manifest={
   releaseId:`${new Date().toISOString().replace(/[:.]/g,'-')}-${sha256(JSON.stringify([catalog.items,offers.items])).slice(0,8)}`,
@@ -17,6 +20,7 @@ const manifest={
   modelCount:catalog.items.length,
   offerCount:offers.items.filter(item=>item.status==='active').length,
   categoryCount:new Set(catalog.items.flatMap(item=>item.categories??[])).size,
+  gatewayRouteCount:gatewayFeed.routeCount,
   sourceCount:0
 };
 await fs.writeFile(path.join(dist,'release.json'),JSON.stringify(manifest,null,2)+'\n');
@@ -34,3 +38,4 @@ const standalone=html
 await fs.writeFile(path.join(dist,'standalone.html'),standalone);
 await fs.writeFile(path.join(root,'standalone.html'),standalone);
 console.log(`构建完成：平台 ${platforms.items.length} 个，模型 ${catalog.items.length} 个，限时福利 ${offers.items.filter(item=>item.status==='active').length} 个；已生成 standalone.html。`);
+
