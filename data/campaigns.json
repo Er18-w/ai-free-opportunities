@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-10T17:55:00+08:00",
+  "updatedAt": "2026-10-17T20:50:00+08:00",
   "note": "仅公开官方来源已核实、价值达到任务门槛的活动与新人权益。",
   "items": [
     {
@@ -166,7 +166,7 @@
     },
     {
       "id": "opencode-zen-free-models",
-      "targetProduct": "OpenCode Zen",
+      "targetProduct": "OpenCode Console",
       "categories": [
         "coding-agent",
         "coding-api"
@@ -178,18 +178,18 @@
       "regionStatus": "global",
       "title": "多款编程模型限时免费",
       "benefitType": "限时免费模型 API",
-      "benefit": "官方 Zen 目录当前列出 MiMo、Ling、Nemotron、LongCat、Space Bunny、Jev 等多个免费型号",
-      "accessThreshold": "创建 OpenCode Zen 账户和 API Key；选择名称带 Free 或目录价格为 0 的型号",
-      "claimMethod": "按官方 Zen 文档创建 API Key，通过 OpenAI 兼容端点调用当前免费型号",
+      "benefit": "官方当前列出 14 个按输入、输出和缓存读取均为 Free 的型号，包括 GLM-5.3 Flash、DeepSeek V4.1 Flash、MiMo、Nemotron、LongCat、Space Bunny 与 Jev 等",
+      "accessThreshold": "注册 OpenCode Console 并创建 API Key；仅选择官方价格表输入、输出与缓存读取均标为 Free 的型号",
+      "claimMethod": "登录 OpenCode Console 创建 API Key，通过对应官方推理端点调用当前免费型号",
       "startAt": null,
       "validUntil": null,
-      "validityText": "多数型号仅标注 limited time，未给绝对截止日；每日读取模型目录复核",
+      "validityText": "免费型号和价格可能随时调整；官方未公布统一请求上限或绝对截止日，需每日复核官方价格表",
       "status": "active",
       "evidenceStatus": "official_verified",
-      "sourceUrl": "https://docs.opencode.ai/docs/zen/",
-      "entryUrl": "https://opencode.ai/",
-      "riskNotes": "部分免费型号会记录输入输出用于改进模型，不能提交隐私或机密代码；自动充值应保持关闭。",
-      "lastVerifiedAt": "2026-10-10T17:55:00+08:00",
+      "sourceUrl": "https://opencode.ai/docs/zen/",
+      "entryUrl": "https://opencode.ai/console",
+      "riskNotes": "同一目录也包含付费模型；调用前必须核对当前价格表，避免误选付费型号，不要提交隐私或机密代码。",
+      "lastVerifiedAt": "2026-10-17T20:50:00+08:00",
       "featuredRank": 7
     }
   ]
