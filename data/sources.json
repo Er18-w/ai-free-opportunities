@@ -15,8 +15,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-11-08T07:24:21.620Z",
-      "lastSuccessAt": "2026-11-08T07:24:21.620Z",
+      "lastAttemptAt": "2026-11-09T07:59:31.540Z",
+      "lastSuccessAt": "2026-11-09T07:59:31.540Z",
       "health": "ok",
       "lastError": null
     },
@@ -49,8 +49,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-11-08T07:24:21.620Z",
-      "lastSuccessAt": "2026-11-08T07:24:21.620Z",
+      "lastAttemptAt": "2026-11-09T07:59:31.540Z",
+      "lastSuccessAt": "2026-11-09T07:59:31.540Z",
       "health": "ok",
       "lastError": null,
       "machineUrl": "https://opencode.ai/zen/v1/models"
