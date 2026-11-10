@@ -15,8 +15,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-11-09T07:59:31.540Z",
-      "lastSuccessAt": "2026-11-09T07:59:31.540Z",
+      "lastAttemptAt": "2026-11-10T08:26:35.794Z",
+      "lastSuccessAt": "2026-11-10T08:26:35.794Z",
       "health": "ok",
       "lastError": null
     },
@@ -49,8 +49,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-11-09T07:59:31.540Z",
-      "lastSuccessAt": "2026-11-09T07:59:31.540Z",
+      "lastAttemptAt": "2026-11-10T08:26:35.794Z",
+      "lastSuccessAt": "2026-11-10T08:26:35.794Z",
       "health": "ok",
       "lastError": null,
       "machineUrl": "https://opencode.ai/zen/v1/models"
@@ -459,10 +459,10 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-14T03:21:32.981Z",
-      "lastSuccessAt": null,
-      "health": "failed",
-      "lastError": "fetch failed"
+      "lastAttemptAt": "2026-11-10T08:26:35.794Z",
+      "lastSuccessAt": "2026-11-10T08:26:35.794Z",
+      "health": "ok",
+      "lastError": null
     },
     {
       "id": "S28",
@@ -476,8 +476,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-14T03:21:32.981Z",
-      "lastSuccessAt": "2026-10-14T03:21:32.981Z",
+      "lastAttemptAt": "2026-11-10T08:26:35.794Z",
+      "lastSuccessAt": "2026-11-10T08:26:35.794Z",
       "health": "ok",
       "lastError": null
     },
@@ -493,8 +493,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-14T03:21:32.981Z",
-      "lastSuccessAt": "2026-10-14T03:21:32.981Z",
+      "lastAttemptAt": "2026-11-10T08:26:35.794Z",
+      "lastSuccessAt": "2026-11-10T08:26:35.794Z",
       "health": "ok",
       "lastError": null
     },
@@ -510,8 +510,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-14T03:21:32.981Z",
-      "lastSuccessAt": "2026-10-14T03:21:32.981Z",
+      "lastAttemptAt": "2026-11-10T08:26:35.794Z",
+      "lastSuccessAt": "2026-11-10T08:26:35.794Z",
       "health": "ok",
       "lastError": null
     },
@@ -527,8 +527,8 @@
       "baselineCheckedAt": "2026-10-09",
       "adapterStatus": "implemented_generic",
       "regionEvidence": "未实测",
-      "lastAttemptAt": "2026-10-14T03:21:32.981Z",
-      "lastSuccessAt": "2026-10-14T03:21:32.981Z",
+      "lastAttemptAt": "2026-11-10T08:26:35.794Z",
+      "lastSuccessAt": "2026-11-10T08:26:35.794Z",
       "health": "ok",
       "lastError": null
     }
